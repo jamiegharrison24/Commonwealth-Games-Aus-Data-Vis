@@ -1,0 +1,205 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Marimekko (variable-width stacked bar) chart of every medal Australia has won, 1930-2026. Each column is a sport: its width is proportional to the number of medals won, and it is split into the share of gold, silver and bronze. Wide columns are where the medals come from; tall gold segments are where Australia converts medals into wins.",
+  "width": "container",
+  "height": 300,
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "data": {
+    "url": "data/aus_sport_alltime.csv",
+    "format": {
+      "type": "csv",
+      "parse": {"gold": "number", "silver": "number", "bronze": "number", "total": "number"}
+    }
+  },
+  "transform": [
+    {
+      "calculate": "indexof(['Aquatics','Athletics','Cycling','Shooting','Weightlifting','Gymnastics','Boxing'], datum.sport) >= 0 ? datum.sport : 'Other sports'",
+      "as": "sport_group"
+    },
+    {
+      "aggregate": [
+        {"op": "sum", "field": "gold", "as": "gold"},
+        {"op": "sum", "field": "silver", "as": "silver"},
+        {"op": "sum", "field": "bronze", "as": "bronze"},
+        {"op": "sum", "field": "total", "as": "total"}
+      ],
+      "groupby": ["sport_group"]
+    },
+    {"calculate": "datum.sport_group == 'Other sports' ? -1 : datum.total", "as": "ord"},
+    {
+      "window": [{"op": "sum", "field": "total", "as": "x1"}],
+      "sort": [{"field": "ord", "order": "descending"}],
+      "frame": [null, 0]
+    },
+    {"calculate": "datum.x1 - datum.total", "as": "x0"},
+    {"joinaggregate": [{"op": "sum", "field": "total", "as": "grand"}]},
+    {"calculate": "datum.total / datum.grand", "as": "share_of_all"},
+    {"calculate": "datum.gold / datum.total", "as": "gold_rate"},
+    {"fold": ["gold", "silver", "bronze"], "as": ["medal", "count"]},
+    {"calculate": "indexof(['gold','silver','bronze'], datum.medal)", "as": "mord"},
+    {
+      "window": [{"op": "sum", "field": "count", "as": "c1"}],
+      "groupby": ["sport_group"],
+      "sort": [{"field": "mord", "order": "ascending"}],
+      "frame": [null, 0]
+    },
+    {"calculate": "(datum.c1 - datum.count) / datum.total", "as": "y0"},
+    {"calculate": "datum.c1 / datum.total", "as": "y1"},
+    {"calculate": "upper(substring(datum.medal,0,1)) + substring(datum.medal,1)", "as": "Medal"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rect", "stroke": "#faf8f3", "strokeWidth": 1.5},
+      "encoding": {
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "title": "Medals won, 1930–2026 (column width)",
+          "axis": {"values": [0, 500, 1000, 1500, 2000, 2500, 2771], "grid": false, "format": ",d"},
+          "scale": {"domain": [0, 2771], "nice": false}
+        },
+        "x2": {"field": "x1"},
+        "y": {
+          "field": "y0",
+          "type": "quantitative",
+          "title": null,
+          "axis": {"format": ".0%", "values": [0, 0.25, 0.5, 0.75, 1], "grid": false},
+          "scale": {"domain": [0, 1]}
+        },
+        "y2": {"field": "y1"},
+        "color": {
+          "field": "Medal",
+          "type": "nominal",
+          "scale": {"domain": ["Gold", "Silver", "Bronze"], "range": ["#c9a227", "#b4b9bf", "#b0703c"]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "sport_group", "title": "Sport"},
+          {"field": "Medal"},
+          {"field": "count", "title": "Medals", "type": "quantitative"},
+          {"field": "total", "title": "All medals in this sport", "type": "quantitative"},
+          {
+            "field": "share_of_all",
+            "title": "Share of all Australian medals",
+            "type": "quantitative",
+            "format": ".1%"
+          },
+          {
+            "field": "gold_rate",
+            "title": "Share that were gold",
+            "type": "quantitative",
+            "format": ".0%"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.medal == 'gold' && (datum.total >= 250 || datum.sport_group == 'Other sports')"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dx": 7,
+        "dy": 6,
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#ffffff",
+        "font": "Barlow Semi Condensed"
+      },
+      "encoding": {
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "axis": {"values": [0, 500, 1000, 1500, 2000, 2500, 2771], "grid": false, "format": ",d"}
+        },
+        "y": {"value": 0},
+        "text": {"field": "sport_group"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.medal == 'gold' && (datum.total >= 250 || datum.sport_group == 'Other sports')"
+        },
+        {"calculate": "format(datum.total, ',') + ' medals'", "as": "total_lab"}
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dx": 7,
+        "dy": 22,
+        "fontSize": 12,
+        "color": "#ffffff"
+      },
+      "encoding": {
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "axis": {"values": [0, 500, 1000, 1500, 2000, 2500, 2771], "grid": false, "format": ",d"}
+        },
+        "y": {"value": 0},
+        "text": {"field": "total_lab"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.medal == 'gold' && (datum.total >= 250 || datum.sport_group == 'Other sports')"
+        },
+        {"calculate": "format(datum.gold_rate, '.0%') + ' gold'", "as": "gold_lab"}
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dx": 7,
+        "dy": 36,
+        "fontSize": 12,
+        "color": "#ffffff"
+      },
+      "encoding": {
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "axis": {"values": [0, 500, 1000, 1500, 2000, 2500, 2771], "grid": false, "format": ",d"}
+        },
+        "y": {"value": 0},
+        "text": {"field": "gold_lab"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.medal == 'gold' && datum.total < 250 && datum.sport_group != 'Other sports'"
+        },
+        {"calculate": "(datum.x0 + datum.x1) / 2", "as": "xm"},
+        {"calculate": "datum.sport_group + ' · ' + datum.total", "as": "vlab"}
+      ],
+      "mark": {
+        "type": "text",
+        "angle": 270,
+        "align": "left",
+        "baseline": "middle",
+        "dx": 8,
+        "fontSize": 11.5,
+        "fontWeight": 600,
+        "color": "#ffffff",
+        "font": "Barlow Semi Condensed"
+      },
+      "encoding": {
+        "x": {
+          "field": "xm",
+          "type": "quantitative",
+          "axis": {"values": [0, 500, 1000, 1500, 2000, 2500, 2771], "grid": false, "format": ",d"}
+        },
+        "y": {"datum": 0, "type": "quantitative"},
+        "text": {"field": "vlab"}
+      }
+    }
+  ]
+}

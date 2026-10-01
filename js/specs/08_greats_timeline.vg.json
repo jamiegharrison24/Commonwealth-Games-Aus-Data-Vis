@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Career timeline of Australia's 16 most decorated Commonwealth Games athletes. Each row is an athlete; the line spans their first to last medal-winning Games. At each Games the outer circle's area shows all medals won and the inner gold circle shows how many of them were gold.",
+  "width": "container",
+  "height": {"step": 27},
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "data": {
+    "url": "data/aus_greats.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "gold": "number",
+        "silver": "number",
+        "bronze": "number",
+        "medals": "number",
+        "career_total": "number",
+        "career_gold": "number",
+        "first": "number",
+        "last": "number",
+        "rank": "number"
+      }
+    }
+  },
+  "transform": [{"calculate": "datum.athlete + '  ·  ' + datum.sport", "as": "who"}],
+  "encoding": {
+    "y": {
+      "field": "who",
+      "type": "nominal",
+      "title": null,
+      "sort": {"field": "rank", "op": "min", "order": "ascending"},
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 12.5,
+        "labelPadding": 10,
+        "grid": true,
+        "gridColor": "#efece4",
+        "gridDash": []
+      }
+    },
+    "x": {
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [1946, 2040]},
+      "axis": {
+        "values": [1950, 1962, 1974, 1986, 1998, 2010, 2022],
+        "format": "d",
+        "grid": true,
+        "orient": "top",
+        "domain": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "strokeWidth": 2, "color": "#c9c4b7"},
+      "encoding": {"x": {"field": "first", "aggregate": "min"}, "x2": {"field": "last", "aggregate": "max"}}
+    },
+    {
+      "mark": {"type": "circle", "opacity": 1, "fill": "#dcecE2", "stroke": "#00754F", "strokeWidth": 1.2},
+      "encoding": {
+        "x": {"field": "year"},
+        "size": {
+          "field": "medals",
+          "type": "quantitative",
+          "scale": {"domain": [0, 8], "range": [0, 520]},
+          "title": "Medals at one Games",
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "values": [1, 4, 8],
+            "symbolFillColor": "#dcece2",
+            "symbolStrokeColor": "#00754F"
+          }
+        },
+        "tooltip": [
+          {"field": "athlete", "title": "Athlete"},
+          {"field": "sport", "title": "Sport"},
+          {"field": "year", "title": "Games", "format": "d"},
+          {"field": "gold", "title": "Gold"},
+          {"field": "silver", "title": "Silver"},
+          {"field": "bronze", "title": "Bronze"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "datum.gold > 0"}],
+      "mark": {"type": "circle", "opacity": 1, "fill": "#c9a227", "stroke": null},
+      "encoding": {
+        "x": {"field": "year"},
+        "size": {"field": "gold", "type": "quantitative"},
+        "tooltip": [
+          {"field": "athlete", "title": "Athlete"},
+          {"field": "year", "title": "Games", "format": "d"},
+          {"field": "gold", "title": "Gold"},
+          {"field": "silver", "title": "Silver"},
+          {"field": "bronze", "title": "Bronze"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "max", "field": "career_total", "as": "t"},
+            {"op": "max", "field": "career_gold", "as": "g"},
+            {"op": "min", "field": "rank", "as": "rank"}
+          ],
+          "groupby": ["who"]
+        },
+        {"calculate": "datum.t + ' medals · ' + datum.g + ' gold'", "as": "lab"}
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 12.5,
+        "font": "Barlow Semi Condensed",
+        "fontWeight": 600,
+        "color": "#3b3a36"
+      },
+      "encoding": {"x": {"datum": 2029}, "text": {"field": "lab"}}
+    }
+  ]
+}

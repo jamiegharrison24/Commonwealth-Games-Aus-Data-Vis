@@ -1,0 +1,120 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap: Australian medals won in each sport (rows, ordered by all-time total) at each Games (columns). Darker green = more medals; blank = no medals (or sport not held). Aquatics combines swimming, diving, synchronised swimming and water polo because early Games reported them together.",
+  "width": "container",
+  "height": {"step": 25},
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "data": {
+    "url": "data/aus_sport_games.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "gold": "number",
+        "silver": "number",
+        "bronze": "number",
+        "total": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "indexof(['Aquatics','Athletics','Cycling','Shooting','Weightlifting','Gymnastics','Boxing','Lawn bowls','Wrestling','Judo','Rowing','Squash','Fencing','Hockey'], datum.sport) >= 0 ? datum.sport : 'Other sports'",
+      "as": "sport_group"
+    },
+    {
+      "aggregate": [
+        {"op": "sum", "field": "total", "as": "medals"},
+        {"op": "sum", "field": "gold", "as": "gold"},
+        {"op": "sum", "field": "silver", "as": "silver"},
+        {"op": "sum", "field": "bronze", "as": "bronze"}
+      ],
+      "groupby": ["year", "sport_group"]
+    },
+    {"filter": "datum.medals > 0"},
+    {
+      "joinaggregate": [{"op": "sum", "field": "medals", "as": "sport_total"}],
+      "groupby": ["sport_group"]
+    },
+    {"calculate": "datum.sport_group == 'Other sports' ? -1 : datum.sport_total", "as": "sort_key"},
+    {
+      "calculate": "datum.medals <= 2 ? '1–2' : datum.medals <= 5 ? '3–5' : datum.medals <= 10 ? '6–10' : datum.medals <= 20 ? '11–20' : datum.medals <= 40 ? '21–40' : '41+'",
+      "as": "Medals"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "scale": {
+        "domain": [
+          1930, 1934, 1938, 1950, 1954, 1958, 1962, 1966, 1970, 1974, 1978, 1982, 1986, 1990, 1994,
+          1998, 2002, 2006, 2010, 2014, 2018, 2022, 2026
+        ],
+        "paddingInner": 0.08
+      },
+      "axis": {
+        "orient": "top",
+        "labelAngle": 0,
+        "labelExpr": "'’' + substring(datum.label, 2, 4)",
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 11.5
+      }
+    },
+    "y": {
+      "field": "sport_group",
+      "type": "nominal",
+      "title": null,
+      "sort": {"field": "sort_key", "op": "max", "order": "descending"},
+      "scale": {"paddingInner": 0.08},
+      "axis": {"domain": false, "ticks": false, "labelFontSize": 12.5, "labelPadding": 6}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "rect", "cornerRadius": 2},
+      "encoding": {
+        "color": {
+          "field": "Medals",
+          "type": "ordinal",
+          "title": "Australian medals at that Games",
+          "scale": {
+            "domain": ["1–2", "3–5", "6–10", "11–20", "21–40", "41+"],
+            "range": ["#e3efe7", "#bcdcc8", "#86c09f", "#4a9d74", "#1c7a52", "#0a4f34"]
+          },
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "titleOrient": "left",
+            "symbolType": "square",
+            "symbolSize": 170,
+            "labelFontSize": 12
+          }
+        },
+        "stroke": {"condition": {"param": "rowHover", "empty": false, "value": "#1d1d1b"}, "value": null},
+        "tooltip": [
+          {"field": "sport_group", "title": "Sport"},
+          {"field": "year", "title": "Games"},
+          {"field": "medals", "title": "Australian medals"},
+          {"field": "gold", "title": "Gold"},
+          {"field": "silver", "title": "Silver"},
+          {"field": "bronze", "title": "Bronze"},
+          {"field": "sport_total", "title": "All-time total in this sport"}
+        ]
+      },
+      "params": [
+        {
+          "name": "rowHover",
+          "select": {"type": "point", "fields": ["sport_group"], "on": "mouseover", "clear": "mouseout"}
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": "datum.medals >= 21"}],
+      "mark": {"type": "text", "fontSize": 10.5, "fontWeight": 600, "color": "#ffffff"},
+      "encoding": {"text": {"field": "medals"}}
+    }
+  ]
+}

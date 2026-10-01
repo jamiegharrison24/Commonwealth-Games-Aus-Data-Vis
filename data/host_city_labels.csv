@@ -1,0 +1,21 @@
+city,lat,lon,years,label,side
+Hamilton,43.2557,-79.8711,1930,Hamilton 1930,right
+London,51.5074,-0.1278,1934,London 1934,right
+Sydney,-33.8688,151.2093,1938,Sydney 1938,right
+Auckland,-36.8485,174.7633,1950 · 1990,Auckland 1950 · 1990,right
+Vancouver,49.2827,-123.1207,1954,Vancouver 1954,right
+Cardiff,51.4816,-3.1791,1958,Cardiff 1958,right
+Perth,-31.9523,115.8613,1962,Perth 1962,right
+Kingston,17.9714,-76.7931,1966,Kingston 1966,right
+Edinburgh,55.9533,-3.1883,1970 · 1986,Edinburgh 1970 · 1986,right
+Christchurch,-43.5321,172.6362,1974,Christchurch 1974,right
+Edmonton,53.5461,-113.4938,1978,Edmonton 1978,right
+Brisbane,-27.4698,153.0251,1982,Brisbane 1982,left
+Victoria,48.4284,-123.3656,1994,Victoria 1994,left
+Kuala Lumpur,3.139,101.6869,1998,Kuala Lumpur 1998,right
+Manchester,53.4808,-2.2426,2002,Manchester 2002,right
+Melbourne,-37.8136,144.9631,2006,Melbourne 2006,right
+Delhi,28.6139,77.209,2010,Delhi 2010,right
+Glasgow,55.8642,-4.2518,2014 · 2026,Glasgow 2014 · 2026,left
+Gold Coast,-28.0167,153.4,2018,Gold Coast 2018,right
+Birmingham,52.4862,-1.8904,2022,Birmingham 2022,right

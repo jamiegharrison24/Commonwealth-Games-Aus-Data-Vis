@@ -1,0 +1,642 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Surplus/deficit (gap) chart. Grey line: Australia's share of all athletes entered at each Commonwealth Games. Green line: Australia's share of all medals awarded. The shaded gap between them is the medals Australia won beyond what its team size alone would predict. Gold bands mark Games held in Australia. Hollow grey points (1966, 1970) use all-participant totals that include officials.",
+  "width": "container",
+  "height": 400,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "data": {
+    "url": "data/games.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "aus_athlete_share": "number",
+        "aus_share": "number",
+        "conversion": "number",
+        "aus_team": "number",
+        "total_athletes": "number",
+        "aus_total": "number",
+        "medals_awarded": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.home == 'Home' ? 'Australia (home Games)' : datum.host",
+      "as": "home_lab"
+    },
+    {
+      "calculate": "format(datum.conversion,'.1f') + '×'",
+      "as": "conv_lab"
+    },
+    {
+      "calculate": "datum.athletes_note ? 'All-athlete total ' + datum.athletes_note + ', so Australia’s share is understated' : '—'",
+      "as": "note_lab"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          1927,
+          2039
+        ],
+        "nice": false
+      },
+      "axis": {
+        "format": "d",
+        "values": [
+          1930,
+          1938,
+          1950,
+          1962,
+          1974,
+          1982,
+          1990,
+          1998,
+          2006,
+          2014,
+          2022,
+          2026
+        ],
+        "grid": false,
+        "labelOverlap": true,
+        "labelFontSize": 12
+      }
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": "datum.home == 'Home'"
+        },
+        {
+          "calculate": "datum.year - 1.7",
+          "as": "x0"
+        },
+        {
+          "calculate": "datum.year + 1.7",
+          "as": "x1"
+        }
+      ],
+      "mark": {
+        "type": "rect",
+        "color": "#f0c13f",
+        "opacity": 0.22
+      },
+      "encoding": {
+        "x": {
+          "field": "x0",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "x1"
+        },
+        "y": {
+          "datum": 0
+        },
+        "y2": {
+          "datum": 0.36
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.home == 'Home'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": 700,
+        "color": "#8a6a0c",
+        "baseline": "top",
+        "dy": 4,
+        "font": "Barlow Semi Condensed",
+        "text": "HOME"
+      },
+      "encoding": {
+        "y": {
+          "datum": 0.36,
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "area",
+        "color": "#00754F",
+        "opacity": 0.17,
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "y": {
+          "field": "aus_athlete_share",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0,
+              0.36
+            ],
+            "nice": false
+          },
+          "axis": {
+            "format": ".0%",
+            "values": [
+              0,
+              0.1,
+              0.2,
+              0.3
+            ],
+            "tickCount": 4,
+            "domain": false,
+            "ticks": false,
+            "labelFontSize": 12
+          }
+        },
+        "y2": {
+          "field": "aus_share"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#8c8a83",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "y": {
+          "field": "aus_athlete_share",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#00754F",
+        "strokeWidth": 3.2
+      },
+      "encoding": {
+        "y": {
+          "field": "aus_share",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 46,
+        "color": "#8c8a83",
+        "opacity": 1,
+        "cursor": "pointer"
+      },
+      "transform": [
+        {
+          "filter": "!datum.athletes_note"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "aus_athlete_share",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "label",
+            "title": "Games"
+          },
+          {
+            "field": "home_lab",
+            "title": "Host"
+          },
+          {
+            "field": "aus_team",
+            "type": "quantitative",
+            "title": "Australian athletes",
+            "format": ",d"
+          },
+          {
+            "field": "total_athletes",
+            "type": "quantitative",
+            "title": "All athletes",
+            "format": ",d"
+          },
+          {
+            "field": "aus_athlete_share",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "Australia's share of athletes"
+          },
+          {
+            "field": "aus_total",
+            "type": "quantitative",
+            "title": "Australian medals",
+            "format": ",d"
+          },
+          {
+            "field": "aus_share",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "Australia's share of medals"
+          },
+          {
+            "field": "conv_lab",
+            "title": "Medal share ÷ athlete share"
+          },
+          {
+            "field": "note_lab",
+            "title": "Note"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 50,
+        "fill": "#ffffff",
+        "stroke": "#8c8a83",
+        "strokeWidth": 2,
+        "opacity": 1,
+        "cursor": "pointer"
+      },
+      "transform": [
+        {
+          "filter": "datum.athletes_note"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "aus_athlete_share",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "label",
+            "title": "Games"
+          },
+          {
+            "field": "home_lab",
+            "title": "Host"
+          },
+          {
+            "field": "aus_team",
+            "type": "quantitative",
+            "title": "Australian athletes",
+            "format": ",d"
+          },
+          {
+            "field": "total_athletes",
+            "type": "quantitative",
+            "title": "All athletes",
+            "format": ",d"
+          },
+          {
+            "field": "aus_athlete_share",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "Australia's share of athletes"
+          },
+          {
+            "field": "aus_total",
+            "type": "quantitative",
+            "title": "Australian medals",
+            "format": ",d"
+          },
+          {
+            "field": "aus_share",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "Australia's share of medals"
+          },
+          {
+            "field": "conv_lab",
+            "title": "Medal share ÷ athlete share"
+          },
+          {
+            "field": "note_lab",
+            "title": "Note"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 58,
+        "color": "#00754F",
+        "opacity": 1,
+        "stroke": "#ffffff",
+        "strokeWidth": 1,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "y": {
+          "field": "aus_share",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "label",
+            "title": "Games"
+          },
+          {
+            "field": "home_lab",
+            "title": "Host"
+          },
+          {
+            "field": "aus_team",
+            "type": "quantitative",
+            "title": "Australian athletes",
+            "format": ",d"
+          },
+          {
+            "field": "total_athletes",
+            "type": "quantitative",
+            "title": "All athletes",
+            "format": ",d"
+          },
+          {
+            "field": "aus_athlete_share",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "Australia's share of athletes"
+          },
+          {
+            "field": "aus_total",
+            "type": "quantitative",
+            "title": "Australian medals",
+            "format": ",d"
+          },
+          {
+            "field": "aus_share",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "Australia's share of medals"
+          },
+          {
+            "field": "conv_lab",
+            "title": "Medal share ÷ athlete share"
+          },
+          {
+            "field": "note_lab",
+            "title": "Note"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2027.6,
+            "y": 0.262,
+            "t": "Share of medals won",
+            "c": "m"
+          },
+          {
+            "year": 2027.6,
+            "y": 0.236,
+            "t": "25% at Glasgow 2026",
+            "c": "s"
+          },
+          {
+            "year": 2027.6,
+            "y": 0.096,
+            "t": "Share of athletes",
+            "c": "a"
+          },
+          {
+            "year": 2027.6,
+            "y": 0.072,
+            "t": "9% at Glasgow 2026",
+            "c": "s"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Barlow Semi Condensed",
+        "fontWeight": {
+          "expr": "datum.c == 's' ? 400 : 700"
+        },
+        "fontSize": {
+          "expr": "datum.c == 's' ? 12 : 14"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        },
+        "color": {
+          "condition": [
+            {
+              "test": "datum.c == 'a'",
+              "value": "#5d5b55"
+            },
+            {
+              "test": "datum.c == 's'",
+              "value": "#6b6a64"
+            }
+          ],
+          "value": "#00664a"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 1998.2,
+            "y": 0.205,
+            "t": "THE GAP"
+          },
+          {
+            "year": 1998.2,
+            "y": 0.183,
+            "t": "medals won beyond"
+          },
+          {
+            "year": 1998.2,
+            "y": 0.164,
+            "t": "Australia's team size"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "font": "Barlow Semi Condensed",
+        "fontSize": 12.5,
+        "fontWeight": {
+          "expr": "datum.t == 'THE GAP' ? 700 : 500"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        },
+        "color": {
+          "value": "#00664a"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 1938,
+            "y": 0.332,
+            "ax": 1941,
+            "ay": 0.072,
+            "t1": "Sydney 1938: the home team was a third",
+            "t2": "of all athletes but won slightly less than",
+            "t3": "a third of the medals (0.9×)"
+          },
+          {
+            "year": 1970,
+            "y": 0.0614,
+            "ax": 1966.5,
+            "ay": 0.032,
+            "t1": "1970: 6% of athletes,",
+            "t2": "22% of medals (3.6×)",
+            "t3": ""
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#3b3a36",
+            "strokeWidth": 0.8
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "y",
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "ax"
+            },
+            "y2": {
+              "field": "ay"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 3,
+            "fontSize": 12,
+            "color": "#3b3a36",
+            "font": "Barlow Semi Condensed",
+            "fontWeight": 600
+          },
+          "encoding": {
+            "x": {
+              "field": "ax",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "ay",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t1"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 3,
+            "dy": 14,
+            "fontSize": 12,
+            "color": "#3b3a36",
+            "font": "Barlow Semi Condensed"
+          },
+          "encoding": {
+            "x": {
+              "field": "ax",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "ay",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t2"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 3,
+            "dy": 28,
+            "fontSize": 12,
+            "color": "#3b3a36",
+            "font": "Barlow Semi Condensed"
+          },
+          "encoding": {
+            "x": {
+              "field": "ax",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "ay",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t3"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

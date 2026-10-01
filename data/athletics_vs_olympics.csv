@@ -1,0 +1,486 @@
+cg_year,oly_year,sex,event,discipline,cg_winner,cg_country,cg_mark,wind_aided,oly_gold,oly_gold_noc,oly_gold_mark,oly_bronze_mark,oly_8th_mark,pct_of_oly_gold,pct_of_oly_bronze,standard,jitter
+1970,1968,Men,100 m,Track,Don Quarrie,JAM,10.24,True,Jim Hines,USA,9.9,10.0,10.2,96.68,97.66,Below Olympic final standard,0.092
+1974,1972,Men,100 m,Track,Don Quarrie,JAM,10.38,False,Valery Borzov,URS,10.14,10.33,10.46,97.69,99.52,Olympic final standard,-0.306
+1978,1976,Men,100 m,Track,Don Quarrie,JAM,10.03,True,Hasely Crawford,TTO,10.06,10.14,10.35,100.3,101.1,Olympic gold standard,0.226
+1982,1980,Men,100 m,Track,Allan Wells,SCO,10.02,True,Allan Wells,GBR,10.25,10.39,10.49,102.3,103.69,Olympic gold standard,0.112
+1986,1984,Men,100 m,Track,Ben Johnson (Canadian sprinter),CAN,10.07,False,Carl Lewis,USA,9.99,10.22,10.35,99.21,101.49,Olympic medal standard,-0.354
+1990,1988,Men,100 m,Track,Linford Christie,ENG,9.93,True,Carl Lewis,USA,9.92,9.99,12.26,99.9,100.6,Olympic medal standard,-0.228
+1994,1992,Men,100 m,Track,Linford Christie,ENG,9.91,False,Linford Christie,GBR,9.96,10.04,10.26,100.5,101.31,Olympic gold standard,0.256
+1998,1996,Men,100 m,Track,Ato Boldon,TRI,9.88,False,Donovan Bailey,CAN,9.84,9.90,10.16,99.6,100.2,Olympic medal standard,0.051
+2002,2000,Men,100 m,Track,Kim Collins,SKN,9.98,False,Maurice Greene,USA,9.87,10.04,10.17,98.9,100.6,Olympic medal standard,-0.017
+2006,2004,Men,100 m,Track,Asafa Powell,JAM,10.03,False,Justin Gatlin,USA,9.85,9.87,10.10,98.21,98.4,Olympic final standard,0.078
+2010,2008,Men,100 m,Track,Lerone Clarke,JAM,10.12,False,Usain Bolt,JAM,9.69,9.91,10.03,95.75,97.92,Below Olympic final standard,0.186
+2014,2012,Men,100 m,Track,Kemar Bailey-Cole,JAM,10.00,False,Usain Bolt,JAM,9.63,9.79,11.99,96.3,97.9,Olympic final standard,0.314
+2018,2016,Men,100 m,Track,Akani Simbine,RSA,10.03,False,Usain Bolt,JAM,9.81,9.91,10.06,97.81,98.8,Olympic final standard,-0.304
+2022,2020,Men,100 m,Track,Ferdinand Omanyala,KEN,10.02,False,Lamont Marcell Jacobs,ITA,9.80,9.89,9.98,97.8,98.7,Below Olympic final standard,-0.072
+1970,1968,Men,200 m,Track,Don Quarrie,JAM,20.56,False,Tommie Smith,USA,19.8,20.0,20.6,96.3,97.28,Olympic final standard,0.08
+1974,1972,Men,200 m,Track,Don Quarrie,JAM,20.73,False,Valery Borzov,URS,20.00,20.30,21.05,96.48,97.93,Olympic final standard,0.195
+1978,1976,Men,200 m,Track,Allan Wells,SCO,20.12,True,Don Quarrie,JAM,20.23,20.43,1:19.6,100.55,101.54,Olympic gold standard,-0.306
+1982,1980,Men,200 m,Track,Mike McFarlane,ENG,20.43,False,Pietro Mennea,ITA,20.19,20.29,21.19,98.83,99.31,Olympic final standard,-0.051
+1986,1984,Men,200 m,Track,Atlee Mahorn,CAN,20.31,False,Carl Lewis,USA,19.80,20.26,20.85,97.49,99.75,Olympic final standard,-0.054
+1990,1988,Men,200 m,Track,Marcus Adam,ENG,20.10,True,Joe DeLoach,USA,19.75,20.04,20.58,98.26,99.7,Olympic final standard,0.08
+1994,1992,Men,200 m,Track,Frankie Fredericks,NAM,19.97,False,Mike Marsh,USA,20.01,20.38,20.80,100.2,102.05,Olympic gold standard,-0.322
+1998,1996,Men,200 m,Track,Julian Golding,ENG,20.18,False,Michael Johnson,USA,19.32,19.80,20.48,95.74,98.12,Olympic final standard,-0.292
+2002,2000,Men,200 m,Track,Frankie Fredericks,NAM,20.06,False,Kostas Kenteris,GRE,20.09,20.20,20.49,100.15,100.7,Olympic gold standard,0.009
+2006,2004,Men,200 m,Track,"Omar Brown (sprinter, born 1982)",JAM,20.47,False,Shawn Crawford,USA,19.79,20.03,20.64,96.68,97.85,Olympic final standard,-0.394
+2010,2008,Men,200 m,Track,Leon Baptiste,ENG,20.45,False,Usain Bolt,JAM,19.30,19.98,20.59,94.38,97.7,Olympic final standard,-0.234
+2014,2012,Men,200 m,Track,Rasheed Dwyer,JAM,20.14,False,Usain Bolt,JAM,19.32,19.84,20.69,95.93,98.51,Olympic final standard,-0.077
+2018,2016,Men,200 m,Track,Jereem Richards,TTO,20.12,False,Usain Bolt,JAM,19.78,20.12,20.43,98.31,100.0,Olympic medal standard,-0.122
+2022,2020,Men,200 m,Track,Jereem Richards,TTO,19.80,False,Andre De Grasse,CAN,19.62,19.74,20.39,99.09,99.7,Olympic final standard,-0.147
+1970,1968,Men,400 m,Track,Charles Asati,KEN,45.01,False,Lee Evans,USA,43.8,44.4,47.6,97.31,98.64,Olympic final standard,-0.184
+1974,1972,Men,400 m,Track,Charles Asati,KEN,46.04,False,Vince Matthews,USA,44.66,44.92,45.68,97.0,97.57,Below Olympic final standard,-0.185
+1978,1976,Men,400 m,Track,Rick Mitchell,AUS,46.34,False,Alberto Juantorena,CUB,44.26,44.95,45.63,95.51,97.0,Below Olympic final standard,-0.271
+1982,1980,Men,400 m,Track,Bert Cameron,JAM,45.89,False,Viktor Markin,URS,44.60,44.87,46.33,97.19,97.78,Olympic final standard,0.257
+1986,1984,Men,400 m,Track,Roger Black,ENG,45.57,False,Alonzo Babers,USA,44.27,44.71,45.35,97.15,98.11,Below Olympic final standard,0.285
+1990,1988,Men,400 m,Track,Darren Clark,AUS,44.60,False,Steve Lewis,USA,43.87,44.09,45.03,98.36,98.86,Olympic final standard,-0.12
+1994,1992,Men,400 m,Track,Charles Gitonga,KEN,45.00,False,Quincy Watts,USA,43.50,44.24,45.18,96.67,98.31,Olympic final standard,-0.11
+1998,1996,Men,400 m,Track,Iwan Thomas,WAL,44.52,False,Michael Johnson,USA,43.49,44.53,44.99,97.69,100.02,Olympic medal standard,0.266
+2002,2000,Men,400 m,Track,Michael Blackwood (athlete),JAM,45.07,False,Michael Johnson,USA,43.84,44.70,45.55,97.27,99.18,Olympic final standard,-0.298
+2006,2004,Men,400 m,Track,John Steffensen,AUS,44.73,False,Jeremy Wariner,USA,44.00,44.42,45.55,98.37,99.31,Olympic final standard,-0.399
+2010,2008,Men,400 m,Track,Mark Mutai,KEN,45.44,False,LaShawn Merritt,USA,43.75,44.80,45.39,96.28,98.59,Below Olympic final standard,0.105
+2014,2012,Men,400 m,Track,Kirani James,GRN,44.24,False,Kirani James,GRN,43.94,44.52,45.14,99.32,100.63,Olympic medal standard,0.075
+2018,2016,Men,400 m,Track,Isaac Makwala,BOT,44.35,False,Wayde van Niekerk,RSA,43.03,43.85,44.61,97.02,98.87,Olympic final standard,-0.342
+2022,2020,Men,400 m,Track,Muzala Samukonga,ZAM,44.66,False,Steven Gardiner,BAH,43.85,44.19,45.07,98.19,98.95,Olympic final standard,0.214
+1970,1968,Men,800 m,Track,Robert Ouko (athlete),KEN,1:46.89,False,Ralph Doubell,AUS,1:44.3,1:45.4,1:54.3,97.58,98.61,Olympic final standard,-0.294
+1974,1972,Men,800 m,Track,John Kipkurgat,KEN,1:43.91,False,Dave Wottle,USA,1:45.86,1:46.01,1:47.96,101.88,102.02,Olympic gold standard,0.159
+1978,1976,Men,800 m,Track,Mike Boit,KEN,1:46.39,False,Alberto Juantorena,CUB,1:43.50,1:44.12,1:48.39,97.28,97.87,Olympic final standard,-0.192
+1982,1980,Men,800 m,Track,Peter Bourke (athlete),AUS,1:45.18,False,Steve Ovett,GBR,1:45.4,1:46.0,1:49.3,100.21,100.78,Olympic gold standard,-0.379
+1986,1984,Men,800 m,Track,Steve Cram,ENG,1:43.22,False,Joaquim Cruz,BRA,1:43.00,1:43.83,1:52.28,99.79,100.59,Olympic medal standard,0.144
+1990,1988,Men,800 m,Track,Sammy Tirop,KEN,1:45.98,False,Paul Ereng,KEN,1:43.45,1:44.06,1:49.55,97.61,98.19,Olympic final standard,-0.112
+1994,1992,Men,800 m,Track,Patrick Konchellah,KEN,1:45.18,False,William Tanui,KEN,1:43.66,1:43.97,1:48.34,98.55,98.85,Olympic final standard,0.383
+1998,1996,Men,800 m,Track,Japheth Kimutai,KEN,1:43.82,False,Vebjørn Rodal,NOR,1:42.58,1:42.79,1:45.52,98.81,99.01,Olympic final standard,-0.072
+2002,2000,Men,800 m,Track,Mbulaeni Mulaudzi,RSA,1:46.32,False,Nils Schumann,GER,1:45.08,1:45.16,1:46.24,98.83,98.91,Below Olympic final standard,0.063
+2006,2004,Men,800 m,Track,Alex Kipchirchir,KEN,1:45.88,False,Yury Borzakovsky,RUS,1:44.45,1:44.65,1:52.49,98.65,98.84,Olympic final standard,-0.388
+2010,2008,Men,800 m,Track,Boaz Kiplagat Lalang,KEN,1:46.60,False,Wilfred Bungei,KEN,1:44.65,1:44.82,1:47.19,98.17,98.33,Olympic final standard,-0.094
+2014,2012,Men,800 m,Track,Nijel Amos,BOT,1:45.18,False,David Rudisha,KEN,1:40.91,1:42.53,1:43.77,95.94,97.48,Below Olympic final standard,-0.117
+2018,2016,Men,800 m,Track,Wyclife Kinyamal,KEN,1:45.11,False,David Rudisha,KEN,1:42.15,1:42.93,1:46.15,97.18,97.93,Olympic final standard,0.122
+2022,2020,Men,800 m,Track,Wyclife Kinyamal,KEN,1:47.52,False,Emmanuel Korir,KEN,1:45.06,1:45.39,1:46.41,97.71,98.02,Below Olympic final standard,0.352
+1970,1968,Men,1500 m,Track,Kipchoge Keino,KEN,3:36.68,False,Kip Keino,KEN,3:34.9,3:39.0,3:48.6,99.18,101.07,Olympic medal standard,-0.277
+1974,1972,Men,1500 m,Track,Filbert Bayi,TAN,3:32.16,False,Pekka Vasala,FIN,3:36.33,3:37.46,3:40.24,101.97,102.5,Olympic gold standard,-0.351
+1978,1976,Men,1500 m,Track,David Moorcroft,ENG,3:35.48,False,John Walker,NZL,3:39.17,3:39.33,3:41.80,101.71,101.79,Olympic gold standard,-0.018
+1982,1980,Men,1500 m,Track,Steve Cram,ENG,3:42.37,False,Seb Coe,GBR,3:38.4,3:39.0,3:42.0,98.21,98.48,Below Olympic final standard,0.25
+1986,1984,Men,1500 m,Track,Steve Cram,ENG,3:50.87,False,Seb Coe,GBR,3:32.53,3:34.30,3:37.11,92.06,92.82,Below Olympic final standard,0.25
+1990,1988,Men,1500 m,Track,Peter Elliott (athlete),ENG,3:33.39,False,Peter Rono,KEN,3:35.96,3:36.21,3:38.39,101.2,101.32,Olympic gold standard,-0.11
+1994,1992,Men,1500 m,Track,Reuben Chesang,KEN,3:36.70,False,Fermín Cacho,ESP,3:40.12,3:40.69,3:41.74,101.58,101.84,Olympic gold standard,-0.37
+1998,1996,Men,1500 m,Track,Laban Rotich,KEN,3:39.49,False,Noureddine Morceli,ALG,3:35.78,3:36.72,3:38.19,98.31,98.74,Below Olympic final standard,-0.294
+2002,2000,Men,1500 m,Track,Michael East (athlete),ENG,3:37.35,False,Noah Ngeny,KEN,3:32.07,3:32.44,3:38.91,97.57,97.74,Olympic final standard,0.125
+2006,2004,Men,1500 m,Track,Nick Willis,NZL,3:38.49,False,Hicham El Guerrouj,MAR,3:34.18,3:34.68,3:37.17,98.03,98.26,Below Olympic final standard,0.393
+2010,2008,Men,1500 m,Track,Silas Kiplagat,KEN,3:41:78,False,Asbel Kiprop,KEN,3:33.11,3:34.21,3:35.37,96.09,96.59,Below Olympic final standard,0.136
+2014,2012,Men,1500 m,Track,James Kiplagat Magut,KEN,3:39.31,False,Taoufik Makhloufi,ALG,3:34.08,3:35.13,3:36.72,97.62,98.09,Below Olympic final standard,-0.374
+2018,2016,Men,1500 m,Track,Elijah Manangoi,KEN,3:34.78,False,"Matthew Centrowitz, Jr.",USA,3:50.00,3:50.24,3:51.09,107.09,107.2,Olympic gold standard,0.361
+2022,2020,Men,1500 m,Track,Oliver Hoare (athlete),AUS,3:30.12,False,Jakob Ingebrigtsen,NOR,3:28.32,3:29.05,3:32.67,99.14,99.49,Olympic final standard,0.324
+1970,1968,Men,5000 m,Track,Ian Stewart (athlete),SCO,13:22.85,False,Mohamad Gammoudi,TUN,14:05.0,14:06.4,14:19.0,105.25,105.42,Olympic gold standard,-0.252
+1974,1972,Men,5000 m,Track,Ben Jipcho,KEN,13:14.03,False,Lasse Virén,FIN,13:26.42,13:27.61,13:39.31,101.56,101.71,Olympic gold standard,0.272
+1978,1976,Men,5000 m,Track,Henry Rono,KEN,13:23.04,False,Lasse Virén,FIN,13:24.76,13:25.38,13:29.38,100.21,100.29,Olympic gold standard,-0.232
+1982,1980,Men,5000 m,Track,David Moorcroft,ENG,13:33.00,False,Miruts Yifter,ETH,13:21.0,13:22.0,13:24.1,98.52,98.65,Below Olympic final standard,0.042
+1986,1984,Men,5000 m,Track,Steve Ovett,ENG,13:24.11,False,Saïd Aouita,MAR,13:05.59,13:09.20,13:24.46,97.7,98.15,Olympic final standard,-0.347
+1990,1988,Men,5000 m,Track,Andrew Lloyd (athlete),AUS,13:24.86,False,John Ngugi,KEN,13:11.70,13:15.73,13:26.41,98.36,98.87,Olympic final standard,0.222
+1994,1992,Men,5000 m,Track,Robert Denmark,ENG,13:23.00,False,Dieter Baumann,GER,13:12.52,13:13.03,13:27.80,98.69,98.76,Olympic final standard,0.066
+1998,1996,Men,5000 m,Track,Daniel Komen,KEN,13:22.57,False,Vénuste Niyongabo,BDI,13:07.96,13:08.37,13:13.26,98.18,98.23,Below Olympic final standard,0.081
+2002,2000,Men,5000 m,Track,Sammy Kipketer,KEN,13:13.51,False,Million Wolde,ETH,13:35.49,13:36.47,13:38.57,102.77,102.89,Olympic gold standard,0.069
+2006,2004,Men,5000 m,Track,Augustine Kiprono Choge,KEN,12:56.41,False,Hicham El Guerrouj,MAR,13:14.39,13:15.10,13:25.70,102.32,102.41,Olympic gold standard,-0.165
+2010,2008,Men,5000 m,Track,Moses Ndiema Kipsiro,UGA,13:31.25,False,Kenenisa Bekele,ETH,12:57.82,13:06.22,13:23.48,95.88,96.91,Below Olympic final standard,-0.118
+2014,2012,Men,5000 m,Track,Caleb Ndiku,KEN,13:12.07,False,Mo Farah,GBR,13:41.66,13:42.36,13:45.30,103.74,103.82,Olympic gold standard,0.313
+2018,2016,Men,5000 m,Track,Joshua Cheptegei,UGA,13:50.83,False,Mo Farah,GBR,13:03.30,13:04.35,13:09.17,94.28,94.41,Below Olympic final standard,0.022
+2022,2020,Men,5000 m,Track,Jacob Kiplimo,UGA,13:08.08,False,Joshua Cheptegei,UGA,12:58.15,12:59.05,13:06.60,98.74,98.85,Below Olympic final standard,-0.136
+1970,1968,Men,"10,000 m",Track,Lachie Stewart,SCO,28:11.72,False,Naftali Temu,KEN,29:27.4,29:34.2,29:57.0,104.47,104.88,Olympic gold standard,0.001
+1974,1972,Men,"10,000 m",Track,Dick Tayler,NZL,27:46.40,False,Lasse Virén,FIN,27:38.35,27:40.96,28:18.17,99.52,99.67,Olympic final standard,-0.246
+1978,1976,Men,"10,000 m",Track,Brendan Foster,ENG,28:13.65,False,Lasse Virén,FIN,27:40.38,27:54.92,28:17.78,98.04,98.89,Olympic final standard,0.018
+1982,1980,Men,"10,000 m",Track,Gidamis Shahanga,TAN,28:10.15,False,Miruts Yifter,ETH,27:42.7,27:44.7,28:13.8,98.38,98.49,Olympic final standard,0.13
+1986,1984,Men,"10,000 m",Track,Jon Solly,ENG,27:57.42,False,Alberto Cova,ITA,27:47.54,28:06.46,28:28.08,99.41,100.54,Olympic medal standard,-0.05
+1990,1988,Men,"10,000 m",Track,Eamonn Martin,ENG,28:08.57,False,Brahim Boutayeb,MAR,27:21.46,27:25.16,27:47.23,97.21,97.43,Below Olympic final standard,-0.393
+1994,1992,Men,"10,000 m",Track,Lameck Aguta,KEN,28:38.22,False,Khalid Skah,MAR,27:46.70,28:00.07,28:27.11,97.0,97.78,Below Olympic final standard,0.371
+1998,1996,Men,"10,000 m",Track,Simon Maina,KEN,28:10.00,False,Haile Gebrselassie,ETH,27:07.34,27:24.67,27:50.73,96.29,97.32,Below Olympic final standard,0.287
+2002,2000,Men,"10,000 m",Track,Wilberforce Talel,KEN,27:45.39,False,Haile Gebrselassie,ETH,27:18.20,27:19.75,27:44.09,98.37,98.46,Below Olympic final standard,0.154
+2006,2004,Men,"10,000 m",Track,Boniface Toroitich Kiprop,UGA,27:50.99,False,Kenenisa Bekele,ETH,27:05.10,27:22.57,27:57.09,97.25,98.3,Olympic final standard,-0.074
+2010,2008,Men,"10,000 m",Track,Moses Ndiema Kipsiro,UGA,27:57.39,False,Kenenisa Bekele,ETH,27:01.17,27:04.11,27:23.75,96.65,96.82,Below Olympic final standard,0.367
+2014,2012,Men,"10,000 m",Track,Moses Ndiema Kipsiro,UGA,27:56.11,False,Mo Farah,GBR,27:30.42,27:31.43,27:36.34,98.47,98.53,Below Olympic final standard,0.223
+2018,2016,Men,"10,000 m",Track,Joshua Cheptegei,UGA,27:19.62,False,Mo Farah,GBR,27:05.17,27:06.26,27:23.86,99.12,99.19,Olympic final standard,0.078
+2022,2020,Men,"10,000 m",Track,Jacob Kiplimo,UGA,27:09.19,False,Selemon Barega,ETH,27:43.22,27:43.88,27:53.58,102.09,102.13,Olympic gold standard,-0.379
+1970,1968,Men,110 m hurdles,Track,David Hemery,ENG,13.66,True,Willie Davenport,USA,13.3,13.4,14.0,97.36,98.1,Olympic final standard,-0.134
+1974,1972,Men,110 m hurdles,Track,Fatwell Kimaiyo,KEN,13.69,False,Rod Milburn,USA,13.24,13.48,13.86,96.71,98.47,Olympic final standard,0.327
+1978,1976,Men,110 m hurdles,Track,Berwyn Price,WAL,13.70,True,Guy Drut,FRA,13.30,13.38,13.94,97.08,97.66,Olympic final standard,-0.184
+1982,1980,Men,110 m hurdles,Track,Mark McKoy,CAN,13.37,False,Thomas Munkelt,GDR,13.39,13.44,15.80,100.15,100.52,Olympic gold standard,-0.335
+1986,1984,Men,110 m hurdles,Track,Mark McKoy,CAN,13.31,True,Roger Kingdom,USA,13.20,13.40,14.15,99.17,100.68,Olympic medal standard,0.302
+1990,1988,Men,110 m hurdles,Track,Colin Jackson,WAL,13.08,False,Roger Kingdom,USA,12.98,13.38,13.96,99.24,102.29,Olympic medal standard,0.183
+1994,1992,Men,110 m hurdles,Track,Colin Jackson,WAL,13.08,False,Mark McKoy,CAN,13.12,13.26,14.00,100.31,101.38,Olympic gold standard,-0.342
+1998,1996,Men,110 m hurdles,Track,Tony Jarrett,ENG,13.47,False,Allen Johnson,USA,12.95,13.17,13.43,96.14,97.77,Below Olympic final standard,-0.076
+2002,2000,Men,110 m hurdles,Track,Shaun Bownes,RSA,13.35,False,Anier García,CUB,13.00,13.22,13.61,97.38,99.03,Olympic final standard,-0.054
+2006,2004,Men,110 m hurdles,Track,Maurice Wignall,JAM,13.26,False,Liu Xiang,CHN,12.91,13.20,13.76,97.36,99.55,Olympic final standard,-0.302
+2010,2008,Men,110 m hurdles,Track,Andy Turner (hurdler),ENG,13.38,False,Dayron Robles,CUB,12.93,13.18,13.69,96.64,98.51,Olympic final standard,-0.206
+2014,2012,Men,110 m hurdles,Track,Andrew Riley,JAM,13.32,False,Aries Merritt,USA,12.92,13.12,13.53,97.0,98.5,Olympic final standard,-0.188
+2018,2016,Men,110 m hurdles,Track,Ronald Levy (athlete),JAM,13.19,False,Omar McLeod,JAM,13.05,13.24,13.41,98.94,100.38,Olympic medal standard,0.091
+2022,2020,Men,110 m hurdles,Track,Rasheed Broadbell,JAM,13.08,False,Hansle Parchment,JAM,13.04,13.10,13.38,99.69,100.15,Olympic medal standard,-0.32
+1970,1968,Men,400 m hurdles,Track,John Sherwood (athlete),ENG,50.03,False,Dave Hemery,GBR,48.1,49.0,50.1,96.14,97.94,Olympic final standard,-0.217
+1974,1972,Men,400 m hurdles,Track,Alan Pascoe,ENG,48.83,False,John Akii-Bua,UGA,47.82,48.52,50.25,97.93,99.37,Olympic final standard,0.051
+1978,1976,Men,400 m hurdles,Track,Daniel Kimaiyo,KEN,49.48,False,Edwin Moses,USA,47.63,49.45,51.29,96.26,99.94,Olympic final standard,-0.33
+1982,1980,Men,400 m hurdles,Track,Garry Brown (athlete),AUS,49.37,False,Volker Beck,GDR,48.70,49.11,56.35,98.64,99.47,Olympic final standard,-0.106
+1986,1984,Men,400 m hurdles,Track,Phil Beattie,NIR,49.60,False,Edwin Moses,USA,47.75,48.19,53.78,96.27,97.16,Olympic final standard,0.063
+1990,1988,Men,400 m hurdles,Track,Kriss Akabusi,ENG,48.89,False,André Phillips,USA,47.19,47.56,48.78,96.52,97.28,Below Olympic final standard,-0.2
+1994,1992,Men,400 m hurdles,Track,Samuel Matete,ZAM,48.67,False,Kevin Young,USA,46.78,47.82,49.26,96.12,98.25,Olympic final standard,0.217
+1998,1996,Men,400 m hurdles,Track,Dinsdale Morgan,JAM,48.28,False,Derrick Adkins,USA,47.54,47.96,48.78,98.47,99.34,Olympic final standard,-0.314
+2002,2000,Men,400 m hurdles,Track,Chris Rawlinson,ENG,49.14,False,Angelo Taylor,USA,47.50,47.81,49.01,96.66,97.29,Below Olympic final standard,0.223
+2006,2004,Men,400 m hurdles,Track,L. J. van Zyl,RSA,48.05,False,Félix Sánchez,DOM,47.63,48.26,49.51,99.13,100.44,Olympic medal standard,-0.22
+2010,2008,Men,400 m hurdles,Track,Dai Greene,WAL,48.52,False,Angelo Taylor,USA,47.25,48.06,49.96,97.38,99.05,Olympic final standard,-0.354
+2014,2012,Men,400 m hurdles,Track,Cornel Fredericks,RSA,48.50,False,Félix Sánchez,DOM,47.63,48.10,49.15,98.21,99.18,Olympic final standard,0.216
+2018,2016,Men,400 m hurdles,Track,Kyron McMaster,IVB,48.25,False,Kerron Clement,USA,47.73,47.92,49.09,98.92,99.32,Olympic final standard,-0.368
+2022,2020,Men,400 m hurdles,Track,Kyron McMaster,IVB,48.93,False,Karsten Warholm,NOR,45.94,46.72,48.77,93.89,95.48,Below Olympic final standard,0.317
+1970,1968,Men,Steeplechase,Track,Tony Manning,AUS,8:26.2,False,Amos Biwott,KEN,8:51.0,8:51.8,9:09.0,104.9,105.06,Olympic gold standard,-0.161
+1974,1972,Men,Steeplechase,Track,Ben Jipcho,KEN,8:20.67,False,Kip Keino,KEN,8:23.64,8:24.66,8:37.17,100.59,100.8,Olympic gold standard,0.079
+1978,1976,Men,Steeplechase,Track,Henry Rono,KEN,8:26.54,False,Anders Gärderud,SWE,8:08.02,8:10.36,8:22.65,96.34,96.81,Below Olympic final standard,0.196
+1982,1980,Men,Steeplechase,Track,Julius Korir,KEN,8:23.94,False,Bronisław Malinowski,POL,8:09.7,8:13.6,8:19.8,97.17,97.95,Below Olympic final standard,-0.142
+1986,1984,Men,Steeplechase,Track,Graeme Fell,CAN,8:24.49,False,Julius Korir,KEN,8:11.80,8:14.06,8:21.51,97.48,97.93,Below Olympic final standard,0.335
+1990,1988,Men,Steeplechase,Track,Julius Kariuki,KEN,8:20.64,False,Julius Kariuki,KEN,8:05.51,8:07.96,8:15.97,96.98,97.47,Below Olympic final standard,-0.301
+1994,1992,Men,Steeplechase,Track,Johnstone Kipkoech,KEN,8:14.72,False,Matthew Birir,KEN,8:08.84,8:10.74,8:20.71,98.81,99.2,Olympic final standard,0.065
+1998,1996,Men,Steeplechase,Track,John Kosgei,KEN,8:15.34,False,Joseph Keter,KEN,8:07.12,8:11.28,8:23.39,98.34,99.18,Olympic final standard,0.135
+2002,2000,Men,Steeplechase,Track,Saif Saaeed Shaheen,KEN,8:19.41,False,Reuben Kosgei,KEN,8:21.43,8:22.15,8:26.70,100.4,100.55,Olympic gold standard,-0.282
+2006,2004,Men,Steeplechase,Track,Ezekiel Kemboi,KEN,8:18.17,False,Ezekiel Kemboi,KEN,8:05.81,8:06.64,8:15.58,97.52,97.69,Below Olympic final standard,0.16
+2010,2008,Men,Steeplechase,Track,Richard Mateelong,KEN,8:16.39,False,Brimin Kipruto,KEN,8:10.34,8:11.01,8:16.59,98.78,98.92,Olympic final standard,-0.383
+2014,2012,Men,Steeplechase,Track,Jonathan Ndiku,KEN,8:10.44,False,Ezekiel Kemboi,KEN,8:18.56,8:19.73,8:25.91,101.66,101.89,Olympic gold standard,0.262
+2018,2016,Men,Steeplechase,Track,Conseslus Kipruto,KEN,8:10.08,False,Conseslus Kipruto,KEN,8:03.28,8:11.52,8:25.81,98.61,100.29,Olympic medal standard,0.096
+2022,2020,Men,Steeplechase,Track,Abraham Kibiwot,KEN,8:11.15,False,Soufiane El-Bakkali,MAR,8:08.90,8:11.45,8:17.44,99.54,100.06,Olympic medal standard,0.291
+1970,1968,Men,High jump,Field,Lawrie Peckham,AUS,2.14,False,Dick Fosbury,USA,2.24,2.20,2.12,95.54,97.27,Olympic final standard,-0.015
+1974,1972,Men,High jump,Field,Gordon Windeyer,AUS,2.16,False,Jüri Tarmak,URS,2.23,2.21,2.15,96.86,97.74,Olympic final standard,0.318
+1978,1976,Men,High jump,Field,Claude Ferragne,CAN,2.20,False,Jacek Wszoła,POL,2.25,2.21,2.18,97.78,99.55,Olympic final standard,0.366
+1982,1980,Men,High jump,Field,Milton Ottey,CAN,2.31,False,Gerd Wessig,GDR,2.36,2.31,2.21,97.88,100.0,Olympic medal standard,0.382
+1986,1984,Men,High jump,Field,Milton Ottey,CAN,2.30,False,Dietmar Mögenburg,FRG,2.35,2.31,2.27,97.87,99.57,Olympic final standard,0.067
+1990,1988,Men,High jump,Field,Clarence Saunders (athlete),BER,2.36,False,Gennady Avdeyenko,URS,2.38,2.36,2.31,99.16,100.0,Olympic medal standard,-0.378
+1994,1992,Men,High jump,Field,Tim Forsyth,AUS,2.32,False,Javier Sotomayor,CUB,2.34,2.34,2.28,99.15,99.15,Olympic final standard,0.156
+1998,1996,Men,High jump,Field,Dalton Grant,ENG,2.31,False,Charles Austin,USA,2.39,2.35,2.29,96.65,98.3,Olympic final standard,-0.348
+2002,2000,Men,High jump,Field,Mark Boswell (athlete),CAN,2.28,False,Sergey Klyugin,RUS,2.35,2.32,2.29,97.02,98.28,Below Olympic final standard,0.099
+2006,2004,Men,High jump,Field,Mark Boswell (athlete),CAN,2.26,False,Stefan Holm,SWE,2.36,2.34,2.29,95.76,96.58,Below Olympic final standard,0.202
+2010,2008,Men,High jump,Field,Donald Thomas (athlete),BAH,2.32,False,Andrey Silnov,RUS,2.36,2.34,2.25,98.31,99.15,Olympic final standard,-0.102
+2014,2012,Men,High jump,Field,Derek Drouin,CAN,2.31,False,Erik Kynard,USA,2.33,,2.25,99.14,,Olympic final standard,-0.213
+2018,2016,Men,High jump,Field,Brandon Starc,AUS,2.32,False,Derek Drouin,CAN,2.38,2.33,2.29,97.48,99.57,Olympic final standard,-0.364
+2022,2020,Men,High jump,Field,Hamish Kerr,NZL,2.25,False,Mutaz Essa Barshim,QAT,2.37,2.37,2.30,94.94,94.94,Below Olympic final standard,-0.267
+1970,1968,Men,Pole vault,Field,Mike Bull,NIR,5.10,False,Bob Seagren,USA,5.40,5.40,5.20,94.44,94.44,Below Olympic final standard,-0.187
+1974,1972,Men,Pole vault,Field,Don Baird,AUS,5.05,False,Wolfgang Nordwig,GDR,5.50,5.35,5.10,91.82,94.39,Below Olympic final standard,-0.126
+1978,1976,Men,Pole vault,Field,Bruce Simpson (athlete),CAN,5.10,False,Tadeusz Ślusarski,POL,5.50,5.50,5.40,92.73,92.73,Below Olympic final standard,-0.017
+1982,1980,Men,Pole vault,Field,Ray Boyd,AUS,5.20,False,Władysław Kozakiewicz,POL,5.78,,5.45,89.97,,Below Olympic final standard,0.302
+1986,1984,Men,Pole vault,Field,Andy Ashurst,ENG,5.30,False,Pierre Quinon,FRA,5.75,5.60,5.30,92.17,94.64,Olympic final standard,-0.053
+1990,1988,Men,Pole vault,Field,Simon Arkell,AUS,5.35,False,Sergey Bubka,URS,5.90,5.80,5.60,90.68,92.24,Below Olympic final standard,0.245
+1994,1992,Men,Pole vault,Field,Neil Winter,WAL,5.40,False,Maksim Tarasov,EUN,5.80,5.75,5.40,93.1,93.91,Olympic final standard,0.037
+1998,1996,Men,Pole vault,Field,Riaan Botha,RSA,5.60,False,Jean Galfione,FRA,5.92,5.92,5.70,94.59,94.59,Below Olympic final standard,-0.165
+2002,2000,Men,Pole vault,Field,Okkert Brits,RSA,5.75,False,Nick Hysong,USA,5.90,5.90,5.80,97.46,97.46,Below Olympic final standard,0.375
+2006,2004,Men,Pole vault,Field,Steve Hooker,AUS,5.80,False,Tim Mack,USA,5.95,5.85,5.65,97.48,99.15,Olympic final standard,0.359
+2010,2008,Men,Pole vault,Field,Steve Hooker,AUS,5.60,False,Steve Hooker,AUS,5.96,5.70,5.60,93.96,98.25,Olympic final standard,0.228
+2014,2012,Men,Pole vault,Field,Steven Lewis,ENG,5.55,False,Renaud Lavillenie,FRA,5.97,5.91,5.50,92.96,93.91,Olympic final standard,-0.218
+2018,2016,Men,Pole vault,Field,Kurtis Marschall,AUS,5.70,False,Thiago Braz,BRA,6.03,5.85,5.50,94.53,97.44,Olympic final standard,0.209
+2022,2020,Men,Pole vault,Field,Kurtis Marschall,AUS,5.70,False,Mondo Duplantis,SWE,6.02,5.87,5.70,94.68,97.1,Olympic final standard,0.024
+1970,1968,Men,Long jump,Field,Lynn Davies,WAL,8.06,True,Bob Beamon,USA,8.90,8.16,7.94,90.56,98.77,Olympic final standard,-0.214
+1974,1972,Men,Long jump,Field,Alan Lerwill,ENG,7.94,False,Randy Williams,USA,8.24,8.03,7.75,96.36,98.88,Olympic final standard,0.016
+1978,1976,Men,Long jump,Field,Roy Mitchell (athlete),ENG,8.06,True,Arnie Robinson,USA,8.35,8.02,7.84,96.53,100.5,Olympic medal standard,-0.129
+1982,1980,Men,Long jump,Field,Gary Honey,AUS,8.08,False,Lutz Dombrowski,GDR,8.54,8.18,8.02,94.61,98.78,Olympic final standard,-0.326
+1986,1984,Men,Long jump,Field,Gary Honey,AUS,8.08,False,Carl Lewis,USA,8.54,8.24,7.81,94.61,98.06,Olympic final standard,-0.194
+1990,1988,Men,Long jump,Field,Yusuf Alli,NGR,8.39,True,Carl Lewis,USA,8.72,8.27,7.89,96.22,101.45,Olympic medal standard,-0.393
+1994,1992,Men,Long jump,Field,Obinna Eregbu,NGR,8.05,False,Carl Lewis,USA,8.67,8.34,7.87,92.85,96.52,Olympic final standard,0.252
+1998,1996,Men,Long jump,Field,Peter Burge (athlete),AUS,8.22,False,Carl Lewis,USA,8.50,8.24,8.06,96.71,99.76,Olympic final standard,0.231
+2002,2000,Men,Long jump,Field,Nathan Morgan,ENG,8.02,False,Iván Pedroso,CUB,8.55,8.31,8.06,93.8,96.51,Below Olympic final standard,-0.284
+2006,2004,Men,Long jump,Field,Ignisious Gaisah,GHA,8.20,False,Dwight Phillips,USA,8.59,8.32,8.21,95.46,98.56,Below Olympic final standard,-0.022
+2010,2008,Men,Long jump,Field,Fabrice Lapierre,AUS,8.30,False,Irving Saladino,PAN,8.34,8.20,7.85,99.52,101.22,Olympic medal standard,0.388
+2014,2012,Men,Long jump,Field,Greg Rutherford,ENG,8.20,False,Greg Rutherford,GBR,8.31,8.12,7.93,98.68,100.99,Olympic medal standard,-0.14
+2018,2016,Men,Long jump,Field,Luvo Manyonga,RSA,8.41,False,Jeff Henderson,USA,8.38,8.29,8.05,100.36,101.45,Olympic gold standard,-0.297
+2022,2020,Men,Long jump,Field,LaQuan Nairn,BAH,8.08,False,Miltiadis Tentoglou,GRE,8.41,8.21,7.99,96.08,98.42,Olympic final standard,0.125
+1970,1968,Men,Triple jump,Field,Phil May (athlete),AUS,16.72,False,Viktor Saneyev,URS,17.39,17.22,16.73w,96.15,97.1,Below Olympic final standard,0.092
+1974,1972,Men,Triple jump,Field,Joshua Owusu,GHA,16.5,False,Viktor Saneyev,URS,17.35w,17.05,16.44,95.1,96.77,Olympic final standard,-0.03
+1978,1976,Men,Triple jump,Field,Keith Connor,ENG,17.21,True,Viktor Saneyev,URS,17.29,16.90,16.43,99.54,101.83,Olympic medal standard,-0.238
+1982,1980,Men,Triple jump,Field,Keith Connor,ENG,17.81,False,Jaak Uudmäe,URS,17.35,17.22,16.44,102.65,103.43,Olympic gold standard,0.362
+1986,1984,Men,Triple jump,Field,John Herbert (athlete),ENG,17.27,False,Al Joyner,USA,17.26w,16.87,16.66,100.06,102.37,Olympic gold standard,-0.337
+1990,1988,Men,Triple jump,Field,Marios Hadjiandreou,CYP,16.95,False,Hristo Markov,BUL,17.61,17.42,16.72,96.25,97.3,Olympic final standard,-0.198
+1994,1992,Men,Triple jump,Field,Julian Golley,ENG,17.03,False,Mike Conley,USA,18.17w,17.36,17.00,93.73,98.1,Olympic final standard,0.255
+1998,1996,Men,Triple jump,Field,Larry Achike,ENG,17.10,False,Kenny Harrison,USA,18.09,17.44,16.90,94.53,98.05,Olympic final standard,0.072
+2002,2000,Men,Triple jump,Field,Jonathan Edwards (triple jumper),ENG,17.86,False,Jonathan Edwards,GBR,17.71,17.46,16.96,100.85,102.29,Olympic gold standard,0.128
+2006,2004,Men,Triple jump,Field,Phillips Idowu,ENG,17.45,False,Christian Olsson,SWE,17.79,17.48,16.96,98.09,99.83,Olympic final standard,-0.321
+2010,2008,Men,Triple jump,Field,Tosin Oke,NGR,17.16,False,Nelson Évora,POR,17.67,17.59,16.87,97.11,97.56,Olympic final standard,0.182
+2014,2012,Men,Triple jump,Field,Godfrey Khotso Mokoena,RSA,17.20,False,Christian Taylor,USA,17.81,17.48,16.92,96.57,98.4,Olympic final standard,0.133
+2018,2016,Men,Triple jump,Field,Troy Doris,GUY,16.88,False,Christian Taylor,USA,17.86,17.58,16.68,94.51,96.02,Olympic final standard,-0.385
+2022,2020,Men,Triple jump,Field,Eldhose Paul,IND,17.03,False,Pedro Pichardo,POR,17.98,17.47,17.01,94.72,97.48,Olympic final standard,-0.006
+1970,1968,Men,Shot put,Field,Dave Steen (shot putter),CAN,19.21,False,Randy Matson,USA,20.54,20.09,18.80,93.52,95.62,Olympic final standard,-0.19
+1974,1972,Men,Shot put,Field,Geoff Capes,ENG,20.74,False,Władysław Komar,POL,21.18,21.14,20.10,97.92,98.11,Olympic final standard,0.378
+1978,1976,Men,Shot put,Field,Geoff Capes,ENG,19.77,False,Udo Beyer,GDR,21.05,21.00,20.17,93.92,94.14,Below Olympic final standard,0.242
+1982,1980,Men,Shot put,Field,Bruno Pauletto,CAN,19.55,False,Vladimir Kiselyov,URS,21.35,21.06,20.07,91.57,92.83,Below Olympic final standard,-0.256
+1986,1984,Men,Shot put,Field,Billy Cole,ENG,18.16,False,Alessandro Andrei,ITA,21.26,20.97,19.65,85.42,86.6,Below Olympic final standard,0.245
+1990,1988,Men,Shot put,Field,Simon Williams (athlete),ENG,18.54,False,Ulf Timmermann,GDR,22.47,21.99,20.36,82.51,84.31,Below Olympic final standard,-0.331
+1994,1992,Men,Shot put,Field,Matt Simson,ENG,19.49,False,Mike Stulce,USA,21.70,20.94,20.23,89.82,93.08,Below Olympic final standard,0.328
+1998,1996,Men,Shot put,Field,Burger Lambrechts,RSA,20.01,False,Randy Barnes,USA,21.62,20.75,20.07,92.55,96.43,Below Olympic final standard,-0.282
+2002,2000,Men,Shot put,Field,Justin Anlezark,AUS,20.91,False,Arsi Harju,FIN,21.29,21.20,20.18,98.22,98.63,Olympic final standard,-0.27
+2006,2004,Men,Shot put,Field,Janus Robberts,RSA,19.76,False,Adam Nelson,USA,21.16,20.84,20.19,93.38,94.82,Below Olympic final standard,-0.01
+2010,2008,Men,Shot put,Field,Dylan Armstrong,CAN,21.02,False,Tomasz Majewski,POL,21.51,21.04,20.06,97.72,99.9,Olympic final standard,0.048
+2014,2012,Men,Shot put,Field,O'Dayne Richards,JAM,21.61,False,Tomasz Majewski,POL,21.89,21.23,20.69,98.72,101.79,Olympic medal standard,-0.358
+2018,2016,Men,Shot put,Field,Tom Walsh (shot putter),NZL,21.41,False,Ryan Crouser,USA,22.52,21.36,20.64,95.07,100.23,Olympic medal standard,-0.326
+2022,2020,Men,Shot put,Field,Tom Walsh (shot putter),NZL,22.26,False,Ryan Crouser,USA,23.30,22.47,20.73,95.54,99.07,Olympic final standard,-0.056
+1970,1968,Men,Discus throw,Field,George Puce,CAN,59.02,False,Al Oerter,USA,64.78,62.92,59.28,91.11,93.8,Below Olympic final standard,0.186
+1974,1972,Men,Discus throw,Field,Robin Tait,NZL,63.08,False,Ludvík Daněk,TCH,64.40,63.40,60.24,97.95,99.5,Olympic final standard,-0.146
+1978,1976,Men,Discus throw,Field,Borys Chambul,CAN,59.70,False,Mac Wilkins,USA,67.50,65.70,61.98,88.44,90.87,Below Olympic final standard,-0.081
+1982,1980,Men,Discus throw,Field,Bradley Cooper (athlete),BAH,64.04,False,Viktor Rashchupkin,URS,66.64,66.32,63.04,96.1,96.56,Olympic final standard,0.02
+1986,1984,Men,Discus throw,Field,Ray Lazdins,CAN,58.86,False,Rolf Danneberg,FRG,66.60,65.46,63.22,88.38,89.92,Below Olympic final standard,0.288
+1990,1988,Men,Discus throw,Field,Adewale Olukoju,NGR,62.62,False,Jürgen Schult,GDR,68.82,67.38,63.28,90.99,92.94,Below Olympic final standard,0.35
+1994,1992,Men,Discus throw,Field,Werner Reiterer,AUS,62.76,False,Romas Ubartas,LTU,65.12,64.12,61.78,96.38,97.88,Olympic final standard,-0.008
+1998,1996,Men,Discus throw,Field,Robert Weir (athlete),ENG,64.42,False,Lars Riedel,GER,69.40,65.80,62.78,92.82,97.9,Olympic final standard,-0.146
+2002,2000,Men,Discus throw,Field,Frantz Kruger,RSA,66.39,False,Virgilijus Alekna,LTU,69.30,68.19,64.41,95.8,97.36,Olympic final standard,0.294
+2006,2004,Men,Discus throw,Field,Scott Martin (athlete),AUS,63.48,False,Virgilijus Alekna,LTU,69.89,66.66,62.58,90.83,95.23,Olympic final standard,0.061
+2010,2008,Men,Discus throw,Field,Benn Harradine,AUS,65.45,False,Gerd Kanter,EST,68.82,67.79,63.43,95.1,96.55,Olympic final standard,0.025
+2014,2012,Men,Discus throw,Field,Vikas Gowda,IND,63.64,False,Robert Harting,GER,68.27,68.03,64.79,93.22,93.55,Below Olympic final standard,0.138
+2018,2016,Men,Discus throw,Field,Fedrick Dacres,JAM,68.20,False,Christoph Harting,GER,68.37,67.05,63.72,99.75,101.72,Olympic medal standard,-0.364
+2022,2020,Men,Discus throw,Field,Matthew Denny,AUS,67.26,False,Daniel Ståhl,SWE,68.90,67.07,63.88,97.62,100.28,Olympic medal standard,-0.327
+1970,1968,Men,Hammer throw,Field,Howard Payne (athlete),ENG,67.80,False,Gyula Zsivótzky,HUN,73.36,69.78,68.26,92.42,97.16,Below Olympic final standard,0.12
+1974,1972,Men,Hammer throw,Field,Ian Chipchase,ENG,69.56,False,Anatoly Bondarchuk,URS,75.50,74.04,70.88,92.13,93.95,Below Olympic final standard,-0.014
+1978,1976,Men,Hammer throw,Field,Peter Farmer (hammer thrower),AUS,71.10,False,Yury Sedykh,URS,77.52,75.48,71.34,91.72,94.2,Below Olympic final standard,-0.399
+1982,1980,Men,Hammer throw,Field,Robert Weir (athlete),ENG,75.08,False,Yury Sedykh,URS,81.80,78.96,73.74,91.78,95.09,Olympic final standard,-0.088
+1986,1984,Men,Hammer throw,Field,Dave Smith (hammer thrower),ENG,74.06,False,Juha Tiainen,FIN,78.08,76.68,72.62,94.85,96.58,Olympic final standard,0.007
+1990,1988,Men,Hammer throw,Field,Sean Carlin,AUS,75.66,False,Sergey Litvinov,URS,84.80,81.16,76.08,89.22,93.22,Below Olympic final standard,-0.138
+1994,1992,Men,Hammer throw,Field,Sean Carlin,AUS,73.48,False,Andrey Abduvaliyev,EUN,82.54,81.38,76.16,89.02,90.29,Below Olympic final standard,0.241
+1998,1996,Men,Hammer throw,Field,Stuart Rendell,AUS,74.71,False,Balázs Kiss,HUN,81.24,80.02,77.38,91.96,93.36,Below Olympic final standard,-0.349
+2002,2000,Men,Hammer throw,Field,Mick Jones (hammer thrower),ENG,72.55,False,Szymon Ziółkowski,POL,80.02,79.17,77.32,90.66,91.64,Below Olympic final standard,0.026
+2006,2004,Men,Hammer throw,Field,Stuart Rendell,AUS,77.53,False,Koji Murofushi,JPN,82.91,78.82,76.22,93.51,98.36,Olympic final standard,-0.103
+2010,2008,Men,Hammer throw,Field,Chris Harmse,RSA,73.12,False,Primož Kozmus,SLO,82.02,81.51,78.65,89.15,89.71,Below Olympic final standard,-0.107
+2014,2012,Men,Hammer throw,Field,Jim Steacy,CAN,74.16,False,Krisztián Pars,HUN,80.59,78.71,74.95,92.02,94.22,Below Olympic final standard,0.094
+2018,2016,Men,Hammer throw,Field,Nick Miller (athlete),ENG,80.26,False,Dilshod Nazarov,TJK,78.68,77.73,74.61,102.01,103.25,Olympic gold standard,0.284
+2022,2020,Men,Hammer throw,Field,Nick Miller (hammer thrower),ENG,76.43,False,Wojciech Nowicki,POL,82.52,81.53,76.72,92.62,93.74,Below Olympic final standard,0.176
+1970,1968,Men,Javelin throw,Field,Dave Travis,ENG,79.50,False,Jānis Lūsis,URS,90.10,87.06,80.56,88.24,91.32,Below Olympic final standard,-0.233
+1974,1972,Men,Javelin throw,Field,Charles Clover (athlete),ENG,84.92,False,Klaus Wolfermann,FRG,90.48,84.42,80.06,93.85,100.59,Olympic medal standard,-0.065
+1978,1976,Men,Javelin throw,Field,Phil Olsen (athlete),CAN,84.00,False,Miklós Németh,HUN,94.58,87.16,80.26,88.81,96.37,Olympic final standard,0.044
+1982,1980,Men,Javelin throw,Field,Mike O'Rourke (athlete),NZL,89.48,False,Dainis Kūla,URS,91.20,86.72,82.40,98.11,103.18,Olympic medal standard,-0.154
+1990,1988,Men,Javelin throw,Field,Steve Backley,ENG,86.02,False,Tapio Korjus,FIN,84.28,83.26,78.30,102.06,103.31,Olympic gold standard,-0.057
+1994,1992,Men,Javelin throw,Field,Steve Backley,ENG,82.74,False,Jan Železný,TCH,89.66,83.38,77.74,92.28,99.23,Olympic final standard,0.321
+1998,1996,Men,Javelin throw,Field,Marius Corbett,RSA,88.75,False,Jan Železný,CZE,88.16,86.98,83.58,100.67,102.03,Olympic gold standard,0.274
+2002,2000,Men,Javelin throw,Field,Steve Backley,ENG,86.81,False,Jan Železný,CZE,90.17,88.67,83.33,96.27,97.9,Olympic final standard,0.227
+2006,2004,Men,Javelin throw,Field,Nick Nieland,ENG,80.10,False,Andreas Thorkildsen,NOR,86.50,84.84,83.01,92.6,94.41,Below Olympic final standard,-0.206
+2010,2008,Men,Javelin throw,Field,Jarrod Bannister,AUS,81.71,False,Andreas Thorkildsen,NOR,90.57,86.16,82.06,90.22,94.84,Below Olympic final standard,0.283
+2014,2012,Men,Javelin throw,Field,Julius Yego,KEN,83.87,False,Keshorn Walcott,TTO,84.58,83.34,80.22,99.16,100.64,Olympic medal standard,0.376
+2018,2016,Men,Javelin throw,Field,Neeraj Chopra,IND,86.47,False,Thomas Röhler,GER,90.30,85.38,82.42,95.76,101.28,Olympic medal standard,0.056
+2022,2020,Men,Javelin throw,Field,Arshad Nadeem,PAK,90.18,False,Neeraj Chopra,IND,87.58,85.44,83.28,102.97,105.55,Olympic gold standard,-0.214
+1970,1968,Women,100 m,Track,Raelene Boyle,AUS,11.26,True,Wyomia Tyus,USA,11.0,11.1,11.6,97.69,98.58,Olympic final standard,0.373
+1974,1972,Women,100 m,Track,Raelene Boyle,AUS,11.27,False,Renate Stecher,GDR,11.07,11.24,12.48,98.23,99.73,Olympic final standard,0.208
+1978,1976,Women,100 m,Track,Sonia Lannaman,ENG,11.27,True,Annegret Richter,FRG,11.08,11.17,11.34,98.31,99.11,Olympic final standard,0.045
+1982,1980,Women,100 m,Track,Angella Taylor-Issajenko,CAN,11.00,False,Lyudmila Kondratyeva,URS,11.06,11.14,11.34,100.55,101.27,Olympic gold standard,0.316
+1986,1984,Women,100 m,Track,Heather Oakes,ENG,11.20,False,Evelyn Ashford,USA,10.97,11.16,11.62,97.95,99.64,Olympic final standard,-0.29
+1990,1988,Women,100 m,Track,Merlene Ottey,JAM,11.02,True,Florence Griffith Joyner,USA,10.54w,10.85w,11.49w,95.64,98.46,Olympic final standard,0.395
+1994,1992,Women,100 m,Track,Mary Onyali-Omagbemi,NGR,11.06,False,Gail Devers,USA,10.82,10.84,11.19,97.83,98.01,Olympic final standard,-0.022
+1998,1996,Women,100 m,Track,Chandra Sturrup,BAH,11.06,False,Gail Devers,USA,10.94,10.96,11.14,98.92,99.1,Olympic final standard,-0.162
+2006,2004,Women,100 m,Track,Sheri-Ann Brooks,JAM,11.19,False,Yuliya Nestsiarenka,BLR,10.93,10.97,11.18,97.68,98.03,Below Olympic final standard,-0.353
+2010,2008,Women,100 m,Track,Natasha Mayers,SVG,11.37,False,Shelly-Ann Fraser,JAM,10.78,,11.20,94.81,,Below Olympic final standard,0.25
+2014,2012,Women,100 m,Track,Blessing Okagbare,NGR,10.85,False,Shelly-Ann Fraser-Pryce,JAM,10.75,10.81,11.01,99.08,99.63,Olympic final standard,0.039
+2018,2016,Women,100 m,Track,Michelle-Lee Ahye,TTO,11.14,False,Elaine Thompson,JAM,10.71,10.86,11.80,96.14,97.49,Olympic final standard,0.11
+2022,2020,Women,100 m,Track,Elaine Thompson-Herah,JAM,10.95,False,Elaine Thompson-Herah,JAM,10.61,10.76,11.12,96.89,98.26,Olympic final standard,0.146
+1970,1968,Women,200 m,Track,Raelene Boyle,AUS,22.75,True,Irena Szewińska,POL,22.5,22.8,23.2,98.9,100.22,Olympic medal standard,-0.17
+1974,1972,Women,200 m,Track,Raelene Boyle,AUS,22.50,False,Renate Stecher,GDR,22.40,22.74,23.11,99.56,101.07,Olympic medal standard,0.339
+1978,1976,Women,200 m,Track,Denise Boyd,AUS,22.82,True,Bärbel Eckert,GDR,22.37,22.47,23.09,98.03,98.47,Olympic final standard,0.371
+1982,1980,Women,200 m,Track,Merlene Ottey,JAM,22.19,True,Bärbel Wöckel,GDR,22.03,22.20,22.80,99.28,100.05,Olympic medal standard,-0.312
+1986,1984,Women,200 m,Track,Angella Taylor-Issajenko,CAN,22.91,False,Valerie Brisco-Hooks,USA,21.81,22.09,22.86,95.2,96.42,Below Olympic final standard,0.292
+1990,1988,Women,200 m,Track,Merlene Ottey,JAM,22.76,False,Florence Griffith Joyner,USA,21.34,21.95,22.42,93.76,96.44,Below Olympic final standard,-0.288
+1994,1992,Women,200 m,Track,Cathy Freeman,AUS,22.25,False,Gwen Torrence,USA,21.81,22.09,22.63,98.02,99.28,Olympic final standard,-0.15
+1998,1996,Women,200 m,Track,Nova Peris,AUS,22.77,False,Marie-José Pérec,FRA,22.12,22.38,22.61,97.15,98.29,Below Olympic final standard,-0.041
+2002,2000,Women,200 m,Track,Debbie Ferguson-McKenzie,BAH,22.20,False,Pauline Davis-Thompson,BAH,22.27,22.35,22.66,100.32,100.68,Olympic gold standard,0.198
+2006,2004,Women,200 m,Track,Sherone Simpson,JAM,22.59,False,Veronica Campbell,JAM,22.05,22.30,22.87,97.61,98.72,Olympic final standard,-0.398
+2010,2008,Women,200 m,Track,Cydonie Mothersille,CAY,22.89,False,Veronica Campbell-Brown,JAM,21.74,22.00,22.68,94.98,96.11,Below Olympic final standard,-0.122
+2014,2012,Women,200 m,Track,Blessing Okagbare,NGR,22.25,False,Allyson Felix,USA,21.88,22.14,22.63,98.34,99.51,Olympic final standard,0.268
+2018,2016,Women,200 m,Track,Shaunae Miller-Uibo,BAH,22.09,False,Elaine Thompson,JAM,21.78,22.15,22.65,98.6,100.27,Olympic medal standard,0.099
+2022,2020,Women,200 m,Track,Elaine Thompson-Herah,JAM,22.02,False,Elaine Thompson-Herah,JAM,21.53,21.87,24.00,97.77,99.32,Olympic final standard,-0.288
+1970,1968,Women,400 m,Track,Marilyn Neufville,JAM,51.02,False,Colette Besson,FRA,52.0,52.2,53.0,101.92,102.31,Olympic gold standard,-0.028
+1974,1972,Women,400 m,Track,Yvonne Saunders,CAN,51.67,False,Monika Zehrt,GDR,51.08,51.64,52.39,98.86,99.94,Olympic final standard,-0.199
+1978,1976,Women,400 m,Track,Donna Hartley,ENG,51.69,False,Irena Szewińska,POL,49.28,50.55,51.66,95.34,97.79,Below Olympic final standard,-0.372
+1982,1980,Women,400 m,Track,Raelene Boyle,AUS,51.26,False,Marita Koch,GDR,48.88,49.66,52.40,95.36,96.88,Olympic final standard,0.288
+1986,1984,Women,400 m,Track,Debbie Flintoff-King,AUS,51.29,False,Valerie Brisco-Hooks,USA,48.83,49.43,51.56,95.2,96.37,Olympic final standard,0.253
+1990,1988,Women,400 m,Track,Fatima Yusuf,NGR,51.08,False,Olga Bryzgina,URS,48.65,49.90,51.25,95.24,97.69,Olympic final standard,0.382
+1994,1992,Women,400 m,Track,Cathy Freeman,AUS,50.38,False,Marie-José Pérec,FRA,48.83,49.64,50.87,96.92,98.53,Olympic final standard,-0.198
+1998,1996,Women,400 m,Track,Sandie Richards,JAM,50.17,False,Marie-José Pérec,FRA,48.25,49.10,50.71,96.17,97.87,Olympic final standard,0.282
+2002,2000,Women,400 m,Track,Aliann Pompey,GUY,51.63,False,Cathy Freeman,AUS,49.11,49.72,51.04,95.12,96.3,Below Olympic final standard,-0.386
+2006,2004,Women,400 m,Track,Christine Ohuruogu,ENG,50.28,False,Tonique Williams-Darling,BAH,49.41,49.89,50.65,98.27,99.22,Olympic final standard,-0.149
+2010,2008,Women,400 m,Track,Amantle Montsho,BOT,50.10,False,Christine Ohuruogu,GBR,49.62,49.93,51.18,99.04,99.66,Olympic final standard,0.361
+2014,2012,Women,400 m,Track,Stephenie Ann McPherson,JAM,50.67,False,Sanya Richards-Ross,USA,49.55,49.72,50.79,97.79,98.13,Olympic final standard,0.252
+2018,2016,Women,400 m,Track,Amantle Montsho,BOT,50.15,False,Shaunae Miller,BAH,49.44,49.85,51.25,98.58,99.4,Olympic final standard,0.056
+2022,2020,Women,400 m,Track,Sada Williams,BAR,49.90,False,Shaunae Miller-Uibo,BAH,48.36,49.46,50.88,96.91,99.12,Olympic final standard,0.333
+1970,1968,Women,800 m,Track,Rosemary Stirling,SCO,2:06.24,False,Madeline Manning,USA,2:00.9,2:02.6,2:08.2,95.77,97.12,Olympic final standard,0.314
+1974,1972,Women,800 m,Track,Charlene Rendina,AUS,2:01.11,False,Hildegard Falck,FRG,1:58.55,1:59.19,2:00.17,97.89,98.41,Below Olympic final standard,-0.139
+1978,1976,Women,800 m,Track,Judy Peckham,AUS,2:02.82,False,Tatyana Kazankina,URS,1:54.94,1:55.60,2:02.21,93.58,94.12,Below Olympic final standard,0.354
+1982,1980,Women,800 m,Track,Kirsty Wade,WAL,2:01.31,False,Nadezhda Olizarenko,URS,1:53.5,1:55.5,1:59.2,93.56,95.21,Below Olympic final standard,0.395
+1986,1984,Women,800 m,Track,Kirsty Wade,WAL,2:00.94,False,Doina Melinte,ROU,1:57.60,1:58.83,2:00.77,97.24,98.26,Below Olympic final standard,0.249
+1990,1988,Women,800 m,Track,Diane Modahl,ENG,2:00.25,False,Sigrun Wodars,GDR,1:56.10,1:56.91,2:00.77,96.55,97.22,Olympic final standard,0.333
+1994,1992,Women,800 m,Track,Inez Turner,JAM,2:01.74,False,Ellen van Langen,NED,1:55.54,1:56.80,1:58.13,94.91,95.94,Below Olympic final standard,-0.074
+1998,1996,Women,800 m,Track,Maria Mutola,MOZ,1:57.60,False,Svetlana Masterkova,RUS,1:57.73,1:58.71,2:00.54,100.11,100.94,Olympic gold standard,-0.067
+2002,2000,Women,800 m,Track,Maria Mutola,MOZ,1:57.35,False,Maria Mutola,MOZ,1:56.15,1:56.80,1:59.27,98.98,99.53,Olympic final standard,-0.161
+2006,2004,Women,800 m,Track,Janeth Jepkosgei,KEN,1:57.88,False,Kelly Holmes,GBR,1:56.38,1:56.43,2:00.95,98.73,98.77,Olympic final standard,0.242
+2010,2008,Women,800 m,Track,Nancy Langat,KEN,2:00.01,False,Pamela Jelimo,KEN,1:54.87,1:56.73,2:02.63,95.72,97.27,Olympic final standard,0.096
+2014,2012,Women,800 m,Track,Eunice Sum,KEN,2:00.51,False,Caster Semenya,RSA,1:57.23,1:57.93,,97.28,97.86,Below Olympic final standard,0.337
+2018,2016,Women,800 m,Track,Caster Semenya,RSA,1:56.68,False,Caster Semenya,RSA,1:55.28,1:56.89,1:59.57,98.8,100.18,Olympic medal standard,-0.365
+2022,2020,Women,800 m,Track,Mary Moraa,KEN,1:57.07,False,Athing Mu,USA,1:55.21,1:56.81,1:58.26,98.41,99.78,Olympic final standard,0.132
+1974,1972,Women,1500 m,Track,Glenda Reiser,CAN,4:07.08,False,Lyudmila Bragina,URS,4:01.38,4:02.85,4:12.15,97.69,98.29,Olympic final standard,-0.235
+1978,1976,Women,1500 m,Track,Mary Stewart (athlete),ENG,4:06.34,False,Tatyana Kazankina,URS,4:05.48,4:06.09,4:08.54,99.65,99.9,Olympic final standard,-0.062
+1982,1980,Women,1500 m,Track,Christina Boxer,ENG,4:08.28,False,Tatyana Kazankina,URS,3:56.6,3:59.6,4:03.0,95.3,96.5,Below Olympic final standard,0.066
+1986,1984,Women,1500 m,Track,Kirsty Wade,WAL,4:10.91,False,Gabriella Dorio,ITA,4:03.25,4:04.15,4:08.92,96.95,97.31,Below Olympic final standard,-0.383
+1990,1988,Women,1500 m,Track,Angela Chalmers,CAN,4:08.41,False,Paula Ivan,ROU,3:53.96,4:00.30,4:02.49,94.18,96.74,Below Olympic final standard,-0.345
+1994,1992,Women,1500 m,Track,Kelly Holmes,ENG,4:08.86,False,Hassiba Boulmerka,ALG,3:55.30,3:57.08,4:02.03,94.55,95.27,Below Olympic final standard,-0.082
+1998,1996,Women,1500 m,Track,Jackline Maranga,KEN,4:05.27,False,Svetlana Masterkova,RUS,4:00.83,4:03.02,4:05.92,98.19,99.08,Olympic final standard,0.247
+2002,2000,Women,1500 m,Track,Kelly Holmes,ENG,4:05.99,False,Nouria Mérah-Benida,ALG,4:05.10,4:05.27,4:08.30,99.64,99.71,Olympic final standard,0.102
+2006,2004,Women,1500 m,Track,Lisa Dobriskey,ENG,4:06.21,False,Kelly Holmes,GBR,3:57.90,3:58.39,4:00.67,96.62,96.82,Below Olympic final standard,0.269
+2010,2008,Women,1500 m,Track,Nancy Langat,KEN,4:05.26,False,Nancy Langat,KEN,4:00.23,4:01.78,4:04.86,97.95,98.58,Below Olympic final standard,-0.099
+2014,2012,Women,1500 m,Track,Faith Kipyegon,KEN,4:08.94,False,Maryam Jamal,BRN,4:10.74,4:11.26,4:16.57,100.72,100.93,Olympic gold standard,-0.336
+2018,2016,Women,1500 m,Track,Caster Semenya,RSA,4:00.71,False,Faith Kipyegon,KEN,4:08.92,4:10.53,4:13.14,103.41,104.08,Olympic gold standard,-0.1
+2022,2020,Women,1500 m,Track,Laura Muir,SCO,4:02.75,False,Faith Kipyegon,KEN,3:53.11,3:55.86,3:59.95,96.03,97.16,Below Olympic final standard,-0.255
+1998,1996,Women,5000 m,Track,Kate Anderson-Richardson,AUS,15:52.74,False,Wang Junxia,CHN,14:59.88,15:07.52,15:17.33,94.45,95.25,Below Olympic final standard,-0.306
+2002,2000,Women,5000 m,Track,Paula Radcliffe,ENG,14.31,False,Gabriela Szabo,ROU,14:40.79,14:42.23,14:50.31,101.12,101.29,Olympic gold standard,-0.142
+2006,2004,Women,5000 m,Track,Isabella Ochichi,KEN,14:57.84,False,Meseret Defar,ETH,14:45.65,14:51.83,15:07.23,98.64,99.33,Olympic final standard,0.253
+2010,2008,Women,5000 m,Track,Vivian Cheruiyot,KEN,15:55.12,False,Tirunesh Dibaba,ETH,15:41.40,15:44.96,15:49.39,98.56,98.94,Below Olympic final standard,-0.037
+2014,2012,Women,5000 m,Track,Mercy Cherono,KEN,15:07.21,False,Meseret Defar,ETH,15:04.25,15:05.15,15:14.55,99.67,99.77,Olympic final standard,-0.15
+2018,2016,Women,5000 m,Track,Hellen Obiri,KEN,15:13.11,False,Vivian Cheruiyot,KEN,14:26.17,14:33.59,15:00.69,94.86,95.67,Below Olympic final standard,-0.174
+2022,2020,Women,5000 m,Track,Beatrice Chebet,KEN,14:38.21,False,Sifan Hassan,NED,14:36.79,14:38.87,14:46.49,99.84,100.08,Olympic medal standard,-0.266
+1990,1988,Women,"10,000 m",Track,Liz McColgan,SCO,32:23.56,False,Olga Bondarenko,URS,31:05.21,31:19.82,31:50.51,95.97,96.72,Below Olympic final standard,0.166
+1994,1992,Women,"10,000 m",Track,Yvonne Murray,SCO,31:56.97,False,Derartu Tulu,ETH,31:06.02,31:19.89,31:38.04,97.34,98.07,Below Olympic final standard,0.114
+1998,1996,Women,"10,000 m",Track,Esther Wanjiru,KEN,33:40.13,False,Fernanda Ribeiro,POR,31:01.63,31:06.65,31:26.46,92.15,92.4,Below Olympic final standard,0.034
+2002,2000,Women,"10,000 m",Track,Salina Kosgei,KEN,31:27.83,False,Derartu Tulu,ETH,30:17.49,30:22.88,31:14.70,96.27,96.56,Below Olympic final standard,0.165
+2006,2004,Women,"10,000 m",Track,Lucy Wangui Kabuu,KEN,31:29.66,False,Xing Huina,CHN,30:24.36,30:26.42,31:04.62,96.54,96.65,Below Olympic final standard,-0.229
+2010,2008,Women,"10,000 m",Track,Grace Momanyi,KEN,32:34.11,False,Tirunesh Dibaba,ETH,29:54.66,30:26.50,30:55.16,91.84,93.47,Below Olympic final standard,0.166
+2014,2012,Women,"10,000 m",Track,Joyce Chepkirui,KEN,32:09.35,False,Tirunesh Dibaba,ETH,30:20.75,30:30.44,30:55.63,94.37,94.87,Below Olympic final standard,-0.327
+2018,2016,Women,"10,000 m",Track,Stella Chesang,UGA,31:45.30,False,Almaz Ayana,ETH,29:17.45,29:42.56,30:26.66,92.24,93.56,Below Olympic final standard,-0.198
+2022,2020,Women,"10,000 m",Track,Eilish McColgan,SCO,30:48.60,False,Sifan Hassan,NED,29:55.32,30:01.72,31:01.97,97.12,97.46,Olympic final standard,-0.097
+1974,1972,Women,100 m hurdles,Track,Judy Vernon,ENG,13.45,False,Annelie Ehrhardt,GDR,12.59,12.90,13.44,93.61,95.91,Below Olympic final standard,-0.393
+1978,1976,Women,100 m hurdles,Track,Lorna Boothe,ENG,12.98,True,Johanna Schaller,GDR,12.77,12.80,13.51,98.38,98.61,Olympic final standard,0.075
+1982,1980,Women,100 m hurdles,Track,Shirley Strong,ENG,12.78,False,Vera Komisova,URS,12.56,12.65,13.08,98.28,98.98,Olympic final standard,0.398
+1986,1984,Women,100 m hurdles,Track,Sally Gunnell,ENG,13.29,False,Benita Fitzgerald-Brown,USA,12.84,13.06,13.40,96.61,98.27,Olympic final standard,-0.154
+1990,1988,Women,100 m hurdles,Track,Kay Morley-Brown,WAL,12.91,False,Yordanka Donkova,BUL,12.38,12.75,13.73,95.89,98.76,Olympic final standard,0.286
+1994,1992,Women,100 m hurdles,Track,Michelle Freeman,JAM,13.12,False,Voula Patoulidou,GRE,12.64,12.70,13.57,96.34,96.8,Olympic final standard,-0.391
+1998,1996,Women,100 m hurdles,Track,Gillian Russell,JAM,12.70,False,Ludmila Engquist,SWE,12.58,12.65,13.11,99.06,99.61,Olympic final standard,0.216
+2002,2000,Women,100 m hurdles,Track,Lacena Golding-Clarke,JAM,12.77,False,Olga Shishigina,KAZ,12.65,12.76,13.49,99.06,99.92,Olympic final standard,-0.266
+2006,2004,Women,100 m hurdles,Track,Brigitte Foster-Hylton,JAM,12.75,False,Joanna Hayes,USA,12.37,12.56,12.81,97.02,98.51,Olympic final standard,0.136
+2010,2008,Women,100 m hurdles,Track,Sally Pearson,AUS,12.67,False,Dawn Harper,USA,12.54,12.64,12.94,98.97,99.76,Olympic final standard,0.11
+2014,2012,Women,100 m hurdles,Track,Sally Pearson,AUS,12.67,False,Sally Pearson,AUS,12.35,12.48,13.07,97.47,98.5,Olympic final standard,0.006
+2018,2016,Women,100 m hurdles,Track,Tobi Amusan,NGR,12.68,False,Brianna Rollins,USA,12.48,12.61,12.89,98.42,99.45,Olympic final standard,0.251
+2022,2020,Women,100 m hurdles,Track,Tobi Amusan,NGR,12.30,False,Jasmine Camacho-Quinn,PUR,12.37,12.55,13.24,100.57,102.03,Olympic gold standard,0.067
+1986,1984,Women,400 m hurdles,Track,Debbie Flintoff-King,AUS,54.94,False,Nawal El-Moutawakel,MAR,54.61,55.41,57.15,99.4,100.86,Olympic medal standard,-0.086
+1990,1988,Women,400 m hurdles,Track,Sally Gunnell,ENG,55.38,False,Debbie Flintoff-King,AUS,53.17,53.63,55.32,96.01,96.84,Below Olympic final standard,-0.114
+1994,1992,Women,400 m hurdles,Track,Sally Gunnell,ENG,54.51,False,Sally Gunnell,GBR,53.23,54.31,55.58,97.65,99.63,Olympic final standard,-0.166
+1998,1996,Women,400 m hurdles,Track,Andrea Blackett,BAR,53.91,False,Deon Hemmings,JAM,52.82,53.22,54.57,97.98,98.72,Olympic final standard,0.335
+2002,2000,Women,400 m hurdles,Track,Jana Pittman,AUS,54.40,False,Irina Privalova,RUS,53.02,53.57,55.00,97.46,98.47,Olympic final standard,0.21
+2006,2004,Women,400 m hurdles,Track,Jana Pittman,AUS,53.82,False,Fani Chalkia,GRE,52.82,53.44,55.79,98.14,99.29,Olympic final standard,-0.21
+2010,2008,Women,400 m hurdles,Track,Muizat Ajoke Odumosu,NGR,55.28,False,Melaine Walker,JAM,52.64,53.84,57.55,95.22,97.4,Olympic final standard,-0.138
+2014,2012,Women,400 m hurdles,Track,Kaliese Spencer,JAM,54.10,False,Lashinda Demus,USA,52.77,53.66,55.31,97.54,99.19,Olympic final standard,-0.318
+2018,2016,Women,400 m hurdles,Track,Janieve Russell,JAM,54.33,False,Dalilah Muhammad,USA,53.13,53.72,54.61,97.79,98.88,Olympic final standard,0.224
+2022,2020,Women,400 m hurdles,Track,Janieve Russell,JAM,54.14,False,Sydney McLaughlin,USA,51.46,52.03,55.84,95.05,96.1,Olympic final standard,-0.233
+2010,2008,Women,Steeplechase,Track,Milcah Chemos Cheywa,KEN,9:40.96,False,Gulnara Galkina,RUS,8:58.81,9:12.33,9:22.26,92.74,95.07,Below Olympic final standard,-0.114
+2014,2012,Women,Steeplechase,Track,Purity Cherotich Kirui,KEN,9:30.96,False,Habiba Ghribi,TUN,9:08.37,9:09.88,9:23.54,96.04,96.31,Below Olympic final standard,0.266
+2018,2016,Women,Steeplechase,Track,Aisha Praught-Leer,JAM,9:21.00,False,Ruth Jebet,BRN,8:59.75,9:07.63,9:21.10,96.21,97.62,Olympic final standard,0.354
+2022,2020,Women,Steeplechase,Track,Jackline Chepkoech,KEN,9:15.68,False,Peruth Chemutai,UGA,9:01.45,9:05.39,9:16.41,97.44,98.15,Olympic final standard,0.399
+1970,1968,Women,High jump,Field,Debbie Brill,CAN,1.78,False,Miloslava Rezková,TCH,1.82,1.80,1.76,97.8,98.89,Olympic final standard,0.07
+1974,1972,Women,High jump,Field,Barbara Inkpen,ENG,1.84,False,Ulrike Meyfarth,FRG,1.92,1.88,1.82,95.83,97.87,Olympic final standard,0.27
+1978,1976,Women,High jump,Field,Katrina Gibbs,AUS,1.93,False,Rosie Ackermann,GDR,1.93,1.91,1.87,100.0,101.05,Olympic gold standard,-0.249
+1982,1980,Women,High jump,Field,Debbie Brill,CAN,1.88,False,Sara Simeoni,ITA,1.97,1.94,1.88,95.43,96.91,Olympic final standard,-0.044
+1986,1984,Women,High jump,Field,Christine Stanton,AUS,1.92,False,Ulrike Meyfarth,FRG,2.02,1.97,1.91,95.05,97.46,Olympic final standard,-0.243
+1990,1988,Women,High jump,Field,Tania Murray,NZL,1.88,False,Louise Ritter,USA,2.01,1.99,1.90,93.53,94.47,Below Olympic final standard,0.269
+1994,1992,Women,High jump,Field,Alison Inverarity,AUS,1.94,False,Heike Henkel,GER,2.02,1.97,1.91,96.04,98.48,Olympic final standard,0.239
+1998,1996,Women,High jump,Field,Hestrie Cloete,RSA,1.91,False,Stefka Kostadinova,BUL,2.05,2.01,1.96,93.17,95.02,Below Olympic final standard,-0.036
+2002,2000,Women,High jump,Field,Hestrie Cloete,RSA,1.96,False,Yelena Yelesina,RUS,2.01,1.99,1.93,97.51,98.49,Olympic final standard,0.077
+2006,2004,Women,High jump,Field,Anika Smit,RSA,1.91,False,Yelena Slesarenko,RUS,2.06,2.02,1.93,92.72,94.55,Below Olympic final standard,0.265
+2010,2008,Women,High jump,Field,Nicole Forrester,CAN,1.91,False,Tia Hellebaut,BEL,2.05,1.99,1.93,93.17,95.98,Below Olympic final standard,-0.134
+2014,2012,Women,High jump,Field,Eleanor Patterson,AUS,1.94,False,Anna Chicherova,RUS,2.05,2.00,1.93,94.63,97.0,Olympic final standard,-0.122
+2018,2016,Women,High jump,Field,Levern Spencer,LCA,1.95,False,Ruth Beitía,ESP,1.97,1.97,1.93,98.98,98.98,Olympic final standard,0.302
+2022,2020,Women,High jump,Field,Lamara Distin,JAM,1.95,False,Mariya Lasitskene,ROC,2.04,2.00,1.96,95.59,97.5,Below Olympic final standard,-0.137
+2002,2000,Women,Pole vault,Field,Tatiana Grigorieva,AUS,4.35,False,Stacy Dragila,USA,4.60,4.50,4.35,94.57,96.67,Olympic final standard,-0.199
+2006,2004,Women,Pole vault,Field,Kym Howe,AUS,4.62,False,Yelena Isinbayeva,RUS,4.91,4.70,4.40,94.09,98.3,Olympic final standard,0.29
+2010,2008,Women,Pole vault,Field,Alana Boyd,AUS,4.40,False,Yelena Isinbayeva,RUS,5.05,4.75,4.55,87.13,92.63,Below Olympic final standard,0.16
+2014,2012,Women,Pole vault,Field,Alana Boyd,AUS,4.50,False,Jenn Suhr,USA,4.75,4.70,4.45,94.74,95.74,Olympic final standard,0.043
+2018,2016,Women,Pole vault,Field,Alysha Newman,CAN,4.75,False,Aikaterini Stefanidi,GRE,4.85,4.80,4.60,97.94,98.96,Olympic final standard,0.027
+2022,2020,Women,Pole vault,Field,Nina Kennedy,AUS,4.60,False,Katie Nageotte,USA,4.90,4.85,4.50,93.88,94.85,Olympic final standard,0.001
+1970,1968,Women,Long jump,Field,Sheila Sherwood,ENG,6.73,False,Viorica Viscopoleanu,ROU,6.82,6.66,6.40,98.68,101.05,Olympic medal standard,0.018
+1974,1972,Women,Long jump,Field,Modupe Oshikoya,NGR,6.46,False,Heide Rosendahl,FRG,6.78,6.67,6.46,95.28,96.85,Olympic final standard,0.353
+1978,1976,Women,Long jump,Field,Sue Reeve,ENG,6.59,False,Angela Voigt,GDR,6.72,6.60,6.38,98.07,99.85,Olympic final standard,0.182
+1982,1980,Women,Long jump,Field,Shonel Ferguson,BAH,6.91,False,Tatyana Kolpakova,URS,7.06,7.01,6.71,97.88,98.57,Olympic final standard,-0.338
+1986,1984,Women,Long jump,Field,Joyce Oladapo,ENG,6.43,False,Anișoara Stanciu-Cușmir,ROU,6.96,6.80w,6.44,92.39,94.56,Below Olympic final standard,0.308
+1990,1988,Women,Long jump,Field,Jane Flemming,AUS,6.78,False,Jackie Joyner-Kersee,USA,7.40,7.11,6.55,91.62,95.36,Olympic final standard,0.331
+1994,1992,Women,Long jump,Field,Nicole Boegman,AUS,6.82,False,Heike Drechsler,GER,7.14,7.07,6.60,95.52,96.46,Olympic final standard,-0.234
+1998,1996,Women,Long jump,Field,Joanne Wise,ENG,6.63,False,Chioma Ajunwa,NGR,7.12,7.00,6.60,93.12,94.71,Olympic final standard,0.301
+2002,2000,Women,Long jump,Field,Elva Goulbourne,JAM,6.70,False,Heike Drechsler,GER,6.99,6.83,6.56w,95.85,98.1,Olympic final standard,-0.082
+2006,2004,Women,Long jump,Field,Bronwyn Thompson,AUS,6.97,False,Tatyana Lebedeva,RUS,7.07,7.05,6.66,98.59,98.87,Olympic final standard,0.162
+2010,2008,Women,Long jump,Field,Alice Falaiye,CAN,6.50,False,Maurren Maggi,BRA,7.04,6.79,6.49,92.33,95.73,Olympic final standard,0.241
+2014,2012,Women,Long jump,Field,Ese Brume,NGR,6.56,False,Brittney Reese,USA,7.12,6.89,6.35,92.13,95.21,Olympic final standard,0.041
+2018,2016,Women,Long jump,Field,Christabel Nettey,CAN,6.84,False,Tianna Bartoletta,USA,7.17,7.08,6.69,95.4,96.61,Olympic final standard,0.01
+2022,2020,Women,Long jump,Field,Ese Brume,NGR,7.00,False,Malaika Mihambo,GER,7.00,6.97,6.80,100.0,100.43,Olympic gold standard,-0.247
+1998,1996,Women,Triple jump,Field,Ashia Hansen,ENG,14.32,False,Inesa Kravets,UKR,15.33,14.98,14.12,93.41,95.59,Olympic final standard,0.106
+2002,2000,Women,Triple jump,Field,Ashia Hansen,ENG,14.86,False,Tereza Marinova,BUL,15.20,14.96,13.97,97.76,99.33,Olympic final standard,0.122
+2006,2004,Women,Triple jump,Field,Trecia-Kaye Smith,JAM,14.39,False,Françoise Mbango,CMR,15.30,15.14,14.79,94.05,95.05,Below Olympic final standard,0.156
+2010,2008,Women,Triple jump,Field,Trecia-Kaye Smith,JAM,14.19,False,Françoise Mbango,CMR,15.39,15.05,14.13,92.2,94.29,Olympic final standard,0.135
+2014,2012,Women,Triple jump,Field,Kimberly Williams (triple jumper),JAM,14.21,False,Olga Rypakova,KAZ,14.98,14.79,14.35,94.86,96.08,Below Olympic final standard,0.296
+2018,2016,Women,Triple jump,Field,Kimberly Williams (triple jumper),JAM,14.64,False,Caterine Ibargüen,COL,15.17,14.74,14.26,96.51,99.32,Olympic final standard,-0.155
+2022,2020,Women,Triple jump,Field,Shanieka Ricketts,JAM,14.94,False,Yulimar Rojas,VEN,15.67,14.87,14.51,95.34,100.47,Olympic medal standard,0.215
+1970,1968,Women,Shot put,Field,Mary Peters (athlete),NIR,15.93,False,Margitta Gummel,GDR,19.61,18.19,16.23,81.23,87.58,Below Olympic final standard,-0.283
+1974,1972,Women,Shot put,Field,Jane Haist,CAN,16.12,False,Nadezhda Chizhova,URS,21.03,19.35,18.34,76.65,83.31,Below Olympic final standard,0.365
+1978,1976,Women,Shot put,Field,Gael Martin,AUS,17.31,False,Ivanka Hristova,BUL,21.16,20.67,18.89,81.81,83.74,Below Olympic final standard,0.068
+1982,1980,Women,Shot put,Field,Judy Oakes,ENG,17.92,False,Ilona Slupianek,GDR,22.41,21.20,19.66,79.96,84.53,Below Olympic final standard,0.11
+1986,1984,Women,Shot put,Field,Gael Martin,AUS,19.00,False,Claudia Losch,FRG,20.48,19.19,17.23,92.77,99.01,Olympic final standard,0.274
+1990,1988,Women,Shot put,Field,Myrtle Augee,ENG,18.48,False,Nataliya Lisovskaya,URS,22.24,21.06,19.82,83.09,87.75,Below Olympic final standard,0.121
+1994,1992,Women,Shot put,Field,Judy Oakes,ENG,18.16,False,Svetlana Krivelyova,EUN,21.06,19.78,18.69,86.23,91.81,Below Olympic final standard,-0.29
+1998,1996,Women,Shot put,Field,Judy Oakes,ENG,18.83,False,Astrid Kumbernuss,GER,20.56,19.35,18.68,91.59,97.31,Olympic final standard,0.344
+2002,2000,Women,Shot put,Field,Vivian Chukwuemeka,NGR,17.53,False,Yanina Karolchyk,BLR,20.56,19.62,18.49,85.26,89.35,Below Olympic final standard,-0.059
+2006,2004,Women,Shot put,Field,Valerie Adams,NZL,19.66,False,Yumileidi Cumbá,CUB,19.59,19.01,18.37,100.36,103.42,Olympic gold standard,0.095
+2010,2008,Women,Shot put,Field,Valerie Adams,NZL,20.47,False,Valerie Vili,NZL,20.56,19.20,18.28,99.56,106.61,Olympic medal standard,0.366
+2014,2012,Women,Shot put,Field,Valerie Adams,NZL,19.88,False,Valerie Adams,NZL,20.70,19.63,18.47,96.04,101.27,Olympic medal standard,-0.142
+2018,2016,Women,Shot put,Field,Danniel Thomas-Dodd,JAM,19.36,False,Michelle Carter,USA,20.63,19.87,18.23,93.84,97.43,Olympic final standard,0.271
+2022,2020,Women,Shot put,Field,Sarah Mitton,CAN,19.03,False,Gong Lijiao,CHN,20.58,19.62,18.88,92.47,96.99,Olympic final standard,-0.149
+1970,1968,Women,Discus throw,Field,Rosemary Payne,SCO,54.46,False,Lia Manoliu,ROU,58.28,54.90,52.80,93.45,99.2,Olympic final standard,0.391
+1974,1972,Women,Discus throw,Field,Jane Haist,CAN,55.52,False,Faina Melnik,URS,66.62,64.34,59.00,83.34,86.29,Below Olympic final standard,-0.128
+1978,1976,Women,Discus throw,Field,Carmen Ionesco,CAN,62.16,False,Evelin Schlaak,GDR,69.00,66.84,63.46,90.09,93.0,Below Olympic final standard,0.058
+1982,1980,Women,Discus throw,Field,Meg Ritchie,SCO,62.98,False,Evelin Jahl,GDR,69.96,67.40,63.14,90.02,93.44,Below Olympic final standard,0.247
+1986,1984,Women,Discus throw,Field,Gael Martin,AUS,56.42,False,Ria Stalman,NED,65.36,63.64,55.88,86.32,88.65,Olympic final standard,-0.265
+1990,1988,Women,Discus throw,Field,Lisa-Marie Vizaniari,AUS,56.38,False,Martina Hellmann,GDR,72.30,69.74,65.94,77.98,80.84,Below Olympic final standard,0.213
+1994,1992,Women,Discus throw,Field,Daniela Costian,AUS,63.72,False,Maritza Martén,CUB,70.06,66.24,63.42,90.95,96.2,Olympic final standard,-0.127
+1998,1996,Women,Discus throw,Field,Beatrice Faumuina,NZL,65.92,False,Ilke Wyludda,GER,69.66,65.64,62.48,94.63,100.43,Olympic medal standard,-0.342
+2002,2000,Women,Discus throw,Field,Beatrice Faumuina,NZL,60.82,False,Elina Zverava,BLR,68.40,65.20,62.57,88.92,93.28,Below Olympic final standard,0.361
+2006,2004,Women,Discus throw,Field,Elizna Naudé,RSA,61.55,False,Nataliya Sadova,RUS,67.02,66.08,61.05,91.84,93.14,Olympic final standard,-0.175
+2010,2008,Women,Discus throw,Field,Krishna Poonia,IND,61.51,False,Stephanie Brown-Trafton,USA,64.74,62.20,60.15,95.01,98.89,Olympic final standard,-0.274
+2014,2012,Women,Discus throw,Field,Dani Stevens,AUS,64.88,False,Sandra Perković,CRO,69.11,66.38,61.68,93.88,97.74,Olympic final standard,-0.297
+2018,2016,Women,Discus throw,Field,Dani Stevens,AUS,68.26,False,Sandra Perković,CRO,69.21,65.34,63.06,98.63,104.47,Olympic medal standard,-0.353
+2022,2020,Women,Discus throw,Field,Chioma Onyekwere,NGR,61.70,False,Valarie Allman,USA,68.98,65.72,62.02,89.45,93.88,Below Olympic final standard,-0.119
+2002,2000,Women,Hammer throw,Field,Lorraine Shaw,ENG,66.83,False,Kamila Skolimowska,POL,71.16,69.28,66.15,93.92,96.46,Olympic final standard,-0.322
+2006,2004,Women,Hammer throw,Field,Brooke Krueger-Billett,AUS,67.90,False,Olga Kuzenkova,RUS,75.02,73.16,70.40,90.51,92.81,Below Olympic final standard,-0.038
+2010,2008,Women,Hammer throw,Field,Sultana Frizell,CAN,68.57,False,Yipsi Moreno,CUB,75.20,72.54,69.72,91.18,94.53,Below Olympic final standard,0.233
+2014,2012,Women,Hammer throw,Field,Sultana Frizell,CAN,71.97,False,Anita Włodarczyk,POL,77.60,76.34,69.33,92.74,94.28,Olympic final standard,-0.215
+2018,2016,Women,Hammer throw,Field,Julia Ratcliffe,NZL,69.94,False,Anita Włodarczyk,POL,82.29,74.54,70.95,84.99,93.83,Below Olympic final standard,0.06
+2022,2020,Women,Hammer throw,Field,Camryn Rogers,CAN,74.08,False,Anita Włodarczyk,POL,78.48,75.49,73.09,94.39,98.13,Olympic final standard,-0.186
+1970,1968,Women,Javelin throw,Field,Petra Rivers,AUS,52.00,False,Angéla Németh,HUN,60.36,58.04,53.96,86.15,89.59,Below Olympic final standard,-0.34
+1974,1972,Women,Javelin throw,Field,Petra Rivers,AUS,55.48,False,Ruth Fuchs,GDR,63.88,59.94,56.36,86.85,92.56,Below Olympic final standard,-0.271
+1978,1976,Women,Javelin throw,Field,Tessa Sanderson,ENG,61.34,False,Ruth Fuchs,GDR,65.94,63.96,57.50,93.02,95.9,Olympic final standard,-0.33
+1982,1980,Women,Javelin throw,Field,Sue Howland,AUS,64.46,False,María Colón,CUB,68.40,66.56,63.94,94.24,96.84,Olympic final standard,0.157
+1986,1984,Women,Javelin throw,Field,Tessa Sanderson,ENG,69.80,False,Tessa Sanderson,GBR,69.56,67.14,62.06,100.35,103.96,Olympic gold standard,-0.339
+1990,1988,Women,Javelin throw,Field,Tessa Sanderson,ENG,65.72,False,Petra Felke,GDR,74.68,67.30,60.76,88.0,97.65,Olympic final standard,-0.092
+1994,1992,Women,Javelin throw,Field,Louise Currey,AUS,63.76,False,Silke Renk,GER,68.34,66.86,58.26,93.3,95.36,Olympic final standard,-0.083
+1998,1996,Women,Javelin throw,Field,Louise Currey,AUS,66.96,False,Heli Rantanen,FIN,67.94,64.98,60.74,98.56,103.05,Olympic medal standard,0.144
+2002,2000,Women,Javelin throw,Field,Laverne Eve,BAH,58.46,False,Trine Hattestad,NOR,68.91,66.18,62.10,84.84,88.33,Below Olympic final standard,0.14
+2006,2004,Women,Javelin throw,Field,Sunette Viljoen,RSA,60.72,False,Osleidys Menéndez,CUB,71.53,64.29,61.75,84.89,94.45,Below Olympic final standard,-0.109
+2010,2008,Women,Javelin throw,Field,Sunette Viljoen,RSA,62.34,False,Barbora Špotáková,CZE,71.42,65.75,58.13,87.29,94.81,Olympic final standard,-0.032
+2014,2012,Women,Javelin throw,Field,Kim Mickle,AUS,65.96,False,Barbora Špotáková,CZE,69.55,64.91,59.46,94.84,101.62,Olympic medal standard,0.017
+2018,2016,Women,Javelin throw,Field,Kathryn Mitchell,AUS,68.92,False,Sara Kolak,CRO,66.18,64.80,62.92,104.14,106.36,Olympic gold standard,0.095
+2022,2020,Women,Javelin throw,Field,Kelsey-Lee Barber,AUS,64.34,False,Liu Shiying,CHN,66.34,64.56,59.96,96.99,99.66,Olympic final standard,0.228
+2026,2024,Men,100 m,Track,Emmanuel Eseme,CMR,9.83,False,Noah Lyles,USA,9.784,9.81,9.91,99.53,99.8,Olympic final standard,0.059
+2026,2024,Men,200 m,Track,Sinesipho Dambile,RSA,19.96,False,Letsile Tebogo,BOT,19.46,19.70,20.53,97.49,98.7,Olympic final standard,-0.153
+2026,2024,Men,400 m,Track,Samuel Ogazi,NGR,44.25,False,Quincy Hall,USA,43.40,43.74,45.62,98.08,98.85,Olympic final standard,0.218
+2026,2024,Men,800 m,Track,Navasky Anderson,JAM,1:45.33,False,Emmanuel Wanyonyi,KEN,1:41.19,1:41.50,1:43.84,96.07,96.36,Below Olympic final standard,0.351
+2026,2024,Men,5000 m,Track,Mathew Kipsang,KEN,13:23.61,False,Jakob Ingebrigtsen,NOR,13:13.66,13:15.13,13:18.10,98.76,98.94,Below Olympic final standard,0.154
+2026,2024,Men,"10,000 m",Track,Ky Robinson,AUS,27:48.93,False,Joshua Cheptegei,UGA,26:43.14,26:43.46,26:49.49,96.06,96.08,Below Olympic final standard,0.18
+2026,2024,Men,110 m hurdles,Track,Demario Prince,JAM,13.17,False,Grant Holloway,USA,12.99,13.088,13.39,98.63,99.38,Olympic final standard,-0.046
+2026,2024,Men,400 m hurdles,Track,Ezekiel Nathaniel,NGR,48.47,False,Rai Benjamin,USA,46.46,47.26,52.53,95.85,97.5,Olympic final standard,-0.185
+2026,2024,Men,Steeplechase,Track,Edmund Serem,KEN,8:18.23,False,Soufiane El-Bakkali,MAR,8:06.05,8:06.47,8:11.72,97.56,97.64,Below Olympic final standard,0.217
+2026,2024,Men,High jump,Field,Romaine Beckford,JAM,2.25,False,Hamish Kerr,NZL,2.36,2.34,2.27,95.34,96.15,Below Olympic final standard,0.154
+2026,2024,Men,Pole vault,Field,Kurtis Marschall,AUS,5.85,False,Mondo Duplantis,SWE,6.25,5.90,5.80,93.6,99.15,Olympic final standard,-0.222
+2026,2024,Men,Long jump,Field,Tajay Gayle,JAM,8.15,False,Miltiadis Tentoglou,GRE,8.48,8.34,8.03,96.11,97.72,Olympic final standard,0.218
+2026,2024,Men,Triple jump,Field,Jordan Scott (triple jumper),JAM,16.72,False,Jordan Díaz,ESP,17.86,17.64,17.34,93.62,94.78,Below Olympic final standard,-0.114
+2026,2024,Men,Shot put,Field,Chukwuebuka Enekwechi,NGR,21.07,False,Ryan Crouser,USA,22.90,22.15,20.88,92.01,95.12,Olympic final standard,-0.086
+2026,2024,Men,Discus throw,Field,Matthew Denny,AUS,67.73,False,Rojé Stona,JAM,70.00,69.31,66.55,96.76,97.72,Olympic final standard,-0.065
+2026,2024,Men,Hammer throw,Field,Ethan Katzberg,CAN,80.97,False,Ethan Katzberg,CAN,84.12,79.39,77.38,96.26,101.99,Olympic medal standard,-0.116
+2026,2024,Men,Javelin throw,Field,Rumesh Tharanga,SRI,89.75,False,Arshad Nadeem,PAK,92.97,88.54,84.58,96.54,101.37,Olympic medal standard,-0.07
+2026,2024,Women,100 m,Track,Zoe Hobbs,NZL,10.93,False,Julien Alfred,LCA,10.72,10.92,13.84,98.08,99.91,Olympic final standard,-0.23
+2026,2024,Women,200 m,Track,Adaejah Hodge,IVB,22.07,False,Gabby Thomas,USA,21.83,22.20,22.70,98.91,100.59,Olympic medal standard,-0.31
+2026,2024,Women,400 m,Track,Dejanea Oakley,JAM,50.21,False,Marileidy Paulino,DOM,48.17,48.98,49.96,95.94,97.55,Below Olympic final standard,-0.126
+2026,2024,Women,800 m,Track,Georgia Hunter Bell,ENG,1:59.51,False,Keely Hodgkinson,GBR,1:56.72,1:57.42,1:58.79,97.67,98.25,Below Olympic final standard,-0.018
+2026,2024,Women,5000 m,Track,Rose Davies (athlete),AUS,14:44.53,False,Beatrice Chebet,KEN,14:28.56,14:30.61,14:43.21,98.19,98.43,Below Olympic final standard,-0.15
+2026,2024,Women,"10,000 m",Track,Rose Davies (athlete),AUS,31:39.32,False,Beatrice Chebet,KEN,30:43.25,30:44.12,30:49.98,97.05,97.09,Below Olympic final standard,-0.31
+2026,2024,Women,100 m hurdles,Track,Devynne Charlton,BAH,12.33,False,Masai Russell,USA,12.33,12.36,12.93,100.0,100.24,Olympic gold standard,0.174
+2026,2024,Women,400 m hurdles,Track,Sanique Walker,JAM,54.00,False,Sydney McLaughlin-Levrone,USA,50.37,52.15,54.53,93.28,96.57,Olympic final standard,-0.355
+2026,2024,Women,Steeplechase,Track,Faith Cherotich,KEN,9:01.76,False,Winfred Yavi,BRN,8:52.76,8:55.15,9:06.07,98.34,98.78,Olympic final standard,-0.33
+2026,2024,Women,High jump,Field,Eleanor Patterson,AUS,1.96,False,Yaroslava Mahuchikh,UKR,2.00,1.95,1.95,98.0,100.51,Olympic medal standard,-0.119
+2026,2024,Women,Pole vault,Field,Eliza McCartney,NZL,4.65,False,Nina Kennedy,AUS,4.90,4.85,4.70,94.9,95.88,Below Olympic final standard,-0.257
+2026,2024,Women,Long jump,Field,Jazmin Sawyers,ENG,6.93,False,Tara Davis-Woodhall,USA,7.10,6.96,6.66,97.61,99.57,Olympic final standard,-0.104
+2026,2024,Women,Triple jump,Field,Thea LaFond,DMA,14.60,False,Thea LaFond,DMA,15.02,14.67,14.14,97.2,99.52,Olympic final standard,-0.072
+2026,2024,Women,Shot put,Field,Sarah Mitton,CAN,19.88,False,Yemisi Ogunleye,GER,20.00,19.32,18.41,99.4,102.9,Olympic medal standard,0.003
+2026,2024,Women,Discus throw,Field,Samantha Hall (discus thrower),JAM,61.66,False,Valarie Allman,USA,69.50,67.51,63.11,88.72,91.33,Below Olympic final standard,-0.322
+2026,2024,Women,Hammer throw,Field,Camryn Rogers,CAN,74.91,False,Camryn Rogers,CAN,76.97,74.27,72.98,97.32,100.86,Olympic medal standard,-0.116
+2026,2024,Women,Javelin throw,Field,Mackenzie Little,AUS,61.88,False,Haruka Kitaguchi,JPN,65.80,63.68,62.44,94.04,97.17,Below Olympic final standard,-0.305

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Matrix (categorical heatmap): for each individual athletics event (rows) at each Commonwealth Games since 1970 (columns), how the Commonwealth winner's mark compares with the previous Olympics. Darkest = would have won Olympic gold; next = an Olympic medal; next = a place in the Olympic final (top 8); lightest = not good enough for the Olympic final.",
+  "data": {
+    "url": "data/athletics_vs_olympics.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "cg_year": "number",
+        "oly_year": "number",
+        "pct_of_oly_gold": "number",
+        "pct_of_oly_bronze": "number",
+        "jitter": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "indexof(['100 m','200 m','400 m','800 m','1500 m','5000 m','10,000 m','110 m hurdles','100 m hurdles','400 m hurdles','Steeplechase','High jump','Pole vault','Long jump','Triple jump','Shot put','Discus throw','Hammer throw','Javelin throw'], datum.event)",
+      "as": "eord"
+    },
+    {
+      "calculate": "datum.standard == 'Olympic gold standard' ? 'Olympic champion' : datum.standard == 'Olympic medal standard' ? 'Olympic medal' : datum.standard == 'Olympic final standard' ? 'Olympic final (top 8)' : 'Not an Olympic finalist'",
+      "as": "Would have been"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "sex",
+      "type": "nominal",
+      "title": null,
+      "sort": ["Men", "Women"],
+      "header": {
+        "labelFontSize": 15,
+        "labelAnchor": "start",
+        "labelFont": "Barlow Semi Condensed",
+        "labelFontWeight": 700
+      }
+    }
+  },
+  "spacing": 30,
+  "resolve": {"scale": {"y": "independent"}},
+  "spec": {
+    "width": {"step": 26},
+    "height": {"step": 20},
+    "mark": {"type": "rect", "cornerRadius": 2, "stroke": "#0b1620", "strokeWidth": 1.5},
+    "encoding": {
+      "x": {
+        "field": "cg_year",
+        "type": "ordinal",
+        "title": null,
+        "scale": {
+          "domain": [1970, 1974, 1978, 1982, 1986, 1990, 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022, 2026]
+        },
+        "axis": {
+          "orient": "top",
+          "labelAngle": -90,
+          "domain": false,
+          "ticks": false,
+          "labelFontSize": 11,
+          "labelPadding": 4
+        }
+      },
+      "y": {
+        "field": "event",
+        "type": "nominal",
+        "title": null,
+        "sort": {"field": "eord", "op": "min"},
+        "axis": {"domain": false, "ticks": false, "labelFontSize": 12, "labelPadding": 6}
+      },
+      "color": {
+        "field": "Would have been",
+        "type": "ordinal",
+        "scale": {
+          "domain": ["Olympic champion", "Olympic medal", "Olympic final (top 8)", "Not an Olympic finalist"],
+          "range": ["#d6efff", "#6fb3e0", "#2f6f99", "#1e2f3b"]
+        },
+        "legend": {
+          "orient": "top",
+          "direction": "horizontal",
+          "title": "The Commonwealth winner's mark would have earned, at the previous Olympics:",
+          "titleLimit": 600,
+          "symbolType": "square",
+          "symbolSize": 170,
+          "columns": 4
+        }
+      },
+      "tooltip": [
+        {"field": "cg_year", "title": "Commonwealth Games"},
+        {"field": "sex", "title": "Category"},
+        {"field": "event", "title": "Event"},
+        {"field": "cg_winner", "title": "Commonwealth winner"},
+        {"field": "cg_mark", "title": "Winning mark"},
+        {"field": "oly_year", "title": "Previous Olympics"},
+        {"field": "oly_gold_mark", "title": "Olympic gold"},
+        {"field": "oly_bronze_mark", "title": "Olympic bronze"},
+        {"field": "oly_8th_mark", "title": "Olympic 8th place"},
+        {"field": "Would have been"}
+      ]
+    }
+  }
+}

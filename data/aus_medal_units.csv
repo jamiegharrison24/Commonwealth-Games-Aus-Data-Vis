@@ -1,0 +1,2772 @@
+year,label,medal,k,col,row,games_total,games_gold
+1930,Hamilton 1930,Gold,0,0,0,8,3
+1930,Hamilton 1930,Gold,1,1,0,8,3
+1930,Hamilton 1930,Gold,2,2,0,8,3
+1930,Hamilton 1930,Silver,3,3,0,8,3
+1930,Hamilton 1930,Silver,4,4,0,8,3
+1930,Hamilton 1930,Silver,5,0,1,8,3
+1930,Hamilton 1930,Silver,6,1,1,8,3
+1930,Hamilton 1930,Bronze,7,2,1,8,3
+1934,London 1934,Gold,0,0,0,14,8
+1934,London 1934,Gold,1,1,0,14,8
+1934,London 1934,Gold,2,2,0,14,8
+1934,London 1934,Gold,3,3,0,14,8
+1934,London 1934,Gold,4,4,0,14,8
+1934,London 1934,Gold,5,0,1,14,8
+1934,London 1934,Gold,6,1,1,14,8
+1934,London 1934,Gold,7,2,1,14,8
+1934,London 1934,Silver,8,3,1,14,8
+1934,London 1934,Silver,9,4,1,14,8
+1934,London 1934,Silver,10,0,2,14,8
+1934,London 1934,Silver,11,1,2,14,8
+1934,London 1934,Bronze,12,2,2,14,8
+1934,London 1934,Bronze,13,3,2,14,8
+1938,Sydney 1938,Gold,0,0,0,66,25
+1938,Sydney 1938,Gold,1,1,0,66,25
+1938,Sydney 1938,Gold,2,2,0,66,25
+1938,Sydney 1938,Gold,3,3,0,66,25
+1938,Sydney 1938,Gold,4,4,0,66,25
+1938,Sydney 1938,Gold,5,0,1,66,25
+1938,Sydney 1938,Gold,6,1,1,66,25
+1938,Sydney 1938,Gold,7,2,1,66,25
+1938,Sydney 1938,Gold,8,3,1,66,25
+1938,Sydney 1938,Gold,9,4,1,66,25
+1938,Sydney 1938,Gold,10,0,2,66,25
+1938,Sydney 1938,Gold,11,1,2,66,25
+1938,Sydney 1938,Gold,12,2,2,66,25
+1938,Sydney 1938,Gold,13,3,2,66,25
+1938,Sydney 1938,Gold,14,4,2,66,25
+1938,Sydney 1938,Gold,15,0,3,66,25
+1938,Sydney 1938,Gold,16,1,3,66,25
+1938,Sydney 1938,Gold,17,2,3,66,25
+1938,Sydney 1938,Gold,18,3,3,66,25
+1938,Sydney 1938,Gold,19,4,3,66,25
+1938,Sydney 1938,Gold,20,0,4,66,25
+1938,Sydney 1938,Gold,21,1,4,66,25
+1938,Sydney 1938,Gold,22,2,4,66,25
+1938,Sydney 1938,Gold,23,3,4,66,25
+1938,Sydney 1938,Gold,24,4,4,66,25
+1938,Sydney 1938,Silver,25,0,5,66,25
+1938,Sydney 1938,Silver,26,1,5,66,25
+1938,Sydney 1938,Silver,27,2,5,66,25
+1938,Sydney 1938,Silver,28,3,5,66,25
+1938,Sydney 1938,Silver,29,4,5,66,25
+1938,Sydney 1938,Silver,30,0,6,66,25
+1938,Sydney 1938,Silver,31,1,6,66,25
+1938,Sydney 1938,Silver,32,2,6,66,25
+1938,Sydney 1938,Silver,33,3,6,66,25
+1938,Sydney 1938,Silver,34,4,6,66,25
+1938,Sydney 1938,Silver,35,0,7,66,25
+1938,Sydney 1938,Silver,36,1,7,66,25
+1938,Sydney 1938,Silver,37,2,7,66,25
+1938,Sydney 1938,Silver,38,3,7,66,25
+1938,Sydney 1938,Silver,39,4,7,66,25
+1938,Sydney 1938,Silver,40,0,8,66,25
+1938,Sydney 1938,Silver,41,1,8,66,25
+1938,Sydney 1938,Silver,42,2,8,66,25
+1938,Sydney 1938,Silver,43,3,8,66,25
+1938,Sydney 1938,Bronze,44,4,8,66,25
+1938,Sydney 1938,Bronze,45,0,9,66,25
+1938,Sydney 1938,Bronze,46,1,9,66,25
+1938,Sydney 1938,Bronze,47,2,9,66,25
+1938,Sydney 1938,Bronze,48,3,9,66,25
+1938,Sydney 1938,Bronze,49,4,9,66,25
+1938,Sydney 1938,Bronze,50,0,10,66,25
+1938,Sydney 1938,Bronze,51,1,10,66,25
+1938,Sydney 1938,Bronze,52,2,10,66,25
+1938,Sydney 1938,Bronze,53,3,10,66,25
+1938,Sydney 1938,Bronze,54,4,10,66,25
+1938,Sydney 1938,Bronze,55,0,11,66,25
+1938,Sydney 1938,Bronze,56,1,11,66,25
+1938,Sydney 1938,Bronze,57,2,11,66,25
+1938,Sydney 1938,Bronze,58,3,11,66,25
+1938,Sydney 1938,Bronze,59,4,11,66,25
+1938,Sydney 1938,Bronze,60,0,12,66,25
+1938,Sydney 1938,Bronze,61,1,12,66,25
+1938,Sydney 1938,Bronze,62,2,12,66,25
+1938,Sydney 1938,Bronze,63,3,12,66,25
+1938,Sydney 1938,Bronze,64,4,12,66,25
+1938,Sydney 1938,Bronze,65,0,13,66,25
+1950,Auckland 1950,Gold,0,0,0,80,34
+1950,Auckland 1950,Gold,1,1,0,80,34
+1950,Auckland 1950,Gold,2,2,0,80,34
+1950,Auckland 1950,Gold,3,3,0,80,34
+1950,Auckland 1950,Gold,4,4,0,80,34
+1950,Auckland 1950,Gold,5,0,1,80,34
+1950,Auckland 1950,Gold,6,1,1,80,34
+1950,Auckland 1950,Gold,7,2,1,80,34
+1950,Auckland 1950,Gold,8,3,1,80,34
+1950,Auckland 1950,Gold,9,4,1,80,34
+1950,Auckland 1950,Gold,10,0,2,80,34
+1950,Auckland 1950,Gold,11,1,2,80,34
+1950,Auckland 1950,Gold,12,2,2,80,34
+1950,Auckland 1950,Gold,13,3,2,80,34
+1950,Auckland 1950,Gold,14,4,2,80,34
+1950,Auckland 1950,Gold,15,0,3,80,34
+1950,Auckland 1950,Gold,16,1,3,80,34
+1950,Auckland 1950,Gold,17,2,3,80,34
+1950,Auckland 1950,Gold,18,3,3,80,34
+1950,Auckland 1950,Gold,19,4,3,80,34
+1950,Auckland 1950,Gold,20,0,4,80,34
+1950,Auckland 1950,Gold,21,1,4,80,34
+1950,Auckland 1950,Gold,22,2,4,80,34
+1950,Auckland 1950,Gold,23,3,4,80,34
+1950,Auckland 1950,Gold,24,4,4,80,34
+1950,Auckland 1950,Gold,25,0,5,80,34
+1950,Auckland 1950,Gold,26,1,5,80,34
+1950,Auckland 1950,Gold,27,2,5,80,34
+1950,Auckland 1950,Gold,28,3,5,80,34
+1950,Auckland 1950,Gold,29,4,5,80,34
+1950,Auckland 1950,Gold,30,0,6,80,34
+1950,Auckland 1950,Gold,31,1,6,80,34
+1950,Auckland 1950,Gold,32,2,6,80,34
+1950,Auckland 1950,Gold,33,3,6,80,34
+1950,Auckland 1950,Silver,34,4,6,80,34
+1950,Auckland 1950,Silver,35,0,7,80,34
+1950,Auckland 1950,Silver,36,1,7,80,34
+1950,Auckland 1950,Silver,37,2,7,80,34
+1950,Auckland 1950,Silver,38,3,7,80,34
+1950,Auckland 1950,Silver,39,4,7,80,34
+1950,Auckland 1950,Silver,40,0,8,80,34
+1950,Auckland 1950,Silver,41,1,8,80,34
+1950,Auckland 1950,Silver,42,2,8,80,34
+1950,Auckland 1950,Silver,43,3,8,80,34
+1950,Auckland 1950,Silver,44,4,8,80,34
+1950,Auckland 1950,Silver,45,0,9,80,34
+1950,Auckland 1950,Silver,46,1,9,80,34
+1950,Auckland 1950,Silver,47,2,9,80,34
+1950,Auckland 1950,Silver,48,3,9,80,34
+1950,Auckland 1950,Silver,49,4,9,80,34
+1950,Auckland 1950,Silver,50,0,10,80,34
+1950,Auckland 1950,Silver,51,1,10,80,34
+1950,Auckland 1950,Silver,52,2,10,80,34
+1950,Auckland 1950,Silver,53,3,10,80,34
+1950,Auckland 1950,Silver,54,4,10,80,34
+1950,Auckland 1950,Silver,55,0,11,80,34
+1950,Auckland 1950,Silver,56,1,11,80,34
+1950,Auckland 1950,Silver,57,2,11,80,34
+1950,Auckland 1950,Silver,58,3,11,80,34
+1950,Auckland 1950,Silver,59,4,11,80,34
+1950,Auckland 1950,Silver,60,0,12,80,34
+1950,Auckland 1950,Bronze,61,1,12,80,34
+1950,Auckland 1950,Bronze,62,2,12,80,34
+1950,Auckland 1950,Bronze,63,3,12,80,34
+1950,Auckland 1950,Bronze,64,4,12,80,34
+1950,Auckland 1950,Bronze,65,0,13,80,34
+1950,Auckland 1950,Bronze,66,1,13,80,34
+1950,Auckland 1950,Bronze,67,2,13,80,34
+1950,Auckland 1950,Bronze,68,3,13,80,34
+1950,Auckland 1950,Bronze,69,4,13,80,34
+1950,Auckland 1950,Bronze,70,0,14,80,34
+1950,Auckland 1950,Bronze,71,1,14,80,34
+1950,Auckland 1950,Bronze,72,2,14,80,34
+1950,Auckland 1950,Bronze,73,3,14,80,34
+1950,Auckland 1950,Bronze,74,4,14,80,34
+1950,Auckland 1950,Bronze,75,0,15,80,34
+1950,Auckland 1950,Bronze,76,1,15,80,34
+1950,Auckland 1950,Bronze,77,2,15,80,34
+1950,Auckland 1950,Bronze,78,3,15,80,34
+1950,Auckland 1950,Bronze,79,4,15,80,34
+1954,Vancouver 1954,Gold,0,0,0,48,20
+1954,Vancouver 1954,Gold,1,1,0,48,20
+1954,Vancouver 1954,Gold,2,2,0,48,20
+1954,Vancouver 1954,Gold,3,3,0,48,20
+1954,Vancouver 1954,Gold,4,4,0,48,20
+1954,Vancouver 1954,Gold,5,0,1,48,20
+1954,Vancouver 1954,Gold,6,1,1,48,20
+1954,Vancouver 1954,Gold,7,2,1,48,20
+1954,Vancouver 1954,Gold,8,3,1,48,20
+1954,Vancouver 1954,Gold,9,4,1,48,20
+1954,Vancouver 1954,Gold,10,0,2,48,20
+1954,Vancouver 1954,Gold,11,1,2,48,20
+1954,Vancouver 1954,Gold,12,2,2,48,20
+1954,Vancouver 1954,Gold,13,3,2,48,20
+1954,Vancouver 1954,Gold,14,4,2,48,20
+1954,Vancouver 1954,Gold,15,0,3,48,20
+1954,Vancouver 1954,Gold,16,1,3,48,20
+1954,Vancouver 1954,Gold,17,2,3,48,20
+1954,Vancouver 1954,Gold,18,3,3,48,20
+1954,Vancouver 1954,Gold,19,4,3,48,20
+1954,Vancouver 1954,Silver,20,0,4,48,20
+1954,Vancouver 1954,Silver,21,1,4,48,20
+1954,Vancouver 1954,Silver,22,2,4,48,20
+1954,Vancouver 1954,Silver,23,3,4,48,20
+1954,Vancouver 1954,Silver,24,4,4,48,20
+1954,Vancouver 1954,Silver,25,0,5,48,20
+1954,Vancouver 1954,Silver,26,1,5,48,20
+1954,Vancouver 1954,Silver,27,2,5,48,20
+1954,Vancouver 1954,Silver,28,3,5,48,20
+1954,Vancouver 1954,Silver,29,4,5,48,20
+1954,Vancouver 1954,Silver,30,0,6,48,20
+1954,Vancouver 1954,Bronze,31,1,6,48,20
+1954,Vancouver 1954,Bronze,32,2,6,48,20
+1954,Vancouver 1954,Bronze,33,3,6,48,20
+1954,Vancouver 1954,Bronze,34,4,6,48,20
+1954,Vancouver 1954,Bronze,35,0,7,48,20
+1954,Vancouver 1954,Bronze,36,1,7,48,20
+1954,Vancouver 1954,Bronze,37,2,7,48,20
+1954,Vancouver 1954,Bronze,38,3,7,48,20
+1954,Vancouver 1954,Bronze,39,4,7,48,20
+1954,Vancouver 1954,Bronze,40,0,8,48,20
+1954,Vancouver 1954,Bronze,41,1,8,48,20
+1954,Vancouver 1954,Bronze,42,2,8,48,20
+1954,Vancouver 1954,Bronze,43,3,8,48,20
+1954,Vancouver 1954,Bronze,44,4,8,48,20
+1954,Vancouver 1954,Bronze,45,0,9,48,20
+1954,Vancouver 1954,Bronze,46,1,9,48,20
+1954,Vancouver 1954,Bronze,47,2,9,48,20
+1958,Cardiff 1958,Gold,0,0,0,66,27
+1958,Cardiff 1958,Gold,1,1,0,66,27
+1958,Cardiff 1958,Gold,2,2,0,66,27
+1958,Cardiff 1958,Gold,3,3,0,66,27
+1958,Cardiff 1958,Gold,4,4,0,66,27
+1958,Cardiff 1958,Gold,5,0,1,66,27
+1958,Cardiff 1958,Gold,6,1,1,66,27
+1958,Cardiff 1958,Gold,7,2,1,66,27
+1958,Cardiff 1958,Gold,8,3,1,66,27
+1958,Cardiff 1958,Gold,9,4,1,66,27
+1958,Cardiff 1958,Gold,10,0,2,66,27
+1958,Cardiff 1958,Gold,11,1,2,66,27
+1958,Cardiff 1958,Gold,12,2,2,66,27
+1958,Cardiff 1958,Gold,13,3,2,66,27
+1958,Cardiff 1958,Gold,14,4,2,66,27
+1958,Cardiff 1958,Gold,15,0,3,66,27
+1958,Cardiff 1958,Gold,16,1,3,66,27
+1958,Cardiff 1958,Gold,17,2,3,66,27
+1958,Cardiff 1958,Gold,18,3,3,66,27
+1958,Cardiff 1958,Gold,19,4,3,66,27
+1958,Cardiff 1958,Gold,20,0,4,66,27
+1958,Cardiff 1958,Gold,21,1,4,66,27
+1958,Cardiff 1958,Gold,22,2,4,66,27
+1958,Cardiff 1958,Gold,23,3,4,66,27
+1958,Cardiff 1958,Gold,24,4,4,66,27
+1958,Cardiff 1958,Gold,25,0,5,66,27
+1958,Cardiff 1958,Gold,26,1,5,66,27
+1958,Cardiff 1958,Silver,27,2,5,66,27
+1958,Cardiff 1958,Silver,28,3,5,66,27
+1958,Cardiff 1958,Silver,29,4,5,66,27
+1958,Cardiff 1958,Silver,30,0,6,66,27
+1958,Cardiff 1958,Silver,31,1,6,66,27
+1958,Cardiff 1958,Silver,32,2,6,66,27
+1958,Cardiff 1958,Silver,33,3,6,66,27
+1958,Cardiff 1958,Silver,34,4,6,66,27
+1958,Cardiff 1958,Silver,35,0,7,66,27
+1958,Cardiff 1958,Silver,36,1,7,66,27
+1958,Cardiff 1958,Silver,37,2,7,66,27
+1958,Cardiff 1958,Silver,38,3,7,66,27
+1958,Cardiff 1958,Silver,39,4,7,66,27
+1958,Cardiff 1958,Silver,40,0,8,66,27
+1958,Cardiff 1958,Silver,41,1,8,66,27
+1958,Cardiff 1958,Silver,42,2,8,66,27
+1958,Cardiff 1958,Silver,43,3,8,66,27
+1958,Cardiff 1958,Silver,44,4,8,66,27
+1958,Cardiff 1958,Silver,45,0,9,66,27
+1958,Cardiff 1958,Silver,46,1,9,66,27
+1958,Cardiff 1958,Silver,47,2,9,66,27
+1958,Cardiff 1958,Silver,48,3,9,66,27
+1958,Cardiff 1958,Bronze,49,4,9,66,27
+1958,Cardiff 1958,Bronze,50,0,10,66,27
+1958,Cardiff 1958,Bronze,51,1,10,66,27
+1958,Cardiff 1958,Bronze,52,2,10,66,27
+1958,Cardiff 1958,Bronze,53,3,10,66,27
+1958,Cardiff 1958,Bronze,54,4,10,66,27
+1958,Cardiff 1958,Bronze,55,0,11,66,27
+1958,Cardiff 1958,Bronze,56,1,11,66,27
+1958,Cardiff 1958,Bronze,57,2,11,66,27
+1958,Cardiff 1958,Bronze,58,3,11,66,27
+1958,Cardiff 1958,Bronze,59,4,11,66,27
+1958,Cardiff 1958,Bronze,60,0,12,66,27
+1958,Cardiff 1958,Bronze,61,1,12,66,27
+1958,Cardiff 1958,Bronze,62,2,12,66,27
+1958,Cardiff 1958,Bronze,63,3,12,66,27
+1958,Cardiff 1958,Bronze,64,4,12,66,27
+1958,Cardiff 1958,Bronze,65,0,13,66,27
+1962,Perth 1962,Gold,0,0,0,105,38
+1962,Perth 1962,Gold,1,1,0,105,38
+1962,Perth 1962,Gold,2,2,0,105,38
+1962,Perth 1962,Gold,3,3,0,105,38
+1962,Perth 1962,Gold,4,4,0,105,38
+1962,Perth 1962,Gold,5,0,1,105,38
+1962,Perth 1962,Gold,6,1,1,105,38
+1962,Perth 1962,Gold,7,2,1,105,38
+1962,Perth 1962,Gold,8,3,1,105,38
+1962,Perth 1962,Gold,9,4,1,105,38
+1962,Perth 1962,Gold,10,0,2,105,38
+1962,Perth 1962,Gold,11,1,2,105,38
+1962,Perth 1962,Gold,12,2,2,105,38
+1962,Perth 1962,Gold,13,3,2,105,38
+1962,Perth 1962,Gold,14,4,2,105,38
+1962,Perth 1962,Gold,15,0,3,105,38
+1962,Perth 1962,Gold,16,1,3,105,38
+1962,Perth 1962,Gold,17,2,3,105,38
+1962,Perth 1962,Gold,18,3,3,105,38
+1962,Perth 1962,Gold,19,4,3,105,38
+1962,Perth 1962,Gold,20,0,4,105,38
+1962,Perth 1962,Gold,21,1,4,105,38
+1962,Perth 1962,Gold,22,2,4,105,38
+1962,Perth 1962,Gold,23,3,4,105,38
+1962,Perth 1962,Gold,24,4,4,105,38
+1962,Perth 1962,Gold,25,0,5,105,38
+1962,Perth 1962,Gold,26,1,5,105,38
+1962,Perth 1962,Gold,27,2,5,105,38
+1962,Perth 1962,Gold,28,3,5,105,38
+1962,Perth 1962,Gold,29,4,5,105,38
+1962,Perth 1962,Gold,30,0,6,105,38
+1962,Perth 1962,Gold,31,1,6,105,38
+1962,Perth 1962,Gold,32,2,6,105,38
+1962,Perth 1962,Gold,33,3,6,105,38
+1962,Perth 1962,Gold,34,4,6,105,38
+1962,Perth 1962,Gold,35,0,7,105,38
+1962,Perth 1962,Gold,36,1,7,105,38
+1962,Perth 1962,Gold,37,2,7,105,38
+1962,Perth 1962,Silver,38,3,7,105,38
+1962,Perth 1962,Silver,39,4,7,105,38
+1962,Perth 1962,Silver,40,0,8,105,38
+1962,Perth 1962,Silver,41,1,8,105,38
+1962,Perth 1962,Silver,42,2,8,105,38
+1962,Perth 1962,Silver,43,3,8,105,38
+1962,Perth 1962,Silver,44,4,8,105,38
+1962,Perth 1962,Silver,45,0,9,105,38
+1962,Perth 1962,Silver,46,1,9,105,38
+1962,Perth 1962,Silver,47,2,9,105,38
+1962,Perth 1962,Silver,48,3,9,105,38
+1962,Perth 1962,Silver,49,4,9,105,38
+1962,Perth 1962,Silver,50,0,10,105,38
+1962,Perth 1962,Silver,51,1,10,105,38
+1962,Perth 1962,Silver,52,2,10,105,38
+1962,Perth 1962,Silver,53,3,10,105,38
+1962,Perth 1962,Silver,54,4,10,105,38
+1962,Perth 1962,Silver,55,0,11,105,38
+1962,Perth 1962,Silver,56,1,11,105,38
+1962,Perth 1962,Silver,57,2,11,105,38
+1962,Perth 1962,Silver,58,3,11,105,38
+1962,Perth 1962,Silver,59,4,11,105,38
+1962,Perth 1962,Silver,60,0,12,105,38
+1962,Perth 1962,Silver,61,1,12,105,38
+1962,Perth 1962,Silver,62,2,12,105,38
+1962,Perth 1962,Silver,63,3,12,105,38
+1962,Perth 1962,Silver,64,4,12,105,38
+1962,Perth 1962,Silver,65,0,13,105,38
+1962,Perth 1962,Silver,66,1,13,105,38
+1962,Perth 1962,Silver,67,2,13,105,38
+1962,Perth 1962,Silver,68,3,13,105,38
+1962,Perth 1962,Silver,69,4,13,105,38
+1962,Perth 1962,Silver,70,0,14,105,38
+1962,Perth 1962,Silver,71,1,14,105,38
+1962,Perth 1962,Silver,72,2,14,105,38
+1962,Perth 1962,Silver,73,3,14,105,38
+1962,Perth 1962,Bronze,74,4,14,105,38
+1962,Perth 1962,Bronze,75,0,15,105,38
+1962,Perth 1962,Bronze,76,1,15,105,38
+1962,Perth 1962,Bronze,77,2,15,105,38
+1962,Perth 1962,Bronze,78,3,15,105,38
+1962,Perth 1962,Bronze,79,4,15,105,38
+1962,Perth 1962,Bronze,80,0,16,105,38
+1962,Perth 1962,Bronze,81,1,16,105,38
+1962,Perth 1962,Bronze,82,2,16,105,38
+1962,Perth 1962,Bronze,83,3,16,105,38
+1962,Perth 1962,Bronze,84,4,16,105,38
+1962,Perth 1962,Bronze,85,0,17,105,38
+1962,Perth 1962,Bronze,86,1,17,105,38
+1962,Perth 1962,Bronze,87,2,17,105,38
+1962,Perth 1962,Bronze,88,3,17,105,38
+1962,Perth 1962,Bronze,89,4,17,105,38
+1962,Perth 1962,Bronze,90,0,18,105,38
+1962,Perth 1962,Bronze,91,1,18,105,38
+1962,Perth 1962,Bronze,92,2,18,105,38
+1962,Perth 1962,Bronze,93,3,18,105,38
+1962,Perth 1962,Bronze,94,4,18,105,38
+1962,Perth 1962,Bronze,95,0,19,105,38
+1962,Perth 1962,Bronze,96,1,19,105,38
+1962,Perth 1962,Bronze,97,2,19,105,38
+1962,Perth 1962,Bronze,98,3,19,105,38
+1962,Perth 1962,Bronze,99,4,19,105,38
+1962,Perth 1962,Bronze,100,0,20,105,38
+1962,Perth 1962,Bronze,101,1,20,105,38
+1962,Perth 1962,Bronze,102,2,20,105,38
+1962,Perth 1962,Bronze,103,3,20,105,38
+1962,Perth 1962,Bronze,104,4,20,105,38
+1966,Kingston 1966,Gold,0,0,0,73,23
+1966,Kingston 1966,Gold,1,1,0,73,23
+1966,Kingston 1966,Gold,2,2,0,73,23
+1966,Kingston 1966,Gold,3,3,0,73,23
+1966,Kingston 1966,Gold,4,4,0,73,23
+1966,Kingston 1966,Gold,5,0,1,73,23
+1966,Kingston 1966,Gold,6,1,1,73,23
+1966,Kingston 1966,Gold,7,2,1,73,23
+1966,Kingston 1966,Gold,8,3,1,73,23
+1966,Kingston 1966,Gold,9,4,1,73,23
+1966,Kingston 1966,Gold,10,0,2,73,23
+1966,Kingston 1966,Gold,11,1,2,73,23
+1966,Kingston 1966,Gold,12,2,2,73,23
+1966,Kingston 1966,Gold,13,3,2,73,23
+1966,Kingston 1966,Gold,14,4,2,73,23
+1966,Kingston 1966,Gold,15,0,3,73,23
+1966,Kingston 1966,Gold,16,1,3,73,23
+1966,Kingston 1966,Gold,17,2,3,73,23
+1966,Kingston 1966,Gold,18,3,3,73,23
+1966,Kingston 1966,Gold,19,4,3,73,23
+1966,Kingston 1966,Gold,20,0,4,73,23
+1966,Kingston 1966,Gold,21,1,4,73,23
+1966,Kingston 1966,Gold,22,2,4,73,23
+1966,Kingston 1966,Silver,23,3,4,73,23
+1966,Kingston 1966,Silver,24,4,4,73,23
+1966,Kingston 1966,Silver,25,0,5,73,23
+1966,Kingston 1966,Silver,26,1,5,73,23
+1966,Kingston 1966,Silver,27,2,5,73,23
+1966,Kingston 1966,Silver,28,3,5,73,23
+1966,Kingston 1966,Silver,29,4,5,73,23
+1966,Kingston 1966,Silver,30,0,6,73,23
+1966,Kingston 1966,Silver,31,1,6,73,23
+1966,Kingston 1966,Silver,32,2,6,73,23
+1966,Kingston 1966,Silver,33,3,6,73,23
+1966,Kingston 1966,Silver,34,4,6,73,23
+1966,Kingston 1966,Silver,35,0,7,73,23
+1966,Kingston 1966,Silver,36,1,7,73,23
+1966,Kingston 1966,Silver,37,2,7,73,23
+1966,Kingston 1966,Silver,38,3,7,73,23
+1966,Kingston 1966,Silver,39,4,7,73,23
+1966,Kingston 1966,Silver,40,0,8,73,23
+1966,Kingston 1966,Silver,41,1,8,73,23
+1966,Kingston 1966,Silver,42,2,8,73,23
+1966,Kingston 1966,Silver,43,3,8,73,23
+1966,Kingston 1966,Silver,44,4,8,73,23
+1966,Kingston 1966,Silver,45,0,9,73,23
+1966,Kingston 1966,Silver,46,1,9,73,23
+1966,Kingston 1966,Silver,47,2,9,73,23
+1966,Kingston 1966,Silver,48,3,9,73,23
+1966,Kingston 1966,Silver,49,4,9,73,23
+1966,Kingston 1966,Silver,50,0,10,73,23
+1966,Kingston 1966,Bronze,51,1,10,73,23
+1966,Kingston 1966,Bronze,52,2,10,73,23
+1966,Kingston 1966,Bronze,53,3,10,73,23
+1966,Kingston 1966,Bronze,54,4,10,73,23
+1966,Kingston 1966,Bronze,55,0,11,73,23
+1966,Kingston 1966,Bronze,56,1,11,73,23
+1966,Kingston 1966,Bronze,57,2,11,73,23
+1966,Kingston 1966,Bronze,58,3,11,73,23
+1966,Kingston 1966,Bronze,59,4,11,73,23
+1966,Kingston 1966,Bronze,60,0,12,73,23
+1966,Kingston 1966,Bronze,61,1,12,73,23
+1966,Kingston 1966,Bronze,62,2,12,73,23
+1966,Kingston 1966,Bronze,63,3,12,73,23
+1966,Kingston 1966,Bronze,64,4,12,73,23
+1966,Kingston 1966,Bronze,65,0,13,73,23
+1966,Kingston 1966,Bronze,66,1,13,73,23
+1966,Kingston 1966,Bronze,67,2,13,73,23
+1966,Kingston 1966,Bronze,68,3,13,73,23
+1966,Kingston 1966,Bronze,69,4,13,73,23
+1966,Kingston 1966,Bronze,70,0,14,73,23
+1966,Kingston 1966,Bronze,71,1,14,73,23
+1966,Kingston 1966,Bronze,72,2,14,73,23
+1970,Edinburgh 1970,Gold,0,0,0,82,36
+1970,Edinburgh 1970,Gold,1,1,0,82,36
+1970,Edinburgh 1970,Gold,2,2,0,82,36
+1970,Edinburgh 1970,Gold,3,3,0,82,36
+1970,Edinburgh 1970,Gold,4,4,0,82,36
+1970,Edinburgh 1970,Gold,5,0,1,82,36
+1970,Edinburgh 1970,Gold,6,1,1,82,36
+1970,Edinburgh 1970,Gold,7,2,1,82,36
+1970,Edinburgh 1970,Gold,8,3,1,82,36
+1970,Edinburgh 1970,Gold,9,4,1,82,36
+1970,Edinburgh 1970,Gold,10,0,2,82,36
+1970,Edinburgh 1970,Gold,11,1,2,82,36
+1970,Edinburgh 1970,Gold,12,2,2,82,36
+1970,Edinburgh 1970,Gold,13,3,2,82,36
+1970,Edinburgh 1970,Gold,14,4,2,82,36
+1970,Edinburgh 1970,Gold,15,0,3,82,36
+1970,Edinburgh 1970,Gold,16,1,3,82,36
+1970,Edinburgh 1970,Gold,17,2,3,82,36
+1970,Edinburgh 1970,Gold,18,3,3,82,36
+1970,Edinburgh 1970,Gold,19,4,3,82,36
+1970,Edinburgh 1970,Gold,20,0,4,82,36
+1970,Edinburgh 1970,Gold,21,1,4,82,36
+1970,Edinburgh 1970,Gold,22,2,4,82,36
+1970,Edinburgh 1970,Gold,23,3,4,82,36
+1970,Edinburgh 1970,Gold,24,4,4,82,36
+1970,Edinburgh 1970,Gold,25,0,5,82,36
+1970,Edinburgh 1970,Gold,26,1,5,82,36
+1970,Edinburgh 1970,Gold,27,2,5,82,36
+1970,Edinburgh 1970,Gold,28,3,5,82,36
+1970,Edinburgh 1970,Gold,29,4,5,82,36
+1970,Edinburgh 1970,Gold,30,0,6,82,36
+1970,Edinburgh 1970,Gold,31,1,6,82,36
+1970,Edinburgh 1970,Gold,32,2,6,82,36
+1970,Edinburgh 1970,Gold,33,3,6,82,36
+1970,Edinburgh 1970,Gold,34,4,6,82,36
+1970,Edinburgh 1970,Gold,35,0,7,82,36
+1970,Edinburgh 1970,Silver,36,1,7,82,36
+1970,Edinburgh 1970,Silver,37,2,7,82,36
+1970,Edinburgh 1970,Silver,38,3,7,82,36
+1970,Edinburgh 1970,Silver,39,4,7,82,36
+1970,Edinburgh 1970,Silver,40,0,8,82,36
+1970,Edinburgh 1970,Silver,41,1,8,82,36
+1970,Edinburgh 1970,Silver,42,2,8,82,36
+1970,Edinburgh 1970,Silver,43,3,8,82,36
+1970,Edinburgh 1970,Silver,44,4,8,82,36
+1970,Edinburgh 1970,Silver,45,0,9,82,36
+1970,Edinburgh 1970,Silver,46,1,9,82,36
+1970,Edinburgh 1970,Silver,47,2,9,82,36
+1970,Edinburgh 1970,Silver,48,3,9,82,36
+1970,Edinburgh 1970,Silver,49,4,9,82,36
+1970,Edinburgh 1970,Silver,50,0,10,82,36
+1970,Edinburgh 1970,Silver,51,1,10,82,36
+1970,Edinburgh 1970,Silver,52,2,10,82,36
+1970,Edinburgh 1970,Silver,53,3,10,82,36
+1970,Edinburgh 1970,Silver,54,4,10,82,36
+1970,Edinburgh 1970,Silver,55,0,11,82,36
+1970,Edinburgh 1970,Silver,56,1,11,82,36
+1970,Edinburgh 1970,Silver,57,2,11,82,36
+1970,Edinburgh 1970,Silver,58,3,11,82,36
+1970,Edinburgh 1970,Silver,59,4,11,82,36
+1970,Edinburgh 1970,Bronze,60,0,12,82,36
+1970,Edinburgh 1970,Bronze,61,1,12,82,36
+1970,Edinburgh 1970,Bronze,62,2,12,82,36
+1970,Edinburgh 1970,Bronze,63,3,12,82,36
+1970,Edinburgh 1970,Bronze,64,4,12,82,36
+1970,Edinburgh 1970,Bronze,65,0,13,82,36
+1970,Edinburgh 1970,Bronze,66,1,13,82,36
+1970,Edinburgh 1970,Bronze,67,2,13,82,36
+1970,Edinburgh 1970,Bronze,68,3,13,82,36
+1970,Edinburgh 1970,Bronze,69,4,13,82,36
+1970,Edinburgh 1970,Bronze,70,0,14,82,36
+1970,Edinburgh 1970,Bronze,71,1,14,82,36
+1970,Edinburgh 1970,Bronze,72,2,14,82,36
+1970,Edinburgh 1970,Bronze,73,3,14,82,36
+1970,Edinburgh 1970,Bronze,74,4,14,82,36
+1970,Edinburgh 1970,Bronze,75,0,15,82,36
+1970,Edinburgh 1970,Bronze,76,1,15,82,36
+1970,Edinburgh 1970,Bronze,77,2,15,82,36
+1970,Edinburgh 1970,Bronze,78,3,15,82,36
+1970,Edinburgh 1970,Bronze,79,4,15,82,36
+1970,Edinburgh 1970,Bronze,80,0,16,82,36
+1970,Edinburgh 1970,Bronze,81,1,16,82,36
+1974,Christchurch 1974,Gold,0,0,0,82,29
+1974,Christchurch 1974,Gold,1,1,0,82,29
+1974,Christchurch 1974,Gold,2,2,0,82,29
+1974,Christchurch 1974,Gold,3,3,0,82,29
+1974,Christchurch 1974,Gold,4,4,0,82,29
+1974,Christchurch 1974,Gold,5,0,1,82,29
+1974,Christchurch 1974,Gold,6,1,1,82,29
+1974,Christchurch 1974,Gold,7,2,1,82,29
+1974,Christchurch 1974,Gold,8,3,1,82,29
+1974,Christchurch 1974,Gold,9,4,1,82,29
+1974,Christchurch 1974,Gold,10,0,2,82,29
+1974,Christchurch 1974,Gold,11,1,2,82,29
+1974,Christchurch 1974,Gold,12,2,2,82,29
+1974,Christchurch 1974,Gold,13,3,2,82,29
+1974,Christchurch 1974,Gold,14,4,2,82,29
+1974,Christchurch 1974,Gold,15,0,3,82,29
+1974,Christchurch 1974,Gold,16,1,3,82,29
+1974,Christchurch 1974,Gold,17,2,3,82,29
+1974,Christchurch 1974,Gold,18,3,3,82,29
+1974,Christchurch 1974,Gold,19,4,3,82,29
+1974,Christchurch 1974,Gold,20,0,4,82,29
+1974,Christchurch 1974,Gold,21,1,4,82,29
+1974,Christchurch 1974,Gold,22,2,4,82,29
+1974,Christchurch 1974,Gold,23,3,4,82,29
+1974,Christchurch 1974,Gold,24,4,4,82,29
+1974,Christchurch 1974,Gold,25,0,5,82,29
+1974,Christchurch 1974,Gold,26,1,5,82,29
+1974,Christchurch 1974,Gold,27,2,5,82,29
+1974,Christchurch 1974,Gold,28,3,5,82,29
+1974,Christchurch 1974,Silver,29,4,5,82,29
+1974,Christchurch 1974,Silver,30,0,6,82,29
+1974,Christchurch 1974,Silver,31,1,6,82,29
+1974,Christchurch 1974,Silver,32,2,6,82,29
+1974,Christchurch 1974,Silver,33,3,6,82,29
+1974,Christchurch 1974,Silver,34,4,6,82,29
+1974,Christchurch 1974,Silver,35,0,7,82,29
+1974,Christchurch 1974,Silver,36,1,7,82,29
+1974,Christchurch 1974,Silver,37,2,7,82,29
+1974,Christchurch 1974,Silver,38,3,7,82,29
+1974,Christchurch 1974,Silver,39,4,7,82,29
+1974,Christchurch 1974,Silver,40,0,8,82,29
+1974,Christchurch 1974,Silver,41,1,8,82,29
+1974,Christchurch 1974,Silver,42,2,8,82,29
+1974,Christchurch 1974,Silver,43,3,8,82,29
+1974,Christchurch 1974,Silver,44,4,8,82,29
+1974,Christchurch 1974,Silver,45,0,9,82,29
+1974,Christchurch 1974,Silver,46,1,9,82,29
+1974,Christchurch 1974,Silver,47,2,9,82,29
+1974,Christchurch 1974,Silver,48,3,9,82,29
+1974,Christchurch 1974,Silver,49,4,9,82,29
+1974,Christchurch 1974,Silver,50,0,10,82,29
+1974,Christchurch 1974,Silver,51,1,10,82,29
+1974,Christchurch 1974,Silver,52,2,10,82,29
+1974,Christchurch 1974,Silver,53,3,10,82,29
+1974,Christchurch 1974,Silver,54,4,10,82,29
+1974,Christchurch 1974,Silver,55,0,11,82,29
+1974,Christchurch 1974,Silver,56,1,11,82,29
+1974,Christchurch 1974,Bronze,57,2,11,82,29
+1974,Christchurch 1974,Bronze,58,3,11,82,29
+1974,Christchurch 1974,Bronze,59,4,11,82,29
+1974,Christchurch 1974,Bronze,60,0,12,82,29
+1974,Christchurch 1974,Bronze,61,1,12,82,29
+1974,Christchurch 1974,Bronze,62,2,12,82,29
+1974,Christchurch 1974,Bronze,63,3,12,82,29
+1974,Christchurch 1974,Bronze,64,4,12,82,29
+1974,Christchurch 1974,Bronze,65,0,13,82,29
+1974,Christchurch 1974,Bronze,66,1,13,82,29
+1974,Christchurch 1974,Bronze,67,2,13,82,29
+1974,Christchurch 1974,Bronze,68,3,13,82,29
+1974,Christchurch 1974,Bronze,69,4,13,82,29
+1974,Christchurch 1974,Bronze,70,0,14,82,29
+1974,Christchurch 1974,Bronze,71,1,14,82,29
+1974,Christchurch 1974,Bronze,72,2,14,82,29
+1974,Christchurch 1974,Bronze,73,3,14,82,29
+1974,Christchurch 1974,Bronze,74,4,14,82,29
+1974,Christchurch 1974,Bronze,75,0,15,82,29
+1974,Christchurch 1974,Bronze,76,1,15,82,29
+1974,Christchurch 1974,Bronze,77,2,15,82,29
+1974,Christchurch 1974,Bronze,78,3,15,82,29
+1974,Christchurch 1974,Bronze,79,4,15,82,29
+1974,Christchurch 1974,Bronze,80,0,16,82,29
+1974,Christchurch 1974,Bronze,81,1,16,82,29
+1978,Edmonton 1978,Gold,0,0,0,84,24
+1978,Edmonton 1978,Gold,1,1,0,84,24
+1978,Edmonton 1978,Gold,2,2,0,84,24
+1978,Edmonton 1978,Gold,3,3,0,84,24
+1978,Edmonton 1978,Gold,4,4,0,84,24
+1978,Edmonton 1978,Gold,5,0,1,84,24
+1978,Edmonton 1978,Gold,6,1,1,84,24
+1978,Edmonton 1978,Gold,7,2,1,84,24
+1978,Edmonton 1978,Gold,8,3,1,84,24
+1978,Edmonton 1978,Gold,9,4,1,84,24
+1978,Edmonton 1978,Gold,10,0,2,84,24
+1978,Edmonton 1978,Gold,11,1,2,84,24
+1978,Edmonton 1978,Gold,12,2,2,84,24
+1978,Edmonton 1978,Gold,13,3,2,84,24
+1978,Edmonton 1978,Gold,14,4,2,84,24
+1978,Edmonton 1978,Gold,15,0,3,84,24
+1978,Edmonton 1978,Gold,16,1,3,84,24
+1978,Edmonton 1978,Gold,17,2,3,84,24
+1978,Edmonton 1978,Gold,18,3,3,84,24
+1978,Edmonton 1978,Gold,19,4,3,84,24
+1978,Edmonton 1978,Gold,20,0,4,84,24
+1978,Edmonton 1978,Gold,21,1,4,84,24
+1978,Edmonton 1978,Gold,22,2,4,84,24
+1978,Edmonton 1978,Gold,23,3,4,84,24
+1978,Edmonton 1978,Silver,24,4,4,84,24
+1978,Edmonton 1978,Silver,25,0,5,84,24
+1978,Edmonton 1978,Silver,26,1,5,84,24
+1978,Edmonton 1978,Silver,27,2,5,84,24
+1978,Edmonton 1978,Silver,28,3,5,84,24
+1978,Edmonton 1978,Silver,29,4,5,84,24
+1978,Edmonton 1978,Silver,30,0,6,84,24
+1978,Edmonton 1978,Silver,31,1,6,84,24
+1978,Edmonton 1978,Silver,32,2,6,84,24
+1978,Edmonton 1978,Silver,33,3,6,84,24
+1978,Edmonton 1978,Silver,34,4,6,84,24
+1978,Edmonton 1978,Silver,35,0,7,84,24
+1978,Edmonton 1978,Silver,36,1,7,84,24
+1978,Edmonton 1978,Silver,37,2,7,84,24
+1978,Edmonton 1978,Silver,38,3,7,84,24
+1978,Edmonton 1978,Silver,39,4,7,84,24
+1978,Edmonton 1978,Silver,40,0,8,84,24
+1978,Edmonton 1978,Silver,41,1,8,84,24
+1978,Edmonton 1978,Silver,42,2,8,84,24
+1978,Edmonton 1978,Silver,43,3,8,84,24
+1978,Edmonton 1978,Silver,44,4,8,84,24
+1978,Edmonton 1978,Silver,45,0,9,84,24
+1978,Edmonton 1978,Silver,46,1,9,84,24
+1978,Edmonton 1978,Silver,47,2,9,84,24
+1978,Edmonton 1978,Silver,48,3,9,84,24
+1978,Edmonton 1978,Silver,49,4,9,84,24
+1978,Edmonton 1978,Silver,50,0,10,84,24
+1978,Edmonton 1978,Silver,51,1,10,84,24
+1978,Edmonton 1978,Silver,52,2,10,84,24
+1978,Edmonton 1978,Silver,53,3,10,84,24
+1978,Edmonton 1978,Silver,54,4,10,84,24
+1978,Edmonton 1978,Silver,55,0,11,84,24
+1978,Edmonton 1978,Silver,56,1,11,84,24
+1978,Edmonton 1978,Bronze,57,2,11,84,24
+1978,Edmonton 1978,Bronze,58,3,11,84,24
+1978,Edmonton 1978,Bronze,59,4,11,84,24
+1978,Edmonton 1978,Bronze,60,0,12,84,24
+1978,Edmonton 1978,Bronze,61,1,12,84,24
+1978,Edmonton 1978,Bronze,62,2,12,84,24
+1978,Edmonton 1978,Bronze,63,3,12,84,24
+1978,Edmonton 1978,Bronze,64,4,12,84,24
+1978,Edmonton 1978,Bronze,65,0,13,84,24
+1978,Edmonton 1978,Bronze,66,1,13,84,24
+1978,Edmonton 1978,Bronze,67,2,13,84,24
+1978,Edmonton 1978,Bronze,68,3,13,84,24
+1978,Edmonton 1978,Bronze,69,4,13,84,24
+1978,Edmonton 1978,Bronze,70,0,14,84,24
+1978,Edmonton 1978,Bronze,71,1,14,84,24
+1978,Edmonton 1978,Bronze,72,2,14,84,24
+1978,Edmonton 1978,Bronze,73,3,14,84,24
+1978,Edmonton 1978,Bronze,74,4,14,84,24
+1978,Edmonton 1978,Bronze,75,0,15,84,24
+1978,Edmonton 1978,Bronze,76,1,15,84,24
+1978,Edmonton 1978,Bronze,77,2,15,84,24
+1978,Edmonton 1978,Bronze,78,3,15,84,24
+1978,Edmonton 1978,Bronze,79,4,15,84,24
+1978,Edmonton 1978,Bronze,80,0,16,84,24
+1978,Edmonton 1978,Bronze,81,1,16,84,24
+1978,Edmonton 1978,Bronze,82,2,16,84,24
+1978,Edmonton 1978,Bronze,83,3,16,84,24
+1982,Brisbane 1982,Gold,0,0,0,107,39
+1982,Brisbane 1982,Gold,1,1,0,107,39
+1982,Brisbane 1982,Gold,2,2,0,107,39
+1982,Brisbane 1982,Gold,3,3,0,107,39
+1982,Brisbane 1982,Gold,4,4,0,107,39
+1982,Brisbane 1982,Gold,5,0,1,107,39
+1982,Brisbane 1982,Gold,6,1,1,107,39
+1982,Brisbane 1982,Gold,7,2,1,107,39
+1982,Brisbane 1982,Gold,8,3,1,107,39
+1982,Brisbane 1982,Gold,9,4,1,107,39
+1982,Brisbane 1982,Gold,10,0,2,107,39
+1982,Brisbane 1982,Gold,11,1,2,107,39
+1982,Brisbane 1982,Gold,12,2,2,107,39
+1982,Brisbane 1982,Gold,13,3,2,107,39
+1982,Brisbane 1982,Gold,14,4,2,107,39
+1982,Brisbane 1982,Gold,15,0,3,107,39
+1982,Brisbane 1982,Gold,16,1,3,107,39
+1982,Brisbane 1982,Gold,17,2,3,107,39
+1982,Brisbane 1982,Gold,18,3,3,107,39
+1982,Brisbane 1982,Gold,19,4,3,107,39
+1982,Brisbane 1982,Gold,20,0,4,107,39
+1982,Brisbane 1982,Gold,21,1,4,107,39
+1982,Brisbane 1982,Gold,22,2,4,107,39
+1982,Brisbane 1982,Gold,23,3,4,107,39
+1982,Brisbane 1982,Gold,24,4,4,107,39
+1982,Brisbane 1982,Gold,25,0,5,107,39
+1982,Brisbane 1982,Gold,26,1,5,107,39
+1982,Brisbane 1982,Gold,27,2,5,107,39
+1982,Brisbane 1982,Gold,28,3,5,107,39
+1982,Brisbane 1982,Gold,29,4,5,107,39
+1982,Brisbane 1982,Gold,30,0,6,107,39
+1982,Brisbane 1982,Gold,31,1,6,107,39
+1982,Brisbane 1982,Gold,32,2,6,107,39
+1982,Brisbane 1982,Gold,33,3,6,107,39
+1982,Brisbane 1982,Gold,34,4,6,107,39
+1982,Brisbane 1982,Gold,35,0,7,107,39
+1982,Brisbane 1982,Gold,36,1,7,107,39
+1982,Brisbane 1982,Gold,37,2,7,107,39
+1982,Brisbane 1982,Gold,38,3,7,107,39
+1982,Brisbane 1982,Silver,39,4,7,107,39
+1982,Brisbane 1982,Silver,40,0,8,107,39
+1982,Brisbane 1982,Silver,41,1,8,107,39
+1982,Brisbane 1982,Silver,42,2,8,107,39
+1982,Brisbane 1982,Silver,43,3,8,107,39
+1982,Brisbane 1982,Silver,44,4,8,107,39
+1982,Brisbane 1982,Silver,45,0,9,107,39
+1982,Brisbane 1982,Silver,46,1,9,107,39
+1982,Brisbane 1982,Silver,47,2,9,107,39
+1982,Brisbane 1982,Silver,48,3,9,107,39
+1982,Brisbane 1982,Silver,49,4,9,107,39
+1982,Brisbane 1982,Silver,50,0,10,107,39
+1982,Brisbane 1982,Silver,51,1,10,107,39
+1982,Brisbane 1982,Silver,52,2,10,107,39
+1982,Brisbane 1982,Silver,53,3,10,107,39
+1982,Brisbane 1982,Silver,54,4,10,107,39
+1982,Brisbane 1982,Silver,55,0,11,107,39
+1982,Brisbane 1982,Silver,56,1,11,107,39
+1982,Brisbane 1982,Silver,57,2,11,107,39
+1982,Brisbane 1982,Silver,58,3,11,107,39
+1982,Brisbane 1982,Silver,59,4,11,107,39
+1982,Brisbane 1982,Silver,60,0,12,107,39
+1982,Brisbane 1982,Silver,61,1,12,107,39
+1982,Brisbane 1982,Silver,62,2,12,107,39
+1982,Brisbane 1982,Silver,63,3,12,107,39
+1982,Brisbane 1982,Silver,64,4,12,107,39
+1982,Brisbane 1982,Silver,65,0,13,107,39
+1982,Brisbane 1982,Silver,66,1,13,107,39
+1982,Brisbane 1982,Silver,67,2,13,107,39
+1982,Brisbane 1982,Silver,68,3,13,107,39
+1982,Brisbane 1982,Silver,69,4,13,107,39
+1982,Brisbane 1982,Silver,70,0,14,107,39
+1982,Brisbane 1982,Silver,71,1,14,107,39
+1982,Brisbane 1982,Silver,72,2,14,107,39
+1982,Brisbane 1982,Silver,73,3,14,107,39
+1982,Brisbane 1982,Silver,74,4,14,107,39
+1982,Brisbane 1982,Silver,75,0,15,107,39
+1982,Brisbane 1982,Silver,76,1,15,107,39
+1982,Brisbane 1982,Silver,77,2,15,107,39
+1982,Brisbane 1982,Bronze,78,3,15,107,39
+1982,Brisbane 1982,Bronze,79,4,15,107,39
+1982,Brisbane 1982,Bronze,80,0,16,107,39
+1982,Brisbane 1982,Bronze,81,1,16,107,39
+1982,Brisbane 1982,Bronze,82,2,16,107,39
+1982,Brisbane 1982,Bronze,83,3,16,107,39
+1982,Brisbane 1982,Bronze,84,4,16,107,39
+1982,Brisbane 1982,Bronze,85,0,17,107,39
+1982,Brisbane 1982,Bronze,86,1,17,107,39
+1982,Brisbane 1982,Bronze,87,2,17,107,39
+1982,Brisbane 1982,Bronze,88,3,17,107,39
+1982,Brisbane 1982,Bronze,89,4,17,107,39
+1982,Brisbane 1982,Bronze,90,0,18,107,39
+1982,Brisbane 1982,Bronze,91,1,18,107,39
+1982,Brisbane 1982,Bronze,92,2,18,107,39
+1982,Brisbane 1982,Bronze,93,3,18,107,39
+1982,Brisbane 1982,Bronze,94,4,18,107,39
+1982,Brisbane 1982,Bronze,95,0,19,107,39
+1982,Brisbane 1982,Bronze,96,1,19,107,39
+1982,Brisbane 1982,Bronze,97,2,19,107,39
+1982,Brisbane 1982,Bronze,98,3,19,107,39
+1982,Brisbane 1982,Bronze,99,4,19,107,39
+1982,Brisbane 1982,Bronze,100,0,20,107,39
+1982,Brisbane 1982,Bronze,101,1,20,107,39
+1982,Brisbane 1982,Bronze,102,2,20,107,39
+1982,Brisbane 1982,Bronze,103,3,20,107,39
+1982,Brisbane 1982,Bronze,104,4,20,107,39
+1982,Brisbane 1982,Bronze,105,0,21,107,39
+1982,Brisbane 1982,Bronze,106,1,21,107,39
+1986,Edinburgh 1986,Gold,0,0,0,121,40
+1986,Edinburgh 1986,Gold,1,1,0,121,40
+1986,Edinburgh 1986,Gold,2,2,0,121,40
+1986,Edinburgh 1986,Gold,3,3,0,121,40
+1986,Edinburgh 1986,Gold,4,4,0,121,40
+1986,Edinburgh 1986,Gold,5,0,1,121,40
+1986,Edinburgh 1986,Gold,6,1,1,121,40
+1986,Edinburgh 1986,Gold,7,2,1,121,40
+1986,Edinburgh 1986,Gold,8,3,1,121,40
+1986,Edinburgh 1986,Gold,9,4,1,121,40
+1986,Edinburgh 1986,Gold,10,0,2,121,40
+1986,Edinburgh 1986,Gold,11,1,2,121,40
+1986,Edinburgh 1986,Gold,12,2,2,121,40
+1986,Edinburgh 1986,Gold,13,3,2,121,40
+1986,Edinburgh 1986,Gold,14,4,2,121,40
+1986,Edinburgh 1986,Gold,15,0,3,121,40
+1986,Edinburgh 1986,Gold,16,1,3,121,40
+1986,Edinburgh 1986,Gold,17,2,3,121,40
+1986,Edinburgh 1986,Gold,18,3,3,121,40
+1986,Edinburgh 1986,Gold,19,4,3,121,40
+1986,Edinburgh 1986,Gold,20,0,4,121,40
+1986,Edinburgh 1986,Gold,21,1,4,121,40
+1986,Edinburgh 1986,Gold,22,2,4,121,40
+1986,Edinburgh 1986,Gold,23,3,4,121,40
+1986,Edinburgh 1986,Gold,24,4,4,121,40
+1986,Edinburgh 1986,Gold,25,0,5,121,40
+1986,Edinburgh 1986,Gold,26,1,5,121,40
+1986,Edinburgh 1986,Gold,27,2,5,121,40
+1986,Edinburgh 1986,Gold,28,3,5,121,40
+1986,Edinburgh 1986,Gold,29,4,5,121,40
+1986,Edinburgh 1986,Gold,30,0,6,121,40
+1986,Edinburgh 1986,Gold,31,1,6,121,40
+1986,Edinburgh 1986,Gold,32,2,6,121,40
+1986,Edinburgh 1986,Gold,33,3,6,121,40
+1986,Edinburgh 1986,Gold,34,4,6,121,40
+1986,Edinburgh 1986,Gold,35,0,7,121,40
+1986,Edinburgh 1986,Gold,36,1,7,121,40
+1986,Edinburgh 1986,Gold,37,2,7,121,40
+1986,Edinburgh 1986,Gold,38,3,7,121,40
+1986,Edinburgh 1986,Gold,39,4,7,121,40
+1986,Edinburgh 1986,Silver,40,0,8,121,40
+1986,Edinburgh 1986,Silver,41,1,8,121,40
+1986,Edinburgh 1986,Silver,42,2,8,121,40
+1986,Edinburgh 1986,Silver,43,3,8,121,40
+1986,Edinburgh 1986,Silver,44,4,8,121,40
+1986,Edinburgh 1986,Silver,45,0,9,121,40
+1986,Edinburgh 1986,Silver,46,1,9,121,40
+1986,Edinburgh 1986,Silver,47,2,9,121,40
+1986,Edinburgh 1986,Silver,48,3,9,121,40
+1986,Edinburgh 1986,Silver,49,4,9,121,40
+1986,Edinburgh 1986,Silver,50,0,10,121,40
+1986,Edinburgh 1986,Silver,51,1,10,121,40
+1986,Edinburgh 1986,Silver,52,2,10,121,40
+1986,Edinburgh 1986,Silver,53,3,10,121,40
+1986,Edinburgh 1986,Silver,54,4,10,121,40
+1986,Edinburgh 1986,Silver,55,0,11,121,40
+1986,Edinburgh 1986,Silver,56,1,11,121,40
+1986,Edinburgh 1986,Silver,57,2,11,121,40
+1986,Edinburgh 1986,Silver,58,3,11,121,40
+1986,Edinburgh 1986,Silver,59,4,11,121,40
+1986,Edinburgh 1986,Silver,60,0,12,121,40
+1986,Edinburgh 1986,Silver,61,1,12,121,40
+1986,Edinburgh 1986,Silver,62,2,12,121,40
+1986,Edinburgh 1986,Silver,63,3,12,121,40
+1986,Edinburgh 1986,Silver,64,4,12,121,40
+1986,Edinburgh 1986,Silver,65,0,13,121,40
+1986,Edinburgh 1986,Silver,66,1,13,121,40
+1986,Edinburgh 1986,Silver,67,2,13,121,40
+1986,Edinburgh 1986,Silver,68,3,13,121,40
+1986,Edinburgh 1986,Silver,69,4,13,121,40
+1986,Edinburgh 1986,Silver,70,0,14,121,40
+1986,Edinburgh 1986,Silver,71,1,14,121,40
+1986,Edinburgh 1986,Silver,72,2,14,121,40
+1986,Edinburgh 1986,Silver,73,3,14,121,40
+1986,Edinburgh 1986,Silver,74,4,14,121,40
+1986,Edinburgh 1986,Silver,75,0,15,121,40
+1986,Edinburgh 1986,Silver,76,1,15,121,40
+1986,Edinburgh 1986,Silver,77,2,15,121,40
+1986,Edinburgh 1986,Silver,78,3,15,121,40
+1986,Edinburgh 1986,Silver,79,4,15,121,40
+1986,Edinburgh 1986,Silver,80,0,16,121,40
+1986,Edinburgh 1986,Silver,81,1,16,121,40
+1986,Edinburgh 1986,Silver,82,2,16,121,40
+1986,Edinburgh 1986,Silver,83,3,16,121,40
+1986,Edinburgh 1986,Silver,84,4,16,121,40
+1986,Edinburgh 1986,Silver,85,0,17,121,40
+1986,Edinburgh 1986,Bronze,86,1,17,121,40
+1986,Edinburgh 1986,Bronze,87,2,17,121,40
+1986,Edinburgh 1986,Bronze,88,3,17,121,40
+1986,Edinburgh 1986,Bronze,89,4,17,121,40
+1986,Edinburgh 1986,Bronze,90,0,18,121,40
+1986,Edinburgh 1986,Bronze,91,1,18,121,40
+1986,Edinburgh 1986,Bronze,92,2,18,121,40
+1986,Edinburgh 1986,Bronze,93,3,18,121,40
+1986,Edinburgh 1986,Bronze,94,4,18,121,40
+1986,Edinburgh 1986,Bronze,95,0,19,121,40
+1986,Edinburgh 1986,Bronze,96,1,19,121,40
+1986,Edinburgh 1986,Bronze,97,2,19,121,40
+1986,Edinburgh 1986,Bronze,98,3,19,121,40
+1986,Edinburgh 1986,Bronze,99,4,19,121,40
+1986,Edinburgh 1986,Bronze,100,0,20,121,40
+1986,Edinburgh 1986,Bronze,101,1,20,121,40
+1986,Edinburgh 1986,Bronze,102,2,20,121,40
+1986,Edinburgh 1986,Bronze,103,3,20,121,40
+1986,Edinburgh 1986,Bronze,104,4,20,121,40
+1986,Edinburgh 1986,Bronze,105,0,21,121,40
+1986,Edinburgh 1986,Bronze,106,1,21,121,40
+1986,Edinburgh 1986,Bronze,107,2,21,121,40
+1986,Edinburgh 1986,Bronze,108,3,21,121,40
+1986,Edinburgh 1986,Bronze,109,4,21,121,40
+1986,Edinburgh 1986,Bronze,110,0,22,121,40
+1986,Edinburgh 1986,Bronze,111,1,22,121,40
+1986,Edinburgh 1986,Bronze,112,2,22,121,40
+1986,Edinburgh 1986,Bronze,113,3,22,121,40
+1986,Edinburgh 1986,Bronze,114,4,22,121,40
+1986,Edinburgh 1986,Bronze,115,0,23,121,40
+1986,Edinburgh 1986,Bronze,116,1,23,121,40
+1986,Edinburgh 1986,Bronze,117,2,23,121,40
+1986,Edinburgh 1986,Bronze,118,3,23,121,40
+1986,Edinburgh 1986,Bronze,119,4,23,121,40
+1986,Edinburgh 1986,Bronze,120,0,24,121,40
+1990,Auckland 1990,Gold,0,0,0,164,52
+1990,Auckland 1990,Gold,1,1,0,164,52
+1990,Auckland 1990,Gold,2,2,0,164,52
+1990,Auckland 1990,Gold,3,3,0,164,52
+1990,Auckland 1990,Gold,4,4,0,164,52
+1990,Auckland 1990,Gold,5,0,1,164,52
+1990,Auckland 1990,Gold,6,1,1,164,52
+1990,Auckland 1990,Gold,7,2,1,164,52
+1990,Auckland 1990,Gold,8,3,1,164,52
+1990,Auckland 1990,Gold,9,4,1,164,52
+1990,Auckland 1990,Gold,10,0,2,164,52
+1990,Auckland 1990,Gold,11,1,2,164,52
+1990,Auckland 1990,Gold,12,2,2,164,52
+1990,Auckland 1990,Gold,13,3,2,164,52
+1990,Auckland 1990,Gold,14,4,2,164,52
+1990,Auckland 1990,Gold,15,0,3,164,52
+1990,Auckland 1990,Gold,16,1,3,164,52
+1990,Auckland 1990,Gold,17,2,3,164,52
+1990,Auckland 1990,Gold,18,3,3,164,52
+1990,Auckland 1990,Gold,19,4,3,164,52
+1990,Auckland 1990,Gold,20,0,4,164,52
+1990,Auckland 1990,Gold,21,1,4,164,52
+1990,Auckland 1990,Gold,22,2,4,164,52
+1990,Auckland 1990,Gold,23,3,4,164,52
+1990,Auckland 1990,Gold,24,4,4,164,52
+1990,Auckland 1990,Gold,25,0,5,164,52
+1990,Auckland 1990,Gold,26,1,5,164,52
+1990,Auckland 1990,Gold,27,2,5,164,52
+1990,Auckland 1990,Gold,28,3,5,164,52
+1990,Auckland 1990,Gold,29,4,5,164,52
+1990,Auckland 1990,Gold,30,0,6,164,52
+1990,Auckland 1990,Gold,31,1,6,164,52
+1990,Auckland 1990,Gold,32,2,6,164,52
+1990,Auckland 1990,Gold,33,3,6,164,52
+1990,Auckland 1990,Gold,34,4,6,164,52
+1990,Auckland 1990,Gold,35,0,7,164,52
+1990,Auckland 1990,Gold,36,1,7,164,52
+1990,Auckland 1990,Gold,37,2,7,164,52
+1990,Auckland 1990,Gold,38,3,7,164,52
+1990,Auckland 1990,Gold,39,4,7,164,52
+1990,Auckland 1990,Gold,40,0,8,164,52
+1990,Auckland 1990,Gold,41,1,8,164,52
+1990,Auckland 1990,Gold,42,2,8,164,52
+1990,Auckland 1990,Gold,43,3,8,164,52
+1990,Auckland 1990,Gold,44,4,8,164,52
+1990,Auckland 1990,Gold,45,0,9,164,52
+1990,Auckland 1990,Gold,46,1,9,164,52
+1990,Auckland 1990,Gold,47,2,9,164,52
+1990,Auckland 1990,Gold,48,3,9,164,52
+1990,Auckland 1990,Gold,49,4,9,164,52
+1990,Auckland 1990,Gold,50,0,10,164,52
+1990,Auckland 1990,Gold,51,1,10,164,52
+1990,Auckland 1990,Silver,52,2,10,164,52
+1990,Auckland 1990,Silver,53,3,10,164,52
+1990,Auckland 1990,Silver,54,4,10,164,52
+1990,Auckland 1990,Silver,55,0,11,164,52
+1990,Auckland 1990,Silver,56,1,11,164,52
+1990,Auckland 1990,Silver,57,2,11,164,52
+1990,Auckland 1990,Silver,58,3,11,164,52
+1990,Auckland 1990,Silver,59,4,11,164,52
+1990,Auckland 1990,Silver,60,0,12,164,52
+1990,Auckland 1990,Silver,61,1,12,164,52
+1990,Auckland 1990,Silver,62,2,12,164,52
+1990,Auckland 1990,Silver,63,3,12,164,52
+1990,Auckland 1990,Silver,64,4,12,164,52
+1990,Auckland 1990,Silver,65,0,13,164,52
+1990,Auckland 1990,Silver,66,1,13,164,52
+1990,Auckland 1990,Silver,67,2,13,164,52
+1990,Auckland 1990,Silver,68,3,13,164,52
+1990,Auckland 1990,Silver,69,4,13,164,52
+1990,Auckland 1990,Silver,70,0,14,164,52
+1990,Auckland 1990,Silver,71,1,14,164,52
+1990,Auckland 1990,Silver,72,2,14,164,52
+1990,Auckland 1990,Silver,73,3,14,164,52
+1990,Auckland 1990,Silver,74,4,14,164,52
+1990,Auckland 1990,Silver,75,0,15,164,52
+1990,Auckland 1990,Silver,76,1,15,164,52
+1990,Auckland 1990,Silver,77,2,15,164,52
+1990,Auckland 1990,Silver,78,3,15,164,52
+1990,Auckland 1990,Silver,79,4,15,164,52
+1990,Auckland 1990,Silver,80,0,16,164,52
+1990,Auckland 1990,Silver,81,1,16,164,52
+1990,Auckland 1990,Silver,82,2,16,164,52
+1990,Auckland 1990,Silver,83,3,16,164,52
+1990,Auckland 1990,Silver,84,4,16,164,52
+1990,Auckland 1990,Silver,85,0,17,164,52
+1990,Auckland 1990,Silver,86,1,17,164,52
+1990,Auckland 1990,Silver,87,2,17,164,52
+1990,Auckland 1990,Silver,88,3,17,164,52
+1990,Auckland 1990,Silver,89,4,17,164,52
+1990,Auckland 1990,Silver,90,0,18,164,52
+1990,Auckland 1990,Silver,91,1,18,164,52
+1990,Auckland 1990,Silver,92,2,18,164,52
+1990,Auckland 1990,Silver,93,3,18,164,52
+1990,Auckland 1990,Silver,94,4,18,164,52
+1990,Auckland 1990,Silver,95,0,19,164,52
+1990,Auckland 1990,Silver,96,1,19,164,52
+1990,Auckland 1990,Silver,97,2,19,164,52
+1990,Auckland 1990,Silver,98,3,19,164,52
+1990,Auckland 1990,Silver,99,4,19,164,52
+1990,Auckland 1990,Silver,100,0,20,164,52
+1990,Auckland 1990,Silver,101,1,20,164,52
+1990,Auckland 1990,Silver,102,2,20,164,52
+1990,Auckland 1990,Silver,103,3,20,164,52
+1990,Auckland 1990,Silver,104,4,20,164,52
+1990,Auckland 1990,Silver,105,0,21,164,52
+1990,Auckland 1990,Bronze,106,1,21,164,52
+1990,Auckland 1990,Bronze,107,2,21,164,52
+1990,Auckland 1990,Bronze,108,3,21,164,52
+1990,Auckland 1990,Bronze,109,4,21,164,52
+1990,Auckland 1990,Bronze,110,0,22,164,52
+1990,Auckland 1990,Bronze,111,1,22,164,52
+1990,Auckland 1990,Bronze,112,2,22,164,52
+1990,Auckland 1990,Bronze,113,3,22,164,52
+1990,Auckland 1990,Bronze,114,4,22,164,52
+1990,Auckland 1990,Bronze,115,0,23,164,52
+1990,Auckland 1990,Bronze,116,1,23,164,52
+1990,Auckland 1990,Bronze,117,2,23,164,52
+1990,Auckland 1990,Bronze,118,3,23,164,52
+1990,Auckland 1990,Bronze,119,4,23,164,52
+1990,Auckland 1990,Bronze,120,0,24,164,52
+1990,Auckland 1990,Bronze,121,1,24,164,52
+1990,Auckland 1990,Bronze,122,2,24,164,52
+1990,Auckland 1990,Bronze,123,3,24,164,52
+1990,Auckland 1990,Bronze,124,4,24,164,52
+1990,Auckland 1990,Bronze,125,0,25,164,52
+1990,Auckland 1990,Bronze,126,1,25,164,52
+1990,Auckland 1990,Bronze,127,2,25,164,52
+1990,Auckland 1990,Bronze,128,3,25,164,52
+1990,Auckland 1990,Bronze,129,4,25,164,52
+1990,Auckland 1990,Bronze,130,0,26,164,52
+1990,Auckland 1990,Bronze,131,1,26,164,52
+1990,Auckland 1990,Bronze,132,2,26,164,52
+1990,Auckland 1990,Bronze,133,3,26,164,52
+1990,Auckland 1990,Bronze,134,4,26,164,52
+1990,Auckland 1990,Bronze,135,0,27,164,52
+1990,Auckland 1990,Bronze,136,1,27,164,52
+1990,Auckland 1990,Bronze,137,2,27,164,52
+1990,Auckland 1990,Bronze,138,3,27,164,52
+1990,Auckland 1990,Bronze,139,4,27,164,52
+1990,Auckland 1990,Bronze,140,0,28,164,52
+1990,Auckland 1990,Bronze,141,1,28,164,52
+1990,Auckland 1990,Bronze,142,2,28,164,52
+1990,Auckland 1990,Bronze,143,3,28,164,52
+1990,Auckland 1990,Bronze,144,4,28,164,52
+1990,Auckland 1990,Bronze,145,0,29,164,52
+1990,Auckland 1990,Bronze,146,1,29,164,52
+1990,Auckland 1990,Bronze,147,2,29,164,52
+1990,Auckland 1990,Bronze,148,3,29,164,52
+1990,Auckland 1990,Bronze,149,4,29,164,52
+1990,Auckland 1990,Bronze,150,0,30,164,52
+1990,Auckland 1990,Bronze,151,1,30,164,52
+1990,Auckland 1990,Bronze,152,2,30,164,52
+1990,Auckland 1990,Bronze,153,3,30,164,52
+1990,Auckland 1990,Bronze,154,4,30,164,52
+1990,Auckland 1990,Bronze,155,0,31,164,52
+1990,Auckland 1990,Bronze,156,1,31,164,52
+1990,Auckland 1990,Bronze,157,2,31,164,52
+1990,Auckland 1990,Bronze,158,3,31,164,52
+1990,Auckland 1990,Bronze,159,4,31,164,52
+1990,Auckland 1990,Bronze,160,0,32,164,52
+1990,Auckland 1990,Bronze,161,1,32,164,52
+1990,Auckland 1990,Bronze,162,2,32,164,52
+1990,Auckland 1990,Bronze,163,3,32,164,52
+1994,Victoria 1994,Gold,0,0,0,182,87
+1994,Victoria 1994,Gold,1,1,0,182,87
+1994,Victoria 1994,Gold,2,2,0,182,87
+1994,Victoria 1994,Gold,3,3,0,182,87
+1994,Victoria 1994,Gold,4,4,0,182,87
+1994,Victoria 1994,Gold,5,0,1,182,87
+1994,Victoria 1994,Gold,6,1,1,182,87
+1994,Victoria 1994,Gold,7,2,1,182,87
+1994,Victoria 1994,Gold,8,3,1,182,87
+1994,Victoria 1994,Gold,9,4,1,182,87
+1994,Victoria 1994,Gold,10,0,2,182,87
+1994,Victoria 1994,Gold,11,1,2,182,87
+1994,Victoria 1994,Gold,12,2,2,182,87
+1994,Victoria 1994,Gold,13,3,2,182,87
+1994,Victoria 1994,Gold,14,4,2,182,87
+1994,Victoria 1994,Gold,15,0,3,182,87
+1994,Victoria 1994,Gold,16,1,3,182,87
+1994,Victoria 1994,Gold,17,2,3,182,87
+1994,Victoria 1994,Gold,18,3,3,182,87
+1994,Victoria 1994,Gold,19,4,3,182,87
+1994,Victoria 1994,Gold,20,0,4,182,87
+1994,Victoria 1994,Gold,21,1,4,182,87
+1994,Victoria 1994,Gold,22,2,4,182,87
+1994,Victoria 1994,Gold,23,3,4,182,87
+1994,Victoria 1994,Gold,24,4,4,182,87
+1994,Victoria 1994,Gold,25,0,5,182,87
+1994,Victoria 1994,Gold,26,1,5,182,87
+1994,Victoria 1994,Gold,27,2,5,182,87
+1994,Victoria 1994,Gold,28,3,5,182,87
+1994,Victoria 1994,Gold,29,4,5,182,87
+1994,Victoria 1994,Gold,30,0,6,182,87
+1994,Victoria 1994,Gold,31,1,6,182,87
+1994,Victoria 1994,Gold,32,2,6,182,87
+1994,Victoria 1994,Gold,33,3,6,182,87
+1994,Victoria 1994,Gold,34,4,6,182,87
+1994,Victoria 1994,Gold,35,0,7,182,87
+1994,Victoria 1994,Gold,36,1,7,182,87
+1994,Victoria 1994,Gold,37,2,7,182,87
+1994,Victoria 1994,Gold,38,3,7,182,87
+1994,Victoria 1994,Gold,39,4,7,182,87
+1994,Victoria 1994,Gold,40,0,8,182,87
+1994,Victoria 1994,Gold,41,1,8,182,87
+1994,Victoria 1994,Gold,42,2,8,182,87
+1994,Victoria 1994,Gold,43,3,8,182,87
+1994,Victoria 1994,Gold,44,4,8,182,87
+1994,Victoria 1994,Gold,45,0,9,182,87
+1994,Victoria 1994,Gold,46,1,9,182,87
+1994,Victoria 1994,Gold,47,2,9,182,87
+1994,Victoria 1994,Gold,48,3,9,182,87
+1994,Victoria 1994,Gold,49,4,9,182,87
+1994,Victoria 1994,Gold,50,0,10,182,87
+1994,Victoria 1994,Gold,51,1,10,182,87
+1994,Victoria 1994,Gold,52,2,10,182,87
+1994,Victoria 1994,Gold,53,3,10,182,87
+1994,Victoria 1994,Gold,54,4,10,182,87
+1994,Victoria 1994,Gold,55,0,11,182,87
+1994,Victoria 1994,Gold,56,1,11,182,87
+1994,Victoria 1994,Gold,57,2,11,182,87
+1994,Victoria 1994,Gold,58,3,11,182,87
+1994,Victoria 1994,Gold,59,4,11,182,87
+1994,Victoria 1994,Gold,60,0,12,182,87
+1994,Victoria 1994,Gold,61,1,12,182,87
+1994,Victoria 1994,Gold,62,2,12,182,87
+1994,Victoria 1994,Gold,63,3,12,182,87
+1994,Victoria 1994,Gold,64,4,12,182,87
+1994,Victoria 1994,Gold,65,0,13,182,87
+1994,Victoria 1994,Gold,66,1,13,182,87
+1994,Victoria 1994,Gold,67,2,13,182,87
+1994,Victoria 1994,Gold,68,3,13,182,87
+1994,Victoria 1994,Gold,69,4,13,182,87
+1994,Victoria 1994,Gold,70,0,14,182,87
+1994,Victoria 1994,Gold,71,1,14,182,87
+1994,Victoria 1994,Gold,72,2,14,182,87
+1994,Victoria 1994,Gold,73,3,14,182,87
+1994,Victoria 1994,Gold,74,4,14,182,87
+1994,Victoria 1994,Gold,75,0,15,182,87
+1994,Victoria 1994,Gold,76,1,15,182,87
+1994,Victoria 1994,Gold,77,2,15,182,87
+1994,Victoria 1994,Gold,78,3,15,182,87
+1994,Victoria 1994,Gold,79,4,15,182,87
+1994,Victoria 1994,Gold,80,0,16,182,87
+1994,Victoria 1994,Gold,81,1,16,182,87
+1994,Victoria 1994,Gold,82,2,16,182,87
+1994,Victoria 1994,Gold,83,3,16,182,87
+1994,Victoria 1994,Gold,84,4,16,182,87
+1994,Victoria 1994,Gold,85,0,17,182,87
+1994,Victoria 1994,Gold,86,1,17,182,87
+1994,Victoria 1994,Silver,87,2,17,182,87
+1994,Victoria 1994,Silver,88,3,17,182,87
+1994,Victoria 1994,Silver,89,4,17,182,87
+1994,Victoria 1994,Silver,90,0,18,182,87
+1994,Victoria 1994,Silver,91,1,18,182,87
+1994,Victoria 1994,Silver,92,2,18,182,87
+1994,Victoria 1994,Silver,93,3,18,182,87
+1994,Victoria 1994,Silver,94,4,18,182,87
+1994,Victoria 1994,Silver,95,0,19,182,87
+1994,Victoria 1994,Silver,96,1,19,182,87
+1994,Victoria 1994,Silver,97,2,19,182,87
+1994,Victoria 1994,Silver,98,3,19,182,87
+1994,Victoria 1994,Silver,99,4,19,182,87
+1994,Victoria 1994,Silver,100,0,20,182,87
+1994,Victoria 1994,Silver,101,1,20,182,87
+1994,Victoria 1994,Silver,102,2,20,182,87
+1994,Victoria 1994,Silver,103,3,20,182,87
+1994,Victoria 1994,Silver,104,4,20,182,87
+1994,Victoria 1994,Silver,105,0,21,182,87
+1994,Victoria 1994,Silver,106,1,21,182,87
+1994,Victoria 1994,Silver,107,2,21,182,87
+1994,Victoria 1994,Silver,108,3,21,182,87
+1994,Victoria 1994,Silver,109,4,21,182,87
+1994,Victoria 1994,Silver,110,0,22,182,87
+1994,Victoria 1994,Silver,111,1,22,182,87
+1994,Victoria 1994,Silver,112,2,22,182,87
+1994,Victoria 1994,Silver,113,3,22,182,87
+1994,Victoria 1994,Silver,114,4,22,182,87
+1994,Victoria 1994,Silver,115,0,23,182,87
+1994,Victoria 1994,Silver,116,1,23,182,87
+1994,Victoria 1994,Silver,117,2,23,182,87
+1994,Victoria 1994,Silver,118,3,23,182,87
+1994,Victoria 1994,Silver,119,4,23,182,87
+1994,Victoria 1994,Silver,120,0,24,182,87
+1994,Victoria 1994,Silver,121,1,24,182,87
+1994,Victoria 1994,Silver,122,2,24,182,87
+1994,Victoria 1994,Silver,123,3,24,182,87
+1994,Victoria 1994,Silver,124,4,24,182,87
+1994,Victoria 1994,Silver,125,0,25,182,87
+1994,Victoria 1994,Silver,126,1,25,182,87
+1994,Victoria 1994,Silver,127,2,25,182,87
+1994,Victoria 1994,Silver,128,3,25,182,87
+1994,Victoria 1994,Silver,129,4,25,182,87
+1994,Victoria 1994,Silver,130,0,26,182,87
+1994,Victoria 1994,Silver,131,1,26,182,87
+1994,Victoria 1994,Silver,132,2,26,182,87
+1994,Victoria 1994,Silver,133,3,26,182,87
+1994,Victoria 1994,Silver,134,4,26,182,87
+1994,Victoria 1994,Silver,135,0,27,182,87
+1994,Victoria 1994,Silver,136,1,27,182,87
+1994,Victoria 1994,Silver,137,2,27,182,87
+1994,Victoria 1994,Silver,138,3,27,182,87
+1994,Victoria 1994,Bronze,139,4,27,182,87
+1994,Victoria 1994,Bronze,140,0,28,182,87
+1994,Victoria 1994,Bronze,141,1,28,182,87
+1994,Victoria 1994,Bronze,142,2,28,182,87
+1994,Victoria 1994,Bronze,143,3,28,182,87
+1994,Victoria 1994,Bronze,144,4,28,182,87
+1994,Victoria 1994,Bronze,145,0,29,182,87
+1994,Victoria 1994,Bronze,146,1,29,182,87
+1994,Victoria 1994,Bronze,147,2,29,182,87
+1994,Victoria 1994,Bronze,148,3,29,182,87
+1994,Victoria 1994,Bronze,149,4,29,182,87
+1994,Victoria 1994,Bronze,150,0,30,182,87
+1994,Victoria 1994,Bronze,151,1,30,182,87
+1994,Victoria 1994,Bronze,152,2,30,182,87
+1994,Victoria 1994,Bronze,153,3,30,182,87
+1994,Victoria 1994,Bronze,154,4,30,182,87
+1994,Victoria 1994,Bronze,155,0,31,182,87
+1994,Victoria 1994,Bronze,156,1,31,182,87
+1994,Victoria 1994,Bronze,157,2,31,182,87
+1994,Victoria 1994,Bronze,158,3,31,182,87
+1994,Victoria 1994,Bronze,159,4,31,182,87
+1994,Victoria 1994,Bronze,160,0,32,182,87
+1994,Victoria 1994,Bronze,161,1,32,182,87
+1994,Victoria 1994,Bronze,162,2,32,182,87
+1994,Victoria 1994,Bronze,163,3,32,182,87
+1994,Victoria 1994,Bronze,164,4,32,182,87
+1994,Victoria 1994,Bronze,165,0,33,182,87
+1994,Victoria 1994,Bronze,166,1,33,182,87
+1994,Victoria 1994,Bronze,167,2,33,182,87
+1994,Victoria 1994,Bronze,168,3,33,182,87
+1994,Victoria 1994,Bronze,169,4,33,182,87
+1994,Victoria 1994,Bronze,170,0,34,182,87
+1994,Victoria 1994,Bronze,171,1,34,182,87
+1994,Victoria 1994,Bronze,172,2,34,182,87
+1994,Victoria 1994,Bronze,173,3,34,182,87
+1994,Victoria 1994,Bronze,174,4,34,182,87
+1994,Victoria 1994,Bronze,175,0,35,182,87
+1994,Victoria 1994,Bronze,176,1,35,182,87
+1994,Victoria 1994,Bronze,177,2,35,182,87
+1994,Victoria 1994,Bronze,178,3,35,182,87
+1994,Victoria 1994,Bronze,179,4,35,182,87
+1994,Victoria 1994,Bronze,180,0,36,182,87
+1994,Victoria 1994,Bronze,181,1,36,182,87
+1998,Kuala Lumpur 1998,Gold,0,0,0,198,80
+1998,Kuala Lumpur 1998,Gold,1,1,0,198,80
+1998,Kuala Lumpur 1998,Gold,2,2,0,198,80
+1998,Kuala Lumpur 1998,Gold,3,3,0,198,80
+1998,Kuala Lumpur 1998,Gold,4,4,0,198,80
+1998,Kuala Lumpur 1998,Gold,5,0,1,198,80
+1998,Kuala Lumpur 1998,Gold,6,1,1,198,80
+1998,Kuala Lumpur 1998,Gold,7,2,1,198,80
+1998,Kuala Lumpur 1998,Gold,8,3,1,198,80
+1998,Kuala Lumpur 1998,Gold,9,4,1,198,80
+1998,Kuala Lumpur 1998,Gold,10,0,2,198,80
+1998,Kuala Lumpur 1998,Gold,11,1,2,198,80
+1998,Kuala Lumpur 1998,Gold,12,2,2,198,80
+1998,Kuala Lumpur 1998,Gold,13,3,2,198,80
+1998,Kuala Lumpur 1998,Gold,14,4,2,198,80
+1998,Kuala Lumpur 1998,Gold,15,0,3,198,80
+1998,Kuala Lumpur 1998,Gold,16,1,3,198,80
+1998,Kuala Lumpur 1998,Gold,17,2,3,198,80
+1998,Kuala Lumpur 1998,Gold,18,3,3,198,80
+1998,Kuala Lumpur 1998,Gold,19,4,3,198,80
+1998,Kuala Lumpur 1998,Gold,20,0,4,198,80
+1998,Kuala Lumpur 1998,Gold,21,1,4,198,80
+1998,Kuala Lumpur 1998,Gold,22,2,4,198,80
+1998,Kuala Lumpur 1998,Gold,23,3,4,198,80
+1998,Kuala Lumpur 1998,Gold,24,4,4,198,80
+1998,Kuala Lumpur 1998,Gold,25,0,5,198,80
+1998,Kuala Lumpur 1998,Gold,26,1,5,198,80
+1998,Kuala Lumpur 1998,Gold,27,2,5,198,80
+1998,Kuala Lumpur 1998,Gold,28,3,5,198,80
+1998,Kuala Lumpur 1998,Gold,29,4,5,198,80
+1998,Kuala Lumpur 1998,Gold,30,0,6,198,80
+1998,Kuala Lumpur 1998,Gold,31,1,6,198,80
+1998,Kuala Lumpur 1998,Gold,32,2,6,198,80
+1998,Kuala Lumpur 1998,Gold,33,3,6,198,80
+1998,Kuala Lumpur 1998,Gold,34,4,6,198,80
+1998,Kuala Lumpur 1998,Gold,35,0,7,198,80
+1998,Kuala Lumpur 1998,Gold,36,1,7,198,80
+1998,Kuala Lumpur 1998,Gold,37,2,7,198,80
+1998,Kuala Lumpur 1998,Gold,38,3,7,198,80
+1998,Kuala Lumpur 1998,Gold,39,4,7,198,80
+1998,Kuala Lumpur 1998,Gold,40,0,8,198,80
+1998,Kuala Lumpur 1998,Gold,41,1,8,198,80
+1998,Kuala Lumpur 1998,Gold,42,2,8,198,80
+1998,Kuala Lumpur 1998,Gold,43,3,8,198,80
+1998,Kuala Lumpur 1998,Gold,44,4,8,198,80
+1998,Kuala Lumpur 1998,Gold,45,0,9,198,80
+1998,Kuala Lumpur 1998,Gold,46,1,9,198,80
+1998,Kuala Lumpur 1998,Gold,47,2,9,198,80
+1998,Kuala Lumpur 1998,Gold,48,3,9,198,80
+1998,Kuala Lumpur 1998,Gold,49,4,9,198,80
+1998,Kuala Lumpur 1998,Gold,50,0,10,198,80
+1998,Kuala Lumpur 1998,Gold,51,1,10,198,80
+1998,Kuala Lumpur 1998,Gold,52,2,10,198,80
+1998,Kuala Lumpur 1998,Gold,53,3,10,198,80
+1998,Kuala Lumpur 1998,Gold,54,4,10,198,80
+1998,Kuala Lumpur 1998,Gold,55,0,11,198,80
+1998,Kuala Lumpur 1998,Gold,56,1,11,198,80
+1998,Kuala Lumpur 1998,Gold,57,2,11,198,80
+1998,Kuala Lumpur 1998,Gold,58,3,11,198,80
+1998,Kuala Lumpur 1998,Gold,59,4,11,198,80
+1998,Kuala Lumpur 1998,Gold,60,0,12,198,80
+1998,Kuala Lumpur 1998,Gold,61,1,12,198,80
+1998,Kuala Lumpur 1998,Gold,62,2,12,198,80
+1998,Kuala Lumpur 1998,Gold,63,3,12,198,80
+1998,Kuala Lumpur 1998,Gold,64,4,12,198,80
+1998,Kuala Lumpur 1998,Gold,65,0,13,198,80
+1998,Kuala Lumpur 1998,Gold,66,1,13,198,80
+1998,Kuala Lumpur 1998,Gold,67,2,13,198,80
+1998,Kuala Lumpur 1998,Gold,68,3,13,198,80
+1998,Kuala Lumpur 1998,Gold,69,4,13,198,80
+1998,Kuala Lumpur 1998,Gold,70,0,14,198,80
+1998,Kuala Lumpur 1998,Gold,71,1,14,198,80
+1998,Kuala Lumpur 1998,Gold,72,2,14,198,80
+1998,Kuala Lumpur 1998,Gold,73,3,14,198,80
+1998,Kuala Lumpur 1998,Gold,74,4,14,198,80
+1998,Kuala Lumpur 1998,Gold,75,0,15,198,80
+1998,Kuala Lumpur 1998,Gold,76,1,15,198,80
+1998,Kuala Lumpur 1998,Gold,77,2,15,198,80
+1998,Kuala Lumpur 1998,Gold,78,3,15,198,80
+1998,Kuala Lumpur 1998,Gold,79,4,15,198,80
+1998,Kuala Lumpur 1998,Silver,80,0,16,198,80
+1998,Kuala Lumpur 1998,Silver,81,1,16,198,80
+1998,Kuala Lumpur 1998,Silver,82,2,16,198,80
+1998,Kuala Lumpur 1998,Silver,83,3,16,198,80
+1998,Kuala Lumpur 1998,Silver,84,4,16,198,80
+1998,Kuala Lumpur 1998,Silver,85,0,17,198,80
+1998,Kuala Lumpur 1998,Silver,86,1,17,198,80
+1998,Kuala Lumpur 1998,Silver,87,2,17,198,80
+1998,Kuala Lumpur 1998,Silver,88,3,17,198,80
+1998,Kuala Lumpur 1998,Silver,89,4,17,198,80
+1998,Kuala Lumpur 1998,Silver,90,0,18,198,80
+1998,Kuala Lumpur 1998,Silver,91,1,18,198,80
+1998,Kuala Lumpur 1998,Silver,92,2,18,198,80
+1998,Kuala Lumpur 1998,Silver,93,3,18,198,80
+1998,Kuala Lumpur 1998,Silver,94,4,18,198,80
+1998,Kuala Lumpur 1998,Silver,95,0,19,198,80
+1998,Kuala Lumpur 1998,Silver,96,1,19,198,80
+1998,Kuala Lumpur 1998,Silver,97,2,19,198,80
+1998,Kuala Lumpur 1998,Silver,98,3,19,198,80
+1998,Kuala Lumpur 1998,Silver,99,4,19,198,80
+1998,Kuala Lumpur 1998,Silver,100,0,20,198,80
+1998,Kuala Lumpur 1998,Silver,101,1,20,198,80
+1998,Kuala Lumpur 1998,Silver,102,2,20,198,80
+1998,Kuala Lumpur 1998,Silver,103,3,20,198,80
+1998,Kuala Lumpur 1998,Silver,104,4,20,198,80
+1998,Kuala Lumpur 1998,Silver,105,0,21,198,80
+1998,Kuala Lumpur 1998,Silver,106,1,21,198,80
+1998,Kuala Lumpur 1998,Silver,107,2,21,198,80
+1998,Kuala Lumpur 1998,Silver,108,3,21,198,80
+1998,Kuala Lumpur 1998,Silver,109,4,21,198,80
+1998,Kuala Lumpur 1998,Silver,110,0,22,198,80
+1998,Kuala Lumpur 1998,Silver,111,1,22,198,80
+1998,Kuala Lumpur 1998,Silver,112,2,22,198,80
+1998,Kuala Lumpur 1998,Silver,113,3,22,198,80
+1998,Kuala Lumpur 1998,Silver,114,4,22,198,80
+1998,Kuala Lumpur 1998,Silver,115,0,23,198,80
+1998,Kuala Lumpur 1998,Silver,116,1,23,198,80
+1998,Kuala Lumpur 1998,Silver,117,2,23,198,80
+1998,Kuala Lumpur 1998,Silver,118,3,23,198,80
+1998,Kuala Lumpur 1998,Silver,119,4,23,198,80
+1998,Kuala Lumpur 1998,Silver,120,0,24,198,80
+1998,Kuala Lumpur 1998,Silver,121,1,24,198,80
+1998,Kuala Lumpur 1998,Silver,122,2,24,198,80
+1998,Kuala Lumpur 1998,Silver,123,3,24,198,80
+1998,Kuala Lumpur 1998,Silver,124,4,24,198,80
+1998,Kuala Lumpur 1998,Silver,125,0,25,198,80
+1998,Kuala Lumpur 1998,Silver,126,1,25,198,80
+1998,Kuala Lumpur 1998,Silver,127,2,25,198,80
+1998,Kuala Lumpur 1998,Silver,128,3,25,198,80
+1998,Kuala Lumpur 1998,Silver,129,4,25,198,80
+1998,Kuala Lumpur 1998,Silver,130,0,26,198,80
+1998,Kuala Lumpur 1998,Silver,131,1,26,198,80
+1998,Kuala Lumpur 1998,Silver,132,2,26,198,80
+1998,Kuala Lumpur 1998,Silver,133,3,26,198,80
+1998,Kuala Lumpur 1998,Silver,134,4,26,198,80
+1998,Kuala Lumpur 1998,Silver,135,0,27,198,80
+1998,Kuala Lumpur 1998,Silver,136,1,27,198,80
+1998,Kuala Lumpur 1998,Silver,137,2,27,198,80
+1998,Kuala Lumpur 1998,Silver,138,3,27,198,80
+1998,Kuala Lumpur 1998,Silver,139,4,27,198,80
+1998,Kuala Lumpur 1998,Silver,140,0,28,198,80
+1998,Kuala Lumpur 1998,Bronze,141,1,28,198,80
+1998,Kuala Lumpur 1998,Bronze,142,2,28,198,80
+1998,Kuala Lumpur 1998,Bronze,143,3,28,198,80
+1998,Kuala Lumpur 1998,Bronze,144,4,28,198,80
+1998,Kuala Lumpur 1998,Bronze,145,0,29,198,80
+1998,Kuala Lumpur 1998,Bronze,146,1,29,198,80
+1998,Kuala Lumpur 1998,Bronze,147,2,29,198,80
+1998,Kuala Lumpur 1998,Bronze,148,3,29,198,80
+1998,Kuala Lumpur 1998,Bronze,149,4,29,198,80
+1998,Kuala Lumpur 1998,Bronze,150,0,30,198,80
+1998,Kuala Lumpur 1998,Bronze,151,1,30,198,80
+1998,Kuala Lumpur 1998,Bronze,152,2,30,198,80
+1998,Kuala Lumpur 1998,Bronze,153,3,30,198,80
+1998,Kuala Lumpur 1998,Bronze,154,4,30,198,80
+1998,Kuala Lumpur 1998,Bronze,155,0,31,198,80
+1998,Kuala Lumpur 1998,Bronze,156,1,31,198,80
+1998,Kuala Lumpur 1998,Bronze,157,2,31,198,80
+1998,Kuala Lumpur 1998,Bronze,158,3,31,198,80
+1998,Kuala Lumpur 1998,Bronze,159,4,31,198,80
+1998,Kuala Lumpur 1998,Bronze,160,0,32,198,80
+1998,Kuala Lumpur 1998,Bronze,161,1,32,198,80
+1998,Kuala Lumpur 1998,Bronze,162,2,32,198,80
+1998,Kuala Lumpur 1998,Bronze,163,3,32,198,80
+1998,Kuala Lumpur 1998,Bronze,164,4,32,198,80
+1998,Kuala Lumpur 1998,Bronze,165,0,33,198,80
+1998,Kuala Lumpur 1998,Bronze,166,1,33,198,80
+1998,Kuala Lumpur 1998,Bronze,167,2,33,198,80
+1998,Kuala Lumpur 1998,Bronze,168,3,33,198,80
+1998,Kuala Lumpur 1998,Bronze,169,4,33,198,80
+1998,Kuala Lumpur 1998,Bronze,170,0,34,198,80
+1998,Kuala Lumpur 1998,Bronze,171,1,34,198,80
+1998,Kuala Lumpur 1998,Bronze,172,2,34,198,80
+1998,Kuala Lumpur 1998,Bronze,173,3,34,198,80
+1998,Kuala Lumpur 1998,Bronze,174,4,34,198,80
+1998,Kuala Lumpur 1998,Bronze,175,0,35,198,80
+1998,Kuala Lumpur 1998,Bronze,176,1,35,198,80
+1998,Kuala Lumpur 1998,Bronze,177,2,35,198,80
+1998,Kuala Lumpur 1998,Bronze,178,3,35,198,80
+1998,Kuala Lumpur 1998,Bronze,179,4,35,198,80
+1998,Kuala Lumpur 1998,Bronze,180,0,36,198,80
+1998,Kuala Lumpur 1998,Bronze,181,1,36,198,80
+1998,Kuala Lumpur 1998,Bronze,182,2,36,198,80
+1998,Kuala Lumpur 1998,Bronze,183,3,36,198,80
+1998,Kuala Lumpur 1998,Bronze,184,4,36,198,80
+1998,Kuala Lumpur 1998,Bronze,185,0,37,198,80
+1998,Kuala Lumpur 1998,Bronze,186,1,37,198,80
+1998,Kuala Lumpur 1998,Bronze,187,2,37,198,80
+1998,Kuala Lumpur 1998,Bronze,188,3,37,198,80
+1998,Kuala Lumpur 1998,Bronze,189,4,37,198,80
+1998,Kuala Lumpur 1998,Bronze,190,0,38,198,80
+1998,Kuala Lumpur 1998,Bronze,191,1,38,198,80
+1998,Kuala Lumpur 1998,Bronze,192,2,38,198,80
+1998,Kuala Lumpur 1998,Bronze,193,3,38,198,80
+1998,Kuala Lumpur 1998,Bronze,194,4,38,198,80
+1998,Kuala Lumpur 1998,Bronze,195,0,39,198,80
+1998,Kuala Lumpur 1998,Bronze,196,1,39,198,80
+1998,Kuala Lumpur 1998,Bronze,197,2,39,198,80
+2002,Manchester 2002,Gold,0,0,0,207,82
+2002,Manchester 2002,Gold,1,1,0,207,82
+2002,Manchester 2002,Gold,2,2,0,207,82
+2002,Manchester 2002,Gold,3,3,0,207,82
+2002,Manchester 2002,Gold,4,4,0,207,82
+2002,Manchester 2002,Gold,5,0,1,207,82
+2002,Manchester 2002,Gold,6,1,1,207,82
+2002,Manchester 2002,Gold,7,2,1,207,82
+2002,Manchester 2002,Gold,8,3,1,207,82
+2002,Manchester 2002,Gold,9,4,1,207,82
+2002,Manchester 2002,Gold,10,0,2,207,82
+2002,Manchester 2002,Gold,11,1,2,207,82
+2002,Manchester 2002,Gold,12,2,2,207,82
+2002,Manchester 2002,Gold,13,3,2,207,82
+2002,Manchester 2002,Gold,14,4,2,207,82
+2002,Manchester 2002,Gold,15,0,3,207,82
+2002,Manchester 2002,Gold,16,1,3,207,82
+2002,Manchester 2002,Gold,17,2,3,207,82
+2002,Manchester 2002,Gold,18,3,3,207,82
+2002,Manchester 2002,Gold,19,4,3,207,82
+2002,Manchester 2002,Gold,20,0,4,207,82
+2002,Manchester 2002,Gold,21,1,4,207,82
+2002,Manchester 2002,Gold,22,2,4,207,82
+2002,Manchester 2002,Gold,23,3,4,207,82
+2002,Manchester 2002,Gold,24,4,4,207,82
+2002,Manchester 2002,Gold,25,0,5,207,82
+2002,Manchester 2002,Gold,26,1,5,207,82
+2002,Manchester 2002,Gold,27,2,5,207,82
+2002,Manchester 2002,Gold,28,3,5,207,82
+2002,Manchester 2002,Gold,29,4,5,207,82
+2002,Manchester 2002,Gold,30,0,6,207,82
+2002,Manchester 2002,Gold,31,1,6,207,82
+2002,Manchester 2002,Gold,32,2,6,207,82
+2002,Manchester 2002,Gold,33,3,6,207,82
+2002,Manchester 2002,Gold,34,4,6,207,82
+2002,Manchester 2002,Gold,35,0,7,207,82
+2002,Manchester 2002,Gold,36,1,7,207,82
+2002,Manchester 2002,Gold,37,2,7,207,82
+2002,Manchester 2002,Gold,38,3,7,207,82
+2002,Manchester 2002,Gold,39,4,7,207,82
+2002,Manchester 2002,Gold,40,0,8,207,82
+2002,Manchester 2002,Gold,41,1,8,207,82
+2002,Manchester 2002,Gold,42,2,8,207,82
+2002,Manchester 2002,Gold,43,3,8,207,82
+2002,Manchester 2002,Gold,44,4,8,207,82
+2002,Manchester 2002,Gold,45,0,9,207,82
+2002,Manchester 2002,Gold,46,1,9,207,82
+2002,Manchester 2002,Gold,47,2,9,207,82
+2002,Manchester 2002,Gold,48,3,9,207,82
+2002,Manchester 2002,Gold,49,4,9,207,82
+2002,Manchester 2002,Gold,50,0,10,207,82
+2002,Manchester 2002,Gold,51,1,10,207,82
+2002,Manchester 2002,Gold,52,2,10,207,82
+2002,Manchester 2002,Gold,53,3,10,207,82
+2002,Manchester 2002,Gold,54,4,10,207,82
+2002,Manchester 2002,Gold,55,0,11,207,82
+2002,Manchester 2002,Gold,56,1,11,207,82
+2002,Manchester 2002,Gold,57,2,11,207,82
+2002,Manchester 2002,Gold,58,3,11,207,82
+2002,Manchester 2002,Gold,59,4,11,207,82
+2002,Manchester 2002,Gold,60,0,12,207,82
+2002,Manchester 2002,Gold,61,1,12,207,82
+2002,Manchester 2002,Gold,62,2,12,207,82
+2002,Manchester 2002,Gold,63,3,12,207,82
+2002,Manchester 2002,Gold,64,4,12,207,82
+2002,Manchester 2002,Gold,65,0,13,207,82
+2002,Manchester 2002,Gold,66,1,13,207,82
+2002,Manchester 2002,Gold,67,2,13,207,82
+2002,Manchester 2002,Gold,68,3,13,207,82
+2002,Manchester 2002,Gold,69,4,13,207,82
+2002,Manchester 2002,Gold,70,0,14,207,82
+2002,Manchester 2002,Gold,71,1,14,207,82
+2002,Manchester 2002,Gold,72,2,14,207,82
+2002,Manchester 2002,Gold,73,3,14,207,82
+2002,Manchester 2002,Gold,74,4,14,207,82
+2002,Manchester 2002,Gold,75,0,15,207,82
+2002,Manchester 2002,Gold,76,1,15,207,82
+2002,Manchester 2002,Gold,77,2,15,207,82
+2002,Manchester 2002,Gold,78,3,15,207,82
+2002,Manchester 2002,Gold,79,4,15,207,82
+2002,Manchester 2002,Gold,80,0,16,207,82
+2002,Manchester 2002,Gold,81,1,16,207,82
+2002,Manchester 2002,Silver,82,2,16,207,82
+2002,Manchester 2002,Silver,83,3,16,207,82
+2002,Manchester 2002,Silver,84,4,16,207,82
+2002,Manchester 2002,Silver,85,0,17,207,82
+2002,Manchester 2002,Silver,86,1,17,207,82
+2002,Manchester 2002,Silver,87,2,17,207,82
+2002,Manchester 2002,Silver,88,3,17,207,82
+2002,Manchester 2002,Silver,89,4,17,207,82
+2002,Manchester 2002,Silver,90,0,18,207,82
+2002,Manchester 2002,Silver,91,1,18,207,82
+2002,Manchester 2002,Silver,92,2,18,207,82
+2002,Manchester 2002,Silver,93,3,18,207,82
+2002,Manchester 2002,Silver,94,4,18,207,82
+2002,Manchester 2002,Silver,95,0,19,207,82
+2002,Manchester 2002,Silver,96,1,19,207,82
+2002,Manchester 2002,Silver,97,2,19,207,82
+2002,Manchester 2002,Silver,98,3,19,207,82
+2002,Manchester 2002,Silver,99,4,19,207,82
+2002,Manchester 2002,Silver,100,0,20,207,82
+2002,Manchester 2002,Silver,101,1,20,207,82
+2002,Manchester 2002,Silver,102,2,20,207,82
+2002,Manchester 2002,Silver,103,3,20,207,82
+2002,Manchester 2002,Silver,104,4,20,207,82
+2002,Manchester 2002,Silver,105,0,21,207,82
+2002,Manchester 2002,Silver,106,1,21,207,82
+2002,Manchester 2002,Silver,107,2,21,207,82
+2002,Manchester 2002,Silver,108,3,21,207,82
+2002,Manchester 2002,Silver,109,4,21,207,82
+2002,Manchester 2002,Silver,110,0,22,207,82
+2002,Manchester 2002,Silver,111,1,22,207,82
+2002,Manchester 2002,Silver,112,2,22,207,82
+2002,Manchester 2002,Silver,113,3,22,207,82
+2002,Manchester 2002,Silver,114,4,22,207,82
+2002,Manchester 2002,Silver,115,0,23,207,82
+2002,Manchester 2002,Silver,116,1,23,207,82
+2002,Manchester 2002,Silver,117,2,23,207,82
+2002,Manchester 2002,Silver,118,3,23,207,82
+2002,Manchester 2002,Silver,119,4,23,207,82
+2002,Manchester 2002,Silver,120,0,24,207,82
+2002,Manchester 2002,Silver,121,1,24,207,82
+2002,Manchester 2002,Silver,122,2,24,207,82
+2002,Manchester 2002,Silver,123,3,24,207,82
+2002,Manchester 2002,Silver,124,4,24,207,82
+2002,Manchester 2002,Silver,125,0,25,207,82
+2002,Manchester 2002,Silver,126,1,25,207,82
+2002,Manchester 2002,Silver,127,2,25,207,82
+2002,Manchester 2002,Silver,128,3,25,207,82
+2002,Manchester 2002,Silver,129,4,25,207,82
+2002,Manchester 2002,Silver,130,0,26,207,82
+2002,Manchester 2002,Silver,131,1,26,207,82
+2002,Manchester 2002,Silver,132,2,26,207,82
+2002,Manchester 2002,Silver,133,3,26,207,82
+2002,Manchester 2002,Silver,134,4,26,207,82
+2002,Manchester 2002,Silver,135,0,27,207,82
+2002,Manchester 2002,Silver,136,1,27,207,82
+2002,Manchester 2002,Silver,137,2,27,207,82
+2002,Manchester 2002,Silver,138,3,27,207,82
+2002,Manchester 2002,Silver,139,4,27,207,82
+2002,Manchester 2002,Silver,140,0,28,207,82
+2002,Manchester 2002,Silver,141,1,28,207,82
+2002,Manchester 2002,Silver,142,2,28,207,82
+2002,Manchester 2002,Silver,143,3,28,207,82
+2002,Manchester 2002,Bronze,144,4,28,207,82
+2002,Manchester 2002,Bronze,145,0,29,207,82
+2002,Manchester 2002,Bronze,146,1,29,207,82
+2002,Manchester 2002,Bronze,147,2,29,207,82
+2002,Manchester 2002,Bronze,148,3,29,207,82
+2002,Manchester 2002,Bronze,149,4,29,207,82
+2002,Manchester 2002,Bronze,150,0,30,207,82
+2002,Manchester 2002,Bronze,151,1,30,207,82
+2002,Manchester 2002,Bronze,152,2,30,207,82
+2002,Manchester 2002,Bronze,153,3,30,207,82
+2002,Manchester 2002,Bronze,154,4,30,207,82
+2002,Manchester 2002,Bronze,155,0,31,207,82
+2002,Manchester 2002,Bronze,156,1,31,207,82
+2002,Manchester 2002,Bronze,157,2,31,207,82
+2002,Manchester 2002,Bronze,158,3,31,207,82
+2002,Manchester 2002,Bronze,159,4,31,207,82
+2002,Manchester 2002,Bronze,160,0,32,207,82
+2002,Manchester 2002,Bronze,161,1,32,207,82
+2002,Manchester 2002,Bronze,162,2,32,207,82
+2002,Manchester 2002,Bronze,163,3,32,207,82
+2002,Manchester 2002,Bronze,164,4,32,207,82
+2002,Manchester 2002,Bronze,165,0,33,207,82
+2002,Manchester 2002,Bronze,166,1,33,207,82
+2002,Manchester 2002,Bronze,167,2,33,207,82
+2002,Manchester 2002,Bronze,168,3,33,207,82
+2002,Manchester 2002,Bronze,169,4,33,207,82
+2002,Manchester 2002,Bronze,170,0,34,207,82
+2002,Manchester 2002,Bronze,171,1,34,207,82
+2002,Manchester 2002,Bronze,172,2,34,207,82
+2002,Manchester 2002,Bronze,173,3,34,207,82
+2002,Manchester 2002,Bronze,174,4,34,207,82
+2002,Manchester 2002,Bronze,175,0,35,207,82
+2002,Manchester 2002,Bronze,176,1,35,207,82
+2002,Manchester 2002,Bronze,177,2,35,207,82
+2002,Manchester 2002,Bronze,178,3,35,207,82
+2002,Manchester 2002,Bronze,179,4,35,207,82
+2002,Manchester 2002,Bronze,180,0,36,207,82
+2002,Manchester 2002,Bronze,181,1,36,207,82
+2002,Manchester 2002,Bronze,182,2,36,207,82
+2002,Manchester 2002,Bronze,183,3,36,207,82
+2002,Manchester 2002,Bronze,184,4,36,207,82
+2002,Manchester 2002,Bronze,185,0,37,207,82
+2002,Manchester 2002,Bronze,186,1,37,207,82
+2002,Manchester 2002,Bronze,187,2,37,207,82
+2002,Manchester 2002,Bronze,188,3,37,207,82
+2002,Manchester 2002,Bronze,189,4,37,207,82
+2002,Manchester 2002,Bronze,190,0,38,207,82
+2002,Manchester 2002,Bronze,191,1,38,207,82
+2002,Manchester 2002,Bronze,192,2,38,207,82
+2002,Manchester 2002,Bronze,193,3,38,207,82
+2002,Manchester 2002,Bronze,194,4,38,207,82
+2002,Manchester 2002,Bronze,195,0,39,207,82
+2002,Manchester 2002,Bronze,196,1,39,207,82
+2002,Manchester 2002,Bronze,197,2,39,207,82
+2002,Manchester 2002,Bronze,198,3,39,207,82
+2002,Manchester 2002,Bronze,199,4,39,207,82
+2002,Manchester 2002,Bronze,200,0,40,207,82
+2002,Manchester 2002,Bronze,201,1,40,207,82
+2002,Manchester 2002,Bronze,202,2,40,207,82
+2002,Manchester 2002,Bronze,203,3,40,207,82
+2002,Manchester 2002,Bronze,204,4,40,207,82
+2002,Manchester 2002,Bronze,205,0,41,207,82
+2002,Manchester 2002,Bronze,206,1,41,207,82
+2006,Melbourne 2006,Gold,0,0,0,221,84
+2006,Melbourne 2006,Gold,1,1,0,221,84
+2006,Melbourne 2006,Gold,2,2,0,221,84
+2006,Melbourne 2006,Gold,3,3,0,221,84
+2006,Melbourne 2006,Gold,4,4,0,221,84
+2006,Melbourne 2006,Gold,5,0,1,221,84
+2006,Melbourne 2006,Gold,6,1,1,221,84
+2006,Melbourne 2006,Gold,7,2,1,221,84
+2006,Melbourne 2006,Gold,8,3,1,221,84
+2006,Melbourne 2006,Gold,9,4,1,221,84
+2006,Melbourne 2006,Gold,10,0,2,221,84
+2006,Melbourne 2006,Gold,11,1,2,221,84
+2006,Melbourne 2006,Gold,12,2,2,221,84
+2006,Melbourne 2006,Gold,13,3,2,221,84
+2006,Melbourne 2006,Gold,14,4,2,221,84
+2006,Melbourne 2006,Gold,15,0,3,221,84
+2006,Melbourne 2006,Gold,16,1,3,221,84
+2006,Melbourne 2006,Gold,17,2,3,221,84
+2006,Melbourne 2006,Gold,18,3,3,221,84
+2006,Melbourne 2006,Gold,19,4,3,221,84
+2006,Melbourne 2006,Gold,20,0,4,221,84
+2006,Melbourne 2006,Gold,21,1,4,221,84
+2006,Melbourne 2006,Gold,22,2,4,221,84
+2006,Melbourne 2006,Gold,23,3,4,221,84
+2006,Melbourne 2006,Gold,24,4,4,221,84
+2006,Melbourne 2006,Gold,25,0,5,221,84
+2006,Melbourne 2006,Gold,26,1,5,221,84
+2006,Melbourne 2006,Gold,27,2,5,221,84
+2006,Melbourne 2006,Gold,28,3,5,221,84
+2006,Melbourne 2006,Gold,29,4,5,221,84
+2006,Melbourne 2006,Gold,30,0,6,221,84
+2006,Melbourne 2006,Gold,31,1,6,221,84
+2006,Melbourne 2006,Gold,32,2,6,221,84
+2006,Melbourne 2006,Gold,33,3,6,221,84
+2006,Melbourne 2006,Gold,34,4,6,221,84
+2006,Melbourne 2006,Gold,35,0,7,221,84
+2006,Melbourne 2006,Gold,36,1,7,221,84
+2006,Melbourne 2006,Gold,37,2,7,221,84
+2006,Melbourne 2006,Gold,38,3,7,221,84
+2006,Melbourne 2006,Gold,39,4,7,221,84
+2006,Melbourne 2006,Gold,40,0,8,221,84
+2006,Melbourne 2006,Gold,41,1,8,221,84
+2006,Melbourne 2006,Gold,42,2,8,221,84
+2006,Melbourne 2006,Gold,43,3,8,221,84
+2006,Melbourne 2006,Gold,44,4,8,221,84
+2006,Melbourne 2006,Gold,45,0,9,221,84
+2006,Melbourne 2006,Gold,46,1,9,221,84
+2006,Melbourne 2006,Gold,47,2,9,221,84
+2006,Melbourne 2006,Gold,48,3,9,221,84
+2006,Melbourne 2006,Gold,49,4,9,221,84
+2006,Melbourne 2006,Gold,50,0,10,221,84
+2006,Melbourne 2006,Gold,51,1,10,221,84
+2006,Melbourne 2006,Gold,52,2,10,221,84
+2006,Melbourne 2006,Gold,53,3,10,221,84
+2006,Melbourne 2006,Gold,54,4,10,221,84
+2006,Melbourne 2006,Gold,55,0,11,221,84
+2006,Melbourne 2006,Gold,56,1,11,221,84
+2006,Melbourne 2006,Gold,57,2,11,221,84
+2006,Melbourne 2006,Gold,58,3,11,221,84
+2006,Melbourne 2006,Gold,59,4,11,221,84
+2006,Melbourne 2006,Gold,60,0,12,221,84
+2006,Melbourne 2006,Gold,61,1,12,221,84
+2006,Melbourne 2006,Gold,62,2,12,221,84
+2006,Melbourne 2006,Gold,63,3,12,221,84
+2006,Melbourne 2006,Gold,64,4,12,221,84
+2006,Melbourne 2006,Gold,65,0,13,221,84
+2006,Melbourne 2006,Gold,66,1,13,221,84
+2006,Melbourne 2006,Gold,67,2,13,221,84
+2006,Melbourne 2006,Gold,68,3,13,221,84
+2006,Melbourne 2006,Gold,69,4,13,221,84
+2006,Melbourne 2006,Gold,70,0,14,221,84
+2006,Melbourne 2006,Gold,71,1,14,221,84
+2006,Melbourne 2006,Gold,72,2,14,221,84
+2006,Melbourne 2006,Gold,73,3,14,221,84
+2006,Melbourne 2006,Gold,74,4,14,221,84
+2006,Melbourne 2006,Gold,75,0,15,221,84
+2006,Melbourne 2006,Gold,76,1,15,221,84
+2006,Melbourne 2006,Gold,77,2,15,221,84
+2006,Melbourne 2006,Gold,78,3,15,221,84
+2006,Melbourne 2006,Gold,79,4,15,221,84
+2006,Melbourne 2006,Gold,80,0,16,221,84
+2006,Melbourne 2006,Gold,81,1,16,221,84
+2006,Melbourne 2006,Gold,82,2,16,221,84
+2006,Melbourne 2006,Gold,83,3,16,221,84
+2006,Melbourne 2006,Silver,84,4,16,221,84
+2006,Melbourne 2006,Silver,85,0,17,221,84
+2006,Melbourne 2006,Silver,86,1,17,221,84
+2006,Melbourne 2006,Silver,87,2,17,221,84
+2006,Melbourne 2006,Silver,88,3,17,221,84
+2006,Melbourne 2006,Silver,89,4,17,221,84
+2006,Melbourne 2006,Silver,90,0,18,221,84
+2006,Melbourne 2006,Silver,91,1,18,221,84
+2006,Melbourne 2006,Silver,92,2,18,221,84
+2006,Melbourne 2006,Silver,93,3,18,221,84
+2006,Melbourne 2006,Silver,94,4,18,221,84
+2006,Melbourne 2006,Silver,95,0,19,221,84
+2006,Melbourne 2006,Silver,96,1,19,221,84
+2006,Melbourne 2006,Silver,97,2,19,221,84
+2006,Melbourne 2006,Silver,98,3,19,221,84
+2006,Melbourne 2006,Silver,99,4,19,221,84
+2006,Melbourne 2006,Silver,100,0,20,221,84
+2006,Melbourne 2006,Silver,101,1,20,221,84
+2006,Melbourne 2006,Silver,102,2,20,221,84
+2006,Melbourne 2006,Silver,103,3,20,221,84
+2006,Melbourne 2006,Silver,104,4,20,221,84
+2006,Melbourne 2006,Silver,105,0,21,221,84
+2006,Melbourne 2006,Silver,106,1,21,221,84
+2006,Melbourne 2006,Silver,107,2,21,221,84
+2006,Melbourne 2006,Silver,108,3,21,221,84
+2006,Melbourne 2006,Silver,109,4,21,221,84
+2006,Melbourne 2006,Silver,110,0,22,221,84
+2006,Melbourne 2006,Silver,111,1,22,221,84
+2006,Melbourne 2006,Silver,112,2,22,221,84
+2006,Melbourne 2006,Silver,113,3,22,221,84
+2006,Melbourne 2006,Silver,114,4,22,221,84
+2006,Melbourne 2006,Silver,115,0,23,221,84
+2006,Melbourne 2006,Silver,116,1,23,221,84
+2006,Melbourne 2006,Silver,117,2,23,221,84
+2006,Melbourne 2006,Silver,118,3,23,221,84
+2006,Melbourne 2006,Silver,119,4,23,221,84
+2006,Melbourne 2006,Silver,120,0,24,221,84
+2006,Melbourne 2006,Silver,121,1,24,221,84
+2006,Melbourne 2006,Silver,122,2,24,221,84
+2006,Melbourne 2006,Silver,123,3,24,221,84
+2006,Melbourne 2006,Silver,124,4,24,221,84
+2006,Melbourne 2006,Silver,125,0,25,221,84
+2006,Melbourne 2006,Silver,126,1,25,221,84
+2006,Melbourne 2006,Silver,127,2,25,221,84
+2006,Melbourne 2006,Silver,128,3,25,221,84
+2006,Melbourne 2006,Silver,129,4,25,221,84
+2006,Melbourne 2006,Silver,130,0,26,221,84
+2006,Melbourne 2006,Silver,131,1,26,221,84
+2006,Melbourne 2006,Silver,132,2,26,221,84
+2006,Melbourne 2006,Silver,133,3,26,221,84
+2006,Melbourne 2006,Silver,134,4,26,221,84
+2006,Melbourne 2006,Silver,135,0,27,221,84
+2006,Melbourne 2006,Silver,136,1,27,221,84
+2006,Melbourne 2006,Silver,137,2,27,221,84
+2006,Melbourne 2006,Silver,138,3,27,221,84
+2006,Melbourne 2006,Silver,139,4,27,221,84
+2006,Melbourne 2006,Silver,140,0,28,221,84
+2006,Melbourne 2006,Silver,141,1,28,221,84
+2006,Melbourne 2006,Silver,142,2,28,221,84
+2006,Melbourne 2006,Silver,143,3,28,221,84
+2006,Melbourne 2006,Silver,144,4,28,221,84
+2006,Melbourne 2006,Silver,145,0,29,221,84
+2006,Melbourne 2006,Silver,146,1,29,221,84
+2006,Melbourne 2006,Silver,147,2,29,221,84
+2006,Melbourne 2006,Silver,148,3,29,221,84
+2006,Melbourne 2006,Silver,149,4,29,221,84
+2006,Melbourne 2006,Silver,150,0,30,221,84
+2006,Melbourne 2006,Silver,151,1,30,221,84
+2006,Melbourne 2006,Silver,152,2,30,221,84
+2006,Melbourne 2006,Silver,153,3,30,221,84
+2006,Melbourne 2006,Bronze,154,4,30,221,84
+2006,Melbourne 2006,Bronze,155,0,31,221,84
+2006,Melbourne 2006,Bronze,156,1,31,221,84
+2006,Melbourne 2006,Bronze,157,2,31,221,84
+2006,Melbourne 2006,Bronze,158,3,31,221,84
+2006,Melbourne 2006,Bronze,159,4,31,221,84
+2006,Melbourne 2006,Bronze,160,0,32,221,84
+2006,Melbourne 2006,Bronze,161,1,32,221,84
+2006,Melbourne 2006,Bronze,162,2,32,221,84
+2006,Melbourne 2006,Bronze,163,3,32,221,84
+2006,Melbourne 2006,Bronze,164,4,32,221,84
+2006,Melbourne 2006,Bronze,165,0,33,221,84
+2006,Melbourne 2006,Bronze,166,1,33,221,84
+2006,Melbourne 2006,Bronze,167,2,33,221,84
+2006,Melbourne 2006,Bronze,168,3,33,221,84
+2006,Melbourne 2006,Bronze,169,4,33,221,84
+2006,Melbourne 2006,Bronze,170,0,34,221,84
+2006,Melbourne 2006,Bronze,171,1,34,221,84
+2006,Melbourne 2006,Bronze,172,2,34,221,84
+2006,Melbourne 2006,Bronze,173,3,34,221,84
+2006,Melbourne 2006,Bronze,174,4,34,221,84
+2006,Melbourne 2006,Bronze,175,0,35,221,84
+2006,Melbourne 2006,Bronze,176,1,35,221,84
+2006,Melbourne 2006,Bronze,177,2,35,221,84
+2006,Melbourne 2006,Bronze,178,3,35,221,84
+2006,Melbourne 2006,Bronze,179,4,35,221,84
+2006,Melbourne 2006,Bronze,180,0,36,221,84
+2006,Melbourne 2006,Bronze,181,1,36,221,84
+2006,Melbourne 2006,Bronze,182,2,36,221,84
+2006,Melbourne 2006,Bronze,183,3,36,221,84
+2006,Melbourne 2006,Bronze,184,4,36,221,84
+2006,Melbourne 2006,Bronze,185,0,37,221,84
+2006,Melbourne 2006,Bronze,186,1,37,221,84
+2006,Melbourne 2006,Bronze,187,2,37,221,84
+2006,Melbourne 2006,Bronze,188,3,37,221,84
+2006,Melbourne 2006,Bronze,189,4,37,221,84
+2006,Melbourne 2006,Bronze,190,0,38,221,84
+2006,Melbourne 2006,Bronze,191,1,38,221,84
+2006,Melbourne 2006,Bronze,192,2,38,221,84
+2006,Melbourne 2006,Bronze,193,3,38,221,84
+2006,Melbourne 2006,Bronze,194,4,38,221,84
+2006,Melbourne 2006,Bronze,195,0,39,221,84
+2006,Melbourne 2006,Bronze,196,1,39,221,84
+2006,Melbourne 2006,Bronze,197,2,39,221,84
+2006,Melbourne 2006,Bronze,198,3,39,221,84
+2006,Melbourne 2006,Bronze,199,4,39,221,84
+2006,Melbourne 2006,Bronze,200,0,40,221,84
+2006,Melbourne 2006,Bronze,201,1,40,221,84
+2006,Melbourne 2006,Bronze,202,2,40,221,84
+2006,Melbourne 2006,Bronze,203,3,40,221,84
+2006,Melbourne 2006,Bronze,204,4,40,221,84
+2006,Melbourne 2006,Bronze,205,0,41,221,84
+2006,Melbourne 2006,Bronze,206,1,41,221,84
+2006,Melbourne 2006,Bronze,207,2,41,221,84
+2006,Melbourne 2006,Bronze,208,3,41,221,84
+2006,Melbourne 2006,Bronze,209,4,41,221,84
+2006,Melbourne 2006,Bronze,210,0,42,221,84
+2006,Melbourne 2006,Bronze,211,1,42,221,84
+2006,Melbourne 2006,Bronze,212,2,42,221,84
+2006,Melbourne 2006,Bronze,213,3,42,221,84
+2006,Melbourne 2006,Bronze,214,4,42,221,84
+2006,Melbourne 2006,Bronze,215,0,43,221,84
+2006,Melbourne 2006,Bronze,216,1,43,221,84
+2006,Melbourne 2006,Bronze,217,2,43,221,84
+2006,Melbourne 2006,Bronze,218,3,43,221,84
+2006,Melbourne 2006,Bronze,219,4,43,221,84
+2006,Melbourne 2006,Bronze,220,0,44,221,84
+2010,Delhi 2010,Gold,0,0,0,177,74
+2010,Delhi 2010,Gold,1,1,0,177,74
+2010,Delhi 2010,Gold,2,2,0,177,74
+2010,Delhi 2010,Gold,3,3,0,177,74
+2010,Delhi 2010,Gold,4,4,0,177,74
+2010,Delhi 2010,Gold,5,0,1,177,74
+2010,Delhi 2010,Gold,6,1,1,177,74
+2010,Delhi 2010,Gold,7,2,1,177,74
+2010,Delhi 2010,Gold,8,3,1,177,74
+2010,Delhi 2010,Gold,9,4,1,177,74
+2010,Delhi 2010,Gold,10,0,2,177,74
+2010,Delhi 2010,Gold,11,1,2,177,74
+2010,Delhi 2010,Gold,12,2,2,177,74
+2010,Delhi 2010,Gold,13,3,2,177,74
+2010,Delhi 2010,Gold,14,4,2,177,74
+2010,Delhi 2010,Gold,15,0,3,177,74
+2010,Delhi 2010,Gold,16,1,3,177,74
+2010,Delhi 2010,Gold,17,2,3,177,74
+2010,Delhi 2010,Gold,18,3,3,177,74
+2010,Delhi 2010,Gold,19,4,3,177,74
+2010,Delhi 2010,Gold,20,0,4,177,74
+2010,Delhi 2010,Gold,21,1,4,177,74
+2010,Delhi 2010,Gold,22,2,4,177,74
+2010,Delhi 2010,Gold,23,3,4,177,74
+2010,Delhi 2010,Gold,24,4,4,177,74
+2010,Delhi 2010,Gold,25,0,5,177,74
+2010,Delhi 2010,Gold,26,1,5,177,74
+2010,Delhi 2010,Gold,27,2,5,177,74
+2010,Delhi 2010,Gold,28,3,5,177,74
+2010,Delhi 2010,Gold,29,4,5,177,74
+2010,Delhi 2010,Gold,30,0,6,177,74
+2010,Delhi 2010,Gold,31,1,6,177,74
+2010,Delhi 2010,Gold,32,2,6,177,74
+2010,Delhi 2010,Gold,33,3,6,177,74
+2010,Delhi 2010,Gold,34,4,6,177,74
+2010,Delhi 2010,Gold,35,0,7,177,74
+2010,Delhi 2010,Gold,36,1,7,177,74
+2010,Delhi 2010,Gold,37,2,7,177,74
+2010,Delhi 2010,Gold,38,3,7,177,74
+2010,Delhi 2010,Gold,39,4,7,177,74
+2010,Delhi 2010,Gold,40,0,8,177,74
+2010,Delhi 2010,Gold,41,1,8,177,74
+2010,Delhi 2010,Gold,42,2,8,177,74
+2010,Delhi 2010,Gold,43,3,8,177,74
+2010,Delhi 2010,Gold,44,4,8,177,74
+2010,Delhi 2010,Gold,45,0,9,177,74
+2010,Delhi 2010,Gold,46,1,9,177,74
+2010,Delhi 2010,Gold,47,2,9,177,74
+2010,Delhi 2010,Gold,48,3,9,177,74
+2010,Delhi 2010,Gold,49,4,9,177,74
+2010,Delhi 2010,Gold,50,0,10,177,74
+2010,Delhi 2010,Gold,51,1,10,177,74
+2010,Delhi 2010,Gold,52,2,10,177,74
+2010,Delhi 2010,Gold,53,3,10,177,74
+2010,Delhi 2010,Gold,54,4,10,177,74
+2010,Delhi 2010,Gold,55,0,11,177,74
+2010,Delhi 2010,Gold,56,1,11,177,74
+2010,Delhi 2010,Gold,57,2,11,177,74
+2010,Delhi 2010,Gold,58,3,11,177,74
+2010,Delhi 2010,Gold,59,4,11,177,74
+2010,Delhi 2010,Gold,60,0,12,177,74
+2010,Delhi 2010,Gold,61,1,12,177,74
+2010,Delhi 2010,Gold,62,2,12,177,74
+2010,Delhi 2010,Gold,63,3,12,177,74
+2010,Delhi 2010,Gold,64,4,12,177,74
+2010,Delhi 2010,Gold,65,0,13,177,74
+2010,Delhi 2010,Gold,66,1,13,177,74
+2010,Delhi 2010,Gold,67,2,13,177,74
+2010,Delhi 2010,Gold,68,3,13,177,74
+2010,Delhi 2010,Gold,69,4,13,177,74
+2010,Delhi 2010,Gold,70,0,14,177,74
+2010,Delhi 2010,Gold,71,1,14,177,74
+2010,Delhi 2010,Gold,72,2,14,177,74
+2010,Delhi 2010,Gold,73,3,14,177,74
+2010,Delhi 2010,Silver,74,4,14,177,74
+2010,Delhi 2010,Silver,75,0,15,177,74
+2010,Delhi 2010,Silver,76,1,15,177,74
+2010,Delhi 2010,Silver,77,2,15,177,74
+2010,Delhi 2010,Silver,78,3,15,177,74
+2010,Delhi 2010,Silver,79,4,15,177,74
+2010,Delhi 2010,Silver,80,0,16,177,74
+2010,Delhi 2010,Silver,81,1,16,177,74
+2010,Delhi 2010,Silver,82,2,16,177,74
+2010,Delhi 2010,Silver,83,3,16,177,74
+2010,Delhi 2010,Silver,84,4,16,177,74
+2010,Delhi 2010,Silver,85,0,17,177,74
+2010,Delhi 2010,Silver,86,1,17,177,74
+2010,Delhi 2010,Silver,87,2,17,177,74
+2010,Delhi 2010,Silver,88,3,17,177,74
+2010,Delhi 2010,Silver,89,4,17,177,74
+2010,Delhi 2010,Silver,90,0,18,177,74
+2010,Delhi 2010,Silver,91,1,18,177,74
+2010,Delhi 2010,Silver,92,2,18,177,74
+2010,Delhi 2010,Silver,93,3,18,177,74
+2010,Delhi 2010,Silver,94,4,18,177,74
+2010,Delhi 2010,Silver,95,0,19,177,74
+2010,Delhi 2010,Silver,96,1,19,177,74
+2010,Delhi 2010,Silver,97,2,19,177,74
+2010,Delhi 2010,Silver,98,3,19,177,74
+2010,Delhi 2010,Silver,99,4,19,177,74
+2010,Delhi 2010,Silver,100,0,20,177,74
+2010,Delhi 2010,Silver,101,1,20,177,74
+2010,Delhi 2010,Silver,102,2,20,177,74
+2010,Delhi 2010,Silver,103,3,20,177,74
+2010,Delhi 2010,Silver,104,4,20,177,74
+2010,Delhi 2010,Silver,105,0,21,177,74
+2010,Delhi 2010,Silver,106,1,21,177,74
+2010,Delhi 2010,Silver,107,2,21,177,74
+2010,Delhi 2010,Silver,108,3,21,177,74
+2010,Delhi 2010,Silver,109,4,21,177,74
+2010,Delhi 2010,Silver,110,0,22,177,74
+2010,Delhi 2010,Silver,111,1,22,177,74
+2010,Delhi 2010,Silver,112,2,22,177,74
+2010,Delhi 2010,Silver,113,3,22,177,74
+2010,Delhi 2010,Silver,114,4,22,177,74
+2010,Delhi 2010,Silver,115,0,23,177,74
+2010,Delhi 2010,Silver,116,1,23,177,74
+2010,Delhi 2010,Silver,117,2,23,177,74
+2010,Delhi 2010,Silver,118,3,23,177,74
+2010,Delhi 2010,Silver,119,4,23,177,74
+2010,Delhi 2010,Silver,120,0,24,177,74
+2010,Delhi 2010,Silver,121,1,24,177,74
+2010,Delhi 2010,Silver,122,2,24,177,74
+2010,Delhi 2010,Silver,123,3,24,177,74
+2010,Delhi 2010,Silver,124,4,24,177,74
+2010,Delhi 2010,Silver,125,0,25,177,74
+2010,Delhi 2010,Silver,126,1,25,177,74
+2010,Delhi 2010,Silver,127,2,25,177,74
+2010,Delhi 2010,Silver,128,3,25,177,74
+2010,Delhi 2010,Bronze,129,4,25,177,74
+2010,Delhi 2010,Bronze,130,0,26,177,74
+2010,Delhi 2010,Bronze,131,1,26,177,74
+2010,Delhi 2010,Bronze,132,2,26,177,74
+2010,Delhi 2010,Bronze,133,3,26,177,74
+2010,Delhi 2010,Bronze,134,4,26,177,74
+2010,Delhi 2010,Bronze,135,0,27,177,74
+2010,Delhi 2010,Bronze,136,1,27,177,74
+2010,Delhi 2010,Bronze,137,2,27,177,74
+2010,Delhi 2010,Bronze,138,3,27,177,74
+2010,Delhi 2010,Bronze,139,4,27,177,74
+2010,Delhi 2010,Bronze,140,0,28,177,74
+2010,Delhi 2010,Bronze,141,1,28,177,74
+2010,Delhi 2010,Bronze,142,2,28,177,74
+2010,Delhi 2010,Bronze,143,3,28,177,74
+2010,Delhi 2010,Bronze,144,4,28,177,74
+2010,Delhi 2010,Bronze,145,0,29,177,74
+2010,Delhi 2010,Bronze,146,1,29,177,74
+2010,Delhi 2010,Bronze,147,2,29,177,74
+2010,Delhi 2010,Bronze,148,3,29,177,74
+2010,Delhi 2010,Bronze,149,4,29,177,74
+2010,Delhi 2010,Bronze,150,0,30,177,74
+2010,Delhi 2010,Bronze,151,1,30,177,74
+2010,Delhi 2010,Bronze,152,2,30,177,74
+2010,Delhi 2010,Bronze,153,3,30,177,74
+2010,Delhi 2010,Bronze,154,4,30,177,74
+2010,Delhi 2010,Bronze,155,0,31,177,74
+2010,Delhi 2010,Bronze,156,1,31,177,74
+2010,Delhi 2010,Bronze,157,2,31,177,74
+2010,Delhi 2010,Bronze,158,3,31,177,74
+2010,Delhi 2010,Bronze,159,4,31,177,74
+2010,Delhi 2010,Bronze,160,0,32,177,74
+2010,Delhi 2010,Bronze,161,1,32,177,74
+2010,Delhi 2010,Bronze,162,2,32,177,74
+2010,Delhi 2010,Bronze,163,3,32,177,74
+2010,Delhi 2010,Bronze,164,4,32,177,74
+2010,Delhi 2010,Bronze,165,0,33,177,74
+2010,Delhi 2010,Bronze,166,1,33,177,74
+2010,Delhi 2010,Bronze,167,2,33,177,74
+2010,Delhi 2010,Bronze,168,3,33,177,74
+2010,Delhi 2010,Bronze,169,4,33,177,74
+2010,Delhi 2010,Bronze,170,0,34,177,74
+2010,Delhi 2010,Bronze,171,1,34,177,74
+2010,Delhi 2010,Bronze,172,2,34,177,74
+2010,Delhi 2010,Bronze,173,3,34,177,74
+2010,Delhi 2010,Bronze,174,4,34,177,74
+2010,Delhi 2010,Bronze,175,0,35,177,74
+2010,Delhi 2010,Bronze,176,1,35,177,74
+2014,Glasgow 2014,Gold,0,0,0,137,49
+2014,Glasgow 2014,Gold,1,1,0,137,49
+2014,Glasgow 2014,Gold,2,2,0,137,49
+2014,Glasgow 2014,Gold,3,3,0,137,49
+2014,Glasgow 2014,Gold,4,4,0,137,49
+2014,Glasgow 2014,Gold,5,0,1,137,49
+2014,Glasgow 2014,Gold,6,1,1,137,49
+2014,Glasgow 2014,Gold,7,2,1,137,49
+2014,Glasgow 2014,Gold,8,3,1,137,49
+2014,Glasgow 2014,Gold,9,4,1,137,49
+2014,Glasgow 2014,Gold,10,0,2,137,49
+2014,Glasgow 2014,Gold,11,1,2,137,49
+2014,Glasgow 2014,Gold,12,2,2,137,49
+2014,Glasgow 2014,Gold,13,3,2,137,49
+2014,Glasgow 2014,Gold,14,4,2,137,49
+2014,Glasgow 2014,Gold,15,0,3,137,49
+2014,Glasgow 2014,Gold,16,1,3,137,49
+2014,Glasgow 2014,Gold,17,2,3,137,49
+2014,Glasgow 2014,Gold,18,3,3,137,49
+2014,Glasgow 2014,Gold,19,4,3,137,49
+2014,Glasgow 2014,Gold,20,0,4,137,49
+2014,Glasgow 2014,Gold,21,1,4,137,49
+2014,Glasgow 2014,Gold,22,2,4,137,49
+2014,Glasgow 2014,Gold,23,3,4,137,49
+2014,Glasgow 2014,Gold,24,4,4,137,49
+2014,Glasgow 2014,Gold,25,0,5,137,49
+2014,Glasgow 2014,Gold,26,1,5,137,49
+2014,Glasgow 2014,Gold,27,2,5,137,49
+2014,Glasgow 2014,Gold,28,3,5,137,49
+2014,Glasgow 2014,Gold,29,4,5,137,49
+2014,Glasgow 2014,Gold,30,0,6,137,49
+2014,Glasgow 2014,Gold,31,1,6,137,49
+2014,Glasgow 2014,Gold,32,2,6,137,49
+2014,Glasgow 2014,Gold,33,3,6,137,49
+2014,Glasgow 2014,Gold,34,4,6,137,49
+2014,Glasgow 2014,Gold,35,0,7,137,49
+2014,Glasgow 2014,Gold,36,1,7,137,49
+2014,Glasgow 2014,Gold,37,2,7,137,49
+2014,Glasgow 2014,Gold,38,3,7,137,49
+2014,Glasgow 2014,Gold,39,4,7,137,49
+2014,Glasgow 2014,Gold,40,0,8,137,49
+2014,Glasgow 2014,Gold,41,1,8,137,49
+2014,Glasgow 2014,Gold,42,2,8,137,49
+2014,Glasgow 2014,Gold,43,3,8,137,49
+2014,Glasgow 2014,Gold,44,4,8,137,49
+2014,Glasgow 2014,Gold,45,0,9,137,49
+2014,Glasgow 2014,Gold,46,1,9,137,49
+2014,Glasgow 2014,Gold,47,2,9,137,49
+2014,Glasgow 2014,Gold,48,3,9,137,49
+2014,Glasgow 2014,Silver,49,4,9,137,49
+2014,Glasgow 2014,Silver,50,0,10,137,49
+2014,Glasgow 2014,Silver,51,1,10,137,49
+2014,Glasgow 2014,Silver,52,2,10,137,49
+2014,Glasgow 2014,Silver,53,3,10,137,49
+2014,Glasgow 2014,Silver,54,4,10,137,49
+2014,Glasgow 2014,Silver,55,0,11,137,49
+2014,Glasgow 2014,Silver,56,1,11,137,49
+2014,Glasgow 2014,Silver,57,2,11,137,49
+2014,Glasgow 2014,Silver,58,3,11,137,49
+2014,Glasgow 2014,Silver,59,4,11,137,49
+2014,Glasgow 2014,Silver,60,0,12,137,49
+2014,Glasgow 2014,Silver,61,1,12,137,49
+2014,Glasgow 2014,Silver,62,2,12,137,49
+2014,Glasgow 2014,Silver,63,3,12,137,49
+2014,Glasgow 2014,Silver,64,4,12,137,49
+2014,Glasgow 2014,Silver,65,0,13,137,49
+2014,Glasgow 2014,Silver,66,1,13,137,49
+2014,Glasgow 2014,Silver,67,2,13,137,49
+2014,Glasgow 2014,Silver,68,3,13,137,49
+2014,Glasgow 2014,Silver,69,4,13,137,49
+2014,Glasgow 2014,Silver,70,0,14,137,49
+2014,Glasgow 2014,Silver,71,1,14,137,49
+2014,Glasgow 2014,Silver,72,2,14,137,49
+2014,Glasgow 2014,Silver,73,3,14,137,49
+2014,Glasgow 2014,Silver,74,4,14,137,49
+2014,Glasgow 2014,Silver,75,0,15,137,49
+2014,Glasgow 2014,Silver,76,1,15,137,49
+2014,Glasgow 2014,Silver,77,2,15,137,49
+2014,Glasgow 2014,Silver,78,3,15,137,49
+2014,Glasgow 2014,Silver,79,4,15,137,49
+2014,Glasgow 2014,Silver,80,0,16,137,49
+2014,Glasgow 2014,Silver,81,1,16,137,49
+2014,Glasgow 2014,Silver,82,2,16,137,49
+2014,Glasgow 2014,Silver,83,3,16,137,49
+2014,Glasgow 2014,Silver,84,4,16,137,49
+2014,Glasgow 2014,Silver,85,0,17,137,49
+2014,Glasgow 2014,Silver,86,1,17,137,49
+2014,Glasgow 2014,Silver,87,2,17,137,49
+2014,Glasgow 2014,Silver,88,3,17,137,49
+2014,Glasgow 2014,Silver,89,4,17,137,49
+2014,Glasgow 2014,Silver,90,0,18,137,49
+2014,Glasgow 2014,Bronze,91,1,18,137,49
+2014,Glasgow 2014,Bronze,92,2,18,137,49
+2014,Glasgow 2014,Bronze,93,3,18,137,49
+2014,Glasgow 2014,Bronze,94,4,18,137,49
+2014,Glasgow 2014,Bronze,95,0,19,137,49
+2014,Glasgow 2014,Bronze,96,1,19,137,49
+2014,Glasgow 2014,Bronze,97,2,19,137,49
+2014,Glasgow 2014,Bronze,98,3,19,137,49
+2014,Glasgow 2014,Bronze,99,4,19,137,49
+2014,Glasgow 2014,Bronze,100,0,20,137,49
+2014,Glasgow 2014,Bronze,101,1,20,137,49
+2014,Glasgow 2014,Bronze,102,2,20,137,49
+2014,Glasgow 2014,Bronze,103,3,20,137,49
+2014,Glasgow 2014,Bronze,104,4,20,137,49
+2014,Glasgow 2014,Bronze,105,0,21,137,49
+2014,Glasgow 2014,Bronze,106,1,21,137,49
+2014,Glasgow 2014,Bronze,107,2,21,137,49
+2014,Glasgow 2014,Bronze,108,3,21,137,49
+2014,Glasgow 2014,Bronze,109,4,21,137,49
+2014,Glasgow 2014,Bronze,110,0,22,137,49
+2014,Glasgow 2014,Bronze,111,1,22,137,49
+2014,Glasgow 2014,Bronze,112,2,22,137,49
+2014,Glasgow 2014,Bronze,113,3,22,137,49
+2014,Glasgow 2014,Bronze,114,4,22,137,49
+2014,Glasgow 2014,Bronze,115,0,23,137,49
+2014,Glasgow 2014,Bronze,116,1,23,137,49
+2014,Glasgow 2014,Bronze,117,2,23,137,49
+2014,Glasgow 2014,Bronze,118,3,23,137,49
+2014,Glasgow 2014,Bronze,119,4,23,137,49
+2014,Glasgow 2014,Bronze,120,0,24,137,49
+2014,Glasgow 2014,Bronze,121,1,24,137,49
+2014,Glasgow 2014,Bronze,122,2,24,137,49
+2014,Glasgow 2014,Bronze,123,3,24,137,49
+2014,Glasgow 2014,Bronze,124,4,24,137,49
+2014,Glasgow 2014,Bronze,125,0,25,137,49
+2014,Glasgow 2014,Bronze,126,1,25,137,49
+2014,Glasgow 2014,Bronze,127,2,25,137,49
+2014,Glasgow 2014,Bronze,128,3,25,137,49
+2014,Glasgow 2014,Bronze,129,4,25,137,49
+2014,Glasgow 2014,Bronze,130,0,26,137,49
+2014,Glasgow 2014,Bronze,131,1,26,137,49
+2014,Glasgow 2014,Bronze,132,2,26,137,49
+2014,Glasgow 2014,Bronze,133,3,26,137,49
+2014,Glasgow 2014,Bronze,134,4,26,137,49
+2014,Glasgow 2014,Bronze,135,0,27,137,49
+2014,Glasgow 2014,Bronze,136,1,27,137,49
+2018,Gold Coast 2018,Gold,0,0,0,198,80
+2018,Gold Coast 2018,Gold,1,1,0,198,80
+2018,Gold Coast 2018,Gold,2,2,0,198,80
+2018,Gold Coast 2018,Gold,3,3,0,198,80
+2018,Gold Coast 2018,Gold,4,4,0,198,80
+2018,Gold Coast 2018,Gold,5,0,1,198,80
+2018,Gold Coast 2018,Gold,6,1,1,198,80
+2018,Gold Coast 2018,Gold,7,2,1,198,80
+2018,Gold Coast 2018,Gold,8,3,1,198,80
+2018,Gold Coast 2018,Gold,9,4,1,198,80
+2018,Gold Coast 2018,Gold,10,0,2,198,80
+2018,Gold Coast 2018,Gold,11,1,2,198,80
+2018,Gold Coast 2018,Gold,12,2,2,198,80
+2018,Gold Coast 2018,Gold,13,3,2,198,80
+2018,Gold Coast 2018,Gold,14,4,2,198,80
+2018,Gold Coast 2018,Gold,15,0,3,198,80
+2018,Gold Coast 2018,Gold,16,1,3,198,80
+2018,Gold Coast 2018,Gold,17,2,3,198,80
+2018,Gold Coast 2018,Gold,18,3,3,198,80
+2018,Gold Coast 2018,Gold,19,4,3,198,80
+2018,Gold Coast 2018,Gold,20,0,4,198,80
+2018,Gold Coast 2018,Gold,21,1,4,198,80
+2018,Gold Coast 2018,Gold,22,2,4,198,80
+2018,Gold Coast 2018,Gold,23,3,4,198,80
+2018,Gold Coast 2018,Gold,24,4,4,198,80
+2018,Gold Coast 2018,Gold,25,0,5,198,80
+2018,Gold Coast 2018,Gold,26,1,5,198,80
+2018,Gold Coast 2018,Gold,27,2,5,198,80
+2018,Gold Coast 2018,Gold,28,3,5,198,80
+2018,Gold Coast 2018,Gold,29,4,5,198,80
+2018,Gold Coast 2018,Gold,30,0,6,198,80
+2018,Gold Coast 2018,Gold,31,1,6,198,80
+2018,Gold Coast 2018,Gold,32,2,6,198,80
+2018,Gold Coast 2018,Gold,33,3,6,198,80
+2018,Gold Coast 2018,Gold,34,4,6,198,80
+2018,Gold Coast 2018,Gold,35,0,7,198,80
+2018,Gold Coast 2018,Gold,36,1,7,198,80
+2018,Gold Coast 2018,Gold,37,2,7,198,80
+2018,Gold Coast 2018,Gold,38,3,7,198,80
+2018,Gold Coast 2018,Gold,39,4,7,198,80
+2018,Gold Coast 2018,Gold,40,0,8,198,80
+2018,Gold Coast 2018,Gold,41,1,8,198,80
+2018,Gold Coast 2018,Gold,42,2,8,198,80
+2018,Gold Coast 2018,Gold,43,3,8,198,80
+2018,Gold Coast 2018,Gold,44,4,8,198,80
+2018,Gold Coast 2018,Gold,45,0,9,198,80
+2018,Gold Coast 2018,Gold,46,1,9,198,80
+2018,Gold Coast 2018,Gold,47,2,9,198,80
+2018,Gold Coast 2018,Gold,48,3,9,198,80
+2018,Gold Coast 2018,Gold,49,4,9,198,80
+2018,Gold Coast 2018,Gold,50,0,10,198,80
+2018,Gold Coast 2018,Gold,51,1,10,198,80
+2018,Gold Coast 2018,Gold,52,2,10,198,80
+2018,Gold Coast 2018,Gold,53,3,10,198,80
+2018,Gold Coast 2018,Gold,54,4,10,198,80
+2018,Gold Coast 2018,Gold,55,0,11,198,80
+2018,Gold Coast 2018,Gold,56,1,11,198,80
+2018,Gold Coast 2018,Gold,57,2,11,198,80
+2018,Gold Coast 2018,Gold,58,3,11,198,80
+2018,Gold Coast 2018,Gold,59,4,11,198,80
+2018,Gold Coast 2018,Gold,60,0,12,198,80
+2018,Gold Coast 2018,Gold,61,1,12,198,80
+2018,Gold Coast 2018,Gold,62,2,12,198,80
+2018,Gold Coast 2018,Gold,63,3,12,198,80
+2018,Gold Coast 2018,Gold,64,4,12,198,80
+2018,Gold Coast 2018,Gold,65,0,13,198,80
+2018,Gold Coast 2018,Gold,66,1,13,198,80
+2018,Gold Coast 2018,Gold,67,2,13,198,80
+2018,Gold Coast 2018,Gold,68,3,13,198,80
+2018,Gold Coast 2018,Gold,69,4,13,198,80
+2018,Gold Coast 2018,Gold,70,0,14,198,80
+2018,Gold Coast 2018,Gold,71,1,14,198,80
+2018,Gold Coast 2018,Gold,72,2,14,198,80
+2018,Gold Coast 2018,Gold,73,3,14,198,80
+2018,Gold Coast 2018,Gold,74,4,14,198,80
+2018,Gold Coast 2018,Gold,75,0,15,198,80
+2018,Gold Coast 2018,Gold,76,1,15,198,80
+2018,Gold Coast 2018,Gold,77,2,15,198,80
+2018,Gold Coast 2018,Gold,78,3,15,198,80
+2018,Gold Coast 2018,Gold,79,4,15,198,80
+2018,Gold Coast 2018,Silver,80,0,16,198,80
+2018,Gold Coast 2018,Silver,81,1,16,198,80
+2018,Gold Coast 2018,Silver,82,2,16,198,80
+2018,Gold Coast 2018,Silver,83,3,16,198,80
+2018,Gold Coast 2018,Silver,84,4,16,198,80
+2018,Gold Coast 2018,Silver,85,0,17,198,80
+2018,Gold Coast 2018,Silver,86,1,17,198,80
+2018,Gold Coast 2018,Silver,87,2,17,198,80
+2018,Gold Coast 2018,Silver,88,3,17,198,80
+2018,Gold Coast 2018,Silver,89,4,17,198,80
+2018,Gold Coast 2018,Silver,90,0,18,198,80
+2018,Gold Coast 2018,Silver,91,1,18,198,80
+2018,Gold Coast 2018,Silver,92,2,18,198,80
+2018,Gold Coast 2018,Silver,93,3,18,198,80
+2018,Gold Coast 2018,Silver,94,4,18,198,80
+2018,Gold Coast 2018,Silver,95,0,19,198,80
+2018,Gold Coast 2018,Silver,96,1,19,198,80
+2018,Gold Coast 2018,Silver,97,2,19,198,80
+2018,Gold Coast 2018,Silver,98,3,19,198,80
+2018,Gold Coast 2018,Silver,99,4,19,198,80
+2018,Gold Coast 2018,Silver,100,0,20,198,80
+2018,Gold Coast 2018,Silver,101,1,20,198,80
+2018,Gold Coast 2018,Silver,102,2,20,198,80
+2018,Gold Coast 2018,Silver,103,3,20,198,80
+2018,Gold Coast 2018,Silver,104,4,20,198,80
+2018,Gold Coast 2018,Silver,105,0,21,198,80
+2018,Gold Coast 2018,Silver,106,1,21,198,80
+2018,Gold Coast 2018,Silver,107,2,21,198,80
+2018,Gold Coast 2018,Silver,108,3,21,198,80
+2018,Gold Coast 2018,Silver,109,4,21,198,80
+2018,Gold Coast 2018,Silver,110,0,22,198,80
+2018,Gold Coast 2018,Silver,111,1,22,198,80
+2018,Gold Coast 2018,Silver,112,2,22,198,80
+2018,Gold Coast 2018,Silver,113,3,22,198,80
+2018,Gold Coast 2018,Silver,114,4,22,198,80
+2018,Gold Coast 2018,Silver,115,0,23,198,80
+2018,Gold Coast 2018,Silver,116,1,23,198,80
+2018,Gold Coast 2018,Silver,117,2,23,198,80
+2018,Gold Coast 2018,Silver,118,3,23,198,80
+2018,Gold Coast 2018,Silver,119,4,23,198,80
+2018,Gold Coast 2018,Silver,120,0,24,198,80
+2018,Gold Coast 2018,Silver,121,1,24,198,80
+2018,Gold Coast 2018,Silver,122,2,24,198,80
+2018,Gold Coast 2018,Silver,123,3,24,198,80
+2018,Gold Coast 2018,Silver,124,4,24,198,80
+2018,Gold Coast 2018,Silver,125,0,25,198,80
+2018,Gold Coast 2018,Silver,126,1,25,198,80
+2018,Gold Coast 2018,Silver,127,2,25,198,80
+2018,Gold Coast 2018,Silver,128,3,25,198,80
+2018,Gold Coast 2018,Silver,129,4,25,198,80
+2018,Gold Coast 2018,Silver,130,0,26,198,80
+2018,Gold Coast 2018,Silver,131,1,26,198,80
+2018,Gold Coast 2018,Silver,132,2,26,198,80
+2018,Gold Coast 2018,Silver,133,3,26,198,80
+2018,Gold Coast 2018,Silver,134,4,26,198,80
+2018,Gold Coast 2018,Silver,135,0,27,198,80
+2018,Gold Coast 2018,Silver,136,1,27,198,80
+2018,Gold Coast 2018,Silver,137,2,27,198,80
+2018,Gold Coast 2018,Silver,138,3,27,198,80
+2018,Gold Coast 2018,Bronze,139,4,27,198,80
+2018,Gold Coast 2018,Bronze,140,0,28,198,80
+2018,Gold Coast 2018,Bronze,141,1,28,198,80
+2018,Gold Coast 2018,Bronze,142,2,28,198,80
+2018,Gold Coast 2018,Bronze,143,3,28,198,80
+2018,Gold Coast 2018,Bronze,144,4,28,198,80
+2018,Gold Coast 2018,Bronze,145,0,29,198,80
+2018,Gold Coast 2018,Bronze,146,1,29,198,80
+2018,Gold Coast 2018,Bronze,147,2,29,198,80
+2018,Gold Coast 2018,Bronze,148,3,29,198,80
+2018,Gold Coast 2018,Bronze,149,4,29,198,80
+2018,Gold Coast 2018,Bronze,150,0,30,198,80
+2018,Gold Coast 2018,Bronze,151,1,30,198,80
+2018,Gold Coast 2018,Bronze,152,2,30,198,80
+2018,Gold Coast 2018,Bronze,153,3,30,198,80
+2018,Gold Coast 2018,Bronze,154,4,30,198,80
+2018,Gold Coast 2018,Bronze,155,0,31,198,80
+2018,Gold Coast 2018,Bronze,156,1,31,198,80
+2018,Gold Coast 2018,Bronze,157,2,31,198,80
+2018,Gold Coast 2018,Bronze,158,3,31,198,80
+2018,Gold Coast 2018,Bronze,159,4,31,198,80
+2018,Gold Coast 2018,Bronze,160,0,32,198,80
+2018,Gold Coast 2018,Bronze,161,1,32,198,80
+2018,Gold Coast 2018,Bronze,162,2,32,198,80
+2018,Gold Coast 2018,Bronze,163,3,32,198,80
+2018,Gold Coast 2018,Bronze,164,4,32,198,80
+2018,Gold Coast 2018,Bronze,165,0,33,198,80
+2018,Gold Coast 2018,Bronze,166,1,33,198,80
+2018,Gold Coast 2018,Bronze,167,2,33,198,80
+2018,Gold Coast 2018,Bronze,168,3,33,198,80
+2018,Gold Coast 2018,Bronze,169,4,33,198,80
+2018,Gold Coast 2018,Bronze,170,0,34,198,80
+2018,Gold Coast 2018,Bronze,171,1,34,198,80
+2018,Gold Coast 2018,Bronze,172,2,34,198,80
+2018,Gold Coast 2018,Bronze,173,3,34,198,80
+2018,Gold Coast 2018,Bronze,174,4,34,198,80
+2018,Gold Coast 2018,Bronze,175,0,35,198,80
+2018,Gold Coast 2018,Bronze,176,1,35,198,80
+2018,Gold Coast 2018,Bronze,177,2,35,198,80
+2018,Gold Coast 2018,Bronze,178,3,35,198,80
+2018,Gold Coast 2018,Bronze,179,4,35,198,80
+2018,Gold Coast 2018,Bronze,180,0,36,198,80
+2018,Gold Coast 2018,Bronze,181,1,36,198,80
+2018,Gold Coast 2018,Bronze,182,2,36,198,80
+2018,Gold Coast 2018,Bronze,183,3,36,198,80
+2018,Gold Coast 2018,Bronze,184,4,36,198,80
+2018,Gold Coast 2018,Bronze,185,0,37,198,80
+2018,Gold Coast 2018,Bronze,186,1,37,198,80
+2018,Gold Coast 2018,Bronze,187,2,37,198,80
+2018,Gold Coast 2018,Bronze,188,3,37,198,80
+2018,Gold Coast 2018,Bronze,189,4,37,198,80
+2018,Gold Coast 2018,Bronze,190,0,38,198,80
+2018,Gold Coast 2018,Bronze,191,1,38,198,80
+2018,Gold Coast 2018,Bronze,192,2,38,198,80
+2018,Gold Coast 2018,Bronze,193,3,38,198,80
+2018,Gold Coast 2018,Bronze,194,4,38,198,80
+2018,Gold Coast 2018,Bronze,195,0,39,198,80
+2018,Gold Coast 2018,Bronze,196,1,39,198,80
+2018,Gold Coast 2018,Bronze,197,2,39,198,80
+2022,Birmingham 2022,Gold,0,0,0,180,67
+2022,Birmingham 2022,Gold,1,1,0,180,67
+2022,Birmingham 2022,Gold,2,2,0,180,67
+2022,Birmingham 2022,Gold,3,3,0,180,67
+2022,Birmingham 2022,Gold,4,4,0,180,67
+2022,Birmingham 2022,Gold,5,0,1,180,67
+2022,Birmingham 2022,Gold,6,1,1,180,67
+2022,Birmingham 2022,Gold,7,2,1,180,67
+2022,Birmingham 2022,Gold,8,3,1,180,67
+2022,Birmingham 2022,Gold,9,4,1,180,67
+2022,Birmingham 2022,Gold,10,0,2,180,67
+2022,Birmingham 2022,Gold,11,1,2,180,67
+2022,Birmingham 2022,Gold,12,2,2,180,67
+2022,Birmingham 2022,Gold,13,3,2,180,67
+2022,Birmingham 2022,Gold,14,4,2,180,67
+2022,Birmingham 2022,Gold,15,0,3,180,67
+2022,Birmingham 2022,Gold,16,1,3,180,67
+2022,Birmingham 2022,Gold,17,2,3,180,67
+2022,Birmingham 2022,Gold,18,3,3,180,67
+2022,Birmingham 2022,Gold,19,4,3,180,67
+2022,Birmingham 2022,Gold,20,0,4,180,67
+2022,Birmingham 2022,Gold,21,1,4,180,67
+2022,Birmingham 2022,Gold,22,2,4,180,67
+2022,Birmingham 2022,Gold,23,3,4,180,67
+2022,Birmingham 2022,Gold,24,4,4,180,67
+2022,Birmingham 2022,Gold,25,0,5,180,67
+2022,Birmingham 2022,Gold,26,1,5,180,67
+2022,Birmingham 2022,Gold,27,2,5,180,67
+2022,Birmingham 2022,Gold,28,3,5,180,67
+2022,Birmingham 2022,Gold,29,4,5,180,67
+2022,Birmingham 2022,Gold,30,0,6,180,67
+2022,Birmingham 2022,Gold,31,1,6,180,67
+2022,Birmingham 2022,Gold,32,2,6,180,67
+2022,Birmingham 2022,Gold,33,3,6,180,67
+2022,Birmingham 2022,Gold,34,4,6,180,67
+2022,Birmingham 2022,Gold,35,0,7,180,67
+2022,Birmingham 2022,Gold,36,1,7,180,67
+2022,Birmingham 2022,Gold,37,2,7,180,67
+2022,Birmingham 2022,Gold,38,3,7,180,67
+2022,Birmingham 2022,Gold,39,4,7,180,67
+2022,Birmingham 2022,Gold,40,0,8,180,67
+2022,Birmingham 2022,Gold,41,1,8,180,67
+2022,Birmingham 2022,Gold,42,2,8,180,67
+2022,Birmingham 2022,Gold,43,3,8,180,67
+2022,Birmingham 2022,Gold,44,4,8,180,67
+2022,Birmingham 2022,Gold,45,0,9,180,67
+2022,Birmingham 2022,Gold,46,1,9,180,67
+2022,Birmingham 2022,Gold,47,2,9,180,67
+2022,Birmingham 2022,Gold,48,3,9,180,67
+2022,Birmingham 2022,Gold,49,4,9,180,67
+2022,Birmingham 2022,Gold,50,0,10,180,67
+2022,Birmingham 2022,Gold,51,1,10,180,67
+2022,Birmingham 2022,Gold,52,2,10,180,67
+2022,Birmingham 2022,Gold,53,3,10,180,67
+2022,Birmingham 2022,Gold,54,4,10,180,67
+2022,Birmingham 2022,Gold,55,0,11,180,67
+2022,Birmingham 2022,Gold,56,1,11,180,67
+2022,Birmingham 2022,Gold,57,2,11,180,67
+2022,Birmingham 2022,Gold,58,3,11,180,67
+2022,Birmingham 2022,Gold,59,4,11,180,67
+2022,Birmingham 2022,Gold,60,0,12,180,67
+2022,Birmingham 2022,Gold,61,1,12,180,67
+2022,Birmingham 2022,Gold,62,2,12,180,67
+2022,Birmingham 2022,Gold,63,3,12,180,67
+2022,Birmingham 2022,Gold,64,4,12,180,67
+2022,Birmingham 2022,Gold,65,0,13,180,67
+2022,Birmingham 2022,Gold,66,1,13,180,67
+2022,Birmingham 2022,Silver,67,2,13,180,67
+2022,Birmingham 2022,Silver,68,3,13,180,67
+2022,Birmingham 2022,Silver,69,4,13,180,67
+2022,Birmingham 2022,Silver,70,0,14,180,67
+2022,Birmingham 2022,Silver,71,1,14,180,67
+2022,Birmingham 2022,Silver,72,2,14,180,67
+2022,Birmingham 2022,Silver,73,3,14,180,67
+2022,Birmingham 2022,Silver,74,4,14,180,67
+2022,Birmingham 2022,Silver,75,0,15,180,67
+2022,Birmingham 2022,Silver,76,1,15,180,67
+2022,Birmingham 2022,Silver,77,2,15,180,67
+2022,Birmingham 2022,Silver,78,3,15,180,67
+2022,Birmingham 2022,Silver,79,4,15,180,67
+2022,Birmingham 2022,Silver,80,0,16,180,67
+2022,Birmingham 2022,Silver,81,1,16,180,67
+2022,Birmingham 2022,Silver,82,2,16,180,67
+2022,Birmingham 2022,Silver,83,3,16,180,67
+2022,Birmingham 2022,Silver,84,4,16,180,67
+2022,Birmingham 2022,Silver,85,0,17,180,67
+2022,Birmingham 2022,Silver,86,1,17,180,67
+2022,Birmingham 2022,Silver,87,2,17,180,67
+2022,Birmingham 2022,Silver,88,3,17,180,67
+2022,Birmingham 2022,Silver,89,4,17,180,67
+2022,Birmingham 2022,Silver,90,0,18,180,67
+2022,Birmingham 2022,Silver,91,1,18,180,67
+2022,Birmingham 2022,Silver,92,2,18,180,67
+2022,Birmingham 2022,Silver,93,3,18,180,67
+2022,Birmingham 2022,Silver,94,4,18,180,67
+2022,Birmingham 2022,Silver,95,0,19,180,67
+2022,Birmingham 2022,Silver,96,1,19,180,67
+2022,Birmingham 2022,Silver,97,2,19,180,67
+2022,Birmingham 2022,Silver,98,3,19,180,67
+2022,Birmingham 2022,Silver,99,4,19,180,67
+2022,Birmingham 2022,Silver,100,0,20,180,67
+2022,Birmingham 2022,Silver,101,1,20,180,67
+2022,Birmingham 2022,Silver,102,2,20,180,67
+2022,Birmingham 2022,Silver,103,3,20,180,67
+2022,Birmingham 2022,Silver,104,4,20,180,67
+2022,Birmingham 2022,Silver,105,0,21,180,67
+2022,Birmingham 2022,Silver,106,1,21,180,67
+2022,Birmingham 2022,Silver,107,2,21,180,67
+2022,Birmingham 2022,Silver,108,3,21,180,67
+2022,Birmingham 2022,Silver,109,4,21,180,67
+2022,Birmingham 2022,Silver,110,0,22,180,67
+2022,Birmingham 2022,Silver,111,1,22,180,67
+2022,Birmingham 2022,Silver,112,2,22,180,67
+2022,Birmingham 2022,Silver,113,3,22,180,67
+2022,Birmingham 2022,Silver,114,4,22,180,67
+2022,Birmingham 2022,Silver,115,0,23,180,67
+2022,Birmingham 2022,Silver,116,1,23,180,67
+2022,Birmingham 2022,Silver,117,2,23,180,67
+2022,Birmingham 2022,Silver,118,3,23,180,67
+2022,Birmingham 2022,Silver,119,4,23,180,67
+2022,Birmingham 2022,Silver,120,0,24,180,67
+2022,Birmingham 2022,Silver,121,1,24,180,67
+2022,Birmingham 2022,Silver,122,2,24,180,67
+2022,Birmingham 2022,Silver,123,3,24,180,67
+2022,Birmingham 2022,Bronze,124,4,24,180,67
+2022,Birmingham 2022,Bronze,125,0,25,180,67
+2022,Birmingham 2022,Bronze,126,1,25,180,67
+2022,Birmingham 2022,Bronze,127,2,25,180,67
+2022,Birmingham 2022,Bronze,128,3,25,180,67
+2022,Birmingham 2022,Bronze,129,4,25,180,67
+2022,Birmingham 2022,Bronze,130,0,26,180,67
+2022,Birmingham 2022,Bronze,131,1,26,180,67
+2022,Birmingham 2022,Bronze,132,2,26,180,67
+2022,Birmingham 2022,Bronze,133,3,26,180,67
+2022,Birmingham 2022,Bronze,134,4,26,180,67
+2022,Birmingham 2022,Bronze,135,0,27,180,67
+2022,Birmingham 2022,Bronze,136,1,27,180,67
+2022,Birmingham 2022,Bronze,137,2,27,180,67
+2022,Birmingham 2022,Bronze,138,3,27,180,67
+2022,Birmingham 2022,Bronze,139,4,27,180,67
+2022,Birmingham 2022,Bronze,140,0,28,180,67
+2022,Birmingham 2022,Bronze,141,1,28,180,67
+2022,Birmingham 2022,Bronze,142,2,28,180,67
+2022,Birmingham 2022,Bronze,143,3,28,180,67
+2022,Birmingham 2022,Bronze,144,4,28,180,67
+2022,Birmingham 2022,Bronze,145,0,29,180,67
+2022,Birmingham 2022,Bronze,146,1,29,180,67
+2022,Birmingham 2022,Bronze,147,2,29,180,67
+2022,Birmingham 2022,Bronze,148,3,29,180,67
+2022,Birmingham 2022,Bronze,149,4,29,180,67
+2022,Birmingham 2022,Bronze,150,0,30,180,67
+2022,Birmingham 2022,Bronze,151,1,30,180,67
+2022,Birmingham 2022,Bronze,152,2,30,180,67
+2022,Birmingham 2022,Bronze,153,3,30,180,67
+2022,Birmingham 2022,Bronze,154,4,30,180,67
+2022,Birmingham 2022,Bronze,155,0,31,180,67
+2022,Birmingham 2022,Bronze,156,1,31,180,67
+2022,Birmingham 2022,Bronze,157,2,31,180,67
+2022,Birmingham 2022,Bronze,158,3,31,180,67
+2022,Birmingham 2022,Bronze,159,4,31,180,67
+2022,Birmingham 2022,Bronze,160,0,32,180,67
+2022,Birmingham 2022,Bronze,161,1,32,180,67
+2022,Birmingham 2022,Bronze,162,2,32,180,67
+2022,Birmingham 2022,Bronze,163,3,32,180,67
+2022,Birmingham 2022,Bronze,164,4,32,180,67
+2022,Birmingham 2022,Bronze,165,0,33,180,67
+2022,Birmingham 2022,Bronze,166,1,33,180,67
+2022,Birmingham 2022,Bronze,167,2,33,180,67
+2022,Birmingham 2022,Bronze,168,3,33,180,67
+2022,Birmingham 2022,Bronze,169,4,33,180,67
+2022,Birmingham 2022,Bronze,170,0,34,180,67
+2022,Birmingham 2022,Bronze,171,1,34,180,67
+2022,Birmingham 2022,Bronze,172,2,34,180,67
+2022,Birmingham 2022,Bronze,173,3,34,180,67
+2022,Birmingham 2022,Bronze,174,4,34,180,67
+2022,Birmingham 2022,Bronze,175,0,35,180,67
+2022,Birmingham 2022,Bronze,176,1,35,180,67
+2022,Birmingham 2022,Bronze,177,2,35,180,67
+2022,Birmingham 2022,Bronze,178,3,35,180,67
+2022,Birmingham 2022,Bronze,179,4,35,180,67
+2026,Glasgow 2026,Gold,0,0,0,171,70
+2026,Glasgow 2026,Gold,1,1,0,171,70
+2026,Glasgow 2026,Gold,2,2,0,171,70
+2026,Glasgow 2026,Gold,3,3,0,171,70
+2026,Glasgow 2026,Gold,4,4,0,171,70
+2026,Glasgow 2026,Gold,5,0,1,171,70
+2026,Glasgow 2026,Gold,6,1,1,171,70
+2026,Glasgow 2026,Gold,7,2,1,171,70
+2026,Glasgow 2026,Gold,8,3,1,171,70
+2026,Glasgow 2026,Gold,9,4,1,171,70
+2026,Glasgow 2026,Gold,10,0,2,171,70
+2026,Glasgow 2026,Gold,11,1,2,171,70
+2026,Glasgow 2026,Gold,12,2,2,171,70
+2026,Glasgow 2026,Gold,13,3,2,171,70
+2026,Glasgow 2026,Gold,14,4,2,171,70
+2026,Glasgow 2026,Gold,15,0,3,171,70
+2026,Glasgow 2026,Gold,16,1,3,171,70
+2026,Glasgow 2026,Gold,17,2,3,171,70
+2026,Glasgow 2026,Gold,18,3,3,171,70
+2026,Glasgow 2026,Gold,19,4,3,171,70
+2026,Glasgow 2026,Gold,20,0,4,171,70
+2026,Glasgow 2026,Gold,21,1,4,171,70
+2026,Glasgow 2026,Gold,22,2,4,171,70
+2026,Glasgow 2026,Gold,23,3,4,171,70
+2026,Glasgow 2026,Gold,24,4,4,171,70
+2026,Glasgow 2026,Gold,25,0,5,171,70
+2026,Glasgow 2026,Gold,26,1,5,171,70
+2026,Glasgow 2026,Gold,27,2,5,171,70
+2026,Glasgow 2026,Gold,28,3,5,171,70
+2026,Glasgow 2026,Gold,29,4,5,171,70
+2026,Glasgow 2026,Gold,30,0,6,171,70
+2026,Glasgow 2026,Gold,31,1,6,171,70
+2026,Glasgow 2026,Gold,32,2,6,171,70
+2026,Glasgow 2026,Gold,33,3,6,171,70
+2026,Glasgow 2026,Gold,34,4,6,171,70
+2026,Glasgow 2026,Gold,35,0,7,171,70
+2026,Glasgow 2026,Gold,36,1,7,171,70
+2026,Glasgow 2026,Gold,37,2,7,171,70
+2026,Glasgow 2026,Gold,38,3,7,171,70
+2026,Glasgow 2026,Gold,39,4,7,171,70
+2026,Glasgow 2026,Gold,40,0,8,171,70
+2026,Glasgow 2026,Gold,41,1,8,171,70
+2026,Glasgow 2026,Gold,42,2,8,171,70
+2026,Glasgow 2026,Gold,43,3,8,171,70
+2026,Glasgow 2026,Gold,44,4,8,171,70
+2026,Glasgow 2026,Gold,45,0,9,171,70
+2026,Glasgow 2026,Gold,46,1,9,171,70
+2026,Glasgow 2026,Gold,47,2,9,171,70
+2026,Glasgow 2026,Gold,48,3,9,171,70
+2026,Glasgow 2026,Gold,49,4,9,171,70
+2026,Glasgow 2026,Gold,50,0,10,171,70
+2026,Glasgow 2026,Gold,51,1,10,171,70
+2026,Glasgow 2026,Gold,52,2,10,171,70
+2026,Glasgow 2026,Gold,53,3,10,171,70
+2026,Glasgow 2026,Gold,54,4,10,171,70
+2026,Glasgow 2026,Gold,55,0,11,171,70
+2026,Glasgow 2026,Gold,56,1,11,171,70
+2026,Glasgow 2026,Gold,57,2,11,171,70
+2026,Glasgow 2026,Gold,58,3,11,171,70
+2026,Glasgow 2026,Gold,59,4,11,171,70
+2026,Glasgow 2026,Gold,60,0,12,171,70
+2026,Glasgow 2026,Gold,61,1,12,171,70
+2026,Glasgow 2026,Gold,62,2,12,171,70
+2026,Glasgow 2026,Gold,63,3,12,171,70
+2026,Glasgow 2026,Gold,64,4,12,171,70
+2026,Glasgow 2026,Gold,65,0,13,171,70
+2026,Glasgow 2026,Gold,66,1,13,171,70
+2026,Glasgow 2026,Gold,67,2,13,171,70
+2026,Glasgow 2026,Gold,68,3,13,171,70
+2026,Glasgow 2026,Gold,69,4,13,171,70
+2026,Glasgow 2026,Silver,70,0,14,171,70
+2026,Glasgow 2026,Silver,71,1,14,171,70
+2026,Glasgow 2026,Silver,72,2,14,171,70
+2026,Glasgow 2026,Silver,73,3,14,171,70
+2026,Glasgow 2026,Silver,74,4,14,171,70
+2026,Glasgow 2026,Silver,75,0,15,171,70
+2026,Glasgow 2026,Silver,76,1,15,171,70
+2026,Glasgow 2026,Silver,77,2,15,171,70
+2026,Glasgow 2026,Silver,78,3,15,171,70
+2026,Glasgow 2026,Silver,79,4,15,171,70
+2026,Glasgow 2026,Silver,80,0,16,171,70
+2026,Glasgow 2026,Silver,81,1,16,171,70
+2026,Glasgow 2026,Silver,82,2,16,171,70
+2026,Glasgow 2026,Silver,83,3,16,171,70
+2026,Glasgow 2026,Silver,84,4,16,171,70
+2026,Glasgow 2026,Silver,85,0,17,171,70
+2026,Glasgow 2026,Silver,86,1,17,171,70
+2026,Glasgow 2026,Silver,87,2,17,171,70
+2026,Glasgow 2026,Silver,88,3,17,171,70
+2026,Glasgow 2026,Silver,89,4,17,171,70
+2026,Glasgow 2026,Silver,90,0,18,171,70
+2026,Glasgow 2026,Silver,91,1,18,171,70
+2026,Glasgow 2026,Silver,92,2,18,171,70
+2026,Glasgow 2026,Silver,93,3,18,171,70
+2026,Glasgow 2026,Silver,94,4,18,171,70
+2026,Glasgow 2026,Silver,95,0,19,171,70
+2026,Glasgow 2026,Silver,96,1,19,171,70
+2026,Glasgow 2026,Silver,97,2,19,171,70
+2026,Glasgow 2026,Silver,98,3,19,171,70
+2026,Glasgow 2026,Silver,99,4,19,171,70
+2026,Glasgow 2026,Silver,100,0,20,171,70
+2026,Glasgow 2026,Silver,101,1,20,171,70
+2026,Glasgow 2026,Silver,102,2,20,171,70
+2026,Glasgow 2026,Silver,103,3,20,171,70
+2026,Glasgow 2026,Silver,104,4,20,171,70
+2026,Glasgow 2026,Silver,105,0,21,171,70
+2026,Glasgow 2026,Silver,106,1,21,171,70
+2026,Glasgow 2026,Silver,107,2,21,171,70
+2026,Glasgow 2026,Silver,108,3,21,171,70
+2026,Glasgow 2026,Silver,109,4,21,171,70
+2026,Glasgow 2026,Silver,110,0,22,171,70
+2026,Glasgow 2026,Silver,111,1,22,171,70
+2026,Glasgow 2026,Silver,112,2,22,171,70
+2026,Glasgow 2026,Silver,113,3,22,171,70
+2026,Glasgow 2026,Silver,114,4,22,171,70
+2026,Glasgow 2026,Bronze,115,0,23,171,70
+2026,Glasgow 2026,Bronze,116,1,23,171,70
+2026,Glasgow 2026,Bronze,117,2,23,171,70
+2026,Glasgow 2026,Bronze,118,3,23,171,70
+2026,Glasgow 2026,Bronze,119,4,23,171,70
+2026,Glasgow 2026,Bronze,120,0,24,171,70
+2026,Glasgow 2026,Bronze,121,1,24,171,70
+2026,Glasgow 2026,Bronze,122,2,24,171,70
+2026,Glasgow 2026,Bronze,123,3,24,171,70
+2026,Glasgow 2026,Bronze,124,4,24,171,70
+2026,Glasgow 2026,Bronze,125,0,25,171,70
+2026,Glasgow 2026,Bronze,126,1,25,171,70
+2026,Glasgow 2026,Bronze,127,2,25,171,70
+2026,Glasgow 2026,Bronze,128,3,25,171,70
+2026,Glasgow 2026,Bronze,129,4,25,171,70
+2026,Glasgow 2026,Bronze,130,0,26,171,70
+2026,Glasgow 2026,Bronze,131,1,26,171,70
+2026,Glasgow 2026,Bronze,132,2,26,171,70
+2026,Glasgow 2026,Bronze,133,3,26,171,70
+2026,Glasgow 2026,Bronze,134,4,26,171,70
+2026,Glasgow 2026,Bronze,135,0,27,171,70
+2026,Glasgow 2026,Bronze,136,1,27,171,70
+2026,Glasgow 2026,Bronze,137,2,27,171,70
+2026,Glasgow 2026,Bronze,138,3,27,171,70
+2026,Glasgow 2026,Bronze,139,4,27,171,70
+2026,Glasgow 2026,Bronze,140,0,28,171,70
+2026,Glasgow 2026,Bronze,141,1,28,171,70
+2026,Glasgow 2026,Bronze,142,2,28,171,70
+2026,Glasgow 2026,Bronze,143,3,28,171,70
+2026,Glasgow 2026,Bronze,144,4,28,171,70
+2026,Glasgow 2026,Bronze,145,0,29,171,70
+2026,Glasgow 2026,Bronze,146,1,29,171,70
+2026,Glasgow 2026,Bronze,147,2,29,171,70
+2026,Glasgow 2026,Bronze,148,3,29,171,70
+2026,Glasgow 2026,Bronze,149,4,29,171,70
+2026,Glasgow 2026,Bronze,150,0,30,171,70
+2026,Glasgow 2026,Bronze,151,1,30,171,70
+2026,Glasgow 2026,Bronze,152,2,30,171,70
+2026,Glasgow 2026,Bronze,153,3,30,171,70
+2026,Glasgow 2026,Bronze,154,4,30,171,70
+2026,Glasgow 2026,Bronze,155,0,31,171,70
+2026,Glasgow 2026,Bronze,156,1,31,171,70
+2026,Glasgow 2026,Bronze,157,2,31,171,70
+2026,Glasgow 2026,Bronze,158,3,31,171,70
+2026,Glasgow 2026,Bronze,159,4,31,171,70
+2026,Glasgow 2026,Bronze,160,0,32,171,70
+2026,Glasgow 2026,Bronze,161,1,32,171,70
+2026,Glasgow 2026,Bronze,162,2,32,171,70
+2026,Glasgow 2026,Bronze,163,3,32,171,70
+2026,Glasgow 2026,Bronze,164,4,32,171,70
+2026,Glasgow 2026,Bronze,165,0,33,171,70
+2026,Glasgow 2026,Bronze,166,1,33,171,70
+2026,Glasgow 2026,Bronze,167,2,33,171,70
+2026,Glasgow 2026,Bronze,168,3,33,171,70
+2026,Glasgow 2026,Bronze,169,4,33,171,70
+2026,Glasgow 2026,Bronze,170,0,34,171,70

@@ -1,0 +1,24 @@
+year,city,host_code,host,lat,lon,label,edition,events,medals_awarded,nations_medalled,top_nation,top_code,aus_gold,aus_silver,aus_bronze,aus_total,aus_rank,aus_share,aus_gold_share,aus_team,medals_per_athlete,home,km_from_canberra,total_athletes,athletes_note,aus_athlete_share,conversion
+1930,Hamilton,CAN,Canada,43.2557,-79.8711,Hamilton 1930,British Empire Games,59,165,9,England,ENG,3,4,1,8,5,0.0485,0.0508,9,0.889,Away,15767,400,,0.0225,2.16
+1934,London,ENG,England,51.5074,-0.1278,London 1934,British Empire Games,68,204,12,England,ENG,8,4,2,14,3,0.0686,0.1176,17,0.824,Away,16982,500,,0.034,2.02
+1938,Sydney,AUS,Australia,-33.8688,151.2093,Sydney 1938,British Empire Games,71,213,10,Australia,AUS,25,19,22,66,1,0.3099,0.3521,154,0.429,Home,247,464,,0.3319,0.93
+1950,Auckland,NZL,New Zealand,-36.8485,174.7633,Auckland 1950,British Empire Games,88,257,12,Australia,AUS,34,27,19,80,1,0.3113,0.3864,144,0.556,Away,2304,590,,0.2441,1.28
+1954,Vancouver,CAN,Canada,49.2827,-123.1207,Vancouver 1954,British Empire and Commonwealth Games,92,270,18,England,ENG,20,11,17,48,2,0.1778,0.2174,78,0.615,Away,12747,662,,0.1178,1.51
+1958,Cardiff,WAL,Wales,51.4816,-3.1791,Cardiff 1958,British Empire and Commonwealth Games,94,292,24,England,ENG,27,22,17,66,2,0.226,0.2872,104,0.635,Away,17172,1122,,0.0927,2.44
+1962,Perth,AUS,Australia,-31.9523,115.8613,Perth 1962,British Empire and Commonwealth Games,104,320,22,Australia,AUS,38,36,31,105,1,0.3281,0.3654,207,0.507,Home,3088,863,,0.2399,1.37
+1966,Kingston,JAM,Jamaica,17.9714,-76.7931,Kingston 1966,British Empire and Commonwealth Games,110,340,22,England,ENG,23,28,22,73,2,0.2147,0.2091,101,0.723,Away,15114,1316,includes officials,0.0767,2.8
+1970,Edinburgh,SCO,Scotland,55.9533,-3.1883,Edinburgh 1970,British Commonwealth Games,121,375,27,Australia,AUS,36,24,22,82,1,0.2187,0.2975,107,0.766,Away,16906,1744,includes officials,0.0614,3.56
+1974,Christchurch,NZL,New Zealand,-43.5321,172.6362,Christchurch 1974,British Commonwealth Games,121,374,21,Australia,AUS,29,28,25,82,1,0.2193,0.2397,162,0.506,Away,2208,1276,,0.127,1.73
+1978,Edmonton,CAN,Canada,53.5461,-113.4938,Edmonton 1978,Commonwealth Games,128,395,21,Canada,CAN,24,33,27,84,3,0.2127,0.1875,148,0.568,Away,13543,1475,,0.1003,2.12
+1982,Brisbane,AUS,Australia,-27.4698,153.0251,Brisbane 1982,Commonwealth Games,143,437,23,Australia,AUS,39,39,29,107,1,0.2449,0.2727,206,0.519,Home,944,1583,,0.1301,1.88
+1986,Edinburgh,SCO,Scotland,55.9533,-3.1883,Edinburgh 1986,Commonwealth Games,163,500,15,England,ENG,40,46,35,121,3,0.242,0.2454,227,0.533,Away,16906,1660,,0.1367,1.77
+1990,Auckland,NZL,New Zealand,-36.8485,174.7633,Auckland 1990,Commonwealth Games,206,644,29,Australia,AUS,52,54,58,164,1,0.2547,0.2524,247,0.664,Away,2304,2074,,0.1191,2.14
+1994,Victoria,CAN,Canada,48.4284,-123.3656,Victoria 1994,Commonwealth Games,217,672,33,Australia,AUS,87,52,43,182,1,0.2708,0.4009,245,0.743,Away,12689,2557,,0.0958,2.83
+1998,Kuala Lumpur,MAS,Malaysia,3.139,101.6869,Kuala Lumpur 1998,Commonwealth Games,213,670,34,Australia,AUS,80,61,57,198,1,0.2955,0.3756,318,0.623,Away,6526,3638,,0.0874,3.38
+2002,Manchester,ENG,England,53.4808,-2.2426,Manchester 2002,Commonwealth Games,282,895,39,Australia,AUS,82,62,63,207,1,0.2313,0.2908,352,0.588,Away,17007,3863,,0.0911,2.54
+2006,Melbourne,AUS,Australia,-37.8136,144.9631,Melbourne 2006,Commonwealth Games,245,744,39,Australia,AUS,84,70,67,221,1,0.297,0.3429,417,0.53,Home,467,4071,,0.1024,2.9
+2010,Delhi,IND,India,28.6139,77.209,Delhi 2010,Commonwealth Games,272,829,36,Australia,AUS,74,55,48,177,1,0.2135,0.2721,366,0.484,Away,10353,4352,,0.0841,2.54
+2014,Glasgow,SCO,Scotland,55.8642,-4.2518,Glasgow 2014,Commonwealth Games,261,824,37,England,ENG,49,42,46,137,2,0.1663,0.1877,414,0.331,Away,16966,4947,,0.0837,1.99
+2018,Gold Coast,AUS,Australia,-28.0167,153.4,Gold Coast 2018,Commonwealth Games,275,840,43,Australia,AUS,80,59,59,198,1,0.2357,0.2909,473,0.419,Home,903,4426,,0.1069,2.2
+2022,Birmingham,ENG,England,52.4862,-1.8904,Birmingham 2022,Commonwealth Games,280,877,43,Australia,AUS,67,57,56,180,1,0.2052,0.2393,429,0.42,Away,17041,4822,,0.089,2.31
+2026,Glasgow,SCO,Scotland,55.8642,-4.2518,Glasgow 2026,Commonwealth Games,216,674,45,Australia,AUS,70,45,56,171,1,0.2537,0.3241,255,0.671,Away,16966,2715,,0.0939,2.7

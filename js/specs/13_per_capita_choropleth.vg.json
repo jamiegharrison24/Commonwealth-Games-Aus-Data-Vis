@@ -1,0 +1,288 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth map of medals won per million residents at the selected Games, standardised by 2024 population (World Bank; ONS mid-2024 for the four UK nations). Classed colour scale, darker = more medals per person. Small island nations are also drawn as circles so they remain visible. Equal Earth (equal-area) projection. Region buttons re-centre and zoom the projection so small nations can be read.",
+  "width": "container",
+  "height": 540,
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "params": [
+    {
+      "name": "region",
+      "value": "World",
+      "bind": {
+        "input": "radio",
+        "options": ["World", "Caribbean", "Africa", "British Isles", "South Asia", "Pacific"],
+        "name": "Zoom to: "
+      }
+    },
+    {
+      "name": "games",
+      "value": 2026,
+      "bind": {
+        "input": "select",
+        "options": [2022, 2026],
+        "labels": ["Birmingham 2022 (full programme)", "Glasgow 2026 (10 sports)"],
+        "name": "Games: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "equalEarth",
+    "rotate": {
+      "expr": "region == 'Caribbean' ? [68, -18, 0] : region == 'Africa' ? [-20, 2, 0] : region == 'British Isles' ? [4, -54.5, 0] : region == 'South Asia' ? [-92, -14, 0] : region == 'Pacific' ? [-165, 18, 0] : [-10, 0, 0]"
+    },
+    "scale": {
+      "expr": "region == 'Caribbean' ? width * 1.25 : region == 'Africa' ? width * 0.5 : region == 'British Isles' ? width * 2.2 : region == 'South Asia' ? width * 0.66 : region == 'Pacific' ? width * 0.5 : width / 5.6"
+    },
+    "translate": {"expr": "[width / 2, height / 2]"}
+  },
+  "layer": [
+    {
+      "data": {"sphere": true},
+      "mark": {"type": "geoshape", "fill": "#eef1f1", "stroke": "#d9dedf", "strokeWidth": 0.6, "clip": true}
+    },
+    {
+      "data": {
+        "url": "data/geo/world_units.topojson",
+        "format": {"type": "topojson", "feature": "countries"}
+      },
+      "transform": [
+        {
+          "calculate": "indexof(['ACA','ACB','AIA','AUS','BGD','BHS','BLZ','BMU','BRB','BRN','BWA','CAN','CMR','COK','CYM','CYP','DMA','ENG','FJI','FLK','GAB','GGY','GHA','GIB','GMB','GRD','GUY','IMN','IND','JAM','JEY','KEN','KIR','KNA','LCA','LKA','LSO','MDV','MLT','MOZ','MSR','MUS','MWI','MYS','NAM','NFK','NGA','NIR','NIU','NRU','NZL','PAK','PNB','PNX','RWA','SCT','SGP','SHN','SLB','SLE','SWZ','SYC','TON','TTO','TUV','TZA','UGA','VCT','VGB','VUT','WLS','WSM','ZAF','ZMB'], datum.properties.GU_A3) >= 0 ? 'Commonwealth, no medal' : 'Not in the Commonwealth'",
+          "as": "member"
+        },
+        {"calculate": "datum.properties.NAME", "as": "Name"}
+      ],
+      "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 0.4, "clip": true},
+      "encoding": {
+        "fill": {
+          "field": "member",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Commonwealth, no medal", "Not in the Commonwealth"],
+            "range": ["#cfcabd", "#ebe8e1"]
+          },
+          "legend": {
+            "orient": "bottom-left",
+            "title": null,
+            "symbolType": "square",
+            "symbolSize": 140,
+            "direction": "vertical"
+          }
+        },
+        "tooltip": [{"field": "Name", "title": "Territory"}, {"field": "member", "title": "Status"}]
+      }
+    },
+    {
+      "data": {
+        "url": "data/medals_per_capita.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "per_million": "number",
+            "total": "number",
+            "population": "number",
+            "rank": "number",
+            "gold": "number",
+            "silver": "number",
+            "bronze": "number",
+            "primary": "number"
+          }
+        }
+      },
+      "transform": [
+        {"filter": "datum.year == games && datum.gu != null && datum.gu != ''"},
+        {
+          "lookup": "gu",
+          "from": {
+            "data": {
+              "url": "data/geo/world_units.topojson",
+              "format": {"type": "topojson", "feature": "countries"}
+            },
+            "key": "properties.GU_A3"
+          },
+          "as": "geo"
+        },
+        {"filter": "datum.geo != null"},
+        {
+          "calculate": "datum.per_million < 1 ? 'Under 1' : datum.per_million < 3 ? '1 to 3' : datum.per_million < 5 ? '3 to 5' : datum.per_million < 10 ? '5 to 10' : datum.per_million < 30 ? '10 to 30' : '30 or more'",
+          "as": "Medals per million people"
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 0.5, "clip": true},
+      "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+          "field": "Medals per million people",
+          "type": "ordinal",
+          "scale": {
+            "domain": ["Under 1", "1 to 3", "3 to 5", "5 to 10", "10 to 30", "30 or more"],
+            "range": ["#fff4c2", "#fedf8a", "#fdb94e", "#f0822b", "#c9531a", "#7f2f0c"]
+          },
+          "legend": {"orient": "top-left", "direction": "vertical", "symbolType": "square", "symbolSize": 150}
+        },
+        "tooltip": [
+          {"field": "nation", "title": "Nation"},
+          {"field": "total", "type": "quantitative", "title": "Medals"},
+          {"field": "rank", "type": "quantitative", "title": "Place on medal table"},
+          {
+            "field": "population",
+            "type": "quantitative",
+            "title": "Population (2024)",
+            "format": ","
+          },
+          {
+            "field": "per_million",
+            "type": "quantitative",
+            "title": "Medals per million people",
+            "format": ".1f"
+          },
+          {"field": "pop_source", "title": "Population source"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/medals_per_capita.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "per_million": "number",
+            "total": "number",
+            "population": "number",
+            "rank": "number",
+            "gold": "number",
+            "silver": "number",
+            "bronze": "number",
+            "primary": "number"
+          }
+        }
+      },
+      "transform": [
+        {"filter": "datum.year == games && datum.gu != null && datum.gu != ''"},
+        {"filter": "datum.primary == 1"},
+        {
+          "lookup": "gu",
+          "from": {
+            "data": {
+              "url": "data/unit_centroids.csv",
+              "format": {"type": "csv", "parse": {"lon": "number", "lat": "number", "bbox_area": "number"}}
+            },
+            "key": "gu",
+            "fields": ["lon", "lat", "bbox_area"]
+          }
+        },
+        {"filter": "datum.bbox_area != null && datum.bbox_area < 4"},
+        {
+          "calculate": "datum.per_million < 1 ? 'Under 1' : datum.per_million < 3 ? '1 to 3' : datum.per_million < 5 ? '3 to 5' : datum.per_million < 10 ? '5 to 10' : datum.per_million < 30 ? '10 to 30' : '30 or more'",
+          "as": "Medals per million people"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": {"expr": "region == 'World' ? 55 : 90"},
+        "stroke": "#3b3a36",
+        "strokeWidth": 0.8,
+        "opacity": 1,
+        "clip": true
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "color": {
+          "field": "Medals per million people",
+          "type": "ordinal",
+          "scale": {
+            "domain": ["Under 1", "1 to 3", "3 to 5", "5 to 10", "10 to 30", "30 or more"],
+            "range": ["#fff4c2", "#fedf8a", "#fdb94e", "#f0822b", "#c9531a", "#7f2f0c"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "nation", "title": "Nation"},
+          {"field": "total", "type": "quantitative", "title": "Medals"},
+          {
+            "field": "population",
+            "type": "quantitative",
+            "title": "Population (2024)",
+            "format": ","
+          },
+          {
+            "field": "per_million",
+            "type": "quantitative",
+            "title": "Medals per million people",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/medals_per_capita.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "per_million": "number",
+            "total": "number",
+            "population": "number",
+            "rank": "number",
+            "gold": "number",
+            "silver": "number",
+            "bronze": "number",
+            "primary": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year == games && (region == 'World' ? indexof(['AUS','ENG','NZL','CAN','IND'], datum.code) >= 0 : datum.total > 0)"
+        },
+        {"filter": "datum.primary == 1"},
+        {
+          "lookup": "gu",
+          "from": {
+            "data": {
+              "url": "data/unit_centroids.csv",
+              "format": {"type": "csv", "parse": {"lon": "number", "lat": "number", "bbox_area": "number"}}
+            },
+            "key": "gu",
+            "fields": ["lon", "lat"]
+          }
+        },
+        {
+          "calculate": "datum.nation + ' ' + (datum.per_million < 1 ? format(datum.per_million, '.2~g') : format(datum.per_million, '.1f'))",
+          "as": "lab"
+        },
+        {
+          "calculate": "region != 'World' ? toNumber(datum.lon) + (datum.code == 'ENG' ? 1.3 : datum.code == 'WAL' ? -1.6 : datum.code == 'JEY' ? 1.2 : datum.code == 'GUE' || datum.code == 'GGY' ? -1.4 : datum.code == 'IOM' ? 1.4 : datum.code == 'NIR' ? -1.0 : 0) : (datum.code == 'ENG' ? toNumber(datum.lon) - 17 : datum.code == 'CAN' ? toNumber(datum.lon) + 8 : datum.code == 'NZL' ? toNumber(datum.lon) + 3 : toNumber(datum.lon))",
+          "as": "lx"
+        },
+        {
+          "calculate": "region != 'World' ? toNumber(datum.lat) + (datum.code == 'JEY' ? -0.35 : datum.code == 'GUE' || datum.code == 'GGY' ? 0.25 : datum.code == 'ENG' ? -0.6 : 0) : (datum.code == 'ENG' ? toNumber(datum.lat) - 1 : datum.code == 'CAN' ? toNumber(datum.lat) - 6 : datum.code == 'NZL' ? toNumber(datum.lat) - 7 : toNumber(datum.lat))",
+          "as": "ly"
+        },
+        {
+          "calculate": "datum.per_million < 1 ? 'Under 1' : datum.per_million < 3 ? '1 to 3' : datum.per_million < 5 ? '3 to 5' : datum.per_million < 10 ? '5 to 10' : datum.per_million < 30 ? '10 to 30' : '30 or more'",
+          "as": "Medals per million people"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": {"expr": "region == 'World' ? 12 : 12.5"},
+        "fontWeight": 700,
+        "font": "Barlow Semi Condensed",
+        "color": "#1d1d1b",
+        "align": "center",
+        "clip": true,
+        "dy": {"expr": "region == 'World' ? 0 : -12"}
+      },
+      "encoding": {
+        "longitude": {"field": "lx", "type": "quantitative"},
+        "latitude": {"field": "ly", "type": "quantitative"},
+        "text": {"field": "lab"}
+      }
+    }
+  ]
+}

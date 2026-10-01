@@ -1,0 +1,16 @@
+home_games,home_year,kind,games,share,gold_share,team
+Sydney 1938,1938,Games before (away),London 1934,0.0686,0.1176,17
+Sydney 1938,1938,Home Games,Sydney 1938,0.3099,0.3521,154
+Sydney 1938,1938,Games after (away),Auckland 1950,0.3113,0.3864,144
+Perth 1962,1962,Games before (away),Cardiff 1958,0.226,0.2872,104
+Perth 1962,1962,Home Games,Perth 1962,0.3281,0.3654,207
+Perth 1962,1962,Games after (away),Kingston 1966,0.2147,0.2091,101
+Brisbane 1982,1982,Games before (away),Edmonton 1978,0.2127,0.1875,148
+Brisbane 1982,1982,Home Games,Brisbane 1982,0.2449,0.2727,206
+Brisbane 1982,1982,Games after (away),Edinburgh 1986,0.242,0.2454,227
+Melbourne 2006,2006,Games before (away),Manchester 2002,0.2313,0.2908,352
+Melbourne 2006,2006,Home Games,Melbourne 2006,0.297,0.3429,417
+Melbourne 2006,2006,Games after (away),Delhi 2010,0.2135,0.2721,366
+Gold Coast 2018,2018,Games before (away),Glasgow 2014,0.1663,0.1877,414
+Gold Coast 2018,2018,Home Games,Gold Coast 2018,0.2357,0.2909,473
+Gold Coast 2018,2018,Games after (away),Birmingham 2022,0.2052,0.2393,429

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Unit chart: each square is one athlete from a Commonwealth nation who won an individual Olympic athletics medal two years before a Commonwealth Games. Filled = also won a medal at that Commonwealth Games; hollow = did not (absent, injured or beaten).",
+  "width": "container",
+  "height": {"step": 22},
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "data": {
+    "url": "data/olympians_at_cg.csv",
+    "format": {"type": "csv", "parse": {"cg_year": "number", "oly_year": "number", "i": "number"}}
+  },
+  "transform": [
+    {"calculate": "datum.cg_medal == 'Won a Commonwealth medal' ? 1 : 0", "as": "won"},
+    {
+      "joinaggregate": [{"op": "sum", "field": "won", "as": "n_won"}, {"op": "count", "as": "n"}],
+      "groupby": ["cg_year"]
+    },
+    {
+      "calculate": "datum.n_won + ' of ' + datum.n + '  (' + format(datum.n_won / datum.n, '.0%') + ')'",
+      "as": "lab"
+    },
+    {"calculate": "datum.cg_year < 1994 ? 'era1' : 'era2'", "as": "era"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "cg_year",
+      "type": "ordinal",
+      "title": null,
+      "sort": "ascending",
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 12.5,
+        "labelFontWeight": 600,
+        "labelPadding": 8
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "square", "size": 150, "strokeWidth": 1.4, "opacity": 1},
+      "encoding": {
+        "x": {
+          "field": "i",
+          "type": "quantitative",
+          "title": null,
+          "scale": {"domain": [-0.8, 48]},
+          "axis": null
+        },
+        "fill": {
+          "field": "cg_medal",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Won a Commonwealth medal", "No Commonwealth medal"],
+            "range": ["#f2efe6", "#0b1620"]
+          },
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "title": null,
+            "symbolStrokeColor": "#f2efe6",
+            "symbolType": "square",
+            "symbolSize": 150
+          }
+        },
+        "stroke": {"value": "#f2efe6"},
+        "tooltip": [
+          {"field": "athlete", "title": "Athlete"},
+          {"field": "noc", "title": "Nation (Olympic code)"},
+          {"field": "event", "title": "Olympic event"},
+          {"field": "oly_year", "title": "Olympics"},
+          {"field": "oly_medal", "title": "Olympic medal"},
+          {"field": "cg_year", "title": "Next Commonwealth Games"},
+          {"field": "cg_medal", "title": "Result"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "datum.i == 0"}],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 12.5,
+        "font": "Barlow Semi Condensed",
+        "fontWeight": 600,
+        "color": "#e9ecee"
+      },
+      "encoding": {"x": {"datum": 40.5}, "text": {"field": "lab"}}
+    }
+  ]
+}

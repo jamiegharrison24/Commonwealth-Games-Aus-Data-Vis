@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Unit column chart ('medal skyline'): every one of Australia's 2,771 Commonwealth Games medals is one dot, stacked five wide above the Games at which it was won. Gold at the bottom, then silver, then bronze.",
+  "width": "container",
+  "height": 380,
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "data": {
+    "url": "data/aus_medal_units.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "k": "number",
+        "col": "number",
+        "row": "number",
+        "games_total": "number",
+        "games_gold": "number"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "circle", "size": {"expr": "width < 700 ? 5 : 26"}, "opacity": 1},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "scale": {"paddingInner": 0.28, "paddingOuter": 0.1},
+          "axis": {
+            "labelExpr": "datum.value == 1930 || datum.value == 1950 || datum.value == 1970 || datum.value == 1990 || datum.value == 2006 || datum.value == 2026 ? datum.value : '’' + substring(datum.label, 2, 4)",
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "labelFontSize": 11.5,
+            "labelPadding": 8,
+            "labelColor": "#a9b4bb",
+            "labelOverlap": "greedy"
+          }
+        },
+        "xOffset": {"field": "col", "type": "ordinal", "scale": {"domain": [0, 1, 2, 3, 4]}},
+        "y": {
+          "field": "row",
+          "type": "quantitative",
+          "axis": null,
+          "scale": {"domain": [0, 50], "nice": false}
+        },
+        "color": {
+          "field": "medal",
+          "type": "nominal",
+          "scale": {"domain": ["Gold", "Silver", "Bronze"], "range": ["#f0c13f", "#cfd6dd", "#d98a4e"]},
+          "legend": {
+            "orient": "top-left",
+            "direction": "horizontal",
+            "title": "One dot = one medal",
+            "labelColor": "#e9ecee",
+            "titleColor": "#a9b4bb",
+            "symbolSize": 70,
+            "offset": 0
+          }
+        },
+        "tooltip": [
+          {"field": "label", "title": "Games"},
+          {"field": "games_total", "title": "Australian medals"},
+          {"field": "games_gold", "title": "of which gold"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"year": 1930, "row": 4, "t": "Hamilton 1930:", "t2": "9 athletes, 8 medals"},
+          {"year": 1962, "row": 24, "t": "Perth 1962:", "t2": "first 100-medal Games"},
+          {"year": 2006, "row": 47, "t": "Melbourne 2006: 221,", "t2": "the record haul"},
+          {"year": 2026, "row": 37.5, "t": "Glasgow 2026:", "t2": "171 from 10 sports"}
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "dy": -16,
+            "fontSize": 12,
+            "fontWeight": 700,
+            "color": "#ffffff",
+            "font": "Barlow Semi Condensed",
+            "opacity": {"expr": "width < 700 ? 0 : 1"}
+          },
+          "encoding": {"text": {"field": "t"}}
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "dy": -3,
+            "fontSize": 11.5,
+            "color": "#a9b4bb",
+            "opacity": {"expr": "width < 700 ? 0 : 1"}
+          },
+          "encoding": {"text": {"field": "t2"}}
+        }
+      ],
+      "encoding": {"x": {"field": "year", "type": "ordinal"}, "y": {"field": "row", "type": "quantitative"}}
+    }
+  ]
+}

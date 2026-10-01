@@ -1,0 +1,168 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Strip plot: every individual athletics event at the Commonwealth Games since 1970 (one dot each). Vertical position = the Commonwealth winner's mark as a percentage of the Olympic champion's mark two years earlier (100% = equal; for track events time is inverted so higher is always better). The black line joins the median event at each Games. Australian winners are green.",
+  "width": "container",
+  "height": 380,
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "data": {
+    "url": "data/athletics_vs_olympics.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "cg_year": "number",
+        "oly_year": "number",
+        "pct_of_oly_gold": "number",
+        "pct_of_oly_bronze": "number",
+        "jitter": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "sexPick",
+      "value": "All",
+      "bind": {"input": "radio", "options": ["All", "Men", "Women"], "name": "Events: "}
+    }
+  ],
+  "transform": [
+    {"filter": "sexPick == 'All' || datum.sex == sexPick"},
+    {"calculate": "datum.cg_year + datum.jitter * 2.4", "as": "xj"},
+    {"calculate": "datum.cg_country == 'AUS' ? 'Australian winner' : 'Other winner'", "as": "who"},
+    {"calculate": "min(max(datum.pct_of_oly_gold, 76), 110)", "as": "pct"}
+  ],
+  "layer": [
+    {
+      "data": {"values": [{"y": 100}]},
+      "mark": {"type": "rule", "color": "#ffffff", "strokeWidth": 1, "strokeDash": [4, 3]},
+      "encoding": {"y": {"field": "y", "type": "quantitative", "scale": {"domain": [76, 110]}}}
+    },
+    {
+      "data": {
+        "values": [{"x": 1967.5, "y": 100.6, "t": "Level with the Olympic champion two years earlier"}]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 11.5,
+        "fontStyle": "italic",
+        "color": "#c5ced4"
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [1966, 2030]}},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [76, 110]}},
+        "text": {"field": "t"}
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 34, "stroke": "#0b1620", "strokeWidth": 0.6},
+      "encoding": {
+        "x": {
+          "field": "xj",
+          "type": "quantitative",
+          "title": null,
+          "scale": {"domain": [1966, 2030]},
+          "axis": {
+            "values": [
+              1970, 1974, 1978, 1982, 1986, 1990, 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022,
+              2026
+            ],
+            "format": "d",
+            "grid": false,
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "pct",
+          "type": "quantitative",
+          "title": "% of Olympic champion's mark",
+          "scale": {"domain": [76, 110]},
+          "axis": {"values": [80, 85, 90, 95, 100, 105, 110], "labelExpr": "datum.value + '%'"}
+        },
+        "color": {
+          "field": "who",
+          "type": "nominal",
+          "scale": {"domain": ["Australian winner", "Other winner"], "range": ["#2fbf87", "#6f7f8b"]},
+          "legend": {
+            "orient": "bottom-right",
+            "title": null,
+            "symbolSize": 80,
+            "fillColor": "#0b1620",
+            "padding": 6
+          }
+        },
+        "opacity": {"condition": {"test": "datum.cg_country == 'AUS'", "value": 1}, "value": 0.75},
+        "order": {"condition": {"test": "datum.cg_country == 'AUS'", "value": 1}, "value": 0},
+        "tooltip": [
+          {"field": "cg_year", "title": "Commonwealth Games"},
+          {"field": "sex", "title": "Category"},
+          {"field": "event", "title": "Event"},
+          {"field": "cg_winner", "title": "Commonwealth winner"},
+          {"field": "cg_country", "title": "Nation"},
+          {"field": "cg_mark", "title": "Winning mark"},
+          {"field": "oly_year", "title": "Previous Olympics"},
+          {"field": "oly_gold", "title": "Olympic champion"},
+          {"field": "oly_gold_mark", "title": "Olympic winning mark"},
+          {
+            "field": "pct_of_oly_gold",
+            "type": "quantitative",
+            "title": "Commonwealth winner as % of Olympic champion",
+            "format": ".1f"
+          },
+          {"field": "standard", "title": "Would have been…"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [{"op": "median", "field": "pct_of_oly_gold", "as": "med"}],
+          "groupby": ["cg_year"]
+        }
+      ],
+      "layer": [
+        {"mark": {"type": "line", "color": "#ffffff", "strokeWidth": 2.2}},
+        {
+          "mark": {"type": "tick", "color": "#ffffff", "thickness": 2.5, "size": 18, "orient": "horizontal"},
+          "encoding": {
+            "tooltip": [
+              {"field": "cg_year", "title": "Commonwealth Games"},
+              {
+                "field": "med",
+                "type": "quantitative",
+                "title": "Median event (% of Olympic champion)",
+                "format": ".1f"
+              }
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {"field": "cg_year", "type": "quantitative", "scale": {"domain": [1966, 2030]}},
+        "y": {"field": "med", "type": "quantitative", "scale": {"domain": [76, 110]}}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 2010, "y": 87.6, "t": "Delhi 2010: lowest median"},
+          {"x": 2010, "y": 86.5, "t": "(95.7%)"},
+          {"x": 1976, "y": 80.2, "t": "Women's throws trailed an"},
+          {"x": 1976, "y": 79.1, "t": "Eastern-bloc Olympic podium"}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 11.5,
+        "color": "#c5ced4",
+        "fontStyle": "italic",
+        "align": "center"
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative", "scale": {"domain": [1966, 2030]}},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [76, 110]}},
+        "text": {"field": "t"}
+      }
+    }
+  ]
+}

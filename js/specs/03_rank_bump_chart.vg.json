@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bump chart: position on the medal table (ranked by gold, then silver, then bronze) at every Games, for the four nations that have finished in the top three most often (Australia, England, Canada, New Zealand). Hover a line to isolate a nation.",
+  "width": "container",
+  "height": 330,
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "data": {
+    "url": "data/medal_tables.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "gold": "number",
+        "silver": "number",
+        "bronze": "number",
+        "total": "number",
+        "rank": "number"
+      }
+    }
+  },
+  "transform": [
+    {"filter": "indexof(['Australia','England','Canada','New Zealand'], datum.nation) >= 0"},
+    {"filter": "datum.rank <= 7"},
+    {
+      "calculate": "indexof(['Australia','England','Canada'], datum.nation) >= 0 ? datum.nation : 'Other'",
+      "as": "group"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [1928, 2034]},
+      "axis": {
+        "values": [1930, 1938, 1950, 1962, 1974, 1986, 1998, 2010, 2022, 2026],
+        "format": "d",
+        "grid": false,
+        "tickSize": 4,
+        "labelFlush": false
+      }
+    },
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "title": "Place on the medal table",
+      "scale": {"domain": [1, 7], "reverse": true, "nice": false, "zero": false},
+      "axis": {
+        "values": [1, 2, 3, 4, 5, 6, 7],
+        "grid": true,
+        "tickSize": 0,
+        "domain": false,
+        "labelExpr": "datum.value == 1 ? '1st' : datum.value == 2 ? '2nd' : datum.value == 3 ? '3rd' : datum.value + 'th'"
+      }
+    },
+    "detail": {"field": "nation"},
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": ["Australia", "England", "Canada", "Other"],
+        "range": ["#00754F", "#E8833A", "#2C6FB5", "#b5b1a6"]
+      }
+    },
+    "opacity": {"condition": {"param": "pick", "empty": true, "value": 1}, "value": 0.12}
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5, "interpolate": "linear"},
+      "encoding": {
+        "strokeWidth": {"condition": {"test": "datum.nation == 'Australia'", "value": 4}, "value": 2}
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 70, "stroke": "#faf8f3", "strokeWidth": 1.5, "opacity": 1},
+      "encoding": {
+        "tooltip": [
+          {"field": "nation", "title": "Nation"},
+          {"field": "year", "title": "Games", "format": "d"},
+          {"field": "rank", "title": "Place"},
+          {"field": "gold", "title": "Gold"},
+          {"field": "silver", "title": "Silver"},
+          {"field": "bronze", "title": "Bronze"}
+        ]
+      },
+      "params": [
+        {
+          "name": "pick",
+          "select": {"type": "point", "fields": ["nation"], "on": "mouseover", "clear": "mouseout"}
+        }
+      ]
+    },
+    {
+      "transform": [
+        {"joinaggregate": [{"op": "max", "field": "year", "as": "lastYear"}], "groupby": ["nation"]},
+        {"filter": "datum.year == datum.lastYear"}
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 9,
+        "fontSize": 13,
+        "fontWeight": 600,
+        "font": "Barlow Semi Condensed"
+      },
+      "encoding": {"text": {"field": "nation"}}
+    },
+    {
+      "data": {
+        "values": [
+          {"year": 1944, "rank": 6.3, "t": "No Games:"},
+          {"year": 1944, "rank": 6.7, "t": "World War II"},
+          {"year": 1986, "rank": 5.9, "t": "1986: 32 nations"},
+          {"year": 1986, "rank": 6.3, "t": "boycotted Edinburgh"}
+        ]
+      },
+      "mark": {"type": "text", "fontSize": 11, "fontStyle": "italic", "color": "#8c8a83", "opacity": 1},
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {"field": "rank", "type": "quantitative"},
+        "text": {"field": "t"},
+        "color": {"value": "#8c8a83"},
+        "detail": null,
+        "opacity": {"value": 1}
+      }
+    }
+  ]
+}

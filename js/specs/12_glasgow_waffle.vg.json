@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Waffle charts (small multiples): every medal awarded at Birmingham 2022 (877) and Glasgow 2026 (674), one square each, grouped by the nation that won it. The Glasgow block is shorter because the programme was cut to ten sports; Australia's green block barely shrinks.",
+  "data": {
+    "url": "data/waffle_2022_2026.csv",
+    "format": {"type": "csv", "parse": {"col": "number", "row": "number", "i": "number"}}
+  },
+  "transform": [
+    {"calculate": "upper(substring(datum.medal,0,1)) + substring(datum.medal,1)", "as": "Medal"},
+    {"joinaggregate": [{"op": "count", "as": "n_games"}], "groupby": ["games"]},
+    {"joinaggregate": [{"op": "count", "as": "n_group"}], "groupby": ["games", "group"]},
+    {
+      "calculate": "format(datum.n_group / datum.n_games, '.0%')",
+      "as": "Share of all medals at these Games"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "games",
+      "type": "nominal",
+      "title": null,
+      "sort": ["Birmingham 2022", "Glasgow 2026"],
+      "header": {
+        "labelFontSize": 16,
+        "labelAnchor": "start",
+        "labelFont": "Barlow Semi Condensed",
+        "labelFontWeight": 700
+      }
+    }
+  },
+  "spacing": 44,
+  "spec": {
+    "width": {"step": 13},
+    "height": {"step": 13},
+    "mark": {"type": "square", "size": 110, "cornerRadius": 1, "opacity": 1},
+    "encoding": {
+      "x": {"field": "col", "type": "ordinal", "axis": null},
+      "y": {"field": "row", "type": "ordinal", "axis": null},
+      "color": {
+        "field": "group",
+        "type": "nominal",
+        "scale": {
+          "domain": ["Australia", "England", "Canada", "Rest of the Commonwealth"],
+          "range": ["#00754F", "#E8833A", "#2C6FB5", "#bdb9ae"]
+        },
+        "legend": {
+          "orient": "top",
+          "direction": "horizontal",
+          "title": "One square = one medal, won by",
+          "titleLimit": 400,
+          "symbolType": "square",
+          "symbolSize": 130,
+          "labelFontSize": 13
+        }
+      },
+      "tooltip": [
+        {"field": "games", "title": "Games"},
+        {"field": "nation", "title": "Nation"},
+        {"field": "Medal"},
+        {"field": "Share of all medals at these Games"}
+      ]
+    }
+  }
+}
