@@ -2,7 +2,7 @@
 
 FIT3179 Data Visualisation 2 · Monash University · Semester 2, 2026 · Author: Jamie
 
-**Live page:** https://<your-github-username>.github.io/<repo-name>/
+**Live page:** https://jamiegharrison24.github.io/Commonwealth-Games-Aus-Data-Vis/
 
 A narrative web visualisation of how Australia came to dominate the Commonwealth Games, where its medals come from, who won them, and whether the Games have got easier. It includes 3 maps and 11 charts, all built with Vega-Lite 5, in a dark "stadium night" design with light chapters for the denser charts.
 
