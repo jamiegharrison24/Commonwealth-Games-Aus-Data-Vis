@@ -15,7 +15,6 @@ A narrative web visualisation of how Australia came to dominate the Commonwealth
 | `js/main.js` | Embeds every chart with a shared theme |
 | `js/specs/*.vg.json` | One readable Vega-Lite specification per chart |
 | `data/` | Tidy CSV data used by the charts, plus TopoJSON/GeoJSON boundaries in `data/geo/` |
-| `scripts/` | Python scripts used to collect and prepare the data |
 | `sketch/` | PDF of the hand-drawn A4 sketch |
 
 ## Charts and idioms
