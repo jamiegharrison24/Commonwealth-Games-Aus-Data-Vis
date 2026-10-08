@@ -109,6 +109,7 @@ h2 {
 .span-12 { grid-column: 1 / -1; }
 .span-8 { grid-column: span 8; }
 .span-4 { grid-column: span 4; }
+.span-3 { grid-column: span 3; }
 .span-6 { grid-column: span 6; }
 .span-5 { grid-column: span 5; }
 .span-7 { grid-column: span 7; }
@@ -159,7 +160,7 @@ figcaption.source a { color: var(--ink-2); }
 footer { background: var(--night); color: #d9d5ca; padding: 44px 0 56px; font-size: 14px; line-height: 1.55; }
 footer h3 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 22px; color: #fff; margin: 0 0 10px; letter-spacing: .02em; }
 footer a { color: #9fd8c2; }
-footer .cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
+footer .cols { display: grid; grid-template-columns: 3fr 2fr; gap: var(--gap); }
 footer ul { padding-left: 18px; margin: 0; }
 footer li { margin-bottom: 6px; }
 footer .fine { margin-top: 28px; border-top: 1px solid #3c3b37; padding-top: 14px; color: #a7a397; }
@@ -235,6 +236,7 @@ section.dark { background: var(--night); color: var(--on-night); border-bottom: 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
   .span-8, .span-4, .span-6, .span-5, .span-7 { grid-column: 1 / -1; }
+  .span-3 { grid-column: span 6; }
   .scoreboard { grid-template-columns: repeat(2, 1fr); }
   .hero-grid { grid-template-columns: 1fr; }
   .byline { text-align: left; }

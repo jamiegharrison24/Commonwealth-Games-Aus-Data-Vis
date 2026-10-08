@@ -1,0 +1,281 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Inset proportional symbol map of the six British host cities (eight Games). Circle area = Australian team places, added up over every Games held in that city. Labels give Australia's place on the medal table at each Games; gold text = Australia finished first. Equal Earth projection zoomed on Britain.",
+  "width": "container",
+  "height": 470,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "projection": {
+    "type": "equalEarth",
+    "rotate": [
+      2.6,
+      -53.7,
+      0
+    ],
+    "scale": {
+      "expr": "height * 4.75"
+    },
+    "translate": {
+      "expr": "[width / 2, height / 2]"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#13222e",
+        "stroke": null,
+        "clip": true
+      }
+    },
+    {
+      "data": {
+        "url": "data/geo/world_units.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#2b3c49",
+        "stroke": "#13222e",
+        "strokeWidth": 0.6,
+        "clip": true
+      }
+    },
+    {
+      "data": {
+        "url": "data/games.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "lat": "number",
+            "lon": "number",
+            "aus_team": "number",
+            "aus_rank": "number",
+            "aus_total": "number",
+            "km_from_canberra": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "indexof(['England','Scotland','Wales'], datum.host) >= 0"
+        },
+        {
+          "joinaggregate": [
+            {
+              "op": "sum",
+              "field": "aus_team",
+              "as": "places"
+            },
+            {
+              "op": "count",
+              "as": "n"
+            }
+          ],
+          "groupby": [
+            "city"
+          ]
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "as": "idx"
+            }
+          ],
+          "groupby": [
+            "city"
+          ],
+          "sort": [
+            {
+              "field": "year"
+            }
+          ]
+        },
+        {
+          "calculate": "datum.aus_rank == 1 ? '1st' : datum.aus_rank == 2 ? '2nd' : datum.aus_rank == 3 ? '3rd' : datum.aus_rank + 'th'",
+          "as": "place"
+        },
+        {
+          "calculate": "datum.year + ': ' + datum.place",
+          "as": "res"
+        }
+      ],
+      "layer": [
+        {
+          "transform": [
+            {
+              "filter": "datum.idx == 1"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "color": "#2fbf87",
+            "opacity": 0.85,
+            "stroke": "#0b1620",
+            "strokeWidth": 1.2,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "places",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  700
+                ],
+                "range": [
+                  0,
+                  2600
+                ],
+                "zero": true
+              },
+              "legend": {
+                "title": "Team places",
+                "values": [
+                  100,
+                  300,
+                  600
+                ],
+                "orient": "bottom-left",
+                "direction": "horizontal",
+                "symbolFillColor": "#2fbf87",
+                "symbolStrokeColor": "#0b1620",
+                "symbolOpacity": 0.85,
+                "labelColor": "#a9b4bb",
+                "titleColor": "#a9b4bb",
+                "labelFontSize": 12,
+                "titleFontSize": 12
+              }
+            },
+            "order": {
+              "field": "places",
+              "sort": "descending"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "title": "Host city"
+              },
+              {
+                "field": "n",
+                "type": "quantitative",
+                "title": "Games held"
+              },
+              {
+                "field": "places",
+                "type": "quantitative",
+                "title": "Australian team places",
+                "format": ","
+              },
+              {
+                "field": "km_from_canberra",
+                "type": "quantitative",
+                "title": "Distance from Canberra (km)",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.idx == 1"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Barlow Semi Condensed",
+            "fontSize": 13.5,
+            "fontWeight": 700,
+            "clip": true,
+            "color": "#f2efe6",
+            "align": {
+              "expr": "(indexof(['Glasgow','Manchester','Cardiff'], datum.city) >= 0 ? 'left' : 'right') == 'left' ? 'right' : 'left'"
+            },
+            "dx": {
+              "expr": "((indexof(['Glasgow','Manchester','Cardiff'], datum.city) >= 0 ? 'left' : 'right') == 'left' ? -1 : 1) * (sqrt(datum.places / 700 * 2600 / PI) + 6)"
+            },
+            "dy": {
+              "expr": "(datum.city == 'Edinburgh' ? -8 : datum.city == 'Glasgow' ? 6 : 0) + -7"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "city"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "true"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "font": "Barlow Semi Condensed",
+            "fontSize": 12.5,
+            "fontWeight": 700,
+            "clip": true,
+            "align": {
+              "expr": "(indexof(['Glasgow','Manchester','Cardiff'], datum.city) >= 0 ? 'left' : 'right') == 'left' ? 'right' : 'left'"
+            },
+            "dx": {
+              "expr": "((indexof(['Glasgow','Manchester','Cardiff'], datum.city) >= 0 ? 'left' : 'right') == 'left' ? -1 : 1) * (sqrt(datum.places / 700 * 2600 / PI) + 6)"
+            },
+            "dy": {
+              "expr": "(datum.city == 'Edinburgh' ? -8 : datum.city == 'Glasgow' ? 6 : 0) + 8 + (datum.idx - 1) * 15"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "res"
+            },
+            "color": {
+              "condition": {
+                "test": "datum.aus_rank == 1",
+                "value": "#f0c13f"
+              },
+              "value": "#a9b4bb"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

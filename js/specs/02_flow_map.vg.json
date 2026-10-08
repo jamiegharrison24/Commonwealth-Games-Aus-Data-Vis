@@ -1,275 +1,880 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Origin-destination flow map: every trip the Australian team has made to a Commonwealth Games, drawn from Canberra. Azimuthal equidistant projection centred on Canberra (clipped at 17,500 km), so every straight line is the shortest (great-circle) route and every distance from the centre is true to scale. Line width = total Australian athletes sent to that city across all Games.",
+  "description": "Origin–destination flow map of every overseas trip the Australian team has made to a Commonwealth Games, 1930–2026. Azimuthal equidistant projection centred on Canberra: every straight line from the centre is the shortest (great-circle) route and is drawn at its true length, and the dashed rings mark 5,000, 10,000 and 15,000 km. Host cities in Britain, New Zealand and western Canada are combined into one flow each. Line width = Australian team places across all Games held there; labels give how often Australia topped the medal table there. The 15,000 km ring is highlighted: Australia finished first at 11 of the 13 Games inside it and 4 of the 10 beyond it. Green dots = the five Australian host cities (home Games).",
   "width": "container",
-  "height": 560,
-  "autosize": {"type": "fit-x", "contains": "padding"},
-  "projection": {"type": "azimuthalEquidistant", "rotate": [-149.13, 35.28, 0], "clipAngle": 158},
+  "height": 580,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "projection": {
+    "type": "azimuthalEquidistant",
+    "rotate": [
+      -149.13,
+      35.28,
+      0
+    ],
+    "clipAngle": 158
+  },
   "layer": [
     {
-      "data": {"sphere": true},
-      "mark": {"type": "geoshape", "fill": "#13222e", "stroke": "#2a3b48", "strokeWidth": 0.8}
+      "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#13222e",
+        "stroke": "#2a3b48",
+        "strokeWidth": 0.8
+      }
     },
     {
       "data": {
         "url": "data/geo/world_units.topojson",
-        "format": {"type": "topojson", "feature": "countries"}
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
       },
-      "mark": {"type": "geoshape", "fill": "#2b3c49", "stroke": "#13222e", "strokeWidth": 0.3}
+      "mark": {
+        "type": "geoshape",
+        "fill": "#2b3c49",
+        "stroke": "#13222e",
+        "strokeWidth": 0.3
+      }
     },
     {
-      "data": {"url": "data/geo/distance_rings.geojson", "format": {"type": "json", "property": "features"}},
+      "data": {
+        "url": "data/geo/distance_rings.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
       "mark": {
         "type": "geoshape",
         "filled": false,
-        "stroke": "#6b7f8c",
-        "strokeWidth": 0.8,
-        "strokeDash": [3, 4]
-      }
-    },
-    {
-      "data": {
-        "url": "data/ring_labels.csv",
-        "format": {"type": "csv", "parse": {"km": "number", "lon": "number", "lat": "number"}}
-      },
-      "mark": {"type": "text", "fontSize": 11, "fontStyle": "italic", "color": "#8fa0ab", "dy": -6},
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "label"}
-      }
-    },
-    {
-      "data": {
-        "url": "data/flows_city.csv",
-        "format": {
-          "type": "csv",
-          "parse": {
-            "lat": "number",
-            "lon": "number",
-            "trips": "number",
-            "athletes": "number",
-            "aus_medals": "number",
-            "km": "number",
-            "o_lat": "number",
-            "o_lon": "number"
-          }
-        }
-      },
-      "mark": {"type": "rule", "strokeCap": "round"},
-      "encoding": {
-        "longitude": {"field": "o_lon", "type": "quantitative"},
-        "latitude": {"field": "o_lat", "type": "quantitative"},
-        "longitude2": {"field": "lon"},
-        "latitude2": {"field": "lat"},
-        "strokeWidth": {
-          "field": "athletes",
-          "type": "quantitative",
-          "title": "Athletes sent (all Games)",
-          "scale": {"domain": [0, 1100], "range": [0.5, 14]},
-          "legend": {
-            "values": [100, 500, 1000],
-            "orient": "bottom-left",
-            "symbolType": "stroke",
-            "symbolStrokeColor": "#2fbf87"
-          }
-        },
-        "color": {"value": "#2fbf87"},
-        "opacity": {"condition": {"param": "hoverCity", "empty": true, "value": 0.72}, "value": 0.15},
-        "tooltip": [
-          {"field": "city", "title": "Host city"},
-          {"field": "games_label", "title": "Games held"},
-          {
-            "field": "athletes",
-            "type": "quantitative",
-            "title": "Australian athletes sent",
-            "format": ","
-          },
-          {
-            "field": "km",
-            "type": "quantitative",
-            "title": "Distance from Canberra (km)",
-            "format": ","
-          },
-          {"field": "aus_medals", "type": "quantitative", "title": "Australian medals won there"}
+        "stroke": "#7d909c",
+        "strokeWidth": 0.9,
+        "strokeDash": [
+          3,
+          4
         ]
-      },
-      "params": [
-        {
-          "name": "hoverCity",
-          "select": {"type": "point", "fields": ["city"], "on": "mouseover", "clear": "mouseout"}
-        }
-      ]
-    },
-    {
-      "data": {
-        "url": "data/flows_city.csv",
-        "format": {
-          "type": "csv",
-          "parse": {
-            "lat": "number",
-            "lon": "number",
-            "trips": "number",
-            "athletes": "number",
-            "aus_medals": "number",
-            "km": "number",
-            "o_lat": "number",
-            "o_lon": "number"
-          }
-        }
-      },
-      "mark": {"type": "circle", "stroke": "#0b1620", "strokeWidth": 1, "cursor": "pointer"},
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "size": {
-          "field": "trips",
-          "type": "quantitative",
-          "scale": {"domain": [1, 2], "range": [60, 150]},
-          "legend": null
-        },
-        "color": {"condition": {"test": "datum.home == 'Home'", "value": "#2fbf87"}, "value": "#f2efe6"},
-        "opacity": {"condition": {"param": "hoverCity", "empty": true, "value": 1}, "value": 0.3},
-        "tooltip": [
-          {"field": "city", "title": "Host city"},
-          {"field": "games_label", "title": "Games held"},
-          {
-            "field": "athletes",
-            "type": "quantitative",
-            "title": "Australian athletes sent",
-            "format": ","
-          },
-          {
-            "field": "km",
-            "type": "quantitative",
-            "title": "Distance from Canberra (km)",
-            "format": ","
-          },
-          {"field": "aus_medals", "type": "quantitative", "title": "Australian medals won there"}
-        ]
-      }
-    },
-    {
-      "data": {
-        "url": "data/flows_city.csv",
-        "format": {
-          "type": "csv",
-          "parse": {
-            "lat": "number",
-            "lon": "number",
-            "trips": "number",
-            "athletes": "number",
-            "aus_medals": "number",
-            "km": "number",
-            "o_lat": "number",
-            "o_lon": "number"
-          }
-        }
-      },
-      "transform": [
-        {
-          "filter": "indexof(['Hamilton','Edmonton','Kingston','Delhi','Kuala Lumpur','Vancouver'], datum.city) >= 0"
-        },
-        {
-          "calculate": "datum.city == 'Vancouver' ? 'Vancouver & Victoria' : datum.city",
-          "as": "lab"
-        }
-      ],
-      "mark": {
-        "type": "text",
-        "fontSize": 12,
-        "fontWeight": 600,
-        "align": "left",
-        "dx": 8,
-        "dy": 0,
-        "font": "Barlow Semi Condensed",
-        "color": "#f2efe6"
-      },
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "lab"}
       }
     },
     {
       "data": {
         "values": [
           {
-            "lon": -4.25,
-            "lat": 55.9,
-            "t": "UK · 8 Games",
-            "t2": "London, Cardiff, Manchester, Birmingham,",
-            "t3": "Edinburgh ×2, Glasgow ×2"
+            "label": "5,000 km",
+            "lon": 149.13,
+            "lat": -80.25
+          },
+          {
+            "label": "10,000 km",
+            "lon": -30.87,
+            "lat": -54.79
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "color": "#a9b4bb",
+        "dy": -8
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/geo/distance_rings.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.km == 15000"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "filled": false,
+        "stroke": "#e9ecee",
+        "strokeWidth": 1.4,
+        "strokeDash": [
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": -30.87,
+            "lat": -29.5,
+            "t": "Within 15,000 km of Canberra:",
+            "w": 700,
+            "c": "#e9ecee"
+          },
+          {
+            "lon": -30.87,
+            "lat": -22,
+            "t": "Australia 1st at 11 of 13 Games",
+            "w": 700,
+            "c": "#e9ecee"
+          },
+          {
+            "lon": -30.87,
+            "lat": 1.6,
+            "t": "Beyond it: 1st at 4 of 10, and England won the other six",
+            "w": 700,
+            "c": "#e9ecee"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "Barlow Semi Condensed",
+        "fontSize": 13,
+        "fontWeight": 700,
+        "color": "#e9ecee"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/games.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "lat": "number",
+            "lon": "number",
+            "aus_team": "number",
+            "aus_total": "number",
+            "aus_rank": "number",
+            "km_from_canberra": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.home == 'Away'"
+        },
+        {
+          "calculate": "indexof(['England','Scotland','Wales'], datum.host) >= 0 ? 'Britain' : datum.host == 'New Zealand' ? 'New Zealand' : indexof(['Vancouver','Victoria','Edmonton'], datum.city) >= 0 ? 'Western Canada' : datum.city",
+          "as": "dest"
+        },
+        {
+          "calculate": "datum.aus_rank == 1 ? 1 : 0",
+          "as": "first"
+        },
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "aus_team",
+              "as": "athletes"
+            },
+            {
+              "op": "count",
+              "as": "games"
+            },
+            {
+              "op": "sum",
+              "field": "first",
+              "as": "firsts"
+            },
+            {
+              "op": "min",
+              "field": "aus_rank",
+              "as": "best"
+            },
+            {
+              "op": "min",
+              "field": "year",
+              "as": "year"
+            },
+            {
+              "op": "sum",
+              "field": "aus_total",
+              "as": "aus_medals"
+            },
+            {
+              "op": "mean",
+              "field": "lat",
+              "as": "lat"
+            },
+            {
+              "op": "mean",
+              "field": "lon",
+              "as": "lon"
+            },
+            {
+              "op": "max",
+              "field": "km_from_canberra",
+              "as": "km"
+            },
+            {
+              "op": "min",
+              "field": "km_from_canberra",
+              "as": "km_min"
+            }
+          ],
+          "groupby": [
+            "dest"
+          ]
+        },
+        {
+          "calculate": "-35.2809",
+          "as": "o_lat"
+        },
+        {
+          "calculate": "149.13",
+          "as": "o_lon"
+        },
+        {
+          "calculate": "datum.dest == 'Britain' ? 'London, Cardiff, Edinburgh ×2, Manchester, Glasgow ×2, Birmingham' : datum.dest == 'New Zealand' ? 'Auckland ×2, Christchurch' : datum.dest == 'Western Canada' ? 'Vancouver, Edmonton, Victoria' : datum.dest",
+          "as": "cities"
+        },
+        {
+          "calculate": "datum.best == 1 ? '1st' : datum.best == 2 ? '2nd' : datum.best == 3 ? '3rd' : datum.best + 'th'",
+          "as": "place"
+        },
+        {
+          "calculate": "datum.games > 1 ? '1st at ' + datum.firsts + ' of ' + datum.games + ' Games' : datum.place + ' in ' + datum.year",
+          "as": "result"
+        },
+        {
+          "calculate": "format(datum.athletes, ',') + ' places · ' + datum.result",
+          "as": "sub"
+        },
+        {
+          "calculate": "datum.km_min == datum.km ? format(datum.km, ',') : format(datum.km_min, ',') + '–' + format(datum.km, ',')",
+          "as": "km_lab"
+        }
+      ],
+      "params": [
+        {
+          "name": "hoverDest",
+          "select": {
+            "type": "point",
+            "fields": [
+              "dest"
+            ],
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeCap": "butt",
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "o_lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "o_lat",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "lon"
+        },
+        "latitude2": {
+          "field": "lat"
+        },
+        "strokeWidth": {
+          "field": "athletes",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1905
+            ],
+            "range": [
+              1,
+              24
+            ]
+          },
+          "legend": null
+        },
+        "color": {
+          "value": "#2fbf87"
+        },
+        "order": {
+          "field": "athletes",
+          "sort": "descending"
+        },
+        "opacity": {
+          "condition": {
+            "param": "hoverDest",
+            "empty": true,
+            "value": 0.85
+          },
+          "value": 0.15
+        },
+        "tooltip": [
+          {
+            "field": "dest",
+            "title": "Destination"
+          },
+          {
+            "field": "cities",
+            "title": "Host cities"
+          },
+          {
+            "field": "games",
+            "type": "quantitative",
+            "title": "Games held there"
+          },
+          {
+            "field": "athletes",
+            "type": "quantitative",
+            "title": "Australian team places",
+            "format": ","
+          },
+          {
+            "field": "result",
+            "title": "Australia on the medal table"
+          },
+          {
+            "field": "km_lab",
+            "title": "Distance from Canberra (km)"
+          },
+          {
+            "field": "aus_medals",
+            "type": "quantitative",
+            "title": "Australian medals won there"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/games.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "lat": "number",
+            "lon": "number",
+            "aus_team": "number",
+            "aus_total": "number",
+            "aus_rank": "number",
+            "km_from_canberra": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.home == 'Away'"
+        },
+        {
+          "calculate": "indexof(['England','Scotland','Wales'], datum.host) >= 0 ? 'Britain' : datum.host == 'New Zealand' ? 'New Zealand' : indexof(['Vancouver','Victoria','Edmonton'], datum.city) >= 0 ? 'Western Canada' : datum.city",
+          "as": "dest"
+        },
+        {
+          "calculate": "datum.aus_rank == 1 ? 1 : 0",
+          "as": "first"
+        },
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "aus_team",
+              "as": "athletes"
+            },
+            {
+              "op": "count",
+              "as": "games"
+            },
+            {
+              "op": "sum",
+              "field": "first",
+              "as": "firsts"
+            },
+            {
+              "op": "min",
+              "field": "aus_rank",
+              "as": "best"
+            },
+            {
+              "op": "min",
+              "field": "year",
+              "as": "year"
+            },
+            {
+              "op": "sum",
+              "field": "aus_total",
+              "as": "aus_medals"
+            },
+            {
+              "op": "mean",
+              "field": "lat",
+              "as": "lat"
+            },
+            {
+              "op": "mean",
+              "field": "lon",
+              "as": "lon"
+            },
+            {
+              "op": "max",
+              "field": "km_from_canberra",
+              "as": "km"
+            },
+            {
+              "op": "min",
+              "field": "km_from_canberra",
+              "as": "km_min"
+            }
+          ],
+          "groupby": [
+            "dest"
+          ]
+        },
+        {
+          "calculate": "-35.2809",
+          "as": "o_lat"
+        },
+        {
+          "calculate": "149.13",
+          "as": "o_lon"
+        },
+        {
+          "calculate": "datum.dest == 'Britain' ? 'London, Cardiff, Edinburgh ×2, Manchester, Glasgow ×2, Birmingham' : datum.dest == 'New Zealand' ? 'Auckland ×2, Christchurch' : datum.dest == 'Western Canada' ? 'Vancouver, Edmonton, Victoria' : datum.dest",
+          "as": "cities"
+        },
+        {
+          "calculate": "datum.best == 1 ? '1st' : datum.best == 2 ? '2nd' : datum.best == 3 ? '3rd' : datum.best + 'th'",
+          "as": "place"
+        },
+        {
+          "calculate": "datum.games > 1 ? '1st at ' + datum.firsts + ' of ' + datum.games + ' Games' : datum.place + ' in ' + datum.year",
+          "as": "result"
+        },
+        {
+          "calculate": "format(datum.athletes, ',') + ' places · ' + datum.result",
+          "as": "sub"
+        },
+        {
+          "calculate": "datum.km_min == datum.km ? format(datum.km, ',') : format(datum.km_min, ',') + '–' + format(datum.km, ',')",
+          "as": "km_lab"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 55,
+        "color": "#f2efe6",
+        "stroke": "#0b1620",
+        "strokeWidth": 1.2,
+        "opacity": 1,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "dest",
+            "title": "Destination"
+          },
+          {
+            "field": "cities",
+            "title": "Host cities"
+          },
+          {
+            "field": "games",
+            "type": "quantitative",
+            "title": "Games held there"
+          },
+          {
+            "field": "athletes",
+            "type": "quantitative",
+            "title": "Australian team places",
+            "format": ","
+          },
+          {
+            "field": "result",
+            "title": "Australia on the medal table"
+          },
+          {
+            "field": "km_lab",
+            "title": "Distance from Canberra (km)"
+          },
+          {
+            "field": "aus_medals",
+            "type": "quantitative",
+            "title": "Australian medals won there"
+          }
+        ],
+        "opacity": {
+          "condition": {
+            "param": "hoverDest",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.3
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/games.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "lat": "number",
+            "lon": "number",
+            "aus_team": "number",
+            "aus_total": "number",
+            "aus_rank": "number",
+            "km_from_canberra": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.home == 'Away'"
+        },
+        {
+          "calculate": "indexof(['England','Scotland','Wales'], datum.host) >= 0 ? 'Britain' : datum.host == 'New Zealand' ? 'New Zealand' : indexof(['Vancouver','Victoria','Edmonton'], datum.city) >= 0 ? 'Western Canada' : datum.city",
+          "as": "dest"
+        },
+        {
+          "calculate": "datum.aus_rank == 1 ? 1 : 0",
+          "as": "first"
+        },
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "aus_team",
+              "as": "athletes"
+            },
+            {
+              "op": "count",
+              "as": "games"
+            },
+            {
+              "op": "sum",
+              "field": "first",
+              "as": "firsts"
+            },
+            {
+              "op": "min",
+              "field": "aus_rank",
+              "as": "best"
+            },
+            {
+              "op": "min",
+              "field": "year",
+              "as": "year"
+            },
+            {
+              "op": "sum",
+              "field": "aus_total",
+              "as": "aus_medals"
+            },
+            {
+              "op": "mean",
+              "field": "lat",
+              "as": "lat"
+            },
+            {
+              "op": "mean",
+              "field": "lon",
+              "as": "lon"
+            },
+            {
+              "op": "max",
+              "field": "km_from_canberra",
+              "as": "km"
+            },
+            {
+              "op": "min",
+              "field": "km_from_canberra",
+              "as": "km_min"
+            }
+          ],
+          "groupby": [
+            "dest"
+          ]
+        },
+        {
+          "calculate": "-35.2809",
+          "as": "o_lat"
+        },
+        {
+          "calculate": "149.13",
+          "as": "o_lon"
+        },
+        {
+          "calculate": "datum.dest == 'Britain' ? 'London, Cardiff, Edinburgh ×2, Manchester, Glasgow ×2, Birmingham' : datum.dest == 'New Zealand' ? 'Auckland ×2, Christchurch' : datum.dest == 'Western Canada' ? 'Vancouver, Edmonton, Victoria' : datum.dest",
+          "as": "cities"
+        },
+        {
+          "calculate": "datum.best == 1 ? '1st' : datum.best == 2 ? '2nd' : datum.best == 3 ? '3rd' : datum.best + 'th'",
+          "as": "place"
+        },
+        {
+          "calculate": "datum.games > 1 ? '1st at ' + datum.firsts + ' of ' + datum.games + ' Games' : datum.place + ' in ' + datum.year",
+          "as": "result"
+        },
+        {
+          "calculate": "format(datum.athletes, ',') + ' places · ' + datum.result",
+          "as": "sub"
+        },
+        {
+          "calculate": "datum.km_min == datum.km ? format(datum.km, ',') : format(datum.km_min, ',') + '–' + format(datum.km, ',')",
+          "as": "km_lab"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "font": "Barlow Semi Condensed",
+            "fontSize": 13.5,
+            "fontWeight": 700,
+            "color": "#f2efe6",
+            "align": {
+              "expr": "datum.dest == 'Britain' || datum.dest == 'Delhi' || datum.dest == 'Kuala Lumpur' || datum.dest == 'Kingston' ? 'right' : 'left'"
+            },
+            "dx": {
+              "expr": "datum.dest == 'Britain' || datum.dest == 'Delhi' || datum.dest == 'Kuala Lumpur' ? -12 : datum.dest == 'Kingston' ? -4 : 12"
+            },
+            "dy": {
+              "expr": "(datum.dest == 'Western Canada' ? -10 : datum.dest == 'Britain' ? -6 : datum.dest == 'Kingston' ? 30 : datum.dest == 'New Zealand' ? 30 : 0) + -7"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "dest"
+            },
+            "opacity": {
+              "condition": {
+                "param": "hoverDest",
+                "empty": true,
+                "value": 1
+              },
+              "value": 0.3
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "font": "Barlow Semi Condensed",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "color": "#a9b4bb",
+            "align": {
+              "expr": "datum.dest == 'Britain' || datum.dest == 'Delhi' || datum.dest == 'Kuala Lumpur' || datum.dest == 'Kingston' ? 'right' : 'left'"
+            },
+            "dx": {
+              "expr": "datum.dest == 'Britain' || datum.dest == 'Delhi' || datum.dest == 'Kuala Lumpur' ? -12 : datum.dest == 'Kingston' ? -4 : 12"
+            },
+            "dy": {
+              "expr": "(datum.dest == 'Western Canada' ? -10 : datum.dest == 'Britain' ? -6 : datum.dest == 'Kingston' ? 30 : datum.dest == 'New Zealand' ? 30 : 0) + 8"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "sub"
+            },
+            "opacity": {
+              "condition": {
+                "param": "hoverDest",
+                "empty": true,
+                "value": 1
+              },
+              "value": 0.3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "data/games.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "lat": "number",
+            "lon": "number",
+            "aus_team": "number",
+            "aus_total": "number",
+            "aus_rank": "number",
+            "km_from_canberra": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.home == 'Home'"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 45,
+        "color": "#2fbf87",
+        "stroke": "#0b1620",
+        "strokeWidth": 1,
+        "opacity": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "label",
+            "title": "Home Games"
+          },
+          {
+            "field": "aus_team",
+            "type": "quantitative",
+            "title": "Australian team places",
+            "format": ","
+          },
+          {
+            "field": "aus_rank",
+            "type": "quantitative",
+            "title": "Australia's place"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 149.13,
+            "lat": -35.28
           }
         ]
       },
       "layer": [
         {
           "mark": {
-            "type": "text",
-            "fontSize": 12,
-            "fontWeight": 700,
-            "align": "left",
-            "dx": 14,
-            "dy": -14,
-            "font": "Barlow Semi Condensed"
-          },
-          "encoding": {"text": {"field": "t"}}
-        },
-        {
-          "mark": {"type": "text", "fontSize": 11, "align": "left", "dx": 14, "dy": 0, "color": "#a9b4bb"},
-          "encoding": {"text": {"field": "t2"}}
-        },
-        {
-          "mark": {"type": "text", "fontSize": 11, "align": "left", "dx": 14, "dy": 13, "color": "#a9b4bb"},
-          "encoding": {"text": {"field": "t3"}}
-        }
-      ],
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"}
-      }
-    },
-    {
-      "data": {"values": [{"lon": 149.13, "lat": -35.28, "t": "Canberra"}]},
-      "layer": [
-        {
-          "mark": {"type": "point", "shape": "diamond", "filled": true, "size": 90, "color": "#f2efe6"}
+            "type": "point",
+            "shape": "diamond",
+            "filled": true,
+            "size": 110,
+            "color": "#f2efe6",
+            "stroke": "#0b1620",
+            "strokeWidth": 1
+          }
         },
         {
           "mark": {
             "type": "text",
-            "fontSize": 12,
+            "font": "Barlow Semi Condensed",
+            "fontSize": 13.5,
             "fontWeight": 700,
             "align": "right",
-            "dx": -8,
-            "dy": 14,
-            "font": "Barlow Semi Condensed"
-          },
-          "encoding": {"text": {"field": "t"}}
+            "dx": -10,
+            "dy": 22,
+            "text": "Canberra"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "font": "Barlow Semi Condensed",
+            "fontSize": 12.5,
+            "fontWeight": 700,
+            "color": "#2fbf87",
+            "align": "right",
+            "dx": -10,
+            "dy": 38,
+            "text": "Home Games: 5 cities"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "font": "Barlow Semi Condensed",
+            "fontSize": 12,
+            "color": "#a9b4bb",
+            "align": "right",
+            "dx": -10,
+            "dy": 53,
+            "text": "1,457 places · 1st at 5 of 5"
+          }
         }
       ],
       "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"}
-      }
-    },
-    {
-      "data": {"values": [{"lon": 174.8, "lat": -36.8, "t": "Auckland ×2, Christchurch"}]},
-      "mark": {
-        "type": "text",
-        "fontSize": 11.5,
-        "fontWeight": 600,
-        "font": "Barlow Semi Condensed",
-        "align": "left",
-        "dx": 10,
-        "dy": 4,
-        "color": "#f2efe6"
-      },
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "t"}
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
       }
     }
   ]

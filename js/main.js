@@ -48,6 +48,8 @@ const CHARTS = [
   ['#vis-hero', '00_medal_skyline'],
   ['#vis-hosts', '01_host_cities_map'],
   ['#vis-flows', '02_flow_map'],
+  ['#vis-britain', '02b_britain_inset'],
+  ['#vis-distance', '02c_distance_line'],
   ['#vis-bump', '03_rank_bump_chart'],
   ['#vis-gap', '04_athlete_vs_medal_share_gap'],
   ['#vis-home', '05_home_advantage_dumbbell'],

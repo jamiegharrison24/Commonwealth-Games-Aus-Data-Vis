@@ -21,7 +21,7 @@
   <div class="wrap">
     <p class="kicker">Commonwealth Games · 1930–2026 · A data story</p>
     <h1>Top of the <span class="gold-word">Table</span></h1>
-    <p class="subhead">How Australia came to own the Commonwealth Games, and whether the Games still test it</p>
+    <p class="subhead">How Australia came to own the Commonwealth Games, and whether anyone can still challenge it</p>
     <div class="hero-grid">
       <p class="dek">Australia has topped the medal table at 15 of 23 Games. This story looks at where those medals came from, who won them, and whether the competition is weaker than it used to be.</p>
       <p class="byline">By <strong>Jamie</strong><br>Monash University · FIT3179 Data Visualisation<br>October 2026 · Data to Glasgow 2026</p>
@@ -79,23 +79,36 @@
         <h2>The long way there</h2>
         <div class="lede">
           <p>Only eight of the 23 Games have been held in Australia or New Zealand. For the rest, Australian teams travelled up to 17,000 km, roughly as far from home as a sporting team can go.</p>
-          <p>The map below is centred on Canberra. On this projection every straight line is the shortest route over the globe, and the dashed rings show true distance from Australia. Hover a line to isolate one city.</p>
+          <p>The map below is centred on Canberra. On this projection every straight line from Canberra is the shortest route over the globe, drawn at its true length, and the dashed rings mark 5,000, 10,000 and 15,000 km.</p>
         </div>
       </div>
     </div>
 
     <div class="row">
       <figure class="reveal span-8">
-        <h3 class="fig-title">Glasgow has hosted more Australian athletes than any Australian city</h3>
-        <p class="fig-dek">Line width shows the total number of Australian athletes sent to each host city over every Games held there. <span class="aus">Green dots</span> are home Games.</p>
+        <h3 class="fig-title">Australia tops the table close to home, less often on the far side of the world</h3>
+        <p class="fig-dek">Within 15,000 km of Canberra, Australia finished first on the medal table at 11 of 13 Games. Beyond that ring it managed 4 of 10, and every time it missed out, England won. Most of those far Games were in Britain, England's backyard, and four were before 1970, when Australia was a smaller sporting power. Line width shows Australian team places, added up over every Games held at each destination; host cities in Britain, New Zealand and western Canada are combined. <span class="aus">Green dots</span> are the five Australian host cities. Hover a line to isolate it.</p>
         <div id="vis-flows" class="vis"></div>
-        <figcaption class="source">Map idiom: origin–destination flow map on an azimuthal equidistant projection centred on Canberra. Team sizes: Commonwealth Games Australia via Wikipedia. <a href="js/specs/02_flow_map.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source">Map idiom: origin–destination flow map on an azimuthal equidistant projection centred on Canberra (true distances from the centre). Team sizes: Commonwealth Games Australia via Wikipedia; medal-table places: Commonwealth Sport via Wikipedia. <a href="js/specs/02_flow_map.vg.json">Vega-Lite spec</a></figcaption>
       </figure>
-      <aside class="span-4" style="padding-top:78px">
-        <div class="note"><span class="big">17,172 km</span>Canberra to Cardiff, the furthest host city. Australia won 66 medals there in 1958 and finished second.</div>
-        <div class="note"><span class="big">9 → 473</span>From nine athletes in Hamilton 1930 (all men) to 473 on the Gold Coast in 2018, Australia's largest team.</div>
-        <div class="note grey"><span class="big">72%</span>of the 5,180 places in Australian Games teams since 1930 were at overseas Games. Glasgow alone (2014 and 2026) accounts for 669.</div>
-      </aside>
+      <figure class="reveal span-4">
+        <h3 class="fig-title">Britain: eight Games in six cities</h3>
+        <p class="fig-dek">Zooming in on the far end of the biggest line. Circle area shows Australian team places at each city, added up over its Games. Labels give Australia's place on the medal table; <span class="gold">gold</span> means first.</p>
+        <div id="vis-britain" class="vis"></div>
+        <figcaption class="source">Map idiom: proportional symbol inset map, Equal Earth projection. Source as for the flow map. <a href="js/specs/02b_britain_inset.vg.json">Vega-Lite spec</a></figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="reveal span-12">
+        <h3 class="fig-title">Britain is about as far from Canberra as you can get</h3>
+        <p class="fig-dek">Every host city on one line, from Canberra on the left to the farthest point on Earth from Canberra on the right: 20,015 km away, in the Atlantic Ocean near the Azores. Familiar trips are marked above the line for scale. Hover a dot for its distance.</p>
+        <div id="vis-distance" class="vis"></div>
+        <figcaption class="source">Idiom: annotated distance line (one-dimensional dot plot with reference marks). Distances are great-circle (shortest-route) distances from Canberra, calculated from city coordinates; the farthest point is half the Earth's circumference. <a href="js/specs/02c_distance_line.vg.json">Vega-Lite spec</a></figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <div class="note span-6"><span class="big">9 → 473</span>From nine athletes in Hamilton 1930 (all men) to 473 on the Gold Coast in 2018, Australia's largest team.</div>
+      <div class="note grey span-6"><span class="big">72%</span>of the 5,180 places in Australian Games teams since 1930 were at overseas Games.</div>
     </div>
   </div>
 </section>
@@ -337,12 +350,6 @@
   <div class="wrap">
     <div class="cols">
       <div>
-        <h3>About</h3>
-        <p><strong>Top of the Table</strong> was created by Jamie for FIT3179 Data Visualisation 2 (Monash University, Semester 2 2026). Written for a general Australian audience. Published October 2026.</p>
-        <p>Charts are built with <a href="https://vega.github.io/vega-lite/">Vega-Lite</a> 5. Every chart's JSON specification is in <a href="js/specs/">js/specs/</a>; the data files are in <a href="data/">data/</a>.</p>
-        <p>Text and code released under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
-      </div>
-      <div>
         <h3>Data sources</h3>
         <ul>
           <li>Medal tables, 1930–2026, and Australian team and medallist records: Commonwealth Sport (formerly the Commonwealth Games Federation) results, compiled on <a href="https://en.wikipedia.org/wiki/All-time_Commonwealth_Games_medal_table">Wikipedia</a> (accessed 29 Sep 2026).</li>
@@ -354,16 +361,14 @@
         </ul>
       </div>
       <div>
-        <h3>Method &amp; AI use</h3>
+        <h3>Method</h3>
         <ul>
           <li>Ranks use the standard gold-first ordering. Shares use all medals awarded (boxing and judo award two bronzes).</li>
           <li>Athletics comparison: individual events only (no relays, walks, marathons or combined events), 1970 onwards, when events went metric. Each Commonwealth winner is compared with the Olympics two years earlier.</li>
           <li>Data was collected and cleaned with Python scripts.</li>
-          <li><strong>Generative AI acknowledgement:</strong> Claude (Anthropic) was used to help collect and process the data, draft the Vega-Lite specifications, HTML/CSS and narrative text. All design decisions, data and text were reviewed by the author.</li>
         </ul>
       </div>
     </div>
-    <p class="fine">© 2026 Jamie. Not affiliated with Commonwealth Sport or Commonwealth Games Australia. No logos or photographs are used.</p>
   </div>
 </footer>
 
