@@ -4,7 +4,7 @@ FIT3179 Data Visualisation 2 · Monash University · Semester 2, 2026 · Author:
 
 **Live page:** https://jamiegharrison24.github.io/Commonwealth-Games-Aus-Data-Vis/
 
-A narrative web visualisation of how Australia came to dominate the Commonwealth Games, where its medals come from, who won them, and whether the Games have got easier. It includes 3 maps and 11 charts, all built with Vega-Lite 5, in a dark "stadium night" design with light chapters for the denser charts.
+A narrative web visualisation of how Australia came to dominate the Commonwealth Games, where its medals come from, who won them, and whether the Games have got easier. It includes 4 maps and 12 charts, all built with Vega-Lite 5, in a dark "stadium night" design with light chapters for the denser charts.
 
 ## Structure
 
@@ -21,7 +21,9 @@ A narrative web visualisation of how Australia came to dominate the Commonwealth
 
 0. Every Australian medal: unit column chart (hero)
 1. Host cities: proportional symbol map (Equal Earth) with region zoom buttons
-2. Team travel: origin–destination flow map (azimuthal equidistant, centred on Canberra)
+2. Team travel: origin–destination flow map (azimuthal equidistant, centred on Canberra), with distance rings and medal-table outcomes per host region
+   - 2b. Britain: proportional symbol inset map (Equal Earth)
+   - 2c. Distance from Canberra: annotated distance line (one-dimensional dot plot with reference marks)
 3. Medal-table rank: bump chart
 4. Share of athletes vs share of medals: surplus/deficit (gap) line chart
 5. Home advantage: dumbbell (range) charts
@@ -39,6 +41,7 @@ A narrative web visualisation of how Australia came to dominate the Commonwealth
 - Commonwealth Games medal tables and Australian team records (Commonwealth Sport, compiled on Wikipedia); total athletes per Games from each Games’ Wikipedia infobox (1966 and 1970 totals include officials)
 - Olympic athletics results 1968–2024 ([Olympedia](https://www.olympedia.org))
 - Population 2024 (World Bank WDI; ONS mid-2024 for the UK nations)
+- Distances from Canberra: great-circle distances calculated from host-city coordinates
 - Boundaries: Natural Earth 1:50m map units
 
 ## Licence

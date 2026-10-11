@@ -254,3 +254,6 @@ section.dark { background: var(--night); color: var(--on-night); border-bottom: 
   .dek { font-size: 18px; }
   .score .n { font-size: 40px; }
 }
+
+/* Temporary: hides sections without deleting them. Remove this rule (and the class) to restore. */
+.temp-hide { display: none !important; }
