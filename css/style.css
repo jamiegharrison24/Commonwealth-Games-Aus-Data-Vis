@@ -128,18 +128,18 @@ figure { margin: 0; }
   font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25;
   letter-spacing: -.005em; margin: 0 0 8px; color: var(--ink); max-width: 62ch;
 }
-.fig-dek { font-size: 15px; line-height: 1.5; color: var(--ink-2); margin: 0 0 14px; max-width: 78ch; }
+.fig-dek { font-size: 15px; line-height: 1.55; color: var(--ink-2); margin: 0 0 14px; max-width: 68ch; }
 .vis { width: 100%; min-height: 120px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
 .vis .vega-embed { width: 100%; }
 .vis .vega-embed summary { opacity: .35; }
 .vis .vega-embed:hover summary { opacity: 1; }
-figcaption.source { font-size: 12.5px; line-height: 1.45; color: var(--ink-3); margin-top: 10px; border-top: 1px solid var(--rule); padding-top: 7px; }
+figcaption.source { font-size: 13px; line-height: 1.5; color: #6c6a63; margin-top: 10px; border-top: 1px solid var(--rule); padding-top: 7px; }
 figcaption.meta { display: flex; flex-wrap: wrap; gap: 2px 18px; }
 figcaption.meta .m b { font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); margin-right: 5px; }
 .dark figcaption.meta .m b { color: var(--on-night-2); }
 figcaption.meta a.ref { text-decoration: none; }
 figcaption.source a { color: var(--ink-2); }
-.how { font-size: 13.5px; line-height: 1.5; color: var(--ink-2); background: var(--paper-2); border-radius: 4px; padding: 10px 12px; margin: 0 0 14px; max-width: 78ch; }
+.how { font-size: 13.5px; line-height: 1.5; color: var(--ink-2); background: var(--paper-2); border-radius: 4px; padding: 10px 12px; margin: 0 0 14px; max-width: 68ch; }
 .how b { color: var(--ink); font-weight: 600; }
 
 /* vega-lite param controls (sliders / selects) */
@@ -155,6 +155,7 @@ figcaption.source a { color: var(--ink-2); }
 .note .big { display: block; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; line-height: 1; color: var(--aus); margin-bottom: 4px; font-variant-numeric: tabular-nums; }
 .note.eng { border-color: var(--eng); } .note.eng .big { color: var(--eng-text); }
 .note.grey { border-color: var(--ink-3); } .note.grey .big { color: var(--ink); }
+.note.gold-note { border-color: var(--gold); } .note.gold-note .big { color: var(--gold); }
 
 /* verdict box for the "is it getting easier?" question */
 .verdict { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin-top: 30px; }
@@ -271,4 +272,17 @@ section.dark { background: var(--night); color: var(--on-night); border-bottom: 
   h2 { font-size: 34px; }
   .dek { font-size: 18px; }
   .score .n { font-size: 40px; }
+}
+
+/* ---------- Justified body text ----------
+   Course notes (Typography): justified text doesn't improve readability, but it gives text blocks
+   a clean right edge that lines up with the column grid. Hyphenation keeps word spacing even
+   so we don't get "rivers" of white space in narrower columns.
+   The narrow key-number notes stay left-aligned: with only a few words per line, justification
+   leaves large gaps between words (the notes' warning about justified short lines). */
+.lede p, .prose p, .fig-dek, .how, .dek, .verdict p, .pull-note, footer li, footer .fine-lead {
+  text-align: justify; hyphens: auto; -webkit-hyphens: auto; text-wrap: pretty;
+}
+@media (max-width: 640px) {
+  .lede p, .prose p, .fig-dek, .how, .dek, .verdict p, .pull-note, footer li, footer .fine-lead { text-align: left; hyphens: manual; }
 }

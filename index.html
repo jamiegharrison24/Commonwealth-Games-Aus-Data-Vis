@@ -23,7 +23,7 @@
     <h1>Top of the <span class="gold-word">Table</span></h1>
     <p class="subhead">How Australia came to own the Commonwealth Games, and whether anyone can still challenge it</p>
     <div class="hero-grid">
-      <p class="dek">Australia has topped the medal table at 15 of 23 Games. This story looks at where those medals came from, who won them, and whether the competition is weaker than it used to be.</p>
+      <p class="dek">No nation has won more Commonwealth Games medals. This story looks at where Australia's medals came from, who won them, and whether the competition is weaker than it used to be.</p>
       <p class="byline">By <strong>Jamie</strong><br>Monash University · FIT3179 Data Visualisation<br>October 2026 · Data to Glasgow 2026</p>
     </div>
 
@@ -121,7 +121,7 @@
       <div>
         <h2>Climbing to the top, and staying there</h2>
         <div class="lede">
-          <p>For its first 60 years the Commonwealth Games was a two-horse race between Australia and England, with Canada close behind. Since 1990 Australia has lost the top spot only once, at Glasgow 2014.</p>
+          <p>For its first 60 years the Commonwealth Games was a two-horse race between Australia and England, with Canada close behind. From 1990, Australia pulled clear, and the bump chart shows how rarely it has been caught since. The gap chart then asks whether that lead is just a matter of sending more athletes.</p>
         </div>
       </div>
     </div>
@@ -180,7 +180,7 @@
       <div>
         <h2>Built in the pool</h2>
         <div class="lede">
-          <p>More than a third of every Commonwealth medal Australia has won came from aquatics, and almost all of those from swimming. Athletics adds another fifth and cycling a tenth. These three sports have been Australia's strengths since the 1950s. Shooting, gymnastics and weightlifting have become steady contributors since the 1970s and 80s.</p>
+          <p>Australia's biggest medal source by far is the pool, and almost all of that is swimming. Athletics supplies about a fifth of Australia's medals and cycling a tenth. These three sports have been Australia's strengths since the 1950s. Shooting, gymnastics and weightlifting have become steady contributors since the 1970s and 80s.</p>
         </div>
       </div>
     </div>
@@ -188,7 +188,7 @@
     <div class="row">
       <figure class="reveal span-12">
         <h3 class="fig-title">Only aquatics and athletics have delivered Australian medals at all 23 Games</h3>
-        <p class="fig-dek">Australian medals by sport (rows) and Games (columns). Darker green = more medals; numbers mark Games with more than 20. Blank = no Australian medal, often because the sport was not on the programme (notes in grey). The pool peaked at the Gold Coast in 2018 with 84 medals, and in 1970 it supplied more than half of everything Australia won (45 of 82). Hover a cell for the medal breakdown.</p>
+        <p class="fig-dek">Australian medals by sport (rows) and Games (columns). Darker green = more medals; numbers mark Games with more than 20. Blank = no Australian medal, often because the sport was not on the programme (notes in grey). The pool's best haul was 84 medals at the Gold Coast in 2018. Hover a cell for the medal breakdown.</p>
         <div id="vis-heatmap" class="vis"></div>
         <figcaption class="source meta"><span class="m"><b>Idiom</b> Heatmap</span><span class="m"><b>Data</b> <a class="ref" href="#src-2">[2]</a></span><span class="m"><b>Note</b> "Aquatics" combines swimming, diving, synchronised swimming and water polo, which early Games reported together; "Weightlifting" includes para powerlifting. The 2006 sport split differs from the official total by one silver/bronze.</span><span class="m"><a href="js/specs/06_sport_heatmap.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
@@ -203,7 +203,7 @@
       </figure>
       <aside class="span-4 side-notes" aria-label="Key numbers">
         <div class="side-notes-body">
-        <div class="note"><span class="big">37%</span>Aquatics' share of all 2,771 Australian medals: 1,014 medals, 410 of them gold.</div>
+        <div class="note"><span class="big">55%</span>of Australia's medals at Edinburgh 1970 came from the pool (45 of 82), its highest share at any Games.</div>
         <div class="note"><span class="big">47%</span>Cycling turns the most medals into gold of any major sport: 131 of 279.</div>
         <div class="note grey"><span class="big">51%</span>Half of Australia's boxing medals are bronze, because boxing awards two bronzes per event.</div>
         </div>
@@ -278,8 +278,8 @@
 
     <div class="row">
       <figure class="reveal span-12">
-        <h3 class="fig-title">But fewer Olympic medallists win at the Commonwealth Games</h3>
-        <p class="fig-dek">Each square is an athlete from a Commonwealth nation who won an individual Olympic athletics medal. <b>Filled</b> = they also won a medal at the Commonwealth Games two years later. <b>Hollow</b> = they did not, whether absent, injured or beaten.</p>
+        <h3 class="fig-title">But fewer of the Commonwealth's Olympic medallists now win at the Games</h3>
+        <p class="fig-dek">Each row follows one Olympics to the Commonwealth Games two years later: the top row takes every Commonwealth athlete who won an individual athletics medal at Mexico City 1968 and asks whether they also won a medal at Edinburgh 1970. Each square is one of those Olympic medallists. <b>Filled</b> = they won a Commonwealth medal; <b>hollow</b> = they did not, whether absent, injured or beaten. Read down the rows: below the dashed line, a smaller share of each row is filled.</p>
         <div id="vis-units" class="vis"></div>
         <figcaption class="source meta"><span class="m"><b>Idiom</b> Unit (isotype-style) chart</span><span class="m"><b>Data</b> <a class="ref" href="#src-4">[4]</a>, <a class="ref" href="#src-5">[5]</a></span><span class="m"><b>Note</b> Names matched between Olympedia and Wikipedia medallist lists by surname and initial.</span><span class="m"><a href="js/specs/11_olympians_unit_chart.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
@@ -288,11 +288,11 @@
     <div class="verdict reveal">
       <div class="no">
         <h4>The winners aren't getting weaker</h4>
-        <p>For 56 years the median Commonwealth champion has stayed between 95.7% (Delhi 2010) and 97.9% (Brisbane 1982, Gold Coast 2018) of the Olympic champion. There is no downward trend.</p>
+        <p>For 56 years the typical Commonwealth champion has performed at about 96–98% of the Olympic champion's level, with no downward trend.</p>
       </div>
       <div class="yes">
         <h4>…but the biggest stars do skip it more</h4>
-        <p>From 1970 to 1990, <b>half</b> (37 of 75) of the Commonwealth's Olympic athletics medallists won a medal at the next Games. Since 1994 it has been under <b>a third</b> (80 of 265). The Games still have world-class winners, but fewer of the world's best compete.</p>
+        <p>Half of the Commonwealth's Olympic medallists used to win again at the next Games; now fewer than a third do. The Games still have world-class winners, but fewer of the world's best compete.</p>
       </div>
     </div>
   </div>
@@ -307,18 +307,25 @@
         <h2>Glasgow 2026: smaller Games, bigger slice</h2>
         <div class="lede">
           <p>Victoria withdrew as host in 2023, so Glasgow stepped in with a cut-down Games: ten sports instead of Birmingham's twenty, and 674 medals instead of 877. Cutting the programme cut many of the sports where Australia is weaker, but kept swimming, athletics, track cycling and gymnastics.</p>
-          <p>The result: Australia's medal count fell by only 9 (180 to 171), while everyone else's fell by 194. Australia took 32% of the golds, its highest share since 1998.</p>
+          <p>The cuts hit Australia's rivals far harder than Australia, and the second chart then asks whether Australia's haul is as impressive once population is taken into account.</p>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <figure class="reveal span-12">
+    <div class="row sub">
+      <figure class="reveal span-8">
         <h3 class="fig-title">The Games shrank by a quarter; Australia's medal count barely moved</h3>
         <p class="fig-dek">Every medal at the last two Games, one square each. <span class="aus">Australia</span> won 21% of medals in Birmingham and 25% in Glasgow; <span class="eng">England</span>'s share fell from 20% to 16%.</p>
         <div id="vis-waffle" class="vis"></div>
         <figcaption class="source meta"><span class="m"><b>Idiom</b> Waffle charts (small multiples)</span><span class="m"><b>Data</b> <a class="ref" href="#src-1">[1]</a></span><span class="m"><b>Note</b> Squares ordered by nation group, then gold, silver, bronze.</span><span class="m"><a href="js/specs/12_glasgow_waffle.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
+      <aside class="span-4 side-notes" aria-label="Key numbers">
+        <div class="side-notes-body">
+          <div class="note"><span class="big">−9</span>Australia's medal count, from 180 in Birmingham to 171 in Glasgow.</div>
+          <div class="note grey"><span class="big">−194</span>Everyone else's, from 697 to 503, as the programme lost ten sports.</div>
+          <div class="note gold-note"><span class="big">32%</span>Australia's share of Glasgow's golds (70 of 216), its highest since Melbourne 2006 (34%).</div>
+        </div>
+      </aside>
     </div>
 
     <div class="row">
@@ -354,7 +361,7 @@
     <div class="cols">
       <div>
         <h3>Data sources</h3>
-        <p class="fine-lead">Numbers in square brackets in each chart's notes refer to this list. All web sources accessed 29 September 2026.</p>
+        <p class="fine-lead">No single source lists every Commonwealth Games medal, medallist and team, so most of the data was collected by scraping Wikipedia: the medal tables, team pages and medallist lists below, which compile Commonwealth Sport and Commonwealth Games Australia records. Each page was downloaded once and parsed with Python scripts (see Method). Numbers in square brackets in each chart's notes refer to this list. All web sources accessed 29 September 2026.</p>
         <ol class="sources">
           <li id="src-1">Commonwealth Sport (formerly the Commonwealth Games Federation). Medal tables for every Games, 1930–2026, compiled on Wikipedia: <a href="https://en.wikipedia.org/wiki/All-time_Commonwealth_Games_medal_table">All-time Commonwealth Games medal table</a> and each Games' medal table page.</li>
           <li id="src-2">Commonwealth Games Australia. Australian team sizes, medallists and medals by sport, compiled in the Wikipedia articles "Australia at the [year] Commonwealth Games", e.g. <a href="https://en.wikipedia.org/wiki/Australia_at_the_2026_Commonwealth_Games">Australia at the 2026 Commonwealth Games</a>.</li>
