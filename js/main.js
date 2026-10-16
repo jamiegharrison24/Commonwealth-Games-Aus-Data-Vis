@@ -68,7 +68,7 @@ window.__views = {};
 
 CHARTS.forEach(([sel, file]) => {
   const el = document.querySelector(sel);
-  if (!el || el.closest('.temp-hide')) return;
+  if (!el) return;
   const dark = !!el.closest('.dark');
   const opts = {
     mode: 'vega-lite',

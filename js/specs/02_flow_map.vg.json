@@ -1,20 +1,25 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Origin–destination flow map of every overseas trip the Australian team has made to a Commonwealth Games, 1930–2026. Azimuthal equidistant projection centred on Canberra: every straight line from the centre is the shortest (great-circle) route and is drawn at its true length, and the dashed rings mark 5,000, 10,000 and 15,000 km. Host cities in Britain, New Zealand and western Canada are combined into one flow each. Line width = Australian team places across all Games held there; labels give how often Australia topped the medal table there. The 15,000 km ring is highlighted: Australia finished first at 11 of the 13 Games inside it and 4 of the 10 beyond it. Green dots = the five Australian host cities (home Games).",
+  "description": "Origin–destination flow map of every overseas trip the Australian team has made to a Commonwealth Games, 1930–2026. Equal Earth (equal-area) projection rotated to centre on 140°E, so Australia sits in the middle with Britain to the left and Canada and the Caribbean to the right; flows are drawn as great-circle (shortest) routes from Canberra. Host cities in Britain, New Zealand and western Canada are combined into one flow each. Line width = Australian team places across all Games held there (see the line-width key); labels give how often Australia topped the medal table there. Distance itself is shown precisely in the distance line chart that follows. Green dots = the five Australian host cities (home Games).",
   "width": "container",
-  "height": 580,
+  "height": 420,
   "autosize": {
     "type": "fit-x",
     "contains": "padding"
   },
   "projection": {
-    "type": "azimuthalEquidistant",
+    "type": "equalEarth",
     "rotate": [
-      -149.13,
-      35.28,
+      -140,
+      0,
       0
     ],
-    "clipAngle": 158
+    "scale": {
+      "expr": "width/5.45"
+    },
+    "translate": {
+      "expr": "[width/2, height*0.47]"
+    }
   },
   "layer": [
     {
@@ -25,7 +30,8 @@
         "type": "geoshape",
         "fill": "#13222e",
         "stroke": "#2a3b48",
-        "strokeWidth": 0.8
+        "strokeWidth": 0.8,
+        "clip": true
       }
     },
     {
@@ -40,133 +46,8 @@
         "type": "geoshape",
         "fill": "#2b3c49",
         "stroke": "#13222e",
-        "strokeWidth": 0.3
-      }
-    },
-    {
-      "data": {
-        "url": "data/geo/distance_rings.geojson",
-        "format": {
-          "type": "json",
-          "property": "features"
-        }
-      },
-      "mark": {
-        "type": "geoshape",
-        "filled": false,
-        "stroke": "#7d909c",
-        "strokeWidth": 0.9,
-        "strokeDash": [
-          3,
-          4
-        ]
-      }
-    },
-    {
-      "data": {
-        "values": [
-          {
-            "label": "5,000 km",
-            "lon": 149.13,
-            "lat": -80.25
-          },
-          {
-            "label": "10,000 km",
-            "lon": -30.87,
-            "lat": -54.79
-          }
-        ]
-      },
-      "mark": {
-        "type": "text",
-        "fontSize": 12,
-        "fontStyle": "italic",
-        "color": "#a9b4bb",
-        "dy": -8
-      },
-      "encoding": {
-        "longitude": {
-          "field": "lon",
-          "type": "quantitative"
-        },
-        "latitude": {
-          "field": "lat",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "label"
-        }
-      }
-    },
-    {
-      "data": {
-        "url": "data/geo/distance_rings.geojson",
-        "format": {
-          "type": "json",
-          "property": "features"
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.properties.km == 15000"
-        }
-      ],
-      "mark": {
-        "type": "geoshape",
-        "filled": false,
-        "stroke": "#e9ecee",
-        "strokeWidth": 1.4,
-        "strokeDash": [
-          5,
-          4
-        ]
-      }
-    },
-    {
-      "data": {
-        "values": [
-          {
-            "lon": -30.87,
-            "lat": -29.5,
-            "t": "Within 15,000 km of Canberra:",
-            "w": 700,
-            "c": "#e9ecee"
-          },
-          {
-            "lon": -30.87,
-            "lat": -22,
-            "t": "Australia 1st at 11 of 13 Games",
-            "w": 700,
-            "c": "#e9ecee"
-          },
-          {
-            "lon": -30.87,
-            "lat": 1.6,
-            "t": "Beyond it: 1st at 4 of 10, and England won the other six",
-            "w": 700,
-            "c": "#e9ecee"
-          }
-        ]
-      },
-      "mark": {
-        "type": "text",
-        "font": "Barlow Semi Condensed",
-        "fontSize": 13,
-        "fontWeight": 700,
-        "color": "#e9ecee"
-      },
-      "encoding": {
-        "longitude": {
-          "field": "lon",
-          "type": "quantitative"
-        },
-        "latitude": {
-          "field": "lat",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "t"
-        }
+        "strokeWidth": 0.3,
+        "clip": true
       }
     },
     {
@@ -280,6 +161,10 @@
         {
           "calculate": "datum.km_min == datum.km ? format(datum.km, ',') : format(datum.km_min, ',') + '–' + format(datum.km, ',')",
           "as": "km_lab"
+        },
+        {
+          "calculate": "{type:'Feature', properties:{}, geometry:{type:'LineString', coordinates:[[datum.o_lon, datum.o_lat],[datum.lon, datum.lat]]}}",
+          "as": "geo"
         }
       ],
       "params": [
@@ -296,25 +181,13 @@
         }
       ],
       "mark": {
-        "type": "rule",
-        "strokeCap": "butt",
-        "cursor": "pointer"
+        "type": "geoshape",
+        "filled": false,
+        "strokeCap": "round",
+        "cursor": "pointer",
+        "stroke": "#2fbf87"
       },
       "encoding": {
-        "longitude": {
-          "field": "o_lon",
-          "type": "quantitative"
-        },
-        "latitude": {
-          "field": "o_lat",
-          "type": "quantitative"
-        },
-        "longitude2": {
-          "field": "lon"
-        },
-        "latitude2": {
-          "field": "lat"
-        },
         "strokeWidth": {
           "field": "athletes",
           "type": "quantitative",
@@ -325,13 +198,10 @@
             ],
             "range": [
               1,
-              24
+              22
             ]
           },
           "legend": null
-        },
-        "color": {
-          "value": "#2fbf87"
         },
         "order": {
           "field": "athletes",
@@ -378,7 +248,11 @@
             "type": "quantitative",
             "title": "Australian medals won there"
           }
-        ]
+        ],
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        }
       }
     },
     {
@@ -661,7 +535,7 @@
           "as": "result"
         },
         {
-          "calculate": "format(datum.athletes, ',') + ' places · ' + datum.result",
+          "calculate": "datum.dest == 'Britain' ? [format(datum.athletes, ',') + ' places', datum.result] : format(datum.athletes, ',') + ' places · ' + datum.result",
           "as": "sub"
         },
         {
@@ -678,13 +552,13 @@
             "fontWeight": 700,
             "color": "#f2efe6",
             "align": {
-              "expr": "datum.dest == 'Britain' || datum.dest == 'Delhi' || datum.dest == 'Kuala Lumpur' || datum.dest == 'Kingston' ? 'right' : 'left'"
+              "expr": "datum.dest == 'Britain' ? 'left' : datum.dest == 'Delhi' ? 'right' : datum.dest == 'Kuala Lumpur' ? 'right' : datum.dest == 'Western Canada' ? 'right' : datum.dest == 'Hamilton' ? 'left' : datum.dest == 'Kingston' ? 'right' : datum.dest == 'New Zealand' ? 'left' : 'left'"
             },
             "dx": {
-              "expr": "datum.dest == 'Britain' || datum.dest == 'Delhi' || datum.dest == 'Kuala Lumpur' ? -12 : datum.dest == 'Kingston' ? -4 : 12"
+              "expr": "datum.dest == 'Britain' ? -4 : datum.dest == 'Delhi' ? -10 : datum.dest == 'Kuala Lumpur' ? -10 : datum.dest == 'Western Canada' ? -10 : datum.dest == 'Hamilton' ? 10 : datum.dest == 'Kingston' ? -10 : datum.dest == 'New Zealand' ? 10 : 10"
             },
             "dy": {
-              "expr": "(datum.dest == 'Western Canada' ? -10 : datum.dest == 'Britain' ? -6 : datum.dest == 'Kingston' ? 30 : datum.dest == 'New Zealand' ? 30 : 0) + -7"
+              "expr": "(datum.dest == 'Britain' ? 22 : datum.dest == 'Delhi' ? 24 : datum.dest == 'Kuala Lumpur' ? -6 : datum.dest == 'Western Canada' ? -12 : datum.dest == 'Hamilton' ? -6 : datum.dest == 'Kingston' ? -14 : datum.dest == 'New Zealand' ? 6 : 0) + 0"
             }
           },
           "encoding": {
@@ -717,13 +591,13 @@
             "fontWeight": 400,
             "color": "#a9b4bb",
             "align": {
-              "expr": "datum.dest == 'Britain' || datum.dest == 'Delhi' || datum.dest == 'Kuala Lumpur' || datum.dest == 'Kingston' ? 'right' : 'left'"
+              "expr": "datum.dest == 'Britain' ? 'left' : datum.dest == 'Delhi' ? 'right' : datum.dest == 'Kuala Lumpur' ? 'right' : datum.dest == 'Western Canada' ? 'right' : datum.dest == 'Hamilton' ? 'left' : datum.dest == 'Kingston' ? 'right' : datum.dest == 'New Zealand' ? 'left' : 'left'"
             },
             "dx": {
-              "expr": "datum.dest == 'Britain' || datum.dest == 'Delhi' || datum.dest == 'Kuala Lumpur' ? -12 : datum.dest == 'Kingston' ? -4 : 12"
+              "expr": "datum.dest == 'Britain' ? -4 : datum.dest == 'Delhi' ? -10 : datum.dest == 'Kuala Lumpur' ? -10 : datum.dest == 'Western Canada' ? -10 : datum.dest == 'Hamilton' ? 10 : datum.dest == 'Kingston' ? -10 : datum.dest == 'New Zealand' ? 10 : 10"
             },
             "dy": {
-              "expr": "(datum.dest == 'Western Canada' ? -10 : datum.dest == 'Britain' ? -6 : datum.dest == 'Kingston' ? 30 : datum.dest == 'New Zealand' ? 30 : 0) + 8"
+              "expr": "(datum.dest == 'Britain' ? 22 : datum.dest == 'Delhi' ? 24 : datum.dest == 'Kuala Lumpur' ? -6 : datum.dest == 'Western Canada' ? -12 : datum.dest == 'Hamilton' ? -6 : datum.dest == 'Kingston' ? -14 : datum.dest == 'New Zealand' ? 6 : 0) + 15"
             }
           },
           "encoding": {
@@ -876,6 +750,136 @@
           "type": "quantitative"
         }
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 100,
+            "t": "100 places",
+            "i": 0
+          },
+          {
+            "v": 500,
+            "t": "500",
+            "i": 1
+          },
+          {
+            "v": 1905,
+            "t": "1,905 (Britain)",
+            "i": 2
+          }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "1 + 21*datum.v/1905",
+          "as": "w"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#2fbf87",
+            "opacity": 0.85,
+            "strokeCap": "butt"
+          },
+          "encoding": {
+            "x": {
+              "value": {
+                "expr": "width*0.06"
+              }
+            },
+            "x2": {
+              "value": {
+                "expr": "width*0.06+46"
+              }
+            },
+            "y": {
+              "field": "i",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  2
+                ],
+                "range": [
+                  {
+                    "expr": "height-74"
+                  },
+                  {
+                    "expr": "height-22"
+                  }
+                ]
+              },
+              "axis": null
+            },
+            "strokeWidth": {
+              "field": "w",
+              "type": "quantitative",
+              "scale": null
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 12,
+            "color": "#a9b4bb",
+            "font": "Barlow"
+          },
+          "encoding": {
+            "x": {
+              "value": {
+                "expr": "width*0.06+56"
+              }
+            },
+            "y": {
+              "field": "i",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  2
+                ],
+                "range": [
+                  {
+                    "expr": "height-74"
+                  },
+                  {
+                    "expr": "height-22"
+                  }
+                ]
+              },
+              "axis": null
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "bottom",
+            "fontSize": 12,
+            "fontWeight": 600,
+            "color": "#e9ecee",
+            "font": "Barlow",
+            "x": {
+              "expr": "width*0.06"
+            },
+            "y": {
+              "expr": "height-94"
+            },
+            "text": "Line width = Australian team places"
+          }
+        }
+      ]
     }
   ]
 }

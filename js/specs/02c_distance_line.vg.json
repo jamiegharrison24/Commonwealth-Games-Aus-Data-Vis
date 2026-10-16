@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Distance line: every Commonwealth Games host city placed by its great-circle distance from Canberra, on a scale that runs from Canberra (0 km) to the farthest point on Earth from Canberra (20,015 km, half the Earth's circumference, in the Atlantic Ocean near the Azores). Grey ticks above the line are familiar trips for scale. Host cities below; green = home Games.",
+  "description": "Distance line: every Commonwealth Games host city placed by its great-circle distance from Canberra, on a scale that runs from Canberra (0 km) to the farthest point on Earth from Canberra (20,015 km, half the Earth's circumference, in the Atlantic Ocean near the Azores). Grey ticks above the line are familiar trips for scale. Host cities below; green = home Games. A kilometre scale runs along the bottom: only left-to-right position encodes data (distance from Canberra); the vertical stagger of labels is only to stop them overlapping. The 15,000 km mark splits the Games where Australia usually tops the table (11 of 13 within it) from those where it usually doesn't (4 of 10 beyond it).",
   "width": "container",
-  "height": 250,
+  "height": 350,
   "autosize": {
     "type": "fit-x",
     "contains": "padding"
@@ -26,7 +26,7 @@
       "type": "quantitative",
       "scale": {
         "domain": [
-          -3.7,
+          -6.6,
           3.6
         ],
         "nice": false,
@@ -36,6 +36,263 @@
     }
   },
   "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 5000,
+            "y": 0
+          },
+          {
+            "x": 10000,
+            "y": 0
+          },
+          {
+            "x": 20000,
+            "y": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#2a3b48",
+        "strokeWidth": 1,
+        "strokeDash": [
+          2,
+          3
+        ]
+      },
+      "encoding": {
+        "y": {
+          "datum": -5.15
+        },
+        "y2": {
+          "datum": -0.15
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 0,
+            "x2": 20015,
+            "y": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#6b7f8c",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "y": {
+          "datum": -5.15
+        },
+        "x2": {
+          "field": "x2"
+        }
+      }
+    },
+    {
+      "data": {
+        "sequence": {
+          "start": 0,
+          "stop": 20001,
+          "step": 1000,
+          "as": "x"
+        }
+      },
+      "mark": {
+        "type": "tick",
+        "orient": "vertical",
+        "color": "#6b7f8c",
+        "size": 5,
+        "thickness": 1,
+        "yOffset": 2.5
+      },
+      "encoding": {
+        "y": {
+          "datum": -5.15
+        }
+      },
+      "transform": [
+        {
+          "calculate": "0",
+          "as": "y"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 0,
+            "t": "0",
+            "y": 0
+          },
+          {
+            "x": 5000,
+            "t": "5,000",
+            "y": 0
+          },
+          {
+            "x": 10000,
+            "t": "10,000",
+            "y": 0
+          },
+          {
+            "x": 15000,
+            "t": "15,000",
+            "y": 0
+          },
+          {
+            "x": 20000,
+            "t": "20,000 km",
+            "y": 0
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "tick",
+            "orient": "vertical",
+            "color": "#a9b4bb",
+            "size": 9,
+            "thickness": 1.2,
+            "yOffset": 4.5
+          },
+          "encoding": {
+            "y": {
+              "datum": -5.15
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "color": "#a9b4bb",
+            "baseline": "top",
+            "dy": 12,
+            "align": "center"
+          },
+          "encoding": {
+            "y": {
+              "datum": -5.15
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 0,
+            "y": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#e9ecee",
+        "dy": 32,
+        "dx": -6
+      },
+      "encoding": {
+        "y": {
+          "datum": -5.15
+        },
+        "text": {
+          "value": "Great-circle distance from Canberra (km). Only left-to-right position shows distance; labels are stacked up and down just to stop them overlapping."
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 15000,
+            "y": 0
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#e9ecee",
+            "strokeWidth": 1.3,
+            "strokeDash": [
+              5,
+              4
+            ]
+          },
+          "encoding": {
+            "y": {
+              "datum": -5.15
+            },
+            "y2": {
+              "datum": -4.3
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "middle",
+            "fontSize": 12.5,
+            "fontWeight": 700,
+            "color": "#2fbf87",
+            "font": "Barlow Semi Condensed",
+            "dx": -8
+          },
+          "encoding": {
+            "y": {
+              "datum": -4.65
+            },
+            "text": {
+              "value": "◀ Within 15,000 km: Australia 1st at 11 of 13 Games"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 12.5,
+            "fontWeight": 700,
+            "color": "#e9ecee",
+            "font": "Barlow Semi Condensed",
+            "dx": 8
+          },
+          "encoding": {
+            "y": {
+              "datum": -4.65
+            },
+            "text": {
+              "value": "Beyond: 1st at 4 of 10 ▶"
+            }
+          }
+        }
+      ]
+    },
     {
       "data": {
         "values": [

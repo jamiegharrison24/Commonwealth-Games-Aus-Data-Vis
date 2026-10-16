@@ -19,24 +19,21 @@
 <!-- ============ MASTHEAD ============ -->
 <header class="hero dark">
   <div class="wrap">
-    <h1 class="wip-title">Work in Progress</h1>
-    <div class="title-card" hidden>
-      <p class="kicker">Commonwealth Games · 1930–2026 · A data story</p>
-      <h1>Top of the <span class="gold-word">Table</span></h1>
-      <p class="subhead">How Australia came to own the Commonwealth Games, and whether anyone can still challenge it</p>
-      <div class="hero-grid">
-        <p class="dek">Australia has topped the medal table at 15 of 23 Games. This story looks at where those medals came from, who won them, and whether the competition is weaker than it used to be.</p>
-        <p class="byline">By <strong>Jamie</strong><br>Monash University · FIT3179 Data Visualisation<br>October 2026 · Data to Glasgow 2026</p>
-      </div>
+    <p class="kicker">Commonwealth Games · 1930–2026 · A data story</p>
+    <h1>Top of the <span class="gold-word">Table</span></h1>
+    <p class="subhead">How Australia came to own the Commonwealth Games, and whether anyone can still challenge it</p>
+    <div class="hero-grid">
+      <p class="dek">Australia has topped the medal table at 15 of 23 Games. This story looks at where those medals came from, who won them, and whether the competition is weaker than it used to be.</p>
+      <p class="byline">By <strong>Jamie</strong><br>Monash University · FIT3179 Data Visualisation<br>October 2026 · Data to Glasgow 2026</p>
     </div>
 
     <figure class="hero-fig">
       <h3 class="fig-title">Every medal Australia has ever won at the Commonwealth Games</h3>
       <div id="vis-hero" class="vis"></div>
-      <figcaption class="source">Idiom: unit column chart, one dot per medal, stacked five wide per Games. Hover a column for totals. Source: Commonwealth Sport medal tables via Wikipedia. <a href="js/specs/00_medal_skyline.vg.json">Vega-Lite spec</a></figcaption>
+      <figcaption class="source meta"><span class="m"><b>Idiom</b> Unit column chart: one dot per medal, stacked five wide per Games</span><span class="m"><b>Data</b> <a class="ref" href="#src-1">[1]</a></span><span class="m"><b>Note</b> Hover a column for totals.</span><span class="m"><a href="js/specs/00_medal_skyline.vg.json">Vega-Lite spec</a></span></figcaption>
     </figure>
 
-    <div class="scoreboard" role="list" hidden>
+    <div class="scoreboard" role="list">
       <div class="score" role="listitem"><div class="n">23</div><div class="l">Games contested, from Hamilton 1930 to Glasgow 2026, and Australia went to every one</div></div>
       <div class="score" role="listitem"><div class="n aus">2,771</div><div class="l">medals won by Australia, more than any other nation (England: 2,433)</div></div>
       <div class="score" role="listitem"><div class="n gold">1,071</div><div class="l">of them gold, 39% of all medals Australia has won</div></div>
@@ -67,7 +64,7 @@
         <h3 class="fig-title">Australia has topped the table in every host country except Jamaica</h3>
         <p class="fig-dek">Circle area shows the number of medal events. Colour shows which nation topped the medal table: <span class="aus">Australia</span> (15 times), <span class="eng">England</span> (7) or <span class="can">Canada</span> (once, Edmonton 1978). Use <b>Zoom to</b> to look closely at the UK, Australia and New Zealand, or Canada and the Caribbean, and hover a circle for details.</p>
         <div id="vis-hosts" class="vis"></div>
-        <figcaption class="source">Map idiom: proportional symbol map, Equal Earth (equal-area) projection. Sources: Commonwealth Sport results via Wikipedia medal tables; Natural Earth. <a href="js/specs/01_host_cities_map.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Proportional symbol map, Equal Earth (equal-area) projection</span><span class="m"><b>Data</b> <a class="ref" href="#src-1">[1]</a>, <a class="ref" href="#src-3">[3]</a>, <a class="ref" href="#src-8">[8]</a></span><span class="m"><a href="js/specs/01_host_cities_map.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
   </div>
@@ -82,31 +79,31 @@
         <h2>The long way there</h2>
         <div class="lede">
           <p>Only eight of the 23 Games have been held in Australia or New Zealand. For the rest, Australian teams travelled up to 17,000 km, roughly as far from home as a sporting team can go.</p>
-          <p>The map below is centred on Canberra. On this projection every straight line from Canberra is the shortest route over the globe, drawn at its true length, and the dashed rings mark 5,000, 10,000 and 15,000 km.</p>
+          <p>The map below traces the shortest route from Canberra to every overseas host. The line chart under it then lays every host city out by distance, so you can see exactly how far each trip was.</p>
         </div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row sub">
       <figure class="reveal span-8">
-        <h3 class="fig-title">Australia tops the table close to home, less often on the far side of the world</h3>
-        <p class="fig-dek">Within 15,000 km of Canberra, Australia finished first on the medal table at 11 of 13 Games. Beyond that ring it managed 4 of 10, and every time it missed out, England won. Most of those far Games were in Britain, England's backyard, and four were before 1970, when Australia was a smaller sporting power. Line width shows Australian team places, added up over every Games held at each destination; host cities in Britain, New Zealand and western Canada are combined. <span class="aus">Green dots</span> are the five Australian host cities. Hover a line to isolate it.</p>
+        <h3 class="fig-title">Most of Australia's Games travel has been to Britain, on the far side of the world</h3>
+        <p class="fig-dek">Line width shows Australian team places, added up over every Games held at each destination (key, bottom left). Host cities in Britain, New Zealand and western Canada are combined into one line each. Each line follows the shortest route over the globe. Labels give how often Australia topped the medal table there. <span class="aus">Green dots</span> are the five Australian host cities. Hover a line to isolate it.</p>
         <div id="vis-flows" class="vis"></div>
-        <figcaption class="source">Map idiom: origin–destination flow map on an azimuthal equidistant projection centred on Canberra (true distances from the centre). Team sizes: Commonwealth Games Australia via Wikipedia; medal-table places: Commonwealth Sport via Wikipedia. <a href="js/specs/02_flow_map.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Origin–destination flow map, Equal Earth projection rotated to centre on 140°E; lines follow great-circle (shortest) routes</span><span class="m"><b>Data</b> Team sizes <a class="ref" href="#src-2">[2]</a>; medal-table places <a class="ref" href="#src-1">[1]</a>; boundaries <a class="ref" href="#src-8">[8]</a></span><span class="m"><a href="js/specs/02_flow_map.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
       <figure class="reveal span-4">
         <h3 class="fig-title">Britain: eight Games in six cities</h3>
-        <p class="fig-dek">Zooming in on the far end of the biggest line. Circle area shows Australian team places at each city, added up over its Games. Labels give Australia's place on the medal table; <span class="gold">gold</span> means first.</p>
+        <p class="fig-dek">Zooming in on the far end of the biggest line. Circle area shows Australian team places at each city, added up over its Games (key, bottom left). Labels give Australia's place on the medal table; <span class="gold">gold</span> means first.</p>
         <div id="vis-britain" class="vis"></div>
-        <figcaption class="source">Map idiom: proportional symbol inset map, Equal Earth projection. Source as for the flow map. <a href="js/specs/02b_britain_inset.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Proportional symbol inset map, Equal Earth projection</span><span class="m"><b>Data</b> <a class="ref" href="#src-1">[1]</a>, <a class="ref" href="#src-2">[2]</a>, <a class="ref" href="#src-8">[8]</a></span><span class="m"><a href="js/specs/02b_britain_inset.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
     <div class="row">
       <figure class="reveal span-12">
-        <h3 class="fig-title">Britain is about as far from Canberra as you can get</h3>
-        <p class="fig-dek">Every host city on one line, from Canberra on the left to the farthest point on Earth from Canberra on the right: 20,015 km away, in the Atlantic Ocean near the Azores. Familiar trips are marked above the line for scale. Hover a dot for its distance.</p>
+        <h3 class="fig-title">Australia tops the table close to home, less often on the far side of the world</h3>
+        <p class="fig-dek">Every host city on one line, from Canberra on the left to the farthest point on Earth from Canberra on the right: 20,015 km away, in the Atlantic Ocean near the Azores. Only the left-to-right position means anything: it is the distance from Canberra, read off the kilometre scale along the bottom. Familiar trips are marked above the line for scale. Within 15,000 km, Australia finished first on the medal table at 11 of 13 Games. Beyond that mark it managed 4 of 10, and every time it missed out, England won. Most of those far Games were in Britain, England's backyard, and four were before 1970, when Australia was a smaller sporting power. Hover a dot for its distance.</p>
         <div id="vis-distance" class="vis"></div>
-        <figcaption class="source">Idiom: annotated distance line (one-dimensional dot plot with reference marks). Distances are great-circle (shortest-route) distances from Canberra, calculated from city coordinates; the farthest point is half the Earth's circumference. <a href="js/specs/02c_distance_line.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Annotated distance line (one-dimensional dot plot with reference marks)</span><span class="m"><b>Data</b> Medal-table places <a class="ref" href="#src-1">[1]</a>; distances calculated by the author (see Method)</span><span class="m"><b>Note</b> Distances are great-circle distances from Canberra. The farthest point is half the Earth's circumference.</span><span class="m"><a href="js/specs/02c_distance_line.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
     <div class="row">
@@ -135,7 +132,7 @@
         <p class="fig-dek">Place on the medal table (ranked by golds, then silvers, then bronzes) for the four most successful nations: <span class="aus">Australia</span>, <span class="eng">England</span>, <span class="can">Canada</span> and <span class="muted">New Zealand</span>. Hover a line to isolate a nation.</p>
         <p class="how"><b>How to read this bump chart:</b> each line follows one nation from Games to Games. A line at the top means first place; a line that drops means the nation fell down the table.</p>
         <div id="vis-bump" class="vis"></div>
-        <figcaption class="source">Idiom: bump chart. Places below 7th are not shown (New Zealand, 1930s). Source: Commonwealth Sport medal tables via Wikipedia. <a href="js/specs/03_rank_bump_chart.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Bump chart</span><span class="m"><b>Data</b> <a class="ref" href="#src-1">[1]</a></span><span class="m"><b>Note</b> Places below 7th are not shown (New Zealand, 1930s).</span><span class="m"><a href="js/specs/03_rank_bump_chart.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
 
@@ -145,7 +142,7 @@
         <p class="fig-dek">Raw medal counts flatter Australia, because the Games now award about five times as many medals as in 1930. A fairer test compares two shares: of everyone competing, how many were Australian, and of all medals awarded, how many went to Australia? Since the 1970s Australia has made up only 8–14% of the athletes but won 17–30% of the medals, usually two to three times its "fair share". At the early home Games the team swelled (a third of all athletes at Sydney 1938, a quarter at Perth 1962) and the gap almost closed: those extra medals came mostly from sending extra athletes. Glasgow 2026 kept the pattern with a much smaller team: 9% of the athletes, 25% of the medals.</p>
         <p class="how"><b>How to read this gap chart:</b> both lines use the same percentage scale, one dot per Games. <span class="muted"><b>Grey</b></span> = Australia's share of all athletes entered; <span class="aus"><b>green</b></span> = Australia's share of all medals. The shaded green gap is the medals Australia won <em>beyond</em> what its team size alone would predict. Gold bands mark Games held in Australia. Hover a dot for the numbers.</p>
         <div id="vis-gap" class="vis"></div>
-        <figcaption class="source">Idiom: surplus/deficit (gap) line chart, two series on one shared axis. Hollow points (Kingston 1966, Edinburgh 1970): the only published totals include team officials, so Australia's athlete share is slightly understated. Sources: medal tables, Australian team sizes and total athletes per Games via Wikipedia (Commonwealth Sport; Commonwealth Games Australia). <a href="js/specs/04_athlete_vs_medal_share_gap.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Surplus/deficit (gap) line chart: two series on one shared axis</span><span class="m"><b>Data</b> <a class="ref" href="#src-1">[1]</a>, <a class="ref" href="#src-2">[2]</a>, <a class="ref" href="#src-3">[3]</a></span><span class="m"><b>Note</b> Hollow points (Kingston 1966, Edinburgh 1970): the only published totals include team officials, so Australia's athlete share is slightly understated.</span><span class="m"><a href="js/specs/04_athlete_vs_medal_share_gap.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
   </div>
@@ -169,7 +166,7 @@
         <h3 class="fig-title">At home, Australia wins a bigger share with a bigger team</h3>
         <p class="fig-dek"><span class="aus">● Home Games</span> compared with the overseas Games <span class="muted">◀ before</span> and <span class="muted">after ▶</span>. The grey bar spans the three values.</p>
         <div id="vis-home" class="vis"></div>
-        <figcaption class="source">Idiom: dumbbell (range) chart, two panels. Sydney 1938's "before" was London 1934, when Australia sent just 17 athletes. Source: medal tables and team sizes via Wikipedia. <a href="js/specs/05_home_advantage_dumbbell.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Dumbbell (range) chart, two panels</span><span class="m"><b>Data</b> <a class="ref" href="#src-1">[1]</a>, <a class="ref" href="#src-2">[2]</a></span><span class="m"><b>Note</b> Sydney 1938's "before" was London 1934, when Australia sent just 17 athletes.</span><span class="m"><a href="js/specs/05_home_advantage_dumbbell.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
   </div>
@@ -191,23 +188,25 @@
     <div class="row">
       <figure class="reveal span-12">
         <h3 class="fig-title">Only aquatics and athletics have delivered Australian medals at all 23 Games</h3>
-        <p class="fig-dek">Australian medals by sport (rows) and Games (columns). Darker green = more medals. Blank = no Australian medal, often because the sport was not on the programme. Hover a cell for the medal breakdown.</p>
+        <p class="fig-dek">Australian medals by sport (rows) and Games (columns). Darker green = more medals; numbers mark Games with more than 20. Blank = no Australian medal, often because the sport was not on the programme (notes in grey). The pool peaked at the Gold Coast in 2018 with 84 medals, and in 1970 it supplied more than half of everything Australia won (45 of 82). Hover a cell for the medal breakdown.</p>
         <div id="vis-heatmap" class="vis"></div>
-        <figcaption class="source">Idiom: heatmap. "Aquatics" combines swimming, diving, synchronised swimming and water polo, which early Games reported together; "Weightlifting" includes para powerlifting. Source: "Australia at the [year] Commonwealth Games" medal tables, Wikipedia. The 2006 sport split differs from the official total by one silver/bronze. <a href="js/specs/06_sport_heatmap.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Heatmap</span><span class="m"><b>Data</b> <a class="ref" href="#src-2">[2]</a></span><span class="m"><b>Note</b> "Aquatics" combines swimming, diving, synchronised swimming and water polo, which early Games reported together; "Weightlifting" includes para powerlifting. The 2006 sport split differs from the official total by one silver/bronze.</span><span class="m"><a href="js/specs/06_sport_heatmap.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
 
-    <div class="row">
+    <div class="row sub">
       <figure class="reveal span-8">
         <h3 class="fig-title">Every Australian medal since 1930, by sport and colour</h3>
-        <p class="fig-dek">Column width = number of medals in that sport. Each column is split into <span class="gold">gold</span>, <span class="silver">silver</span> and <span class="bronze">bronze</span>.</p>
+        <p class="fig-dek">Column width = number of medals in that sport. Each column is split into <span class="gold">gold</span>, <span class="silver">silver</span> and <span class="bronze">bronze</span>. The dashed line marks Australia's overall gold rate (39%): columns whose gold rises above it convert more of their medals into wins.</p>
         <div id="vis-mekko" class="vis"></div>
-        <figcaption class="source">Idiom: Marimekko (variable-width stacked bar) chart. <a href="js/specs/07_sport_marimekko.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Marimekko (variable-width stacked bar) chart</span><span class="m"><b>Data</b> <a class="ref" href="#src-2">[2]</a></span><span class="m"><b>Note</b> Sports with fewer than 80 medals are grouped as "Other sports".</span><span class="m"><a href="js/specs/07_sport_marimekko.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
-      <aside class="span-4" style="padding-top:44px">
+      <aside class="span-4 side-notes" aria-label="Key numbers">
+        <div class="side-notes-body">
         <div class="note"><span class="big">37%</span>Aquatics' share of all 2,771 Australian medals: 1,014 medals, 410 of them gold.</div>
         <div class="note"><span class="big">47%</span>Cycling turns the most medals into gold of any major sport: 131 of 279.</div>
         <div class="note grey"><span class="big">51%</span>Half of Australia's boxing medals are bronze, because boxing awards two bronzes per event.</div>
+        </div>
       </aside>
     </div>
   </div>
@@ -222,7 +221,7 @@
 </aside>
 
 <!-- ============ 06 GREATS ============ -->
-<section class="chapter temp-hide" id="greats">
+<section class="chapter" id="greats">
   <div class="wrap">
     <div class="chapter-head">
       <div class="chapter-no">06</div>
@@ -238,14 +237,14 @@
         <h3 class="fig-title">Emma McKeon won 20 medals in eight years; Phil Adams took 20 years to win 18</h3>
         <p class="fig-dek">Each row is one athlete. The line runs from their first to last medal-winning Games. At each Games the circle's area shows medals won, and the <span class="gold">gold centre</span> shows how many were gold.</p>
         <div id="vis-greats" class="vis"></div>
-        <figcaption class="source">Idiom: timeline with nested proportional circles. Medals compiled from the per-Games Australian medallist lists on Wikipedia; relay and pairs medals are credited to every listed team member, so totals can differ by a medal or two from other sources. <a href="js/specs/08_greats_timeline.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Timeline with nested proportional circles</span><span class="m"><b>Data</b> <a class="ref" href="#src-2">[2]</a></span><span class="m"><b>Note</b> Relay and pairs medals are credited to every listed team member, so totals can differ by a medal or two from other sources.</span><span class="m"><a href="js/specs/08_greats_timeline.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
   </div>
 </section>
 
 <!-- ============ 07 EASIER? ============ -->
-<section class="chapter dark temp-hide" id="easier">
+<section class="chapter dark" id="easier">
   <div class="wrap">
     <div class="chapter-head">
       <div class="chapter-no">07</div>
@@ -264,7 +263,7 @@
         <p class="fig-dek">Each dot is one event. 100% means the Commonwealth winner matched the Olympic champion's mark; 97% means about 3% slower (or shorter). The white line follows the middle (median) event at each Games. <span class="aus">Green dots</span> are Australian winners. Use the buttons to show men's or women's events only.</p>
         <p class="how"><b>Why percentages?</b> A 100 m sprinter and a javelin thrower can't be compared in seconds and metres, but each can be compared with their own event's Olympic champion. For track events the percentage is inverted, so higher always means better.</p>
         <div id="vis-strip" class="vis"></div>
-        <figcaption class="source">Idiom: strip plot with median line. Marks outside 76–110% are drawn at the edge. Wind-aided Commonwealth marks (e.g. 1970, 1978, 1990 sprints) are included as recorded. Sources: Commonwealth Games athletics medallists via Wikipedia; Olympic results from <a href="https://www.olympedia.org">Olympedia</a>. <a href="js/specs/09_athletics_strip_plot.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Strip plot with median line</span><span class="m"><b>Data</b> <a class="ref" href="#src-4">[4]</a>, <a class="ref" href="#src-5">[5]</a></span><span class="m"><b>Note</b> Marks outside 76–110% are drawn at the edge. Wind-aided Commonwealth marks (e.g. 1970, 1978, 1990 sprints) are included as recorded.</span><span class="m"><a href="js/specs/09_athletics_strip_plot.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
 
@@ -273,7 +272,7 @@
         <h3 class="fig-title">Would the Commonwealth champion have medalled at the Olympics?</h3>
         <p class="fig-dek">Each cell is one event at one Games. About one Commonwealth winner in five would have won an Olympic medal. That rate dipped to its lowest at Melbourne 2006 and Delhi 2010, then peaked at the Gold Coast in 2018.</p>
         <div id="vis-matrix" class="vis"></div>
-        <figcaption class="source">Idiom: matrix / categorical heatmap. Blank cells: event not held, or not comparable (e.g. men's javelin 1986, redesigned implement). <a href="js/specs/10_olympic_standard_matrix.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Matrix (categorical heatmap)</span><span class="m"><b>Data</b> <a class="ref" href="#src-4">[4]</a>, <a class="ref" href="#src-5">[5]</a></span><span class="m"><b>Note</b> Blank cells: event not held, or not comparable (e.g. men's javelin 1986, redesigned implement).</span><span class="m"><a href="js/specs/10_olympic_standard_matrix.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
 
@@ -282,7 +281,7 @@
         <h3 class="fig-title">But fewer Olympic medallists win at the Commonwealth Games</h3>
         <p class="fig-dek">Each square is an athlete from a Commonwealth nation who won an individual Olympic athletics medal. <b>Filled</b> = they also won a medal at the Commonwealth Games two years later. <b>Hollow</b> = they did not, whether absent, injured or beaten.</p>
         <div id="vis-units" class="vis"></div>
-        <figcaption class="source">Idiom: unit (isotype-style) chart. Names matched between Olympedia and Wikipedia medallist lists by surname and initial. <a href="js/specs/11_olympians_unit_chart.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Unit (isotype-style) chart</span><span class="m"><b>Data</b> <a class="ref" href="#src-4">[4]</a>, <a class="ref" href="#src-5">[5]</a></span><span class="m"><b>Note</b> Names matched between Olympedia and Wikipedia medallist lists by surname and initial.</span><span class="m"><a href="js/specs/11_olympians_unit_chart.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
 
@@ -300,7 +299,7 @@
 </section>
 
 <!-- ============ 08 GLASGOW 2026 ============ -->
-<section class="chapter temp-hide" id="glasgow">
+<section class="chapter" id="glasgow">
   <div class="wrap">
     <div class="chapter-head">
       <div class="chapter-no">08</div>
@@ -318,7 +317,7 @@
         <h3 class="fig-title">The Games shrank by a quarter; Australia's medal count barely moved</h3>
         <p class="fig-dek">Every medal at the last two Games, one square each. <span class="aus">Australia</span> won 21% of medals in Birmingham and 25% in Glasgow; <span class="eng">England</span>'s share fell from 20% to 16%.</p>
         <div id="vis-waffle" class="vis"></div>
-        <figcaption class="source">Idiom: waffle charts (small multiples). Squares ordered by nation group, then gold, silver, bronze. Source: 2022 and 2026 Commonwealth Games medal tables via Wikipedia (Commonwealth Sport). <a href="js/specs/12_glasgow_waffle.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Waffle charts (small multiples)</span><span class="m"><b>Data</b> <a class="ref" href="#src-1">[1]</a></span><span class="m"><b>Note</b> Squares ordered by nation group, then gold, silver, bronze.</span><span class="m"><a href="js/specs/12_glasgow_waffle.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
 
@@ -327,14 +326,14 @@
         <h3 class="fig-title">Per person, Australia isn't the champion</h3>
         <p class="fig-dek">Australia won about 6 medals per million people in Glasgow. That places it 19th of the 45 medal-winning nations, behind Wales (9.7), Scotland (7.0), New Zealand (6.8) and a string of small islands. Nauru won two medals with about 12,000 residents; Norfolk Island won a bronze with about 2,000. Darker = more medals per person. Use <b>Zoom to</b> for the Caribbean, Africa, the British Isles, South Asia or the Pacific, and switch <b>Games</b> to compare the full-sized Birmingham 2022.</p>
         <div id="vis-choropleth" class="vis"></div>
-        <figcaption class="source">Map idiom: classed choropleth, Equal Earth (equal-area) projection, standardised by population (the course notes' rule: never map raw counts). Small territories are also drawn as circles so they stay visible. Population: World Bank 2024; ONS mid-2024 for England, Scotland, Wales and Northern Ireland; Natural Earth estimates for Jersey, Guernsey, Norfolk Island, Niue and the Cook Islands. <a href="js/specs/13_per_capita_choropleth.vg.json">Vega-Lite spec</a></figcaption>
+        <figcaption class="source meta"><span class="m"><b>Idiom</b> Classed choropleth, Equal Earth (equal-area) projection, standardised by population</span><span class="m"><b>Data</b> Medals <a class="ref" href="#src-1">[1]</a>; population <a class="ref" href="#src-6">[6]</a>, <a class="ref" href="#src-7">[7]</a>, <a class="ref" href="#src-8">[8]</a>; boundaries <a class="ref" href="#src-8">[8]</a></span><span class="m"><b>Note</b> Small territories are also drawn as circles so they stay visible. Population: World Bank 2024; ONS mid-2024 for England, Scotland, Wales and Northern Ireland; Natural Earth estimates for Jersey, Guernsey, Norfolk Island, Niue and the Cook Islands.</span><span class="m"><a href="js/specs/13_per_capita_choropleth.vg.json">Vega-Lite spec</a></span></figcaption>
       </figure>
     </div>
   </div>
 </section>
 
 <!-- ============ CLOSING ============ -->
-<section class="closing dark temp-hide">
+<section class="closing dark">
   <div class="wrap">
     <div class="chapter-head">
       <div class="chapter-no">FT</div>
@@ -349,26 +348,37 @@
 </main>
 
 <!-- ============ ABOUT / METADATA ============ -->
-<footer hidden>
+<footer id="sources">
   <div class="wrap">
+    <h2 class="footer-title">Sources and method</h2>
     <div class="cols">
       <div>
         <h3>Data sources</h3>
-        <ul>
-          <li>Medal tables, 1930–2026, and Australian team and medallist records: Commonwealth Sport (formerly the Commonwealth Games Federation) results, compiled on <a href="https://en.wikipedia.org/wiki/All-time_Commonwealth_Games_medal_table">Wikipedia</a> (accessed 29 Sep 2026).</li>
-          <li>Commonwealth Games athletics medallists and marks: <a href="https://en.wikipedia.org/wiki/List_of_Commonwealth_Games_medallists_in_athletics_(men)">Wikipedia lists</a> (men, women) and <a href="https://en.wikipedia.org/wiki/Athletics_at_the_2026_Commonwealth_Games">Athletics at the 2026 CG</a>.</li>
-          <li>Total athletes at each Games: the infobox of each Games’ <a href="https://en.wikipedia.org/wiki/Commonwealth_Games">Wikipedia article</a> (Kingston 1966 and Edinburgh 1970 totals include officials).</li>
-          <li>Olympic athletics results, 1968–2024: <a href="https://www.olympedia.org">Olympedia</a> (OlyMADMen).</li>
-          <li>Population 2024: <a href="https://data.worldbank.org/indicator/SP.POP.TOTL">World Bank WDI</a>; <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland">ONS mid-2024 estimates</a>.</li>
-          <li>Boundaries: <a href="https://www.naturalearthdata.com">Natural Earth</a> 1:50m map units (public domain).</li>
-        </ul>
+        <p class="fine-lead">Numbers in square brackets in each chart's notes refer to this list. All web sources accessed 29 September 2026.</p>
+        <ol class="sources">
+          <li id="src-1">Commonwealth Sport (formerly the Commonwealth Games Federation). Medal tables for every Games, 1930–2026, compiled on Wikipedia: <a href="https://en.wikipedia.org/wiki/All-time_Commonwealth_Games_medal_table">All-time Commonwealth Games medal table</a> and each Games' medal table page.</li>
+          <li id="src-2">Commonwealth Games Australia. Australian team sizes, medallists and medals by sport, compiled in the Wikipedia articles "Australia at the [year] Commonwealth Games", e.g. <a href="https://en.wikipedia.org/wiki/Australia_at_the_2026_Commonwealth_Games">Australia at the 2026 Commonwealth Games</a>.</li>
+          <li id="src-3">Total athletes and medal events at each Games: the infobox of each Games' Wikipedia article, via <a href="https://en.wikipedia.org/wiki/Commonwealth_Games">Commonwealth Games</a> (Kingston 1966 and Edinburgh 1970 totals include officials).</li>
+          <li id="src-4">Commonwealth Games athletics medallists and winning marks: Wikipedia, <a href="https://en.wikipedia.org/wiki/List_of_Commonwealth_Games_medallists_in_athletics_(men)">List of Commonwealth Games medallists in athletics (men)</a>, the matching women's list, and <a href="https://en.wikipedia.org/wiki/Athletics_at_the_2026_Commonwealth_Games">Athletics at the 2026 Commonwealth Games</a>.</li>
+          <li id="src-5">Olympic athletics results, 1968–2024: <a href="https://www.olympedia.org">Olympedia</a> (OlyMADMen).</li>
+          <li id="src-6">Population, 2024: World Bank, World Development Indicators, <a href="https://data.worldbank.org/indicator/SP.POP.TOTL">SP.POP.TOTL</a>.</li>
+          <li id="src-7">Population of England, Scotland, Wales and Northern Ireland, mid-2024: Office for National Statistics, <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland">population estimates</a>.</li>
+          <li id="src-8">Boundaries and small-territory population estimates: <a href="https://www.naturalearthdata.com">Natural Earth</a> 1:50m admin-0 map units (public domain).</li>
+        </ol>
       </div>
       <div>
         <h3>Method</h3>
         <ul>
           <li>Ranks use the standard gold-first ordering. Shares use all medals awarded (boxing and judo award two bronzes).</li>
+          <li>Distances are great-circle (shortest-route) distances from Canberra, calculated by the author from host-city coordinates with the haversine formula.</li>
           <li>Athletics comparison: individual events only (no relays, walks, marathons or combined events), 1970 onwards, when events went metric. Each Commonwealth winner is compared with the Olympics two years earlier.</li>
-          <li>Data was collected and cleaned with Python scripts.</li>
+          <li>Data was collected and cleaned with Python scripts, kept in the <a href="scripts/README.md">scripts</a> folder of this page's repository. Every chart's Vega-Lite specification is linked under it.</li>
+        </ul>
+        <h3>About</h3>
+        <ul>
+          <li>By Jamie, Monash University, FIT3179 Data Visualisation, Semester 2 2026. Published October 2026.</li>
+          <li>Built with Vega-Lite 5, Vega-Embed and the Barlow typeface family (Google Fonts).</li>
+          <li>Generative AI (Claude, Anthropic) was used for help with code and copy-editing; all data, charts and text were reviewed by the author.</li>
         </ul>
       </div>
     </div>

@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Inset proportional symbol map of the six British host cities (eight Games). Circle area = Australian team places, added up over every Games held in that city. Labels give Australia's place on the medal table at each Games; gold text = Australia finished first. Equal Earth projection zoomed on Britain.",
   "width": "container",
-  "height": 470,
+  "height": 420,
   "autosize": {
     "type": "fit-x",
     "contains": "padding"
@@ -18,7 +18,7 @@
       "expr": "height * 4.75"
     },
     "translate": {
-      "expr": "[width / 2, height / 2]"
+      "expr": "[width / 2, height * 0.42]"
     }
   },
   "layer": [
@@ -148,23 +148,7 @@
                 ],
                 "zero": true
               },
-              "legend": {
-                "title": "Team places",
-                "values": [
-                  100,
-                  300,
-                  600
-                ],
-                "orient": "bottom-left",
-                "direction": "horizontal",
-                "symbolFillColor": "#2fbf87",
-                "symbolStrokeColor": "#0b1620",
-                "symbolOpacity": 0.85,
-                "labelColor": "#a9b4bb",
-                "titleColor": "#a9b4bb",
-                "labelFontSize": 12,
-                "titleFontSize": 12
-              }
+              "legend": null
             },
             "order": {
               "field": "places",
@@ -272,6 +256,143 @@
                 "value": "#f0c13f"
               },
               "value": "#a9b4bb"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 600,
+            "t": "600",
+            "r": 26.63411942942772
+          },
+          {
+            "v": 300,
+            "t": "300",
+            "r": 18.833166459480722
+          },
+          {
+            "v": 100,
+            "t": "100",
+            "r": 10.873333725074225
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "filled": false,
+            "stroke": "#a9b4bb",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "size": {
+              "field": "v",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  700
+                ],
+                "range": [
+                  0,
+                  2600
+                ],
+                "zero": true
+              },
+              "legend": null
+            },
+            "x": {
+              "value": {
+                "expr": "22+26.63"
+              }
+            },
+            "y": {
+              "value": {
+                "expr": "height-16-datum.r"
+              }
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "stroke": "#a9b4bb",
+            "strokeWidth": 0.8,
+            "strokeDash": [
+              2,
+              2
+            ]
+          },
+          "encoding": {
+            "x": {
+              "value": {
+                "expr": "22+26.63"
+              }
+            },
+            "y": {
+              "value": {
+                "expr": "height-16-2*datum.r"
+              }
+            },
+            "x2": {
+              "value": {
+                "expr": "22+53.27+40"
+              }
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 12,
+            "color": "#a9b4bb"
+          },
+          "encoding": {
+            "text": {
+              "field": "t"
+            },
+            "x": {
+              "value": {
+                "expr": "22+53.27+44"
+              }
+            },
+            "y": {
+              "value": {
+                "expr": "height-16-2*datum.r"
+              }
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "bottom",
+            "fontSize": 12,
+            "fontWeight": 600,
+            "color": "#e9ecee",
+            "text": [
+              "Circle area = Australian team places,",
+              "added up over every Games at that city"
+            ],
+            "lineHeight": 14,
+            "dy": -14
+          },
+          "encoding": {
+            "x": {
+              "value": 22
+            },
+            "y": {
+              "value": {
+                "expr": "height-16-53.27-12"
+              }
             }
           }
         }
