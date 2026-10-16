@@ -117,7 +117,7 @@
           "type": "ordinal",
           "scale": {
             "domain": ["Under 1", "1 to 3", "3 to 5", "5 to 10", "10 to 30", "30 or more"],
-            "range": ["#fff4c2", "#fedf8a", "#fdb94e", "#f0822b", "#c9531a", "#7f2f0c"]
+            "range": ["#f2f0f7", "#d6d4e9", "#b3b0d6", "#8f86c0", "#6a51a3", "#3f1d7a"]
           },
           "legend": {"orient": "top-left", "direction": "vertical", "symbolType": "square", "symbolSize": 150}
         },
@@ -195,7 +195,7 @@
           "type": "ordinal",
           "scale": {
             "domain": ["Under 1", "1 to 3", "3 to 5", "5 to 10", "10 to 30", "30 or more"],
-            "range": ["#fff4c2", "#fedf8a", "#fdb94e", "#f0822b", "#c9531a", "#7f2f0c"]
+            "range": ["#f2f0f7", "#d6d4e9", "#b3b0d6", "#8f86c0", "#6a51a3", "#3f1d7a"]
           },
           "legend": null
         },

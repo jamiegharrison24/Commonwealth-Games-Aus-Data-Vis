@@ -115,7 +115,7 @@
           {"year": 1986, "rank": 6.3, "t": "boycotted Edinburgh"}
         ]
       },
-      "mark": {"type": "text", "fontSize": 11, "fontStyle": "italic", "color": "#8c8a83", "opacity": 1},
+      "mark": {"type": "text", "fontSize": 12, "fontStyle": "italic", "color": "#6c6a63", "opacity": 1},
       "encoding": {
         "x": {"field": "year", "type": "quantitative"},
         "y": {"field": "rank", "type": "quantitative"},

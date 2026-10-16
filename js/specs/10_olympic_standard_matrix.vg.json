@@ -57,7 +57,7 @@
           "labelAngle": -90,
           "domain": false,
           "ticks": false,
-          "labelFontSize": 11,
+          "labelFontSize": 12,
           "labelPadding": 4
         }
       },
@@ -73,7 +73,7 @@
         "type": "ordinal",
         "scale": {
           "domain": ["Olympic champion", "Olympic medal", "Olympic final (top 8)", "Not an Olympic finalist"],
-          "range": ["#d6efff", "#6fb3e0", "#2f6f99", "#1e2f3b"]
+          "range": ["#f0c13f", "#c9d2d8", "#566b79", "#1e2f3b"]
         },
         "legend": {
           "orient": "top",

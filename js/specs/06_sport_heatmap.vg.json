@@ -118,7 +118,7 @@
         "labelExpr": "'’' + substring(datum.label, 2, 4)",
         "domain": false,
         "ticks": false,
-        "labelFontSize": 11.5
+        "labelFontSize": 12.5
       }
     },
     "y": {
@@ -240,7 +240,7 @@
       ],
       "mark": {
         "type": "text",
-        "fontSize": 10.5,
+        "fontSize": 12,
         "fontWeight": 600,
         "color": "#ffffff"
       },
@@ -263,7 +263,7 @@
           {
             "year": 2022,
             "sport": "Shooting",
-            "t": "Not held ’22 or ’26",
+            "t": "Dropped after 2018",
             "align": "center",
             "dx": 22
           },
@@ -299,7 +299,7 @@
       },
       "mark": {
         "type": "text",
-        "fontSize": 11.5,
+        "fontSize": 12.5,
         "fontStyle": "italic",
         "color": "#5d5b55",
         "baseline": "middle",

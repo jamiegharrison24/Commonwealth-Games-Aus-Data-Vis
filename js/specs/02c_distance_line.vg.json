@@ -503,7 +503,7 @@
           "mark": {
             "type": "text",
             "font": "Barlow Semi Condensed",
-            "fontSize": 11.5,
+            "fontSize": 12.5,
             "fontWeight": 400,
             "color": "#a9b4bb",
             "align": "center",
@@ -612,7 +612,7 @@
           "mark": {
             "type": "text",
             "font": "Barlow Semi Condensed",
-            "fontSize": 11.5,
+            "fontSize": 12.5,
             "fontWeight": 400,
             "color": "#a9b4bb",
             "align": "center",
@@ -817,7 +817,7 @@
           "mark": {
             "type": "text",
             "font": "Barlow Semi Condensed",
-            "fontSize": 11.5,
+            "fontSize": 12.5,
             "fontWeight": 400,
             "color": "#a9b4bb",
             "align": "left",
@@ -837,7 +837,7 @@
           "mark": {
             "type": "text",
             "font": "Barlow Semi Condensed",
-            "fontSize": 11.5,
+            "fontSize": 12.5,
             "fontWeight": 400,
             "color": "#a9b4bb",
             "align": "left",

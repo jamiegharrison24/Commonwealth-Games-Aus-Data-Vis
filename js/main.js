@@ -74,7 +74,7 @@ CHARTS.forEach(([sel, file]) => {
     mode: 'vega-lite',
     config: dark ? DARK : LIGHT,
     renderer: 'svg',
-    actions: { export: true, source: false, compiled: false, editor: true },
+    actions: false, // spec links sit in each caption; the menu button broke the right-hand sight line
     tooltip: { theme: dark ? 'custom dark' : 'custom' }
   };
   vegaEmbed(sel, (window.INLINE_SPECS && window.INLINE_SPECS[file]) || `js/specs/${file}.vg.json`, opts)

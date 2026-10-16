@@ -32,7 +32,7 @@
             "labelAngle": 0,
             "domain": false,
             "ticks": false,
-            "labelFontSize": 11.5,
+            "labelFontSize": 12.5,
             "labelPadding": 8,
             "labelColor": "#a9b4bb",
             "labelOverlap": "greedy"
@@ -94,7 +94,7 @@
             "type": "text",
             "align": "center",
             "dy": -3,
-            "fontSize": 11.5,
+            "fontSize": 12.5,
             "color": "#a9b4bb",
             "opacity": {"expr": "width < 700 ? 0 : 1"}
           },

@@ -280,9 +280,9 @@ section.dark { background: var(--night); color: var(--on-night); border-bottom: 
    so we don't get "rivers" of white space in narrower columns.
    The narrow key-number notes stay left-aligned: with only a few words per line, justification
    leaves large gaps between words (the notes' warning about justified short lines). */
-.lede p, .prose p, .fig-dek, .how, .dek, .verdict p, .pull-note, footer li, footer .fine-lead {
+.lede p, .prose p, .fig-dek, .how, .verdict p, .pull-note, footer li, footer .fine-lead {
   text-align: justify; hyphens: auto; -webkit-hyphens: auto; text-wrap: pretty;
 }
 @media (max-width: 640px) {
-  .lede p, .prose p, .fig-dek, .how, .dek, .verdict p, .pull-note, footer li, footer .fine-lead { text-align: left; hyphens: manual; }
+  .lede p, .prose p, .fig-dek, .how, .verdict p, .pull-note, footer li, footer .fine-lead { text-align: left; hyphens: manual; }
 }
