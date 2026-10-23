@@ -1,11 +1,16 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Dumbbell (range) charts for Australia's five home Games. Left: Australia's share of all medals at the home Games (green) compared with the overseas Games immediately before and after (grey). Right: the same comparison for the size of the Australian team.",
+  "description": "Dumbbell (range) charts for Australia's five home Games. Left: Australia's share of all medals at the home Games (green) compared with the overseas Games immediately before and after (grey). Right: the same comparison for the size of the Australian team. Games links in the text set pickYear/pickLabel to highlight that Games.",
   "data": {
     "url": "data/home_advantage.csv",
     "format": {
       "type": "csv",
-      "parse": {"home_year": "number", "share": "number", "gold_share": "number", "team": "number"}
+      "parse": {
+        "home_year": "number",
+        "share": "number",
+        "gold_share": "number",
+        "team": "number"
+      }
     }
   },
   "spacing": 36,
@@ -13,13 +18,20 @@
     {
       "width": 460,
       "height": 230,
-      "title": {"text": "Share of all medals won", "fontSize": 15, "font": "Barlow Semi Condensed"},
+      "title": {
+        "text": "Share of all medals won",
+        "fontSize": 15,
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif"
+      },
       "encoding": {
         "y": {
           "field": "home_games",
           "type": "nominal",
           "title": null,
-          "sort": {"field": "home_year", "order": "ascending"},
+          "sort": {
+            "field": "home_year",
+            "order": "ascending"
+          },
           "axis": {
             "domain": false,
             "ticks": false,
@@ -34,27 +46,82 @@
           "field": "share",
           "type": "quantitative",
           "title": null,
-          "scale": {"domain": [0, 0.35]},
-          "axis": {"format": ".0%", "tickCount": 4, "grid": false}
+          "scale": {
+            "domain": [
+              0,
+              0.35
+            ]
+          },
+          "axis": {
+            "format": ".0%",
+            "tickCount": 4,
+            "grid": false
+          }
         }
       },
       "layer": [
         {
-          "mark": {"type": "rule", "color": "#c9c4b7", "strokeWidth": 3},
+          "transform": [
+            {
+              "filter": "datum.home_year == pickYear"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "stroke": "#f0c13f",
+            "strokeWidth": 30,
+            "opacity": 0.35,
+            "strokeCap": "butt"
+          },
           "encoding": {
-            "x": {"aggregate": "min", "field": "share"},
-            "x2": {"aggregate": "max", "field": "share"}
+            "x": {
+              "value": 0
+            },
+            "x2": {
+              "value": 460
+            }
           }
         },
         {
-          "mark": {"type": "point", "filled": true, "size": 120, "opacity": 1, "strokeWidth": 1.5},
+          "mark": {
+            "type": "rule",
+            "color": "#c9c4b7",
+            "strokeWidth": 3
+          },
+          "encoding": {
+            "x": {
+              "aggregate": "min",
+              "field": "share"
+            },
+            "x2": {
+              "aggregate": "max",
+              "field": "share"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 120,
+            "opacity": 1,
+            "strokeWidth": 1.5
+          },
           "encoding": {
             "shape": {
               "field": "kind",
               "type": "nominal",
               "scale": {
-                "domain": ["Games before (away)", "Home Games", "Games after (away)"],
-                "range": ["triangle-left", "circle", "triangle-right"]
+                "domain": [
+                  "Games before (away)",
+                  "Home Games",
+                  "Games after (away)"
+                ],
+                "range": [
+                  "triangle-left",
+                  "circle",
+                  "triangle-right"
+                ]
               },
               "legend": null
             },
@@ -62,14 +129,28 @@
               "field": "kind",
               "type": "nominal",
               "scale": {
-                "domain": ["Games before (away)", "Home Games", "Games after (away)"],
-                "range": ["#8c8a83", "#00754F", "#8c8a83"]
+                "domain": [
+                  "Games before (away)",
+                  "Home Games",
+                  "Games after (away)"
+                ],
+                "range": [
+                  "#8c8a83",
+                  "#00754F",
+                  "#8c8a83"
+                ]
               },
               "legend": null
             },
             "tooltip": [
-              {"field": "games", "title": "Games"},
-              {"field": "kind", "title": "Compared as"},
+              {
+                "field": "games",
+                "title": "Games"
+              },
+              {
+                "field": "kind",
+                "title": "Compared as"
+              },
               {
                 "field": "share",
                 "type": "quantitative",
@@ -82,51 +163,140 @@
                 "title": "Share of all golds",
                 "format": ".1%"
               },
-              {"field": "team", "type": "quantitative", "title": "Australian athletes"}
+              {
+                "field": "team",
+                "type": "quantitative",
+                "title": "Australian athletes"
+              }
             ]
           }
         },
         {
-          "transform": [{"filter": "datum.kind == 'Home Games'"}],
-          "mark": {"type": "text", "dy": -13, "fontSize": 12, "fontWeight": 700, "color": "#00664a"},
-          "encoding": {"text": {"field": "share", "type": "quantitative", "format": ".0%"}}
+          "transform": [
+            {
+              "filter": "datum.kind == 'Home Games'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": -13,
+            "fontSize": 12,
+            "fontWeight": 700,
+            "color": "#00664a"
+          },
+          "encoding": {
+            "text": {
+              "field": "share",
+              "type": "quantitative",
+              "format": ".0%"
+            }
+          }
         }
       ]
     },
     {
       "width": 460,
       "height": 230,
-      "title": {"text": "Australian athletes sent", "fontSize": 15, "font": "Barlow Semi Condensed"},
+      "title": {
+        "text": "Australian athletes sent",
+        "fontSize": 15,
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif"
+      },
       "encoding": {
         "y": {
           "field": "home_games",
           "type": "nominal",
           "title": null,
-          "sort": {"field": "home_year", "order": "ascending"},
-          "axis": {"domain": false, "ticks": false, "labels": false, "grid": true, "gridDash": []}
+          "sort": {
+            "field": "home_year",
+            "order": "ascending"
+          },
+          "axis": {
+            "domain": false,
+            "ticks": false,
+            "labels": false,
+            "grid": true,
+            "gridDash": []
+          }
         },
         "x": {
           "field": "team",
           "type": "quantitative",
           "title": null,
-          "scale": {"domain": [0, 500]},
-          "axis": {"tickCount": 5, "grid": false}
+          "scale": {
+            "domain": [
+              0,
+              500
+            ]
+          },
+          "axis": {
+            "tickCount": 5,
+            "grid": false
+          }
         }
       },
       "layer": [
         {
-          "mark": {"type": "rule", "color": "#c9c4b7", "strokeWidth": 3},
-          "encoding": {"x": {"aggregate": "min", "field": "team"}, "x2": {"aggregate": "max", "field": "team"}}
+          "transform": [
+            {
+              "filter": "datum.home_year == pickYear"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "stroke": "#f0c13f",
+            "strokeWidth": 30,
+            "opacity": 0.35,
+            "strokeCap": "butt"
+          },
+          "encoding": {
+            "x": {
+              "value": 0
+            },
+            "x2": {
+              "value": 460
+            }
+          }
         },
         {
-          "mark": {"type": "point", "filled": true, "size": 120, "opacity": 1},
+          "mark": {
+            "type": "rule",
+            "color": "#c9c4b7",
+            "strokeWidth": 3
+          },
+          "encoding": {
+            "x": {
+              "aggregate": "min",
+              "field": "team"
+            },
+            "x2": {
+              "aggregate": "max",
+              "field": "team"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 120,
+            "opacity": 1
+          },
           "encoding": {
             "shape": {
               "field": "kind",
               "type": "nominal",
               "scale": {
-                "domain": ["Games before (away)", "Home Games", "Games after (away)"],
-                "range": ["triangle-left", "circle", "triangle-right"]
+                "domain": [
+                  "Games before (away)",
+                  "Home Games",
+                  "Games after (away)"
+                ],
+                "range": [
+                  "triangle-left",
+                  "circle",
+                  "triangle-right"
+                ]
               },
               "legend": null
             },
@@ -134,24 +304,67 @@
               "field": "kind",
               "type": "nominal",
               "scale": {
-                "domain": ["Games before (away)", "Home Games", "Games after (away)"],
-                "range": ["#8c8a83", "#00754F", "#8c8a83"]
+                "domain": [
+                  "Games before (away)",
+                  "Home Games",
+                  "Games after (away)"
+                ],
+                "range": [
+                  "#8c8a83",
+                  "#00754F",
+                  "#8c8a83"
+                ]
               },
               "legend": null
             },
             "tooltip": [
-              {"field": "games", "title": "Games"},
-              {"field": "kind", "title": "Compared as"},
-              {"field": "team", "type": "quantitative", "title": "Australian athletes"}
+              {
+                "field": "games",
+                "title": "Games"
+              },
+              {
+                "field": "kind",
+                "title": "Compared as"
+              },
+              {
+                "field": "team",
+                "type": "quantitative",
+                "title": "Australian athletes"
+              }
             ]
           }
         },
         {
-          "transform": [{"filter": "datum.kind == 'Home Games'"}],
-          "mark": {"type": "text", "dy": -13, "fontSize": 12, "fontWeight": 700, "color": "#00664a"},
-          "encoding": {"text": {"field": "team", "type": "quantitative"}}
+          "transform": [
+            {
+              "filter": "datum.kind == 'Home Games'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": -13,
+            "fontSize": 12,
+            "fontWeight": 700,
+            "color": "#00664a"
+          },
+          "encoding": {
+            "text": {
+              "field": "team",
+              "type": "quantitative"
+            }
+          }
         }
       ]
+    }
+  ],
+  "params": [
+    {
+      "name": "pickYear",
+      "value": 0
+    },
+    {
+      "name": "pickLabel",
+      "value": ""
     }
   ]
 }

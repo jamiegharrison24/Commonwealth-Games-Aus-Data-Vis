@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Strip plot: every individual athletics event at the Commonwealth Games since 1970 (one dot each). Vertical position = the Commonwealth winner's mark as a percentage of the Olympic champion's mark two years earlier (100% = equal; for track events time is inverted so higher is always better). The black line joins the median event at each Games. Australian winners are green. Alternate Games sit in faint 'lanes', like a running track, and the 100% reference is drawn as a chequered finish line.",
+  "description": "Strip plot: every individual athletics event at the Commonwealth Games since 1970 (one dot each). Vertical position = the Commonwealth winner's mark as a percentage of the Olympic champion's mark two years earlier (100% = equal; for track events time is inverted so higher is always better). The black line joins the median event at each Games. Australian winners are green. Alternate Games sit in faint 'lanes', like a running track, and the 100% reference is drawn as a chequered finish line. Games links in the text set pickYear/pickLabel to highlight that Games.",
   "width": "container",
   "height": 380,
   "autosize": {
@@ -33,6 +33,14 @@
         ],
         "name": "Events: "
       }
+    },
+    {
+      "name": "pickYear",
+      "value": 0
+    },
+    {
+      "name": "pickLabel",
+      "value": ""
     }
   ],
   "transform": [
@@ -526,6 +534,107 @@
           "field": "t"
         }
       }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [
+              4,
+              3
+            ],
+            "strokeWidth": 1.6
+          },
+          "encoding": {
+            "x": {
+              "datum": {
+                "expr": "pickYear"
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 0
+            },
+            "y2": {
+              "value": {
+                "expr": "height"
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "opacity": {
+              "value": {
+                "expr": "pickYear >= 1970 ? 1 : 0"
+              }
+            },
+            "detail": null,
+            "tooltip": null,
+            "size": null,
+            "strokeWidth": null
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": {
+              "expr": "scale('x', pickYear) < 70 ? 'left' : scale('x', pickYear) > width - 70 ? 'right' : 'center'"
+            },
+            "baseline": "bottom",
+            "dx": {
+              "expr": "scale('x', pickYear) < 70 ? -3 : scale('x', pickYear) > width - 70 ? 3 : 0"
+            },
+            "dy": -4,
+            "fontSize": 12.5,
+            "fontWeight": 800,
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif"
+          },
+          "encoding": {
+            "x": {
+              "datum": {
+                "expr": "pickYear"
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 0
+            },
+            "text": {
+              "value": {
+                "expr": "pickLabel"
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "opacity": {
+              "value": {
+                "expr": "pickYear >= 1970 ? 1 : 0"
+              }
+            },
+            "detail": null,
+            "tooltip": null,
+            "size": null
+          }
+        }
+      ],
+      "transform": [
+        {
+          "filter": "pickYear >= 1970"
+        }
+      ]
     }
-  ]
+  ],
+  "padding": {
+    "top": 22,
+    "left": 4,
+    "right": 4,
+    "bottom": 4
+  }
 }

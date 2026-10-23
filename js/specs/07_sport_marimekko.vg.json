@@ -260,6 +260,10 @@
       "transform": [
         {
           "filter": "datum.medal == 'gold' && (datum.total >= 250 || datum.sport_group == 'Other sports')"
+        },
+        {
+          "calculate": "datum.sport_group == 'Other sports' ? ['Other', 'sports'] : datum.sport_group",
+          "as": "name_lab"
         }
       ],
       "mark": {
@@ -271,7 +275,8 @@
         "fontSize": 13,
         "fontWeight": 700,
         "color": "#ffffff",
-        "font": "Barlow Semi Condensed"
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
+        "lineHeight": 15
       },
       "encoding": {
         "x": {
@@ -295,7 +300,7 @@
           "value": 0
         },
         "text": {
-          "field": "sport_group"
+          "field": "name_lab"
         }
       }
     },
@@ -305,7 +310,7 @@
           "filter": "datum.medal == 'gold' && (datum.total >= 250 || datum.sport_group == 'Other sports')"
         },
         {
-          "calculate": "format(datum.total, ',') + ' medals'",
+          "calculate": "datum.total < 400 ? format(datum.total, ',') : format(datum.total, ',') + ' medals'",
           "as": "total_lab"
         }
       ],
@@ -314,7 +319,9 @@
         "align": "left",
         "baseline": "top",
         "dx": 7,
-        "dy": 22,
+        "dy": {
+          "expr": "datum.sport_group == 'Other sports' ? 37 : 22"
+        },
         "fontSize": 12,
         "color": "#ffffff"
       },
@@ -359,7 +366,9 @@
         "align": "left",
         "baseline": "top",
         "dx": 7,
-        "dy": 36,
+        "dy": {
+          "expr": "datum.sport_group == 'Other sports' ? 51 : 36"
+        },
         "fontSize": 12,
         "color": "#ffffff"
       },
@@ -412,7 +421,7 @@
         "fontSize": 12.5,
         "fontWeight": 600,
         "color": "#ffffff",
-        "font": "Barlow Semi Condensed"
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif"
       },
       "encoding": {
         "x": {

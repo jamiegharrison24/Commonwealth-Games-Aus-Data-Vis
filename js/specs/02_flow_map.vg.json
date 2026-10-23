@@ -163,7 +163,19 @@
           "as": "km_lab"
         },
         {
-          "calculate": "{type:'Feature', properties:{}, geometry:{type:'LineString', coordinates:[[datum.o_lon, datum.o_lat],[datum.lon, datum.lat]]}}",
+          "lookup": "dest",
+          "from": {
+            "data": {
+              "url": "data/flow_paths.json"
+            },
+            "key": "dest",
+            "fields": [
+              "path"
+            ]
+          }
+        },
+        {
+          "calculate": "{type:'Feature', properties:{}, geometry:{type:'LineString', coordinates: datum.path}}",
           "as": "geo"
         }
       ],
@@ -183,7 +195,7 @@
       "mark": {
         "type": "geoshape",
         "filled": false,
-        "strokeCap": "round",
+        "strokeCap": "butt",
         "cursor": "pointer",
         "stroke": "#2fbf87"
       },
@@ -198,7 +210,9 @@
             ],
             "range": [
               1,
-              22
+              {
+                "expr": "22 * width / 735"
+              }
             ]
           },
           "legend": null
@@ -253,6 +267,38 @@
           "field": "geo",
           "type": "geojson"
         }
+      }
+    },
+    {
+      "data": {
+        "url": "data/flow_paths.json"
+      },
+      "transform": [
+        {
+          "calculate": "{type:'Feature', properties:{}, geometry:{type:'Polygon', coordinates:[datum.arrow]}}",
+          "as": "geo"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#2fbf87",
+        "stroke": null,
+        "strokeWidth": 0
+      },
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+        "opacity": {
+          "condition": {
+            "param": "hoverDest",
+            "empty": true,
+            "value": 0.85
+          },
+          "value": 0.15
+        },
+        "tooltip": null
       }
     },
     {
@@ -547,15 +593,15 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 13.5,
             "fontWeight": 700,
             "color": "#f2efe6",
             "align": {
-              "expr": "datum.dest == 'Britain' ? 'left' : datum.dest == 'Delhi' ? 'right' : datum.dest == 'Kuala Lumpur' ? 'right' : datum.dest == 'Western Canada' ? 'right' : datum.dest == 'Hamilton' ? 'left' : datum.dest == 'Kingston' ? 'right' : datum.dest == 'New Zealand' ? 'left' : 'left'"
+              "expr": "datum.dest == 'Britain' ? 'left' : datum.dest == 'Delhi' ? 'right' : datum.dest == 'Kuala Lumpur' ? 'right' : datum.dest == 'Western Canada' ? 'right' : datum.dest == 'Hamilton' ? 'right' : datum.dest == 'Kingston' ? 'right' : datum.dest == 'New Zealand' ? 'left' : 'left'"
             },
             "dx": {
-              "expr": "datum.dest == 'Britain' ? -4 : datum.dest == 'Delhi' ? -10 : datum.dest == 'Kuala Lumpur' ? -10 : datum.dest == 'Western Canada' ? -10 : datum.dest == 'Hamilton' ? 10 : datum.dest == 'Kingston' ? -10 : datum.dest == 'New Zealand' ? 10 : 10"
+              "expr": "datum.dest == 'Britain' ? -4 : datum.dest == 'Delhi' ? -10 : datum.dest == 'Kuala Lumpur' ? -10 : datum.dest == 'Western Canada' ? -10 : datum.dest == 'Hamilton' ? -10 : datum.dest == 'Kingston' ? -10 : datum.dest == 'New Zealand' ? 10 : 10"
             },
             "dy": {
               "expr": "(datum.dest == 'Britain' ? 22 : datum.dest == 'Delhi' ? 24 : datum.dest == 'Kuala Lumpur' ? -6 : datum.dest == 'Western Canada' ? -12 : datum.dest == 'Hamilton' ? -6 : datum.dest == 'Kingston' ? -14 : datum.dest == 'New Zealand' ? 6 : 0) + 0"
@@ -586,15 +632,15 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12,
             "fontWeight": 400,
             "color": "#a9b4bb",
             "align": {
-              "expr": "datum.dest == 'Britain' ? 'left' : datum.dest == 'Delhi' ? 'right' : datum.dest == 'Kuala Lumpur' ? 'right' : datum.dest == 'Western Canada' ? 'right' : datum.dest == 'Hamilton' ? 'left' : datum.dest == 'Kingston' ? 'right' : datum.dest == 'New Zealand' ? 'left' : 'left'"
+              "expr": "datum.dest == 'Britain' ? 'left' : datum.dest == 'Delhi' ? 'right' : datum.dest == 'Kuala Lumpur' ? 'right' : datum.dest == 'Western Canada' ? 'right' : datum.dest == 'Hamilton' ? 'right' : datum.dest == 'Kingston' ? 'right' : datum.dest == 'New Zealand' ? 'left' : 'left'"
             },
             "dx": {
-              "expr": "datum.dest == 'Britain' ? -4 : datum.dest == 'Delhi' ? -10 : datum.dest == 'Kuala Lumpur' ? -10 : datum.dest == 'Western Canada' ? -10 : datum.dest == 'Hamilton' ? 10 : datum.dest == 'Kingston' ? -10 : datum.dest == 'New Zealand' ? 10 : 10"
+              "expr": "datum.dest == 'Britain' ? -4 : datum.dest == 'Delhi' ? -10 : datum.dest == 'Kuala Lumpur' ? -10 : datum.dest == 'Western Canada' ? -10 : datum.dest == 'Hamilton' ? -10 : datum.dest == 'Kingston' ? -10 : datum.dest == 'New Zealand' ? 10 : 10"
             },
             "dy": {
               "expr": "(datum.dest == 'Britain' ? 22 : datum.dest == 'Delhi' ? 24 : datum.dest == 'Kuala Lumpur' ? -6 : datum.dest == 'Western Canada' ? -12 : datum.dest == 'Hamilton' ? -6 : datum.dest == 'Kingston' ? -14 : datum.dest == 'New Zealand' ? 6 : 0) + 15"
@@ -705,7 +751,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 13.5,
             "fontWeight": 700,
             "align": "right",
@@ -717,7 +763,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12.5,
             "fontWeight": 700,
             "color": "#2fbf87",
@@ -730,7 +776,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12,
             "color": "#a9b4bb",
             "align": "right",
@@ -816,9 +862,21 @@
               "axis": null
             },
             "strokeWidth": {
-              "field": "w",
+              "field": "v",
               "type": "quantitative",
-              "scale": null
+              "scale": {
+                "domain": [
+                  0,
+                  1905
+                ],
+                "range": [
+                  1,
+                  {
+                    "expr": "22 * width / 735"
+                  }
+                ]
+              },
+              "legend": null
             }
           }
         },
@@ -829,7 +887,7 @@
             "baseline": "middle",
             "fontSize": 12,
             "color": "#a9b4bb",
-            "font": "Barlow"
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif"
           },
           "encoding": {
             "x": {
@@ -869,14 +927,14 @@
             "fontSize": 12,
             "fontWeight": 600,
             "color": "#e9ecee",
-            "font": "Barlow",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "x": {
               "expr": "width*0.06"
             },
             "y": {
               "expr": "height-94"
             },
-            "text": "Line width = Australian team places"
+            "text": "Line width = team places"
           }
         }
       ]

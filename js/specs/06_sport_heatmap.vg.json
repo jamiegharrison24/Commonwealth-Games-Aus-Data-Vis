@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Heatmap: Australian medals won in each sport (rows, ordered by all-time total) at each Games (columns). Darker green = more medals; blank = no medals (or sport not held). Aquatics combines swimming, diving, synchronised swimming and water polo because early Games reported them together.",
+  "description": "Heatmap: Australian medals won in each sport (rows, ordered by all-time total) at each Games (columns). Darker green = more medals; blank = no medals (or sport not held). Aquatics combines swimming, diving, synchronised swimming and water polo because early Games reported them together. Games links in the text set pickYear/pickLabel to highlight that Games.",
   "width": "container",
   "height": {
     "step": 25
@@ -176,7 +176,8 @@
             "titleOrient": "left",
             "symbolType": "square",
             "symbolSize": 170,
-            "labelFontSize": 12
+            "labelFontSize": 12,
+            "titleLimit": 400
           }
         },
         "stroke": {
@@ -261,11 +262,11 @@
             "dx": 18
           },
           {
-            "year": 2022,
+            "year": 2026,
             "sport": "Shooting",
             "t": "Dropped after 2018",
-            "align": "center",
-            "dx": 22
+            "align": "right",
+            "dx": 20
           },
           {
             "year": 1974,
@@ -332,6 +333,60 @@
           "value": null
         }
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 0,
+            "sport_group": ""
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "filled": false,
+        "strokeWidth": 2.5,
+        "cornerRadius": 2
+      },
+      "encoding": {
+        "x": {
+          "datum": {
+            "expr": "pickYear"
+          },
+          "type": "ordinal"
+        },
+        "y": {
+          "value": 0
+        },
+        "y2": {
+          "value": {
+            "expr": "height"
+          }
+        },
+        "opacity": {
+          "value": {
+            "expr": "pickYear >= 1900 ? 1 : 0"
+          }
+        },
+        "tooltip": null,
+        "stroke": {
+          "value": "#1d1d1b"
+        },
+        "color": {
+          "value": "#1d1d1b"
+        }
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "pickYear",
+      "value": 0
+    },
+    {
+      "name": "pickLabel",
+      "value": ""
     }
   ]
 }

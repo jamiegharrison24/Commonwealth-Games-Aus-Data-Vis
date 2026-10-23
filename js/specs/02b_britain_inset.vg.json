@@ -187,7 +187,7 @@
           ],
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 13.5,
             "fontWeight": 700,
             "clip": true,
@@ -224,7 +224,7 @@
           ],
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12.5,
             "fontWeight": 700,
             "clip": true,

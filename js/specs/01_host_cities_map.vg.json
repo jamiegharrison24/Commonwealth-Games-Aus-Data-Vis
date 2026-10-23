@@ -1,23 +1,46 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Proportional symbol map: the 23 host cities of the Commonwealth Games (1930-2026). Circle area = number of medal events; colour = nation that topped the medal table. Equal Earth (equal-area) projection. Region buttons re-centre and zoom the projection; the slider replays the Games in order.",
+  "description": "Proportional symbol map: the 23 host cities of the Commonwealth Games (1930-2026). Circle area = number of medal events; colour = nation that topped the medal table. Equal Earth (equal-area) projection. Region buttons re-centre and zoom the projection; the slider replays the Games in order. Games links in the text set pickYear/pickLabel to highlight that Games.",
   "width": "container",
   "height": 500,
-  "autosize": {"type": "fit-x", "contains": "padding"},
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
   "params": [
     {
       "name": "region",
       "value": "World",
       "bind": {
         "input": "radio",
-        "options": ["World", "United Kingdom", "Australia & NZ", "Canada & Caribbean", "Asia"],
+        "options": [
+          "World",
+          "United Kingdom",
+          "Australia & NZ",
+          "Canada & Caribbean",
+          "Asia"
+        ],
         "name": "Zoom to: "
       }
     },
     {
       "name": "upto",
       "value": 2026,
-      "bind": {"input": "range", "min": 1930, "max": 2026, "step": 4, "name": "Show Games held up to: "}
+      "bind": {
+        "input": "range",
+        "min": 1930,
+        "max": 2026,
+        "step": 4,
+        "name": "Show Games held up to: "
+      }
+    },
+    {
+      "name": "pickYear",
+      "value": 0
+    },
+    {
+      "name": "pickLabel",
+      "value": ""
     }
   ],
   "projection": {
@@ -28,24 +51,46 @@
     "scale": {
       "expr": "region == 'United Kingdom' ? width * 2.4 : region == 'Australia & NZ' ? width * 0.58 : region == 'Canada & Caribbean' ? width * 0.5 : region == 'Asia' ? width * 0.6 : width / 5.6"
     },
-    "translate": {"expr": "[width / 2, height / 2]"}
+    "translate": {
+      "expr": "[width / 2, height / 2]"
+    }
   },
   "layer": [
     {
-      "data": {"sphere": true},
-      "mark": {"type": "geoshape", "fill": "#eef1f1", "stroke": "#d9dedf", "strokeWidth": 0.6, "clip": true}
+      "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#eef1f1",
+        "stroke": "#d9dedf",
+        "strokeWidth": 0.6,
+        "clip": true
+      }
     },
     {
       "data": {
         "url": "data/geo/graticule30.topojson",
-        "format": {"type": "topojson", "feature": "graticule"}
+        "format": {
+          "type": "topojson",
+          "feature": "graticule"
+        }
       },
-      "mark": {"type": "geoshape", "fill": null, "stroke": "#dfe5e6", "strokeWidth": 0.5, "clip": true}
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "#dfe5e6",
+        "strokeWidth": 0.5,
+        "clip": true
+      }
     },
     {
       "data": {
         "url": "data/geo/world_units.topojson",
-        "format": {"type": "topojson", "feature": "countries"}
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
       },
       "transform": [
         {
@@ -53,12 +98,26 @@
           "as": "member"
         }
       ],
-      "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 0.4, "clip": true},
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ffffff",
+        "strokeWidth": 0.4,
+        "clip": true
+      },
       "encoding": {
         "fill": {
           "field": "member",
           "type": "nominal",
-          "scale": {"domain": ["Commonwealth", "Other"], "range": ["#d6d1c4", "#ebe8e1"]},
+          "scale": {
+            "domain": [
+              "Commonwealth",
+              "Other"
+            ],
+            "range": [
+              "#d6d1c4",
+              "#ebe8e1"
+            ]
+          },
           "legend": null
         }
       }
@@ -89,7 +148,9 @@
         }
       },
       "transform": [
-        {"filter": "datum.year <= upto"},
+        {
+          "filter": "datum.year <= upto"
+        },
         {
           "calculate": "datum.top_code == 'AUS' ? 'Australia' : datum.top_code == 'ENG' ? 'England' : 'Canada'",
           "as": "Topped the medal table"
@@ -104,15 +165,34 @@
         "clip": true
       },
       "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
         "size": {
           "field": "events",
           "type": "quantitative",
           "title": "Medal events",
-          "scale": {"domain": [0, 300], "range": [0, 1100]},
+          "scale": {
+            "domain": [
+              0,
+              300
+            ],
+            "range": [
+              0,
+              1100
+            ]
+          },
           "legend": {
-            "values": [50, 150, 280],
+            "values": [
+              50,
+              150,
+              280
+            ],
             "orient": "bottom-left",
             "symbolFillColor": "#ffffff",
             "symbolStrokeColor": "#6b6a64",
@@ -123,31 +203,100 @@
         "color": {
           "field": "Topped the medal table",
           "type": "nominal",
-          "scale": {"domain": ["Australia", "England", "Canada"], "range": ["#00754F", "#E8833A", "#2C6FB5"]},
+          "scale": {
+            "domain": [
+              "Australia",
+              "England",
+              "Canada"
+            ],
+            "range": [
+              "#00754F",
+              "#E8833A",
+              "#2C6FB5"
+            ]
+          },
           "legend": null
         },
-        "order": {"field": "events", "sort": "descending"},
+        "order": {
+          "field": "events",
+          "sort": "descending"
+        },
         "tooltip": [
-          {"field": "label", "type": "nominal", "title": "Games"},
-          {"field": "host", "type": "nominal", "title": "Host nation"},
-          {"field": "events", "type": "quantitative", "title": "Medal events"},
-          {"field": "nations_medalled", "type": "quantitative", "title": "Nations that won a medal"},
-          {"field": "Topped the medal table", "type": "nominal"},
-          {"field": "aus_total", "type": "quantitative", "title": "Australian medals"},
-          {"field": "aus_rank", "type": "quantitative", "title": "Australia's place"}
+          {
+            "field": "label",
+            "type": "nominal",
+            "title": "Games"
+          },
+          {
+            "field": "host",
+            "type": "nominal",
+            "title": "Host nation"
+          },
+          {
+            "field": "events",
+            "type": "quantitative",
+            "title": "Medal events"
+          },
+          {
+            "field": "nations_medalled",
+            "type": "quantitative",
+            "title": "Nations that won a medal"
+          },
+          {
+            "field": "Topped the medal table",
+            "type": "nominal"
+          },
+          {
+            "field": "aus_total",
+            "type": "quantitative",
+            "title": "Australian medals"
+          },
+          {
+            "field": "aus_rank",
+            "type": "quantitative",
+            "title": "Australia's place"
+          }
         ]
       }
     },
     {
       "data": {
         "values": [
-          {"lon": -2.5, "lat": 62.5, "t": "UK · 8 Games"},
-          {"lon": -104, "lat": 60.5, "t": "Canada · 4"},
-          {"lon": -76.8, "lat": 11.5, "t": "Jamaica · 1"},
-          {"lon": 77.2, "lat": 34.5, "t": "India · 1"},
-          {"lon": 101.7, "lat": 9.5, "t": "Malaysia · 1"},
-          {"lon": 134, "lat": -18, "t": "Australia · 5"},
-          {"lon": 172, "lat": -49, "t": "New Zealand · 3"}
+          {
+            "lon": -2.5,
+            "lat": 62.5,
+            "t": "UK · 8 Games"
+          },
+          {
+            "lon": -104,
+            "lat": 60.5,
+            "t": "Canada · 4"
+          },
+          {
+            "lon": -76.8,
+            "lat": 11.5,
+            "t": "Jamaica · 1"
+          },
+          {
+            "lon": 77.2,
+            "lat": 34.5,
+            "t": "India · 1"
+          },
+          {
+            "lon": 101.7,
+            "lat": 9.5,
+            "t": "Malaysia · 1"
+          },
+          {
+            "lon": 134,
+            "lat": -18,
+            "t": "Australia · 5"
+          },
+          {
+            "lon": 172,
+            "lat": -49,
+            "t": "New Zealand · 3"
+          }
         ]
       },
       "mark": {
@@ -155,54 +304,164 @@
         "fontSize": 12,
         "fontWeight": 600,
         "color": "#3b3a36",
-        "font": "Barlow Semi Condensed",
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
         "clip": true
       },
       "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "t"}
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
       },
-      "transform": [{"filter": "region == 'World'"}]
+      "transform": [
+        {
+          "filter": "region == 'World'"
+        }
+      ]
     },
     {
       "data": {
         "url": "data/host_city_labels.csv",
-        "format": {"type": "csv", "parse": {"lat": "number", "lon": "number"}}
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number"
+          }
+        }
       },
-      "transform": [{"filter": "region != 'World'"}],
+      "transform": [
+        {
+          "filter": "region != 'World'"
+        }
+      ],
       "layer": [
         {
           "mark": {
             "type": "text",
             "clip": true,
-            "align": {"expr": "datum.side == 'left' ? 'right' : 'left'"},
-            "dx": {"expr": "datum.side == 'left' ? -14 : 14"},
+            "align": {
+              "expr": "datum.side == 'left' ? 'right' : 'left'"
+            },
+            "dx": {
+              "expr": "datum.side == 'left' ? -14 : 14"
+            },
             "dy": -4,
             "fontSize": 14,
             "fontWeight": 700,
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "color": "#1d1d1b"
           },
-          "encoding": {"text": {"field": "city"}}
+          "encoding": {
+            "text": {
+              "field": "city"
+            }
+          }
         },
         {
           "mark": {
             "type": "text",
             "clip": true,
-            "align": {"expr": "datum.side == 'left' ? 'right' : 'left'"},
-            "dx": {"expr": "datum.side == 'left' ? -14 : 14"},
+            "align": {
+              "expr": "datum.side == 'left' ? 'right' : 'left'"
+            },
+            "dx": {
+              "expr": "datum.side == 'left' ? -14 : 14"
+            },
             "dy": 12,
             "fontSize": 12.5,
             "color": "#5d5b55"
           },
-          "encoding": {"text": {"field": "years"}}
+          "encoding": {
+            "text": {
+              "field": "years"
+            }
+          }
         }
       ],
       "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"}
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
       }
+    },
+    {
+      "data": {
+        "url": "data/games.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "year": "number",
+            "lat": "number",
+            "lon": "number",
+            "km_from_canberra": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year == pickYear && (true)"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "filled": false,
+            "stroke": "#1d1d1b",
+            "strokeWidth": 2.5,
+            "size": 900
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 16,
+            "dy": 14,
+            "fontSize": 13,
+            "fontWeight": 800,
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
+            "color": "#1d1d1b",
+            "baseline": "top"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label"
+            }
+          }
+        }
+      ]
     }
   ]
 }

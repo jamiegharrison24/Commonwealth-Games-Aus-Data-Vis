@@ -272,7 +272,7 @@
         "type": "text",
         "fontSize": {"expr": "region == 'World' ? 12 : 12.5"},
         "fontWeight": 700,
-        "font": "Barlow Semi Condensed",
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
         "color": "#1d1d1b",
         "align": "center",
         "clip": true,

@@ -218,7 +218,7 @@
           "datum": -5.15
         },
         "text": {
-          "value": "Great-circle distance from Canberra (km). Only left-to-right position shows distance; labels are stacked up and down just to stop them overlapping."
+          "value": "Great-circle distance from Canberra (km)"
         }
       }
     },
@@ -259,7 +259,7 @@
             "fontSize": 12.5,
             "fontWeight": 700,
             "color": "#2fbf87",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "dx": -8
           },
           "encoding": {
@@ -279,7 +279,7 @@
             "fontSize": 12.5,
             "fontWeight": 700,
             "color": "#e9ecee",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "dx": 8
           },
           "encoding": {
@@ -426,7 +426,7 @@
       },
       "mark": {
         "type": "text",
-        "font": "Barlow Semi Condensed",
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
         "fontSize": 13,
         "fontWeight": 700,
         "color": "#f2efe6",
@@ -447,7 +447,7 @@
             "x": 3088,
             "y": 1.2,
             "t": "Perth",
-            "t2": "across Australia: 3,088 km"
+            "t2": "3,088 km"
           },
           {
             "x": 4540,
@@ -485,7 +485,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12.5,
             "fontWeight": 700,
             "color": "#c9d2d8",
@@ -502,7 +502,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12.5,
             "fontWeight": 400,
             "color": "#a9b4bb",
@@ -587,7 +587,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12.5,
             "fontWeight": 700,
             "color": "#f2efe6",
@@ -611,7 +611,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12.5,
             "fontWeight": 400,
             "color": "#a9b4bb",
@@ -737,7 +737,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 13,
             "fontWeight": 700,
             "color": "#f2efe6",
@@ -776,7 +776,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 13,
             "fontWeight": 700,
             "color": "#f2efe6",
@@ -796,7 +796,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 13,
             "fontWeight": 700,
             "color": "#f2efe6",
@@ -816,7 +816,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12.5,
             "fontWeight": 400,
             "color": "#a9b4bb",
@@ -836,7 +836,7 @@
         {
           "mark": {
             "type": "text",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontSize": 12.5,
             "fontWeight": 400,
             "color": "#a9b4bb",

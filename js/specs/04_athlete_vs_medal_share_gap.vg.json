@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Surplus/deficit (gap) chart. Grey line: Australia's share of all athletes entered at each Commonwealth Games. Green line: Australia's share of all medals awarded. The shaded gap between them is the medals Australia won beyond what its team size alone would predict. Gold bands mark Games held in Australia. Hollow grey points (1966, 1970) use all-participant totals that include officials.",
+  "description": "Surplus/deficit (gap) chart. Grey line: Australia's share of all athletes entered at each Commonwealth Games. Green line: Australia's share of all medals awarded. The shaded gap between them is the medals Australia won beyond what its team size alone would predict. Gold bands mark Games held in Australia. Hollow grey points (1966, 1970) use all-participant totals that include officials. Games links in the text set pickYear/pickLabel to highlight that Games.",
   "width": "container",
   "height": 400,
   "autosize": {
@@ -45,7 +45,7 @@
       "scale": {
         "domain": [
           1927,
-          2039
+          2045
         ],
         "nice": false
       },
@@ -120,7 +120,7 @@
         "color": "#8a6a0c",
         "baseline": "top",
         "dy": 4,
-        "font": "Barlow Semi Condensed",
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
         "text": "HOME"
       },
       "encoding": {
@@ -406,13 +406,13 @@
           {
             "year": 2027.6,
             "y": 0.262,
-            "t": "Share of medals won",
+            "t": "Share of medals",
             "c": "m"
           },
           {
             "year": 2027.6,
             "y": 0.236,
-            "t": "25% at Glasgow 2026",
+            "t": "25% in 2026",
             "c": "s"
           },
           {
@@ -424,7 +424,7 @@
           {
             "year": 2027.6,
             "y": 0.072,
-            "t": "9% at Glasgow 2026",
+            "t": "9% in 2026",
             "c": "s"
           }
         ]
@@ -433,7 +433,7 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "font": "Barlow Semi Condensed",
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
         "fontWeight": {
           "expr": "datum.c == 's' ? 400 : 700"
         },
@@ -491,7 +491,7 @@
       "mark": {
         "type": "text",
         "align": "center",
-        "font": "Barlow Semi Condensed",
+        "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
         "fontSize": 12.5,
         "fontWeight": {
           "expr": "datum.t == 'THE GAP' ? 700 : 500"
@@ -569,7 +569,7 @@
             "dx": 3,
             "fontSize": 12,
             "color": "#3b3a36",
-            "font": "Barlow Semi Condensed",
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif",
             "fontWeight": 600
           },
           "encoding": {
@@ -595,7 +595,7 @@
             "dy": 14,
             "fontSize": 12,
             "color": "#3b3a36",
-            "font": "Barlow Semi Condensed"
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif"
           },
           "encoding": {
             "x": {
@@ -620,7 +620,7 @@
             "dy": 28,
             "fontSize": 12,
             "color": "#3b3a36",
-            "font": "Barlow Semi Condensed"
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif"
           },
           "encoding": {
             "x": {
@@ -637,6 +637,119 @@
           }
         }
       ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 0
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [
+              4,
+              3
+            ],
+            "strokeWidth": 1.6
+          },
+          "encoding": {
+            "x": {
+              "datum": {
+                "expr": "pickYear"
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 0
+            },
+            "y2": {
+              "value": {
+                "expr": "height"
+              }
+            },
+            "color": {
+              "value": "#1d1d1b"
+            },
+            "opacity": {
+              "value": {
+                "expr": "pickYear >= 1900 ? 1 : 0"
+              }
+            },
+            "detail": null,
+            "tooltip": null,
+            "size": null,
+            "strokeWidth": null
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": {
+              "expr": "scale('x', pickYear) < 70 ? 'left' : scale('x', pickYear) > width - 70 ? 'right' : 'center'"
+            },
+            "baseline": "bottom",
+            "dx": {
+              "expr": "scale('x', pickYear) < 70 ? -3 : scale('x', pickYear) > width - 70 ? 3 : 0"
+            },
+            "dy": -4,
+            "fontSize": 12.5,
+            "fontWeight": 800,
+            "font": "Libre Franklin, Helvetica Neue, Arial, sans-serif"
+          },
+          "encoding": {
+            "x": {
+              "datum": {
+                "expr": "pickYear"
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 0
+            },
+            "text": {
+              "value": {
+                "expr": "pickLabel"
+              }
+            },
+            "color": {
+              "value": "#1d1d1b"
+            },
+            "opacity": {
+              "value": {
+                "expr": "pickYear >= 1900 ? 1 : 0"
+              }
+            },
+            "detail": null,
+            "tooltip": null,
+            "size": null
+          }
+        }
+      ],
+      "transform": [
+        {
+          "filter": "pickYear >= 1900"
+        }
+      ]
     }
-  ]
+  ],
+  "params": [
+    {
+      "name": "pickYear",
+      "value": 0
+    },
+    {
+      "name": "pickLabel",
+      "value": ""
+    }
+  ],
+  "padding": {
+    "top": 22,
+    "left": 4,
+    "right": 4,
+    "bottom": 4
+  }
 }
